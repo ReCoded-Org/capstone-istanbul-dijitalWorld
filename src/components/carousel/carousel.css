@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+.sentence {
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: bold;
+  color: #6c567b;
+  text-shadow: 0px 5px 5px #cecece;
+}
+
+.learnBtn {
+  background-color: #6c567b;
+  color: white;
+  font-family: "Roboto";
+  cursor: pointer;
+  width: 170px;
+  height: 60px;
+  font-size: 22px;
+  border-radius: 35px;
+  border-style: hidden;
+  box-shadow: 0px 11px 24px -7px #b3b3b3;
+  
+}
+
+.learnBtn:hover {
+  background-color: #f8b195;
+  border-style: hidden;
+}
+
+.leftPart {
+  padding-left: 6%;
+  padding-right: 60%;
+  padding-bottom: 90%;
+  padding-top: 5%;
+}
+
+span {
+  color: #f8b195;
+}
+
+
