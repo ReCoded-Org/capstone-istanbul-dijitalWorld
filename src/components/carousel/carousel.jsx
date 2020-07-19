@@ -21,7 +21,7 @@ export default function carousel() {
         </div>
         <button className="learnBtn">Learn More</button>
       </div>
-      <div className="rightPart">
+      <div className="midPart">
         {/* <ControlledCarousel /> */}
 
         <div className="calouselTrackContainer">
@@ -56,9 +56,9 @@ export default function carousel() {
         <FontAwesomeIcon icon="instagram" />
         <FontAwesomeIcon icon="twitter" />
 
-        <img className="icon" src={facebook} width="1.25rem" alt="facebook" />
-        <img className="icon" src={instagram} width="1.25rem" alt="instagram" />
-        <img className="icon" src={twitter} width="1.25rem" alt="twitter" />
+        <img className="icon" src={facebook} width="20px" alt="facebook" />
+        <img className="icon" src={instagram} width="20px" alt="instagram" />
+        <img className="icon" src={twitter} width="20px" alt="twitter" />
       </div>
     </div>
   );
