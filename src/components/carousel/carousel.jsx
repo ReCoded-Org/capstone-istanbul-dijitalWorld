@@ -1,10 +1,14 @@
 import React from "react";
 import womenImg from "./womenright.png";
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import twitter from "./twitter.svg";
 import "./carousel.css";
 
 export default function carousel() {
   return (
-    <div>
+    <div className="allContent">
+
       <div className="leftPart">
         <div className="sentence">
           <p>
@@ -13,9 +17,7 @@ export default function carousel() {
             for <span>Impact</span>
           </p>
         </div>
-        <div className="learnBtn">
-          <button className="learnBtn">Learn More</button>
-        </div>
+        <button className="learnBtn">Learn More</button>
       </div>
       <div className="rightPart">
         <div className="calouselTrackContainer">
@@ -39,12 +41,17 @@ export default function carousel() {
             </li>
           </ul>
         </div>
+
         <div className="carouselBtns">
-          <button className="carouselBtn"> v </button>
-          <button className="carouselBtn"> v </button>
+          <button className="carouselBtn"> > </button>
+          <button className="carouselBtn"> > </button>
         </div>
       </div>
-      <div className="socialMediaIcons"></div>
+      <div className="socialMediaIconsPart">
+        <img className="icon" src={facebook} width="20px" alt="facebook" />
+        <img className="icon" src={instagram} width="20px" alt="instagram" />
+        <img className="icon" src={twitter} width="20px" alt="twitter" />
+      </div>
     </div>
   );
 }

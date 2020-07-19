@@ -28,10 +28,11 @@
 }
 
 .leftPart {
-  padding-left: 6%;
-  padding-right: 60%;
-  padding-bottom: 90%;
-  padding-top: 5%;
+  margin-left: 6%;
+  /* float: left; */
+  /* padding-right: 60%; */
+  /* padding-bottom: 90%; */
+   /* padding-top: 5%; */
 }
 
 span {
@@ -45,10 +46,14 @@ span {
 
 
 .rightPart {
-  position: relative;
+  /* position: relative; */
   height: 450px;
   width: 850px;
-  
+  margin-left: -5%;
+  z-index: -1;
+  /* padding-left: 26%; */
+  /* float: left; */
+  margin-top: 10%; 
 }
 
 .carouselImg{
@@ -88,12 +93,43 @@ span {
   font-size: 22px;
   border-radius: 20px;
   border-style: hidden;
-  box-shadow: 0px 11px 24px -7px #b3b3b3;
+  box-shadow: 0px 11px 24px -7px #8f8f8f;
   display: inline;
-  margin: 20px 20px;
-  
+  margin: 50px 12px;
+}
+
+.carouselBtn:hover {
+  background-color: white;
+  color: #8f8f8f;
+  border-style: hidden;
 }
 
 .carouselBtns{
-  padding: 20px;
+  margin-left: 42%;
 }
+
+/* ----------- soclia Media handlers ----------*/
+
+
+.socialMediaIconsPart{
+display: flex;
+flex-direction: column;
+margin-left: 80px;
+margin-top: 100px;
+
+}
+
+
+.icon{
+  
+margin-top:10px ;
+}
+/* ----------- All content ----------*/
+
+
+.allContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
