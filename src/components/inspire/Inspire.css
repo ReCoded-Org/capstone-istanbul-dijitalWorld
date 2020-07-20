@@ -1,24 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.inspireHome {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
 
-.inspireHome{
- font-family: 'Roboto', sans-serif;
- text-align: center;
+.inspireHeader {
+  font-size: 2.875rem;
 }
-.inspireHeader{
-    font-size: 2.875rem;
+
+.pinkSpanInspire {
+  color: #e87a80;
 }
-.pinkSpanInspire{
-    color: #E87A80;
+
+.purpleSpanInspire {
+  color: #6c567c;
 }
-.purpleSpanInspire{
-    color: #6C567C;
+
+.greyParaInspire {
+  color: #4a474d;
+  font-size: 1.875rem;
 }
-.greyParaInspire{
-    color: #4A474D;
-    font-size: 1.875rem;
-}
-.inspireButton{
+
+.inspireButton {
   background-color: #6c567b;
   color: white;
   font-family: "Roboto";
@@ -30,6 +34,7 @@
   border-style: hidden;
   box-shadow: 0 0.6875rem 1.5rem -0.4375rem #b3b3b3;
 }
-.inspireButton:hover{
-background-color: #f8b195;
+
+.inspireButton:hover {
+  background-color: #f8b195;
 }
