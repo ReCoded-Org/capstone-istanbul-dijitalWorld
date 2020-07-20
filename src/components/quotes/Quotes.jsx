@@ -9,27 +9,34 @@ const Quotes = () => {
   return (
     <Container>
       <Row>
-        <Col lg={6} md={6} s={12}>
+        <Col xl={6} lg={12} md={12} className="content-columns">
           <div className="content-container">
-            <h2>#SayHerName</h2>
+            <h2 id="say-her-name">
+              <b>#SayHerName:</b>
+              <br />
+              My Intersectional Activism as a Black African Muslim Woman
+              #BlackLivesMatter
+            </h2>
           </div>
           <div className="content-container">
             <Image src={leonImage} fluid />
           </div>
           <div className="content-container">
-            <h2>
+            <h2 id="fight-for-girls">
               The fight for girls
               <br />
-              won&apos;t be won by girls alone
+              won&apos;t be won by
+              <br />
+              girls alone.
             </h2>
           </div>
         </Col>
-        <Col lg={6} md={6} s={12}>
+        <Col xl={6} lg={12} md={12} className="content-columns">
           <div className="content-container">
             <Image src={safeImage} fluid />
           </div>
           <div className="content-container">
-            <h2>
+            <h2 id="open-letter">
               An Open Letter
               <br />
               to My Abuser

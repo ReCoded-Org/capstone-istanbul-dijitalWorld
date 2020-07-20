@@ -1,5 +1,38 @@
 .content-container,
 .content-container img {
-  width: 32.5rem;
+  width: 35.625rem;
   height: 19.25rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+#say-her-name {
+  color: #6c567b;
+  font-size: 2rem;
+}
+
+#fight-for-girls {
+  color: #f8b195;
+  font-size: 3rem;
+}
+
+#open-letter {
+  color: #f8b195;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.content-columns {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
