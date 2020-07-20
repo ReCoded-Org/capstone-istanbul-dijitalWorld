@@ -11,7 +11,13 @@ const Quotes = () => {
   return (
     <Container>
       <Row>
-        <Col xl={6} lg={12} md={12} className="content-columns">
+        <Col
+          xl={6}
+          lg={12}
+          md={12}
+          className="content-columns"
+          data-testid="column-1"
+        >
           <div className="content-container">
             <h2 id="say-her-name">
               <b>{t("home.quotes.openLetter.part1")}</b>
@@ -33,10 +39,18 @@ const Quotes = () => {
               {t("home.quotes.girlsFight.part3")}
             </h2>
 
-            <button type="button">Donate Now</button>
+            <button type="button" data-testid="button">
+              Donate Now
+            </button>
           </div>
         </Col>
-        <Col xl={6} lg={12} md={12} className="content-columns">
+        <Col
+          xl={6}
+          lg={12}
+          md={12}
+          className="content-columns"
+          data-testid="column-2"
+        >
           <div className="content-container">
             <Image src={safeImage} fluid />
           </div>
