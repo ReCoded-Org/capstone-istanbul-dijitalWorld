@@ -15,9 +15,10 @@ const Newsletter = () => {
        
         <Row>
           <Col className="box">
+            <div className="test">
             <input className="input" placeholder="Your email address"></input>
-            <button className="button">Subscribe</button>
-
+            <button className="button">Subssdscribe</button>
+            </div>
           </Col>
         </Row>
       </Container>
