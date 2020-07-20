@@ -1,10 +1,10 @@
 import React from "react";
-import Quotes from "./components/quotes/Quotes";
+import Home from "./containers/home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Quotes />
+      <Home />
     </div>
   );
 }

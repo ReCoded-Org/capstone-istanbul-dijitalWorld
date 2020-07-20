@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container, Image, Button } from "react-bootstrap";
+import { Col, Row, Container, Image } from "react-bootstrap";
 import safeImage from "../../images/safe_image.jpeg";
 import leonImage from "../../images/leon-biss.jpg";
 import kidsImage from "../../images/small-kids.png";
