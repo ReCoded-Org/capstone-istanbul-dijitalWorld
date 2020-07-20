@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from "../src/containers/home.jsx"
+import Home from "../src/containers/home/Home"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

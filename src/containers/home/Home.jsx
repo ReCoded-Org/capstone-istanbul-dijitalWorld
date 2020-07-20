@@ -1,10 +1,9 @@
 import React from 'react';
-import Footer from "../components/footer";
-import "../components/footer.css";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
-    <div className="home">
+    <div>
         <Footer />
     </div>
   );
