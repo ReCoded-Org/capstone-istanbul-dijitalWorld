@@ -12,27 +12,21 @@ const Quotes = () => {
     <Container>
       <Row data-testid="row1">
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <div className="contentContainer">
-            <h2 id="sayHerName">
-              <b>{t("home.quotes.sayHerName.part1")}</b>
-              <br />
-              {t("home.quotes.sayHerName.part2")}
-              <br />
-              <span>{t("home.quotes.sayHerName.part3")}</span>
-            </h2>
-          </div>
+          <h2 id="sayHerName">
+            <b>{t("home.quotes.sayHerName.part1")}</b>
+            <br />
+            {t("home.quotes.sayHerName.part2")}
+            <br />
+            <span>{t("home.quotes.sayHerName.part3")}</span>
+          </h2>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <div className="contentContainer">
-            <Image src={safeImage} fluid />
-          </div>
+          <Image src={safeImage} fluid />
         </Col>
       </Row>
       <Row data-testid="row2">
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <div className="contentContainer">
-            <Image src={leonImage} fluid />
-          </div>
+          <Image src={leonImage} fluid />
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
@@ -51,23 +45,19 @@ const Quotes = () => {
       </Row>
       <Row data-testid="row3">
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <div className="contentContainer">
-            <h2 id="fightForGirls">
-              {t("home.quotes.girlsFight.part1")}
-              <br />
-              {t("home.quotes.girlsFight.part2")}
-              <br />
-              {t("home.quotes.girlsFight.part3")}
-            </h2>
-            <button type="button" data-testid="button">
-              Donate Now
-            </button>
-          </div>
+          <h2 id="fightForGirls">
+            {t("home.quotes.girlsFight.part1")}
+            <br />
+            {t("home.quotes.girlsFight.part2")}
+            <br />
+            {t("home.quotes.girlsFight.part3")}
+          </h2>
+          <button type="button" data-testid="button">
+            Donate Now
+          </button>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <div className="contentContainer">
-            <Image src={kidsImage} fluid />
-          </div>
+          <Image src={kidsImage} fluid />
         </Col>
       </Row>
     </Container>
