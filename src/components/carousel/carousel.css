@@ -56,31 +56,6 @@ span {
   position: relative;
 }
 
-/* .carouselBtn {
-  background-color: #6c567b;
-  color: white;
-  font-family: "Roboto";
-  cursor: pointer;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.375rem;
-  border-radius: 1.25rem;
-  border-style: hidden;
-  box-shadow: 0rem 0.6875rem 1.5rem -0.4375rem #8f8f8f;
-  display: inline;
-  margin: 3.125rem 0.75rem;
-} */
-
-/* .carouselBtn:hover {
-  background-color: white;
-  color: #8f8f8f;
-  border-style: hidden;
-} */
-
-/* .carouselBtns {
-  margin-left: 42%;
-} */
-
 /* ----------- soclia Media content ----------*/
 .socialMediaIconsPart {
   display: flex;

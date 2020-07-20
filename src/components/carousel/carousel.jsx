@@ -20,11 +20,6 @@ export default function carousel(props) {
       </div>
       <div className="midPart">
         <ControlledCarousel />
-
-        {/* <div className="carouselBtns">
-          <button className="carouselBtn"> > </button>
-          <button className="carouselBtn"> > </button>
-        </div> */}
       </div>
       <div className="socialMediaIconsPart">
         <img className="icon" src={facebook} width="20px" alt="facebook" />
