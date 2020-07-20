@@ -5,7 +5,10 @@
         "title1": "Never miss a story.",
         "title2": "Sign up for our newsletter."
       },
-      "button": "Subscribe"
+      "input": {
+        "text": "Your email address",
+        "button": "Subscribe"
+      }
     }
   }
 }

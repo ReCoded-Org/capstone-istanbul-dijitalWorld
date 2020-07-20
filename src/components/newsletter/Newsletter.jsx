@@ -18,8 +18,8 @@ const Newsletter = () => {
         <Row data-testid="row2">
           <Col className="box">
             <div className="test">
-              <input className="input" placeholder="Your email address"></input>
-              <button className="button">{t("home.newsletter.button")}</button>
+              <input className="input" placeholder={t("home.newsletter.input.text")}></input>
+              <button className="button">{t("home.newsletter.input.button")}</button>
             </div>
           </Col>
         </Row>
