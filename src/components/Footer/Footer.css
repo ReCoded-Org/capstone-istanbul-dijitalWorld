@@ -3,55 +3,19 @@
 .footer-container {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  
   background: rgba(248, 177, 149, 0.56);
-  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); */
   color: #6c567b;
   display: flex;
-  /* justify-content: space-evenly; */
   flex-direction: row;
-
-}
-
-.icon {
-  padding: 5px;
-  font-size: 2rem;
 }
 
 .title-left {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 46px;
-  color: #6c567b;
-}
-
-.title-mid {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-  color: #6c567b;
-
-}
-
-.text-mid {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.5px;
-  color: rgba(108, 86, 123, 0.83);
-}
-
-.title-right {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
+  font-size: 2.125rem;
+  line-height: 2.875rem;
   color: #6c567b;
 }
 
@@ -59,13 +23,44 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.5px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.03125rem;
   color: rgba(108, 86, 123, 0.83);
 }
 
+.title-mid {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5625rem;
+  line-height: 1.8125rem;
+  color: #6c567b;
+}
 
+.text-mid {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.03125rem;
+  color: rgba(108, 86, 123, 0.83);
+}
+
+.title-right {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5625rem;
+  line-height: 1.8125rem;
+  color: #6c567b;
+}
+
+.icon {
+  padding: 0.3125rem;
+  font-size: 2rem;
+}
 
 .row {
   margin: 3% 0;
@@ -75,9 +70,6 @@
 }
 
 .divs {
-  /* display: flex; */
-  /* justify-content: center; */
   text-align: start;
   padding-left: 2%;
 }
-
