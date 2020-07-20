@@ -16,6 +16,8 @@ const Quotes = () => {
               <br />
               My Intersectional Activism as a Black African Muslim Woman
               #BlackLivesMatter
+              <br />
+              <span>by Bashirat Oladele</span>
             </h2>
           </div>
           <div className="content-container">
@@ -29,6 +31,7 @@ const Quotes = () => {
               <br />
               girls alone.
             </h2>
+
             <button type="button">Donate Now</button>
           </div>
         </Col>
@@ -38,9 +41,14 @@ const Quotes = () => {
           </div>
           <div className="content-container">
             <h2 id="open-letter">
-              An Open Letter
+              <u>
+                {" "}
+                An Open Letter
+                <br />
+                to My Abuser
+              </u>
               <br />
-              to My Abuser
+              <span>Anonymous</span>
             </h2>
           </div>
           <div className="content-container">

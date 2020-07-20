@@ -15,6 +15,13 @@
 #say-her-name {
   color: #6c567b;
   font-size: 2rem;
+  padding-left: 1rem;
+}
+
+#say-her-name span {
+  color: #9dafbd;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 #fight-for-girls {
@@ -25,8 +32,13 @@
 #open-letter {
   color: #f8b195;
   font-weight: bold;
-  text-decoration: underline;
   font-size: 3rem;
+}
+
+#open-letter span {
+  color: #9dafbd;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 .content-columns {
