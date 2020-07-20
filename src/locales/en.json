@@ -1,1 +1,10 @@
-{}
+
+{
+    "home": {
+        "inspire":{
+            "header":{"header1":"Give hope.","header2":"Inspire.","header3":"Change lives.","header4":"Share your story today"},
+            "paragraph":{"par1":"YOU have a powerful story to share. Your story can help women and girls","par2":"around the world. Please help build our inspiring collection of stories by","par3":"sharing some aspects of your journey to empowerment"},
+            "button":"Share"
+        }
+    }
+}
