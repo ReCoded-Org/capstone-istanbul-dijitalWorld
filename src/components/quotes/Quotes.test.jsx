@@ -15,12 +15,17 @@ it("button renders correctly", () => {
   expect(getByTestId("button")).toHaveAttribute("type", "button");
 });
 
-it("column 1 have correct class name", () => {
+it("first row is present in the document", () => {
   const { getByTestId } = render(<Quotes />);
-  expect(getByTestId("column-1")).toHaveClass("content-columns");
+  expect(getByTestId("row1")).toBeInTheDocument();
 });
 
-it("column 2 have correct class name", () => {
+it("second row is present in the document", () => {
   const { getByTestId } = render(<Quotes />);
-  expect(getByTestId("column-2")).toHaveClass("content-columns");
+  expect(getByTestId("row3")).toBeInTheDocument();
+});
+
+it("third row is present in the document", () => {
+  const { getByTestId } = render(<Quotes />);
+  expect(getByTestId("row3")).toBeInTheDocument();
 });

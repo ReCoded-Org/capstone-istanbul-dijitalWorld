@@ -10,14 +10,8 @@ const Quotes = () => {
   const { t } = useTranslation();
   return (
     <Container>
-      <Row>
-        <Col
-          xl={6}
-          lg={12}
-          md={12}
-          className="contentColumns"
-          data-testid="column1"
-        >
+      <Row data-testid="row1">
+        <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
             <h2 id="sayHerName">
               <b>{t("home.quotes.sayHerName.part1")}</b>
@@ -28,37 +22,19 @@ const Quotes = () => {
             </h2>
           </div>
         </Col>
-        <Col
-          xl={6}
-          lg={12}
-          md={12}
-          className="contentColumns"
-          data-testid="column1"
-        >
+        <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
             <Image src={safeImage} fluid />
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col
-          xl={6}
-          lg={12}
-          md={12}
-          className="contentColumns"
-          data-testid="column2"
-        >
+      <Row data-testid="row2">
+        <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
             <Image src={leonImage} fluid />
           </div>
         </Col>
-        <Col
-          xl={6}
-          lg={12}
-          md={12}
-          className="contentColumns"
-          data-testid="column2"
-        >
+        <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
             <h2 id="openLetter">
               <u>
@@ -73,14 +49,8 @@ const Quotes = () => {
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col
-          xl={6}
-          lg={12}
-          md={12}
-          className="contentColumns"
-          data-testid="column2"
-        >
+      <Row data-testid="row3">
+        <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
             <h2 id="fightForGirls">
               {t("home.quotes.girlsFight.part1")}
@@ -94,13 +64,7 @@ const Quotes = () => {
             </button>
           </div>
         </Col>
-        <Col
-          xl={6}
-          lg={12}
-          md={12}
-          className="contentColumns"
-          data-testid="column2"
-        >
+        <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
             <Image src={kidsImage} fluid />
           </div>
