@@ -1,1 +1,11 @@
-{}
+{
+  "home": {
+    "newsletter": {
+      "titles": {
+        "title1": "Never miss a story.",
+        "title2": "Sign up for our newsletter."
+      },
+      "button": "Subscribe"
+    }
+  }
+}

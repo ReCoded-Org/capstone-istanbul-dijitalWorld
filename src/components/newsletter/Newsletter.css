@@ -1,63 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* div {
-   margin-left: 3.25rem;
-   margin-right: 3.25rem;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1rem;
-    text-align: center;
-    letter-spacing: -0.318182px;
-    color: #6C567C;
-    /* margin-top: 3rem; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1rem;
+  text-align: center;
+  letter-spacing: -0.318182px;
+  color: #6c567c;
+  margin-top: 3rem; /* couldn't find a way without margin here */
 }
 
 .test {
-    display: flex;
-    /* flex-direction: row; */
-    padding: 2px;
-    position: relative;
-    
+  display: flex;
+  padding: 2px;
+  position: relative;
 }
 
 .input {
-    background: #F4F4F4;
-    border: none;
-    /* box-sizing: border-box; */
-    border-radius: 40px;
-    /* flex-grow: 2; */
-    /* margin-top: 1rem;
-    margin-left: 18rem;
-    margin-right: 3.25rem; */
-    width: 35rem;
-    height: 3.5rem;
-    text-indent: 1rem;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 40px;
+  /* flex-grow: 2; */
+  width: 35rem;
+  height: 3.5rem;
+  text-indent: 1rem;
 }
 
 .input {
-    outline: none;
+  outline: none;
 }
 
 .button {
-    order: 5;
-    position: absolute;
-    background: #6C567B;
-    border-radius: 40px;
-    height: 3rem;
-    width: 7.2rem;
-    outline: none;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24;
-    line-height: 28px;
-    border: none;
-    color: #FFFFFF;
+  order: 5;
+  position: absolute;
+  background: #6c567b;
+  border-radius: 40px;
+  height: 3rem;
+  width: 7.2rem;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24;
+  line-height: 28px;
+  border: none;
+  color: #ffffff;
 }
-
