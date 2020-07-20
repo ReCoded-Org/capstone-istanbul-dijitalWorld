@@ -1,48 +1,51 @@
-.content-container,
-.content-container img {
-  width: 35.625rem;
-  height: 19.25rem;
+.contentContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.content-container {
+.contentContainer {
   display: flex;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: left;
 }
 
-#say-her-name {
+#sayHerName {
   color: #6c567b;
   font-size: 2rem;
-  padding-left: 1rem;
 }
 
-#say-her-name span {
+#sayHerName span {
   color: #9dafbd;
   font-size: 0.8rem;
   font-weight: lighter;
 }
 
-#fight-for-girls {
+#fightForGirls {
   color: #f8b195;
   font-size: 3rem;
 }
 
-#open-letter {
+#openLetter {
   color: #f8b195;
   font-weight: bold;
   font-size: 3rem;
+  width: 100%;
+  align-items: center;
 }
 
-#open-letter span {
+#openLetter span {
   color: #9dafbd;
   font-size: 0.8rem;
   font-weight: lighter;
 }
 
-.content-columns {
+.contentColumns {
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

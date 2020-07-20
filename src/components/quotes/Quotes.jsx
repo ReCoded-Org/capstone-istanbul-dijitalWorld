@@ -15,47 +15,52 @@ const Quotes = () => {
           xl={6}
           lg={12}
           md={12}
-          className="content-columns"
-          data-testid="column-1"
+          className="contentColumns"
+          data-testid="column1"
         >
-          <div className="content-container">
-            <h2 id="say-her-name">
-              <b>{t("home.quotes.openLetter.part1")}</b>
+          <div className="contentContainer">
+            <h2 id="sayHerName">
+              <b>{t("home.quotes.sayHerName.part1")}</b>
               <br />
               {t("home.quotes.sayHerName.part2")}
               <br />
               <span>{t("home.quotes.sayHerName.part3")}</span>
             </h2>
           </div>
-          <div className="content-container">
-            <Image src={leonImage} fluid />
+        </Col>
+        <Col
+          xl={6}
+          lg={12}
+          md={12}
+          className="contentColumns"
+          data-testid="column1"
+        >
+          <div className="contentContainer">
+            <Image src={safeImage} fluid />
           </div>
-          <div className="content-container">
-            <h2 id="fight-for-girls">
-              {t("home.quotes.girlsFight.part1")}
-              <br />
-              {t("home.quotes.girlsFight.part2")}
-              <br />
-              {t("home.quotes.girlsFight.part3")}
-            </h2>
-
-            <button type="button" data-testid="button">
-              Donate Now
-            </button>
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          xl={6}
+          lg={12}
+          md={12}
+          className="contentColumns"
+          data-testid="column2"
+        >
+          <div className="contentContainer">
+            <Image src={leonImage} fluid />
           </div>
         </Col>
         <Col
           xl={6}
           lg={12}
           md={12}
-          className="content-columns"
-          data-testid="column-2"
+          className="contentColumns"
+          data-testid="column2"
         >
-          <div className="content-container">
-            <Image src={safeImage} fluid />
-          </div>
-          <div className="content-container">
-            <h2 id="open-letter">
+          <div className="contentContainer">
+            <h2 id="openLetter">
               <u>
                 {" "}
                 {t("home.quotes.openLetter.part1")}
@@ -66,7 +71,37 @@ const Quotes = () => {
               <span>{t("home.quotes.openLetter.part3")}</span>
             </h2>
           </div>
-          <div className="content-container">
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          xl={6}
+          lg={12}
+          md={12}
+          className="contentColumns"
+          data-testid="column2"
+        >
+          <div className="contentContainer">
+            <h2 id="fightForGirls">
+              {t("home.quotes.girlsFight.part1")}
+              <br />
+              {t("home.quotes.girlsFight.part2")}
+              <br />
+              {t("home.quotes.girlsFight.part3")}
+            </h2>
+            <button type="button" data-testid="button">
+              Donate Now
+            </button>
+          </div>
+        </Col>
+        <Col
+          xl={6}
+          lg={12}
+          md={12}
+          className="contentColumns"
+          data-testid="column2"
+        >
+          <div className="contentContainer">
             <Image src={kidsImage} fluid />
           </div>
         </Col>
