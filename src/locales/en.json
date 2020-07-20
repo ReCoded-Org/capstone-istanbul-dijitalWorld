@@ -1,1 +1,13 @@
-{}
+{
+  "home": {
+    "carousel": {
+      "header": {
+        "header1": "Digital",
+        "header2": "Story telling",
+        "header3": "for",
+        "header4": "Impact"
+      },
+      "button": "learn More"
+    }
+  }
+}
