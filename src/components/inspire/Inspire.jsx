@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 
 export default function Inspire(props) {
-    console.log(props)
+
     return (
         <div className='inspireHome'>
             <h2 className="inspireHeader"><span className="purpleSpanInspire">{props.header1}</span> <span className="pinkSpanInspire">{props.header2}</span><span className="purpleSpanInspire">{props.header3}</span> <span className="pinkSpanInspire">{props.header4}</span></h2>
