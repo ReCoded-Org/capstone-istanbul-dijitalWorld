@@ -6,11 +6,7 @@ const Home = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <Quotes
-        quote1={t("home.quotes.sayHerName")}
-        quote2={t("home.quotes.openLetter")}
-        quote3={t("home.quotes.girlsFight")}
-      />
+      <Quotes quotes={t("home.quotes")} />
     </div>
   );
 };
