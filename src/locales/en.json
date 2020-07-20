@@ -1,1 +1,13 @@
-{}
+{
+  "home": {
+    "quotes": {
+      "sayHerName": [
+        "#SayHerName",
+        "My Intersectional Activism as a Black African Muslim Woman #BlackLivesMatter",
+        "by Bashirat Oladele"
+      ],
+      "openLetter": ["An Open Letter to My Abuser", "Anonymous"],
+      "girlsFight": "The fight for girls won't be won by girls alone"
+    }
+  }
+}
