@@ -16,11 +16,9 @@ const Newsletter = () => {
         </Row>
 
         <Row data-testid="row2">
-          <Col className="box">
-            <div className="test">
+          <Col className="subscribe">
               <input className="input" placeholder={t("home.newsletter.input.text")}></input>
               <button className="button">{t("home.newsletter.input.button")}</button>
-            </div>
           </Col>
         </Row>
       </Container>

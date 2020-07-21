@@ -4,28 +4,27 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1rem;
   text-align: center;
-  letter-spacing: -0.318182px;
   color: #6c567c;
-  margin-top: 3rem; /* couldn't find a way without margin here */
+  margin-top: 4rem; /* couldn't find a way without margin here */
 }
 
-.test {
-  display: flex;
-  padding: 2px;
-  position: relative;
+.subscribe {
+  padding: 0.125rem;
 }
 
 .input {
   background: #f4f4f4;
   border: none;
-  border-radius: 40px;
-  /* flex-grow: 2; */
-  width: 35rem;
-  height: 3.5rem;
+  border-radius: 42.5rem;
+  width: 36.0625rem;
+  height: 5.25rem;
   text-indent: 1rem;
+  font-size: 1.25rem;
+  margin-top: 3.6875rem;
+  margin-left: 16rem;
 }
 
 .input {
@@ -33,18 +32,25 @@
 }
 
 .button {
-  order: 5;
-  position: absolute;
+  /* position: absolute; */
   background: #6c567b;
-  border-radius: 40px;
-  height: 3rem;
-  width: 7.2rem;
+  border-radius: 2.5rem;
+  height: 3.5rem;
+  width: 10rem;
   outline: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 24;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   border: none;
   color: #ffffff;
+}
+
+::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
 }
