@@ -3,7 +3,7 @@
 .footer-container {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  
+
   background: rgba(248, 177, 149, 0.56);
   color: #6c567b;
   display: flex;
@@ -45,7 +45,7 @@
   font-size: 1.125rem;
   line-height: 1.625rem;
   letter-spacing: -0.03125rem;
-  color: rgba(108, 86, 123, 0.83);
+  color: #6c567b;
 }
 
 .title-right {
@@ -69,7 +69,7 @@
   align-self: start;
 }
 
-.divs {
+.footerCol {
   text-align: start;
   padding-left: 2%;
 }

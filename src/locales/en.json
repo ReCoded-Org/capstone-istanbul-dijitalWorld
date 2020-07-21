@@ -1,1 +1,16 @@
-{}
+{
+  "home": {
+    "footer": {
+      "getInTouch": {
+        "title": "Get in Touch",
+        "text": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction."
+      },
+      "contactUs": {
+        "title": "Contact Us",
+        "emailAddress": "hello@gmail.com",
+        "phoneNumber": "+9 876 543 21"
+      },
+      "followUs": "Follow Us"
+    }
+  }
+}
