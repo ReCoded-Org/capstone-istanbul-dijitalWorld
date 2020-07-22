@@ -1,10 +1,15 @@
+import React from "react";
+import ReactDOM from "react-dom";
 import "@testing-library/jest-dom";
+import NavBar from "./NavBar";
+import NavLinks from "./NavLinks";
 
-const navbar = getByTestId("navbar-collapse");
+it("renders without crashing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<NavBar />, div);
+});
 
-expect(navbar).toHaveId("basic-navbar-nav");
-
-expect(
-  queryByTestId(document.documentElement, "brand-logo")
-).toBeInTheDocument();
-expect(getByTestId("visibility-visible")).toBeVisible();
+it("renders without crashing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<NavLinks />, div);
+});

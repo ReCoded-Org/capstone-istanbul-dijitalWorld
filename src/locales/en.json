@@ -1,17 +1,18 @@
 {
- "home": {
-  "navBar": {
-   "navLinks": {
-    "home": "Home",
-    "blog": "Blog",
-    "inspire": "Inspire",
-    "resource": "Resource",
-    "about": "About",
-    "contact": "Contact"
-   },
-   "buttons": {
-    "signup": "Sign Up",
-    "login": "Login"
-   }
- }
-}}
+  "home": {
+    "navBar": {
+      "navLinks": {
+        "home": "Home",
+        "blog": "Blog",
+        "inspire": "Inspire",
+        "resource": "Resource",
+        "about": "About",
+        "contact": "Contact"
+      },
+      "buttons": {
+        "signup": "Sign Up",
+        "login": "Login"
+      }
+    }
+  }
+}
