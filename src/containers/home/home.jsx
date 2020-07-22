@@ -1,6 +1,6 @@
 import React from "react";
-import Carousel from "../../components/carousel/Carousel";
 import { useTranslation } from "react-i18next";
+import Carousel from "../../components/carousel/Carousel";
 
 export default function Home() {
   const { t } = useTranslation();
