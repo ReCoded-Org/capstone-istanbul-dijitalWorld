@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Carousel from "./Carousel";
+import Carousel from "./Carousel.jsx";
 
-it("components are rendering well", () => {
+it("renders well", () => {
   const div = document.createElement("div");
   ReactDOM.render(<Carousel />, div);
 });
