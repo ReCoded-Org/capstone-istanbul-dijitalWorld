@@ -10,7 +10,7 @@ const Quotes = () => {
   const { t } = useTranslation();
   return (
     <Container>
-      <Row data-testid="row1">
+      <Row data-testid="sayHerNameRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <h2 id="sayHerName">
             <b>{t("home.quotes.sayHerName.part1")}</b>
@@ -24,7 +24,7 @@ const Quotes = () => {
           <Image src={safeImage} fluid />
         </Col>
       </Row>
-      <Row data-testid="row2">
+      <Row data-testid="anOpenLetterRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <Image src={leonImage} fluid />
         </Col>
@@ -43,7 +43,7 @@ const Quotes = () => {
           </div>
         </Col>
       </Row>
-      <Row data-testid="row3">
+      <Row data-testid="fightForGirlsRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <h2 id="fightForGirls">
             {t("home.quotes.girlsFight.part1")}

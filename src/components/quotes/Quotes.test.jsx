@@ -9,22 +9,22 @@ it("renders without crashing", () => {
   ReactDOM.render(<Quotes />, div);
 });
 
-it("button renders correctly", () => {
+it("donate button renders correctly", () => {
   const { getByTestId } = render(<Quotes />);
   expect(getByTestId("button")).toHaveAttribute("type", "button");
 });
 
-it("first row is present in the document", () => {
+it("say her name row is present in the document", () => {
   const { getByTestId } = render(<Quotes />);
-  expect(getByTestId("row1")).toBeInTheDocument();
+  expect(getByTestId("sayHerNameRow")).toBeInTheDocument();
 });
 
-it("second row is present in the document", () => {
+it("an open letter row is present in the document", () => {
   const { getByTestId } = render(<Quotes />);
-  expect(getByTestId("row3")).toBeInTheDocument();
+  expect(getByTestId("anOpenLetterRow")).toBeInTheDocument();
 });
 
-it("third row is present in the document", () => {
+it("fight for girls row is present in the document", () => {
   const { getByTestId } = render(<Quotes />);
-  expect(getByTestId("row3")).toBeInTheDocument();
+  expect(getByTestId("fightForGirlsRow")).toBeInTheDocument();
 });
