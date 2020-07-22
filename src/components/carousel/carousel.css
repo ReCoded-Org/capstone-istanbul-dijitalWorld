@@ -1,19 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 
-/* ----------- All content ----------*/
 .allContent {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-/* ---------- left content ----------*/
-.leftPart {
+.sentenceAndButton {
   margin-left: 6%;
 }
 
 .sentence {
-  font-family: "Roboto";
   font-size: 3.75rem;
   font-weight: bold;
   color: #6c567b;
@@ -23,7 +20,6 @@
 .learnBtn {
   background-color: #6c567b;
   color: white;
-  font-family: "Roboto";
   cursor: pointer;
   width: 10.625rem;
   height: 3.75rem;
@@ -42,8 +38,7 @@ span {
   color: #f8b195;
 }
 
-/* ----------------- mid content --------------- */
-.midPart {
+.carouselImgs {
   height: 28.125rem;
   width: 53.125rem;
   margin-left: -5%;
@@ -51,13 +46,7 @@ span {
   margin-top: 10%;
 }
 
-.calouselTrackContainer {
-  height: 100%;
-  position: relative;
-}
-
-/* ----------- soclia Media content ----------*/
-.socialMediaIconsPart {
+.socialMediaIcons {
   display: flex;
   flex-direction: column;
   margin-left: 5rem;

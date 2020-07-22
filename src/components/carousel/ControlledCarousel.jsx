@@ -1,25 +1,24 @@
-import React, { useState } from "react";
-import womenImg from "./womenright.png";
-import women from "./women.png";
+import React from "react";
+import womenPhoto from "./womenPhoto.png";
+import womenIllustration from "./womenIllustration.png";
 import "./carousel.css";
 import Carousel from "react-bootstrap/Carousel";
 
 function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel>
       <Carousel.Item>
-        <img className="d-block w-100" src={womenImg} alt="First slide" />
+        <img className="d-block w-100" src={womenPhoto} alt="First slide" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={women} alt="Second slide" />
+        <img
+          className="d-block w-100"
+          src={womenIllustration}
+          alt="Second slide"
+        />
       </Carousel.Item>
     </Carousel>
   );
 }
+
 export default ControlledCarousel;

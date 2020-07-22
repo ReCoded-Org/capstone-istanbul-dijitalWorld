@@ -2,10 +2,10 @@
   "home": {
     "carousel": {
       "header": {
-        "header1": "Digital",
-        "header2": "Story telling",
-        "header3": "for",
-        "header4": "Impact"
+        "header0": "Digital",
+        "header1": "Story telling",
+        "header2": "for",
+        "header3": "Impact"
       },
       "button": "learn More"
     }

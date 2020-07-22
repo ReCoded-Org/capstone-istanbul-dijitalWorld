@@ -5,23 +5,23 @@ import twitter from "./twitter.svg";
 import "./carousel.css";
 import ControlledCarousel from "./ControlledCarousel.jsx";
 
-export default function carousel(props) {
+export default function Carousel(props) {
   return (
     <div className="allContent">
-      <div className="leftPart">
+      <div className="sentenceAndButton">
         <div className="sentence">
           <p>
-            {props.header1}
-            <br /> {props.header2} <br />
-            {props.header3} <span>{props.header4}</span>
+            {props.header0}
+            <br /> {props.header1} <br />
+            {props.header2} <span>{props.header3}</span>
           </p>
         </div>
         <button className="learnBtn">{props.button}</button>
       </div>
-      <div className="midPart">
+      <div className="carouselImgs">
         <ControlledCarousel />
       </div>
-      <div className="socialMediaIconsPart">
+      <div className="socialMediaIcons">
         <img className="icon" src={facebook} width="20px" alt="facebook" />
         <img className="icon" src={instagram} width="20px" alt="instagram" />
         <img className="icon" src={twitter} width="20px" alt="twitter" />
