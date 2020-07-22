@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import Newsletter from "../components/newsletter";
 import "../components/newsletter.css";
 
 function Home() {
   return (
     <div className="home">
-        <Newsletter />
+      <Newsletter />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Home from "./components/newsletter/Newsletter.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
