@@ -22,9 +22,9 @@ export default function Carousel(props) {
         <ControlledCarousel />
       </div>
       <div className="socialMediaIcons">
-        <img className="icon" src={facebook} width="20px" alt="facebook" />
-        <img className="icon" src={instagram} width="20px" alt="instagram" />
-        <img className="icon" src={twitter} width="20px" alt="twitter" />
+        <img className="icon" src={facebook} alt="facebook" />
+        <img className="icon" src={instagram} alt="instagram" />
+        <img className="icon" src={twitter} alt="twitter" />
       </div>
     </div>
   );
