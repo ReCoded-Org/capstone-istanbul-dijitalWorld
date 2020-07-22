@@ -14,11 +14,15 @@ export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <Navbar className="navbar" data-testid="navbar" expand="sm | md">
+    <Navbar
+      className="navbar"
+      data-testid="navbar"
+      expand="sm"
+    >
       <Navbar.Brand className="navbarBrand" href="#home">
         <img
           data-testid="brand-logo"
-          src={require("../../images/WwwLogo.png")}
+          src={require("../../images/www-logo.png")}
           className="brandLogo d-inline-block align-top"
           alt="World with Women Logo"
         />
@@ -32,18 +36,19 @@ export default function NavBar() {
           <NavLinks />
         </Nav>
         <div className="buttonGroup">
-          <Button className="filledButton">
+          <Button className="signupFilledButton">
             {t("home.navBar.buttons.signup")}
           </Button>
-          <Button className="outlinedButton" variant="outline">
+          <Button className="loginOutlinedButton" variant="outline">
             {t("home.navBar.buttons.login")}
           </Button>
         </div>
       </Navbar.Collapse>
       <DropdownButton
         alignRight
-        variant="secondary"
+        variant="none"
         id="dropdown-item-button"
+        className="dropdownItemButton"
         title="EN"
       >
         <Dropdown.Item as="button">EN</Dropdown.Item>
