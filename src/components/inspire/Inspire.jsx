@@ -4,18 +4,16 @@ import Button from "react-bootstrap/Button";
 
 export default function Inspire(props) {
   return (
-    <div className="inspireHome">
+    <div className="inspireContainer">
       <h2 className="inspireHeader">
-        <span className="purpleSpanInspire">{props.header1}</span>{" "}
-        <span className="pinkSpanInspire">{props.header2}</span>
-        <span className="purpleSpanInspire">{props.header3}</span>{" "}
-        <span className="pinkSpanInspire">{props.header4}</span>
+        <span className="purpleInspire">{props.header0}</span>{" "}
+        <span className="pinkInspire">{props.header1}</span>
+        <span className="purpleInspire">{props.header2}</span>{" "}
+        <span className="pinkInspire">{props.header3}</span>
       </h2>
-      <p className="greyParaInspire">
+      <p className="heroText">
         {" "}
-        {props.par1} <br />
-        {props.par2} <br />
-        {props.par3}
+        {props.heroText} <br />
       </p>
       <Button className="inspireButton">{props.button}</Button>{" "}
     </div>

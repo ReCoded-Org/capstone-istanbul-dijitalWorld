@@ -8,13 +8,11 @@ export default function Home() {
   return (
     <div>
       <Inspire
+        header0={t("home.inspire.header.header0")}
         header1={t("home.inspire.header.header1")}
         header2={t("home.inspire.header.header2")}
         header3={t("home.inspire.header.header3")}
-        header4={t("home.inspire.header.header4")}
-        par1={t("home.inspire.paragraph.par1")}
-        par2={t("home.inspire.paragraph.par2")}
-        par3={t("home.inspire.paragraph.par3")}
+        heroText={t("home.inspire.heroText")}
         button={t("home.inspire.button")}
       />
     </div>
