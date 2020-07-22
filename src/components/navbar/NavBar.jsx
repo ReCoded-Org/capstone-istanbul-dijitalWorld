@@ -14,11 +14,7 @@ export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <Navbar
-      className="navbar"
-      data-testid="navbar"
-      expand="sm"
-    >
+    <Navbar className="navbar" data-testid="navbar" expand="sm">
       <Navbar.Brand className="navbarBrand" href="#home">
         <img
           data-testid="brand-logo"

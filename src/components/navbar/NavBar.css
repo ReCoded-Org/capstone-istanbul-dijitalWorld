@@ -40,8 +40,6 @@
   width: 70px;
 }
 
-/* Button  */
-
 .buttonGroup {
   margin-left: 11em;
 }
@@ -50,6 +48,7 @@
 .loginOutlinedButton {
   box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
   font-size: 14px;
+  display: inline-flex;
   justify-content: center;
   width: 6em;
   height: 2.3em;
@@ -148,7 +147,6 @@
 }
 
 @media only screen and (min-device-width: 850px) and (max-device-width: 998px) {
-  
   /* bootstrap class */
   .dropdown-toggle::after {
     margin-right: 0px;
@@ -173,10 +171,7 @@
   }
 }
 
-
-
 @media only screen and (min-device-width: 576px) and (max-device-width: 850px) {
-
   /* bootstrap class */
   .dropdown-toggle::after {
     margin-right: 0px;
@@ -195,7 +190,7 @@
   }
 
   /* bootstrap class */
-  .navbar-collapse  {
+  .navbar-collapse {
     justify-content: space-around !important;
   }
 
