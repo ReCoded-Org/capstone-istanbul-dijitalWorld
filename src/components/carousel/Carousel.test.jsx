@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Carousel from "./Carousel.jsx";
+import "@testing-library/jest-dom";
+import Carousel from "./Carousel";
 
-it("renders well", () => {
+it("renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(<Carousel />, div);
 });
