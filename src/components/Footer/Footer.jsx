@@ -27,8 +27,12 @@ const Footer = () => {
           <Col className="footerCol" md="2" data-testid="col2">
             <div className="divs">
               <p className="title-mid">{t("home.footer.contactUs.title")}</p>
-              <p className="text-mid">{t("home.footer.contactUs.emailAddress")}</p>
-              <p className="text-mid">{t("home.footer.contactUs.phoneNumber")}</p>
+              <p className="text-mid">
+                {t("home.footer.contactUs.emailAddress")}
+              </p>
+              <p className="text-mid">
+                {t("home.footer.contactUs.phoneNumber")}
+              </p>
             </div>
           </Col>
 

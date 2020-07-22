@@ -1,6 +1,6 @@
-import React from 'react';
-import Home from "../src/containers/home/Home"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Home from "../src/containers/home/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

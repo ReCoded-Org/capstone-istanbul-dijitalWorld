@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Newsletter.css";
 
@@ -8,11 +8,11 @@ const Newsletter = () => {
       <Container>
         <Row>
           <Col className="title">
-            <p>Never miss a story.</p> <br/>
+            <p>Never miss a story.</p> <br />
             <p>Sign up for our newsletter.</p>
           </Col>
         </Row>
-       
+
         <Row>
           <Col className="box">
             <div className="test">
@@ -31,7 +31,6 @@ const Newsletter = () => {
       </Card> */}
     </div>
   );
-}
+};
 
 export default Newsletter;
-
