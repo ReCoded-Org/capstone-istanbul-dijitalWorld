@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+    data-testid="sayHerNameRow"
+  >
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <h2
+        className="sayHerName"
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        home.quotes.sayHerName.0
+      </h2>
+      <h2
+        className="sayHerName"
+      >
+        home.quotes.sayHerName.1
+      </h2>
+      <span
+        className="bashiratOla"
+      >
+        home.quotes.sayHerName.2
+      </span>
+    </div>
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <img
+        className="img-fluid"
+        src="safe_image.jpeg"
+      />
+    </div>
+  </div>
+  <div
+    className="row"
+    data-testid="anOpenLetterRow"
+  >
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <img
+        className="img-fluid"
+        src="leon-biss.jpg"
+      />
+    </div>
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <div
+        className="contentContainer"
+      >
+        <h2
+          className="openLetter"
+        >
+          home.quotes.openLetter.0
+        </h2>
+        <span
+          className="anonymous"
+        >
+          home.quotes.openLetter.1
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+    data-testid="fightForGirlsRow"
+  >
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <h2
+        className="fightForGirls"
+      >
+        home.quotes.girlsFight
+      </h2>
+      <button
+        className="donateButton"
+        data-testid="button"
+        type="button"
+      >
+        Donate Now
+      </button>
+    </div>
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <img
+        className="img-fluid"
+        src="small-kids.png"
+      />
+    </div>
+  </div>
+</div>
+`;
