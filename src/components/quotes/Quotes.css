@@ -15,31 +15,39 @@
 .sayHerName {
   color: #6c567b;
   font-size: 2rem;
+  align-self: start;
 }
 
-.sayHerName span {
+.bashiratOla {
   color: #9dafbd;
   font-size: 0.8rem;
   font-weight: lighter;
+  align-self: flex-start;
 }
 
 .fightForGirls {
   color: #f8b195;
   font-size: 3rem;
+  width: 70%;
 }
 
 .openLetter {
   color: #f8b195;
   font-weight: bold;
+  text-decoration: underline;
+  align-self: center;
   font-size: 3rem;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   align-items: center;
 }
 
-.openLetter span {
+.anonymous {
   color: #9dafbd;
   font-size: 0.8rem;
   font-weight: lighter;
+  padding-left: 5.3rem;
+  align-self: flex-start;
 }
 
 .contentColumns {
