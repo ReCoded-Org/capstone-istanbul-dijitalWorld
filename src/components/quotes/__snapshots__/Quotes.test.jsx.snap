@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+    data-testid="sayHerNameRow"
+  >
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <h2
+        id="sayHerName"
+      >
+        <b>
+          home.quotes.sayHerName.part1
+        </b>
+        <br />
+        home.quotes.sayHerName.part2
+        <br />
+        <span>
+          home.quotes.sayHerName.part3
+        </span>
+      </h2>
+    </div>
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <img
+        className="img-fluid"
+        src="safe_image.jpeg"
+      />
+    </div>
+  </div>
+  <div
+    className="row"
+    data-testid="anOpenLetterRow"
+  >
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <img
+        className="img-fluid"
+        src="leon-biss.jpg"
+      />
+    </div>
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <div
+        className="contentContainer"
+      >
+        <h2
+          id="openLetter"
+        >
+          <u>
+             
+            home.quotes.openLetter.part1
+            <br />
+            home.quotes.openLetter.part2
+          </u>
+          <br />
+          <span>
+            home.quotes.openLetter.part3
+          </span>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+    data-testid="fightForGirlsRow"
+  >
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <h2
+        id="fightForGirls"
+      >
+        home.quotes.girlsFight.part1
+        <br />
+        home.quotes.girlsFight.part2
+        <br />
+        home.quotes.girlsFight.part3
+      </h2>
+      <button
+        data-testid="button"
+        type="button"
+      >
+        Donate Now
+      </button>
+    </div>
+    <div
+      className="contentColumns col-xl-6 col-lg-12 col-md-12"
+    >
+      <img
+        className="img-fluid"
+        src="small-kids.png"
+      />
+    </div>
+  </div>
+</div>
+`;
