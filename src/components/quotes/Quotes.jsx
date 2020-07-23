@@ -12,7 +12,7 @@ const Quotes = () => {
     <Container>
       <Row data-testid="sayHerNameRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <h2 id="sayHerName">
+          <h2 className="sayHerName">
             <b>{t("home.quotes.sayHerName.part1")}</b>
             <br />
             {t("home.quotes.sayHerName.part2")}
@@ -30,7 +30,7 @@ const Quotes = () => {
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
-            <h2 id="openLetter">
+            <h2 className="openLetter">
               <u>
                 {" "}
                 {t("home.quotes.openLetter.part1")}
@@ -45,14 +45,14 @@ const Quotes = () => {
       </Row>
       <Row data-testid="fightForGirlsRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <h2 id="fightForGirls">
+          <h2 className="fightForGirls">
             {t("home.quotes.girlsFight.part1")}
             <br />
             {t("home.quotes.girlsFight.part2")}
             <br />
             {t("home.quotes.girlsFight.part3")}
           </h2>
-          <button type="button" data-testid="button">
+          <button type="button" className="donateButton" data-testid="button">
             Donate Now
           </button>
         </Col>

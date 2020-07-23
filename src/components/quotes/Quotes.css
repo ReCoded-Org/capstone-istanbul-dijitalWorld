@@ -12,23 +12,23 @@
   text-align: left;
 }
 
-#sayHerName {
+.sayHerName {
   color: #6c567b;
   font-size: 2rem;
 }
 
-#sayHerName span {
+.sayHerName span {
   color: #9dafbd;
   font-size: 0.8rem;
   font-weight: lighter;
 }
 
-#fightForGirls {
+.fightForGirls {
   color: #f8b195;
   font-size: 3rem;
 }
 
-#openLetter {
+.openLetter {
   color: #f8b195;
   font-weight: bold;
   font-size: 3rem;
@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-#openLetter span {
+.openLetter span {
   color: #9dafbd;
   font-size: 0.8rem;
   font-weight: lighter;
@@ -51,12 +51,11 @@
   align-items: center;
 }
 
-button {
+.donateButton {
   background-color: #6c567b;
   margin-top: 1.5rem;
   margin-left: 6rem;
   color: white;
-  font-family: inherit;
   font-weight: 600;
   cursor: pointer;
   width: 10.625rem;
@@ -67,7 +66,8 @@ button {
   box-shadow: 0px 11px 24px -7px #b3b3b3;
   align-self: flex-start;
 }
-button:hover {
+
+.donateButton:hover {
   background-color: #f8b195;
   border-style: hidden;
 }
