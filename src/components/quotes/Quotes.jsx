@@ -13,11 +13,11 @@ const Quotes = () => {
       <Row data-testid="sayHerNameRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <h2 className="sayHerName">
-            <b>{t("home.quotes.sayHerName.part1")}</b>
+            <b>{t("home.quotes.sayHerName.0")}</b>
             <br />
-            {t("home.quotes.sayHerName.part2")}
+            {t("home.quotes.sayHerName.1")}
             <br />
-            <span>{t("home.quotes.sayHerName.part3")}</span>
+            <span>{t("home.quotes.sayHerName.2")}</span>
           </h2>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
@@ -33,12 +33,12 @@ const Quotes = () => {
             <h2 className="openLetter">
               <u>
                 {" "}
-                {t("home.quotes.openLetter.part1")}
+                {t("home.quotes.openLetter.0")}
                 <br />
-                {t("home.quotes.openLetter.part2")}
+                {t("home.quotes.openLetter.1")}
               </u>
               <br />
-              <span>{t("home.quotes.openLetter.part3")}</span>
+              <span>{t("home.quotes.openLetter.2")}</span>
             </h2>
           </div>
         </Col>
@@ -46,11 +46,11 @@ const Quotes = () => {
       <Row data-testid="fightForGirlsRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <h2 className="fightForGirls">
-            {t("home.quotes.girlsFight.part1")}
+            {t("home.quotes.girlsFight.0")}
             <br />
-            {t("home.quotes.girlsFight.part2")}
+            {t("home.quotes.girlsFight.1")}
             <br />
-            {t("home.quotes.girlsFight.part3")}
+            {t("home.quotes.girlsFight.2")}
           </h2>
           <button type="button" className="donateButton" data-testid="button">
             Donate Now
