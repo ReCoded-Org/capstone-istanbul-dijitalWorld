@@ -12,7 +12,6 @@ export default function Inspire(props) {
         <span className="pinkInspire">{props.header3}</span>
       </h2>
       <p className="heroText">
-        {" "}
         {props.heroText} <br />
       </p>
       <Button className="inspireButton">{props.button}</Button>{" "}

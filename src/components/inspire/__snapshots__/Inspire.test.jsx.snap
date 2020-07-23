@@ -27,7 +27,6 @@ exports[`renders correctly 1`] = `
     className="heroText"
   >
      
-     
     <br />
   </p>
   <button
