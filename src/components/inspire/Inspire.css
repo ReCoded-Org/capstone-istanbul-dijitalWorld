@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
 .inspireContainer {
-  font-family: "Roboto", sans-serif;
   text-align: center;
   margin: 0 15%;
 }
@@ -26,7 +23,6 @@
 .inspireButton {
   background-color: #6c567b;
   color: white;
-  font-family: "Roboto";
   cursor: pointer;
   width: 18.75rem;
   height: 6.25rem;
