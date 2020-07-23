@@ -13,10 +13,10 @@ const Quotes = () => {
       <Row data-testid="sayHerNameRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <h2 className="sayHerName" style={{ fontWeight: 'bold' }}>
-            {t('home.quotes.sayHerName.0')}
+            {t('home.quotes.sayHerName.hashtag')}
           </h2>
-          <h2 className="sayHerName">{t('home.quotes.sayHerName.1')}</h2>
-          <span className="bashiratOla">{t('home.quotes.sayHerName.2')}</span>
+          <h2 className="sayHerName">{t('home.quotes.sayHerName.title')}</h2>
+          <span className="sayHerNameAuthor">{t('home.quotes.sayHerName.author')}</span>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <Image src={safeImage} fluid />
@@ -28,8 +28,8 @@ const Quotes = () => {
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
           <div className="contentContainer">
-            <h2 className="openLetter">{t('home.quotes.openLetter.0')}</h2>
-            <span className="anonymous">{t('home.quotes.openLetter.1')}</span>
+            <h2 className="openLetter">{t('home.quotes.openLetter.title')}</h2>
+            <span className="anonymous">{t('home.quotes.openLetter.author')}</span>
           </div>
         </Col>
       </Row>
