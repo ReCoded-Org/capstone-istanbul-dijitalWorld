@@ -8,8 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: left;
+  flex-direction: column;
 }
 
 .sayHerName {
