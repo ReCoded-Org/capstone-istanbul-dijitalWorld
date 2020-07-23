@@ -4,14 +4,14 @@
   font-family: "Roboto", sans-serif;
 }
 
-.footer-container {
+.footerContainer {
   font-weight: bold;
   background: rgba(248, 177, 149, 0.603);
   color: #6c567b;
   display: flex;
 }
 
-.row {
+.footerRow {
   margin: 5% 0;
   display: flex;
   justify-content: space-between;
@@ -33,14 +33,15 @@
   color: rgba(108, 86, 123, 0.83);
 }
 
-.title {
+.footerContactTitle,
+.footerSocialTitle {
   font-weight: bold;
   font-size: 1.5625rem;
   line-height: 1.8125rem;
   color: #6c567b;
 }
 
-.text {
+.footerContactText {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.625rem;
@@ -48,7 +49,7 @@
   color: #6c567b;
 }
 
-.icon {
+.footerIcons {
   padding: 0.3125rem;
   font-size: 2.1rem;
 }

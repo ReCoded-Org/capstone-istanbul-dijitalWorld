@@ -11,15 +11,15 @@ it("Renders succesfully.", () => {
 
 it("First column renders successfully.", () => {
   const { getByTestId } = render(<Footer />);
-  expect(getByTestId("col1")).toBeInTheDocument();
+  expect(getByTestId("footerBlurbCol")).toBeInTheDocument();
 });
 
 it("Second column renders successfully.", () => {
   const { getByTestId } = render(<Footer />);
-  expect(getByTestId("col2")).toBeInTheDocument();
+  expect(getByTestId("footerContactCol")).toBeInTheDocument();
 });
 
 it("Third column renders successfully.", () => {
   const { getByTestId } = render(<Footer />);
-  expect(getByTestId("col3")).toBeInTheDocument();
+  expect(getByTestId("footerSocialCol")).toBeInTheDocument();
 });
