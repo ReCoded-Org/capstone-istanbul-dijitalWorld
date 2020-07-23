@@ -16,7 +16,6 @@
         "react-i18next": "^11.7.0",
         "react-scripts": "3.4.1",
         "react-test-renderer": "^16.13.1"
-        "react-scripts": "3.4.1"
     },
     "scripts": {
         "start": "react-scripts start",
