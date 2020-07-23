@@ -14,7 +14,7 @@ export default function Inspire(props) {
       <p className="heroText">
         {props.heroText} <br />
       </p>
-      <Button className="inspireButton">{props.button}</Button>{" "}
+      <Button className="inspireButton">{props.button}</Button>
     </div>
   );
 }
