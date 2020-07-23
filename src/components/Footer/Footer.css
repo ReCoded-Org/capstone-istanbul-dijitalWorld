@@ -9,7 +9,12 @@
   background: rgba(248, 177, 149, 0.603);
   color: #6c567b;
   display: flex;
-  flex-direction: row;
+}
+
+.row {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footerBlurbTitle {
@@ -45,12 +50,5 @@
 
 .icon {
   padding: 0.3125rem;
-  font-size: 2rem;
-}
-
-.row {
-  margin: 5% 0;
-  display: flex;
-  justify-content: space-between;
-  align-self: start;
+  font-size: 2.1rem;
 }

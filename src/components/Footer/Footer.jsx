@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="footer-container">
       <Container>
         <Row className="row">
-          <Col className="footerCol" md="5" data-testid="col1">
+          <Col className="footerCol" md="4" data-testid="col1">
             <p className="footerBlurbTitle">
               {t("home.footer.getInTouch.title")}
             </p>
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
           </Col>
 
-          <Col className="footerCol" md="2" data-testid="col2">
+          <Col className="footerCol" md="3" data-testid="col2">
             <p className="footerContact title">
               {t("home.footer.contactUs.title")}
             </p>
