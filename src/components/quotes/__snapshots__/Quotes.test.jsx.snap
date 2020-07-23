@@ -19,17 +19,17 @@ exports[`renders correctly 1`] = `
           }
         }
       >
-        home.quotes.sayHerName.0
+        home.quotes.sayHerName.hashtag
       </h2>
       <h2
         className="sayHerName"
       >
-        home.quotes.sayHerName.1
+        home.quotes.sayHerName.title
       </h2>
       <span
-        className="bashiratOla"
+        className="sayHerNameAuthor"
       >
-        home.quotes.sayHerName.2
+        home.quotes.sayHerName.author
       </span>
     </div>
     <div
@@ -62,12 +62,12 @@ exports[`renders correctly 1`] = `
         <h2
           className="openLetter"
         >
-          home.quotes.openLetter.0
+          home.quotes.openLetter.title
         </h2>
         <span
           className="anonymous"
         >
-          home.quotes.openLetter.1
+          home.quotes.openLetter.author
         </span>
       </div>
     </div>
