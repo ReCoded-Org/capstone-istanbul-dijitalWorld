@@ -33,15 +33,15 @@ exports[`Matches the snapshot. 1`] = `
       >
         <form>
           <div
-            className="col-lg-10 mb-3"
+            className="col-lg-10 mb-3 inputGroup"
           >
             <div
               className="input-group"
             >
               <input
                 aria-describedby="inputGroupPrepend2"
-                className="form-control rounded-4 validationDefaultUsername"
-                placeholder="Your E-mail Address"
+                className="form-control rounded-4 validationDefaultUsername newsletterBar"
+                placeholder="home.newsletter.input.text"
                 required={true}
                 type="text"
               />
@@ -49,9 +49,9 @@ exports[`Matches the snapshot. 1`] = `
                 class="input-group-prepend"
               >
                 <input
-                  className="btn btn-primary btn-sm rounded-0 inputGroupPrepend2"
+                  className="btn btn-primary btn-sm rounded-0 inputGroupPrepend2 newsletterButton"
                   type="submit"
-                  value="Subscribe"
+                  value="home.newsletter.input.button"
                 />
               </div>
             </div>
