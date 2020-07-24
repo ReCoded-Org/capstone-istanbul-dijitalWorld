@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="inspireContainer"
+  data-testid="inspireContainer"
+>
+  <h2
+    className="inspireHeader"
+  >
+    <span
+      className="purpleInspire"
+    />
+     
+    <span
+      className="pinkInspire"
+    />
+    <span
+      className="purpleInspire"
+    />
+     
+    <span
+      className="pinkInspire"
+    />
+  </h2>
+  <p
+    className="heroText"
+  >
+     
+    <br />
+  </p>
+  <button
+    className="inspireButton btn btn-primary"
+    disabled={false}
+    type="button"
+  />
+</div>
+`;
