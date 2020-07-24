@@ -46,3 +46,4 @@ const Quotes = () => {
       </Row>
     </Container>
   );
+};
