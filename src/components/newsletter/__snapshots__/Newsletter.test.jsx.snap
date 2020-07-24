@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders succesfully. 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+      data-testid="newsletterTitle"
+    >
+      <div
+        className="newsletterTitle col"
+      >
+        <p>
+          home.newsletter.titles.title0
+        </p>
+         
+        <br />
+        <p>
+          home.newsletter.titles.title1
+        </p>
+      </div>
+    </div>
+    <div
+      className="row"
+      data-testid="newsletterInput"
+    >
+      <div
+        className="newsletterInput col"
+      >
+        <div
+          class="input-group mb-3"
+        >
+          <input
+            aria-describedby="basic-addon2"
+            aria-label="Recipient's username"
+            class="form-control newsletterBar"
+            placeholder="Recipient's username"
+            type="text"
+          />
+          <div
+            class="input-group-append"
+          >
+            <button
+              class="btn btn-outline-secondary newsletterButton"
+              type="button"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
