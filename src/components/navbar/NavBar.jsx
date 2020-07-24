@@ -1,14 +1,8 @@
-import React from "react";
-import {
-  Navbar,
-  Nav,
-  Dropdown,
-  DropdownButton,
-  Button,
-} from "react-bootstrap/";
-import NavLinks from "./NavLinks";
-import { useTranslation } from "react-i18next";
-import "./NavBar.css";
+import React from 'react';
+import { Navbar, Nav, Dropdown, DropdownButton, Button } from 'react-bootstrap/';
+import NavLinks from './NavLinks';
+import { useTranslation } from 'react-i18next';
+import './NavBar.css';
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -18,25 +12,20 @@ export default function NavBar() {
       <Navbar.Brand className="navbarBrand" href="#home">
         <img
           data-testid="brand-logo"
-          src={require("../../images/www-logo.png")}
+          src={require('../../images/www-logo.png')}
           className="brandLogo d-inline-block align-top"
           alt="World with Women Logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle
-        className="navbarMainContent"
-        aria-controls="basic-navbar-nav"
-      />
+      <Navbar.Toggle className="navbarMainContent" aria-controls="basic-navbar-nav" />
       <Navbar.Collapse data-testid="navbar-collapse" id="basic-navbar-nav">
         <Nav className="navLinksContainer">
           <NavLinks />
         </Nav>
         <div className="buttonGroup">
-          <Button className="signupFilledButton">
-            {t("home.navBar.buttons.signup")}
-          </Button>
+          <Button className="signupFilledButton">{t('home.navBar.buttons.signup')}</Button>
           <Button className="loginOutlinedButton" variant="outline">
-            {t("home.navBar.buttons.login")}
+            {t('home.navBar.buttons.login')}
           </Button>
         </div>
       </Navbar.Collapse>
