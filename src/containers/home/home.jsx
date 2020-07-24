@@ -1,6 +1,6 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import Carousel from "../../components/carousel/Carousel";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import Carousel from '../../components/carousel/Carousel';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <div>
       <Carousel
-        header0={t("home.carousel.header.header0")}
-        header1={t("home.carousel.header.header1")}
-        header2={t("home.carousel.header.header2")}
-        header3={t("home.carousel.header.header3")}
-        button={t("home.carousel.button")}
+        header0={t('home.carousel.header.header0')}
+        header1={t('home.carousel.header.header1')}
+        header2={t('home.carousel.header.header2')}
+        header3={t('home.carousel.header.header3')}
+        button={t('home.carousel.button')}
       />
     </div>
   );

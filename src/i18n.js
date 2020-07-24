@@ -1,9 +1,9 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import arTranslation from "./locales/ar.json";
-import trTranslation from "./locales/tr.json";
-import enTranslation from "./locales/en.json";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import arTranslation from './locales/ar.json';
+import trTranslation from './locales/tr.json';
+import enTranslation from './locales/en.json';
 
 // import Backend from 'i18next-xhr-backend';
 
@@ -33,12 +33,12 @@ i18n
         translation: enTranslation,
       },
     },
-    lng: "en",
-    fallbackLng: "ar",
+    lng: 'en',
+    fallbackLng: 'ar',
     debug: true,
 
-    keySeparator: ".",
-    nsSeparator: "|", // changed from ':' to allow colons in translated text
+    keySeparator: '.',
+    nsSeparator: '|', // changed from ':' to allow colons in translated text
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
