@@ -47,3 +47,5 @@ const Quotes = () => {
     </Container>
   );
 };
+
+export default Quotes;
