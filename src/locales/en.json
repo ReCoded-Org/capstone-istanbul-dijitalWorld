@@ -2,8 +2,8 @@
   "home": {
     "newsletter": {
       "titles": {
-        "title1": "Never miss a story.",
-        "title2": "Sign up for our newsletter."
+        "title0": "Never miss a story.",
+        "title1": "Sign up for our newsletter."
       },
       "input": {
         "text": "Your email address",
