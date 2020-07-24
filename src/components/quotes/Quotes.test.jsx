@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 import Quotes from './Quotes';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Quotes />, div);
+it('renders correctly', () => {
+  const tree = renderer.create(<Quotes />).toJSON();
+  expect(tree).toMatchSnapshot();
 });

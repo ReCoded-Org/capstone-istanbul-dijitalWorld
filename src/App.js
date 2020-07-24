@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './components/newsletter/Newsletter.jsx';
+import Home from './containers/home/Home';
 
 function App() {
   return (
