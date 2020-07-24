@@ -6,7 +6,6 @@ import leonImage from '../../images/leon-biss.jpg';
 import kidsImage from '../../images/small-kids.png';
 import './Quotes.css';
 
-
 const Quotes = () => {
   const { t } = useTranslation();
   return (
