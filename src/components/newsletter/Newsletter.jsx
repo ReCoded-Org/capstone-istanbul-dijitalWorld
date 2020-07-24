@@ -17,20 +17,29 @@ const Newsletter = () => {
 
         <Row data-testid="newsletterInput">
           <Col className="newsletterInput">
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control newsletterBar"
-                placeholder={t("home.newsletter.input.text")}
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              ></input>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary newsletterButton" type="button">
-                {t("home.newsletter.input.button")}
-                </button>
+            {/* This is Elif's suggestion */}
+            <form>
+              <div className="col-lg-10 mb-3 inputGroup">
+                <div className="input-group">
+                  <input
+                    type="text"
+                    className="form-control rounded-4 validationDefaultUsername newsletterBar"
+                    placeholder={t('home.newsletter.input.text')}
+                    aria-describedby="inputGroupPrepend2"
+                    required
+                  ></input>
+                  <div class="input-group-prepend">
+                    <input
+                      type="submit"
+                      value={t('home.newsletter.input.button')}
+                      className="btn btn-primary btn-sm rounded-0 inputGroupPrepend2 newsletterButton"
+                    ></input>
+                  </div>
+                </div>
               </div>
-            </div>
+            </form>
+
+            {/* This is the first one with the margin */}
             {/* <input
               className="newsletterBar"
               placeholder={t("home.newsletter.input.text")}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders succesfully. 1`] = `
+exports[`Matches the snapshot. 1`] = `
 <div
   className="container"
 >
@@ -31,27 +31,32 @@ exports[`Renders succesfully. 1`] = `
       <div
         className="newsletterInput col"
       >
-        <div
-          class="input-group mb-3"
-        >
-          <input
-            aria-describedby="basic-addon2"
-            aria-label="Recipient's username"
-            class="form-control newsletterBar"
-            placeholder="Recipient's username"
-            type="text"
-          />
+        <form>
           <div
-            class="input-group-append"
+            className="col-lg-10 mb-3"
           >
-            <button
-              class="btn btn-outline-secondary newsletterButton"
-              type="button"
+            <div
+              className="input-group"
             >
-              Button
-            </button>
+              <input
+                aria-describedby="inputGroupPrepend2"
+                className="form-control rounded-4 validationDefaultUsername"
+                placeholder="Your E-mail Address"
+                required={true}
+                type="text"
+              />
+              <div
+                class="input-group-prepend"
+              >
+                <input
+                  className="btn btn-primary btn-sm rounded-0 inputGroupPrepend2"
+                  type="submit"
+                  value="Subscribe"
+                />
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

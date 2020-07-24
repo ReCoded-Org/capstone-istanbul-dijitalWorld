@@ -27,13 +27,51 @@
   background-color: #6c567b;
   color: white;
   cursor: pointer;
-  width: 10rem;
+  width: 9rem;
+  height: 3.1rem;
   font-size: 1.25rem;
-  border-radius: 2.1875rem;
-  border-style: hidden;
+  /* border-radius: 2.1875rem; */
+  /* border-style: hidden; */
 }
 
 .newsletterButton:hover {
   background-color: #f8b195;
   border-style: hidden;
+}
+
+/* Div around the button */
+.input-group-prepend {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* input bar */
+.validationDefaultUsername {
+  border-radius: 40px !important;
+  /* width: 5rem !important; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+/* Button */
+.inputGroupPrepend2 {
+  border-radius: 40px !important;
+  background-color: #6c567b;
+  color: white;
+  cursor: pointer;
+  /* width: 10rem; */
+  /* font-size: 1.25rem; */
+  border-radius: 2.1875rem;
+  border-style: hidden;
+}
+
+.input-group {
+  width: 45rem !important;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: center !important;
 }
