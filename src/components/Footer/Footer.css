@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 .footerContainer {
   font-weight: bold;
   background: rgba(248, 177, 149, 0.603);
