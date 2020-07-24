@@ -1,15 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 import NavBar from './NavBar';
-import NavLinks from './NavLinks';
 
-it('Navbar renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<NavBar />, div);
-});
-
-it('Nav links renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<NavLinks />, div);
+it('Navbar renders correctly', () => {
+  const div = renderer.create(<NavBar />).toJSON();
+  expect(div).toMatchSnapshot();
 });
