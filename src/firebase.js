@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: 'AIzaSyA5C64zEZJ6H8Deup3bpaFAVScQCmcbI_M',
   authDomain: 'world-with-women.firebaseapp.com',
   databaseURL: 'https://world-with-women.firebaseio.com',
