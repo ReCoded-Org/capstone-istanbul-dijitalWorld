@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="footerContainer">
       <Container>
         <Row className="footerRow">
-          <Col className="footerCol" md="4" data-testid="footerBlurbCol">
+          <Col className="footerCol" md="4">
             <p className="footerBlurbTitle">
               {t("home.footer.getInTouch.title")}
             </p>
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
           </Col>
 
-          <Col className="footerCol" md="3" data-testid="footerContactCol">
+          <Col className="footerCol" md="3">
             <p className="footerContactTitle">
               {t("home.footer.contactUs.title")}
             </p>
@@ -37,7 +37,7 @@ const Footer = () => {
             </p>
           </Col>
 
-          <Col className="footerCol" md="2" data-testid="footerSocialCol">
+          <Col className="footerCol" md="2">
             <p className="footerSocialTitle">{t("home.footer.followUs")}</p>
             <FontAwesomeIcon className="footerIcons" icon={faTwitterSquare} />
             <FontAwesomeIcon className="footerIcons" icon={faFacebook} />

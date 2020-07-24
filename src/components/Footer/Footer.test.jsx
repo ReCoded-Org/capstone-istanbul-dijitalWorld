@@ -1,25 +1,28 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { render } from "@testing-library/react";
 import Footer from "./Footer";
-import "@testing-library/jest-dom";
+import renderer from "react-test-renderer";
 
-it("Renders succesfully.", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Footer />, div);
-});
+// it("Renders succesfully.", () => {
+//   const div = document.createElement("div");
+//   ReactDOM.render(<Footer />, div);
+// });
 
-it("First column renders successfully.", () => {
-  const { getByTestId } = render(<Footer />);
-  expect(getByTestId("footerBlurbCol")).toBeInTheDocument();
-});
+// it("First column renders successfully.", () => {
+//   const { getByTestId } = render(<Footer />);
+//   expect(getByTestId("footerBlurbCol")).toBeInTheDocument();
+// });
 
-it("Second column renders successfully.", () => {
-  const { getByTestId } = render(<Footer />);
-  expect(getByTestId("footerContactCol")).toBeInTheDocument();
-});
+// it("Second column renders successfully.", () => {
+//   const { getByTestId } = render(<Footer />);
+//   expect(getByTestId("footerContactCol")).toBeInTheDocument();
+// });
 
-it("Third column renders successfully.", () => {
-  const { getByTestId } = render(<Footer />);
-  expect(getByTestId("footerSocialCol")).toBeInTheDocument();
+// it("Third column renders successfully.", () => {
+//   const { getByTestId } = render(<Footer />);
+//   expect(getByTestId("footerSocialCol")).toBeInTheDocument();
+// });
+
+it("Matches the snapshot.", () => {
+  const tree = renderer.create(<Footer />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
