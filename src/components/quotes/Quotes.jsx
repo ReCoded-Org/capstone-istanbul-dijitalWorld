@@ -46,6 +46,3 @@ const Quotes = () => {
       </Row>
     </Container>
   );
-};
-
-export default Quotes;
