@@ -1,7 +1,6 @@
 import React from 'react';
-import Newsletter from '../components/newsletter';
+import Newsletter from '../../components/newsletter/Newsletter';
 import Quotes from '../../components/quotes/Quotes';
-import '../components/newsletter.css';
 
 function Home() {
   return (

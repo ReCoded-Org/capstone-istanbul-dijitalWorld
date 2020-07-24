@@ -9,40 +9,28 @@
 }
 
 .newsletterInput {
-  padding: 0.125rem;
   outline: none;
+  margin: 3rem 0;
 }
 
 .newsletterBar {
   background: #f4f4f4;
   border: none;
   border-radius: 42.5rem;
-  width: 36.0625rem;
-  height: 5.25rem;
-  text-indent: 1rem;
+  /* width: 36.0625rem; */
+  height: 4rem;
+  text-indent: 1.5rem;
   font-size: 1.25rem;
-  /* margin-top: 3.6875rem; */
-  /* margin-left: 16rem; */
-}
-
-.newsletterBar::placeholder {
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 1.25rem;
-  line-height: 1.4375rem;
 }
 
 .newsletterButton {
   background-color: #6c567b;
   color: white;
   cursor: pointer;
-  width: 10.625rem;
-  /* height: 3.75rem; */
-  font-size: 1.375rem;
+  width: 10rem;
+  font-size: 1.25rem;
   border-radius: 2.1875rem;
   border-style: hidden;
-  /* box-shadow: 0 0.6875rem 1.5rem -0.4375rem #b3b3b3; */
-  /* margin-left: -11.25rem; */
 }
 
 .newsletterButton:hover {

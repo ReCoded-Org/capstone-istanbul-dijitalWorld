@@ -21,13 +21,13 @@ const Newsletter = () => {
               <input
                 type="text"
                 class="form-control newsletterBar"
-                placeholder="Recipient's username"
+                placeholder={t("home.newsletter.input.text")}
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               ></input>
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary newsletterButton" type="button">
-                  Button
+                {t("home.newsletter.input.button")}
                 </button>
               </div>
             </div>
