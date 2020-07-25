@@ -1,32 +1,37 @@
 import React from 'react';
-import facebook from './facebook.svg';
-import instagram from './instagram.svg';
-import twitter from './twitter.svg';
 import './carousel.css';
 import ControlledCarousel from './ControlledCarousel';
+import { useTranslation } from 'react-i18next';
+import {
+  faTwitterSquare,
+  faFacebookSquare,
+  faInstagramSquare,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Carousel(props) {
+export default function Carousel() {
+  const { t } = useTranslation();
   return (
     <div className="allContent">
       <div className="sentenceAndButton">
         <div className="sentence">
           <p>
-            {props.header0}
-            <br /> {props.header1} <br />
-            {props.header2} <span>{props.header3}</span>
+            {t('home.carousel.header.header0')}
+            <br /> {t('home.carousel.header.header1')} <br />
+            {t('home.carousel.header.header2')} <span>{t('home.carousel.header.header3')}</span>
           </p>
         </div>
         <button type="button" className="learnBtn">
-          {props.button}
+          {t('home.carousel.button')}
         </button>
       </div>
       <div className="carouselImgs">
         <ControlledCarousel />
       </div>
       <div className="socialMediaIcons">
-        <img className="icon" src={facebook} alt="facebook" />
-        <img className="icon" src={instagram} alt="instagram" />
-        <img className="icon" src={twitter} alt="twitter" />
+        <FontAwesomeIcon className="homeIcon" icon={faTwitterSquare} />
+        <FontAwesomeIcon className="homeIcon" icon={faFacebookSquare} />
+        <FontAwesomeIcon className="homeIcon" icon={faInstagramSquare} />
       </div>
     </div>
   );
