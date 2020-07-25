@@ -1,8 +1,7 @@
 import React from 'react';
 import Home from './containers/home/Home';
 import NavBar from './components/navbar/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import AboutContent from './components/about/AboutContent';
+import About from './containers/about/About';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Home />
-        <Route path="/about" component={AboutContent} />
+        <Route path="/about" component={About} />
       </div>
     </Router>
   );

@@ -1,14 +1,15 @@
 import React from 'react';
 import './AboutContent.css';
+// import { useTranslation } from 'react-i18next';
 import { Col, Row, Container } from 'react-bootstrap';
 
-const AboutContent = () => {
-
+const AboutContent = (props) => {
+    // const { t } = useTranslation();
   return (
       <Container className="allContent">
         <Row>
           <Col>
-          {/* <p>{props.card.res.map(function (abi, index) { return "Source # " + index + " " })}</p> */}
+          {/* <h2>{props.header.map(function (translate, index) { return {t('about.header')} })}</h2> */}
 
             <h2>Our Story</h2>
             <p>
