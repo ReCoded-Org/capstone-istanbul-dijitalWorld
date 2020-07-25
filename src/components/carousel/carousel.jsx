@@ -16,7 +16,9 @@ export default function Carousel(props) {
             {props.header2} <span>{props.header3}</span>
           </p>
         </div>
-        <button type="button" className="learnBtn">{props.button}</button>
+        <button type="button" className="learnBtn">
+          {props.button}
+        </button>
       </div>
       <div className="carouselImgs">
         <ControlledCarousel />
