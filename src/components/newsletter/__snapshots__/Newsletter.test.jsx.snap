@@ -29,33 +29,25 @@ exports[`Matches the snapshot. 1`] = `
       <div
         className="newsletterInput col"
       >
-        <form>
+        <div
+          className="mb-2 inputGroup input-group"
+        >
+          <input
+            className="newsletterInputBar form-control"
+            placeholder="home.newsletter.input.text"
+          />
           <div
-            className="col-lg-10 mb-3"
+            className="newsletterButtonGroup input-group-append"
           >
-            <div
-              className="input-group"
+            <button
+              className="newsletterButton btn btn-primary"
+              disabled={false}
+              type="button"
             >
-              <input
-                className="form-control rounded-4"
-                id="newsletterInputBar"
-                placeholder="home.newsletter.input.text"
-                required={true}
-                type="text"
-              />
-              <div
-                className="newsletterButtonDiv"
-              >
-                <input
-                  className="btn btn-primary btn-sm rounded-0"
-                  id="newsletterButton"
-                  type="submit"
-                  value="home.newsletter.input.button"
-                />
-              </div>
-            </div>
+              home.newsletter.input.button
+            </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
