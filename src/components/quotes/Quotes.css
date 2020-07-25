@@ -1,0 +1,81 @@
+.contentContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+}
+
+.sayHerName {
+  color: #6c567b;
+  font-size: 2rem;
+  align-self: start;
+}
+
+.sayHerNameAuthor {
+  color: #9dafbd;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  align-self: flex-start;
+}
+
+.fightForGirls {
+  color: #f8b195;
+  font-size: 3rem;
+  width: 70%;
+}
+
+.openLetter {
+  color: #f8b195;
+  font-weight: bold;
+  text-decoration: underline;
+  align-self: center;
+  font-size: 3rem;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.anonymous {
+  color: #9dafbd;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  padding-left: 5.3rem;
+  align-self: flex-start;
+}
+
+.contentColumns {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donateButton {
+  background-color: #6c567b;
+  margin-top: 1.5rem;
+  margin-left: 6rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 10.625rem;
+  height: 3.75rem;
+  font-size: 1.375rem;
+  border-radius: 2.1875rem;
+  border-style: hidden;
+  box-shadow: 0px 11px 24px -7px #b3b3b3;
+  align-self: flex-start;
+}
+
+.donateButton:hover {
+  background-color: #f8b195;
+  border-style: hidden;
+}
