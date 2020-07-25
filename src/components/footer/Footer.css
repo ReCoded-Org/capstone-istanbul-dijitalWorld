@@ -18,8 +18,8 @@
   color: #6c567b;
 }
 
-.footerBlurbText {
-  /* font-style: normal; */
+.footerBlurbText,
+.footerContactText {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.625rem;
@@ -33,14 +33,6 @@
   font-size: 1.5625rem;
   line-height: 1.8125rem;
   color: #6c567b;
-}
-
-.footerContactText {
-  font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 1.625rem;
-  letter-spacing: -0.03125rem;
-  color: rgba(108, 86, 123, 0.83);
 }
 
 .footerIcons {
