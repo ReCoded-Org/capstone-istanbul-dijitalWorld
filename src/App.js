@@ -2,7 +2,6 @@ import React from 'react';
 import Home from './containers/home/Home';
 import NavBar from './components/navbar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from '../src/containers/home/Home';
 import Footer from './components/footer/Footer';
 
 function App() {
