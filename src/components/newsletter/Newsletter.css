@@ -8,70 +8,45 @@
   margin-top: 4rem;
 }
 
+.input-group {
+  width: 45rem !important;
+}
+
 .newsletterInput {
   outline: none;
   margin: 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
-.newsletterBar {
+#newsletterInputBar {
   background: #f4f4f4;
   border: none;
-  border-radius: 42.5rem;
-  /* width: 36.0625rem; */
   height: 4rem;
   text-indent: 1.5rem;
   font-size: 1.25rem;
+  border-radius: 40px !important;
 }
 
-.newsletterButton {
+.newsletterButtonDiv {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#newsletterButton {
   background-color: #6c567b;
   color: white;
   cursor: pointer;
   width: 9rem;
   height: 3.1rem;
   font-size: 1.25rem;
-  /* border-radius: 2.1875rem; */
-  /* border-style: hidden; */
+  border-radius: 40px !important;
+  border-style: hidden;
 }
 
-.newsletterButton:hover {
+#newsletterButton:hover {
   background-color: #f8b195;
   border-style: hidden;
-}
-
-/* Div around the button */
-.input-group-prepend {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* input bar */
-.validationDefaultUsername {
-  border-radius: 40px !important;
-  /* width: 5rem !important; */
-  /* display: flex;
-  justify-content: center; */
-}
-
-/* Button */
-.inputGroupPrepend2 {
-  border-radius: 40px !important;
-  background-color: #6c567b;
-  color: white;
-  cursor: pointer;
-  /* width: 10rem; */
-  /* font-size: 1.25rem; */
-  border-radius: 2.1875rem;
-  border-style: hidden;
-}
-
-.input-group {
-  width: 45rem !important;
-}
-
-.inputGroup {
-  display: flex;
-  justify-content: center !important;
 }

@@ -9,7 +9,6 @@ exports[`Matches the snapshot. 1`] = `
   >
     <div
       className="row"
-      data-testid="newsletterTitle"
     >
       <div
         className="newsletterTitle col"
@@ -26,30 +25,30 @@ exports[`Matches the snapshot. 1`] = `
     </div>
     <div
       className="row"
-      data-testid="newsletterInput"
     >
       <div
         className="newsletterInput col"
       >
         <form>
           <div
-            className="col-lg-10 mb-3 inputGroup"
+            className="col-lg-10 mb-3"
           >
             <div
               className="input-group"
             >
               <input
-                aria-describedby="inputGroupPrepend2"
-                className="form-control rounded-4 validationDefaultUsername newsletterBar"
+                className="form-control rounded-4"
+                id="newsletterInputBar"
                 placeholder="home.newsletter.input.text"
                 required={true}
                 type="text"
               />
               <div
-                class="input-group-prepend"
+                className="newsletterButtonDiv"
               >
                 <input
-                  className="btn btn-primary btn-sm rounded-0 inputGroupPrepend2 newsletterButton"
+                  className="btn btn-primary btn-sm rounded-0"
+                  id="newsletterButton"
                   type="submit"
                   value="home.newsletter.input.button"
                 />

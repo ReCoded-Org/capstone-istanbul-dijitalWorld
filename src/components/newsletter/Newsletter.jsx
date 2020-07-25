@@ -8,45 +8,36 @@ const Newsletter = () => {
   return (
     <div className="container">
       <Container>
-        <Row data-testid="newsletterTitle">
+        <Row>
           <Col className="newsletterTitle">
             <p>{t('home.newsletter.titles.title0')}</p> <br />
             <p>{t('home.newsletter.titles.title1')}</p>
           </Col>
         </Row>
 
-        <Row data-testid="newsletterInput">
+        <Row>
           <Col className="newsletterInput">
-            {/* This is Elif's suggestion */}
             <form>
-              <div className="col-lg-10 mb-3 inputGroup">
+              <div className="col-lg-10 mb-3">
                 <div className="input-group">
                   <input
                     type="text"
-                    className="form-control rounded-4 validationDefaultUsername newsletterBar"
+                    className="form-control rounded-4"
+                    id="newsletterInputBar"
                     placeholder={t('home.newsletter.input.text')}
-                    aria-describedby="inputGroupPrepend2"
                     required
                   ></input>
-                  <div class="input-group-prepend">
+                  <div className="newsletterButtonDiv">
                     <input
                       type="submit"
                       value={t('home.newsletter.input.button')}
-                      className="btn btn-primary btn-sm rounded-0 inputGroupPrepend2 newsletterButton"
+                      className="btn btn-primary btn-sm rounded-0"
+                      id="newsletterButton"
                     ></input>
                   </div>
                 </div>
               </div>
             </form>
-
-            {/* This is the first one with the margin */}
-            {/* <input
-              className="newsletterBar"
-              placeholder={t("home.newsletter.input.text")}
-            ></input>
-            <button className="newsletterButton">
-              {t("home.newsletter.input.button")}
-            </button> */}
           </Col>
         </Row>
       </Container>
