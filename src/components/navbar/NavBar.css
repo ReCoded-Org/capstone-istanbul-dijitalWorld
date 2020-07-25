@@ -1,0 +1,207 @@
+.navbar {
+  padding: 0;
+  height: 5em;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* bootstrap class  */
+.navbarMainContent.navbar-toggler.collapsed {
+  position: absolute;
+  margin-left: 5%;
+}
+
+/* bootstrap class */
+.navbar-light .navbar-nav .nav-link {
+  color: #6c567b;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* bootstrap class */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* bootstrap class */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f8b195;
+  justify-content: flex-end;
+}
+
+.navbarBrand {
+  margin-left: 7em;
+}
+
+.brandLogo {
+  height: 70px;
+  width: 70px;
+}
+
+.buttonGroup {
+  margin-left: 11em;
+}
+
+.signupFilledButton,
+.loginOutlinedButton {
+  box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
+  font-size: 14px;
+  display: inline-flex;
+  justify-content: center;
+  width: 6em;
+  height: 2.3em;
+  margin: 0.3em;
+  border-radius: 40px;
+}
+
+.signupFilledButton {
+  background-color: #6c567b;
+  outline: none;
+  border: none;
+}
+
+.loginOutlinedButton {
+  color: #f8b195;
+  border-color: #f8b195;
+}
+
+.signupFilledButton:hover {
+  background-color: #fff;
+  color: #6c567b;
+  border: #6c567b 1px solid;
+}
+
+.signupFilledButton:active {
+  background-color: #fff;
+  outline: #6c567b 1px solid;
+  color: #6c567b;
+  box-shadow: none;
+}
+
+.signupFilledButton:focus {
+  background-color: #6c567b;
+  color: #fff;
+  box-shadow: none;
+}
+
+.loginOutlinedButton:hover {
+  color: #fff;
+  background-color: #f8b195;
+}
+
+/* bootstrap class */
+.dropdown-toggle {
+  background-color: transparent;
+  width: auto;
+  font-size: 12px;
+  border: none;
+  color: #6c567b;
+}
+
+/* bootstrap class */
+.dropdown-toggle:active {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* bootstrap class */
+.dropdown-toggle::after {
+  color: #f8b195;
+  margin-right: 5em;
+}
+
+/* bootstrap class */
+.dropdown-menu {
+  font-size: 12px;
+}
+
+@media only screen and (min-device-width: 998px) and (max-device-width: 1024px) {
+  .navLinksContainer {
+    margin-left: 15em;
+  }
+
+  /* bootstrap class */
+  .dropdown-toggle::after {
+    margin-right: 0px;
+  }
+
+  .navbarBrand {
+    margin-left: 30px;
+  }
+
+  .buttonGroup {
+    margin-left: 4em;
+  }
+
+  .signupFilledButton,
+  .loginOutlinedButton {
+    box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+    margin: 0.3em;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 850px) and (max-device-width: 998px) {
+  /* bootstrap class */
+  .dropdown-toggle::after {
+    margin-right: 0px;
+  }
+
+  .navbarBrand {
+    margin-left: 50px;
+  }
+
+  .buttonGroup {
+    margin-left: 5em;
+  }
+
+  .signupFilledButton,
+  .loginOutlinedButton {
+    box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
+    font-size: 10px;
+    width: 70px;
+    height: 30px;
+    margin: 0.3em;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 850px) {
+  /* bootstrap class */
+  .dropdown-toggle::after {
+    margin-right: 0px;
+  }
+
+  .navbarBrand {
+    margin: auto;
+  }
+
+  .navLinkText {
+    font-size: 12px !important;
+  }
+
+  .buttonGroup {
+    margin-left: 1em;
+  }
+
+  /* bootstrap class */
+  .navbar-collapse {
+    justify-content: space-around !important;
+  }
+
+  .signupFilledButton,
+  .loginOutlinedButton {
+    box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
+    font-size: 9px;
+    width: 60px;
+    height: 20px;
+    margin: 0.2em;
+    border-radius: 40px;
+  }
+}
