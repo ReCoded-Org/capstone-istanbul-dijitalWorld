@@ -2,7 +2,7 @@ import React from 'react';
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import twitter from './twitter.svg';
-import './Carousel.css';
+import './carousel.css';
 import ControlledCarousel from './ControlledCarousel';
 
 export default function Carousel(props) {
