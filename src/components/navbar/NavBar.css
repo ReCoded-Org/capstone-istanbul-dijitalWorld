@@ -13,7 +13,7 @@
 
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link {
-  color: #6c567b;
+  color: #6c567b !important;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -27,12 +27,12 @@
 
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #f8b195;
+  color: #f8b195 !important;
   justify-content: flex-end;
 }
 
 .navbarBrand {
-  margin-left: 7em;
+  margin-left: 3em;
 }
 
 .brandLogo {
@@ -53,18 +53,18 @@
   width: 6em;
   height: 2.3em;
   margin: 0.3em;
-  border-radius: 40px;
+  border-radius: 40px !important;
 }
 
 .signupFilledButton {
-  background-color: #6c567b;
+  background-color: #6c567b !important;
   outline: none;
   border: none;
 }
 
 .loginOutlinedButton {
-  color: #f8b195;
-  border-color: #f8b195;
+  color: #f8b195 !important;
+  border-color: #f8b195 !important;
 }
 
 .signupFilledButton:hover {
@@ -110,7 +110,7 @@
 /* bootstrap class */
 .dropdown-toggle::after {
   color: #f8b195;
-  margin-right: 5em;
+  margin-right: 3em;
 }
 
 /* bootstrap class */
