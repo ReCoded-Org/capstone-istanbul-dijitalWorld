@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 import Carousel from './Carousel';
 
-it('renders well', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Carousel />, div);
+it('renders correctly', () => {
+  const tree = renderer.create(<Carousel />).toJSON();
+  expect(tree).toMatchSnapshot();
 });

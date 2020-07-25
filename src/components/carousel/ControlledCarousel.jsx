@@ -1,8 +1,8 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import womenPhoto from './womenPhoto.png';
 import womenIllustration from './womenIllustration.png';
 import './carousel.css';
-import Carousel from 'react-bootstrap/Carousel';
 
 function ControlledCarousel() {
   return (
