@@ -19,7 +19,7 @@
 }
 
 .footerBlurbText {
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.625rem;
@@ -40,7 +40,7 @@
   font-size: 1.125rem;
   line-height: 1.625rem;
   letter-spacing: -0.03125rem;
-  color: #6c567b;
+  color: rgba(108, 86, 123, 0.83);
 }
 
 .footerIcons {
