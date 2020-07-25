@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import './Newsletter.css';
 
 const Newsletter = () => {
@@ -17,7 +17,16 @@ const Newsletter = () => {
 
         <Row>
           <Col className="newsletterInput">
-            <form>
+            <InputGroup className="mb-2 inputGroup">
+              <FormControl
+                placeholder={t('home.newsletter.input.text')}
+                className="newsletterInputBar"
+              />
+              <InputGroup.Append className="newsletterButtonGroup">
+                <Button className="newsletterButton">{t('home.newsletter.input.button')}</Button>
+              </InputGroup.Append>
+            </InputGroup>
+            {/* <form>
               <div className="col-lg-10 mb-3">
                 <div className="input-group">
                   <input
@@ -37,7 +46,7 @@ const Newsletter = () => {
                   </div>
                 </div>
               </div>
-            </form>
+            </form> */}
           </Col>
         </Row>
       </Container>
