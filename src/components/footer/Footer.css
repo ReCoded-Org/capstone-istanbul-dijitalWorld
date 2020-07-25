@@ -1,5 +1,4 @@
 .footerContainer {
-  font-weight: bold;
   background: rgba(248, 177, 149, 0.603);
   color: #6c567b;
   display: flex;
@@ -20,7 +19,6 @@
 
 .footerBlurbText,
 .footerContactText {
-  font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.625rem;
   letter-spacing: -0.03125rem;
