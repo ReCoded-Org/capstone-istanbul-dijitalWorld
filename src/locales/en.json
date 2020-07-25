@@ -1,5 +1,21 @@
 {
   "home": {
+    "navBar": {
+      "navLinks": {
+        "home": "Home",
+        "blog": "Blog",
+        "inspire": "Inspire",
+        "resource": "Resource",
+        "about": "About",
+        "contact": "Contact"
+      },
+      "buttons": {
+        "signup": "Sign Up",
+        "login": "Login"
+      },
+      "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
+      "girlsFight": "The fight for girls won't be won by girls alone"
+    },
     "inspire": {
       "header": {
         "header0": "Give hope.",

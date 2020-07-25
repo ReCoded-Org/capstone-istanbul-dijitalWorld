@@ -21,6 +21,7 @@
         "react-dom": "^16.13.1",
         "react-i18next": "^11.7.0",
         "react-scripts": "3.4.1",
+        "save": "^2.4.0",
         "react-test-renderer": "^16.13.1"
     },
     "scripts": {
