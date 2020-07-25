@@ -9,24 +9,38 @@
       },
       "button": "learn More"
     },
-    "inspire": {
-      "header": {
-        "header0": "Give hope.",
-        "header1": "Inspire.",
-        "header2": "Change lives.",
-        "header3": "Share your story today"
+    "navBar": {
+      "navLinks": {
+        "home": "Home",
+        "blog": "Blog",
+        "inspire": "Inspire",
+        "resource": "Resource",
+        "about": "About",
+        "contact": "Contact"
       },
-      "heroText": "YOU have a powerful story to share. Your story can help women and girls around the world. Please help build our inspiring collection of stories by, sharing some aspects of your journey to empowerment",
-      "button": "Share"
-    },
-    "quotes": {
-      "sayHerName": {
-        "hashtag": "#SayHerName",
-        "title": "My Intersectional Activism as a Black African Muslim Woman #BlackLivesMatter",
-        "author": "by Bashirat Oladele"
+      "buttons": {
+        "signup": "Sign Up",
+        "login": "Login"
       },
-      "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
-      "girlsFight": "The fight for girls won't be won by girls alone"
+      "inspire": {
+        "header": {
+          "header0": "Give hope.",
+          "header1": "Inspire.",
+          "header2": "Change lives.",
+          "header3": "Share your story today"
+        },
+        "heroText": "YOU have a powerful story to share. Your story can help women and girls around the world. Please help build our inspiring collection of stories by, sharing some aspects of your journey to empowerment",
+        "button": "Share"
+      },
+      "quotes": {
+        "sayHerName": {
+          "hashtag": "#SayHerName",
+          "title": "My Intersectional Activism as a Black African Muslim Woman #BlackLivesMatter",
+          "author": "by Bashirat Oladele"
+        },
+        "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
+        "girlsFight": "The fight for girls won't be won by girls alone"
+      }
     }
   }
 }
