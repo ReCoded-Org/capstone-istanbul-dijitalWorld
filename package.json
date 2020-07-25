@@ -1,5 +1,4 @@
 {
-
     "name": "digital-world",
     "version": "0.1.0",
     "private": true,
@@ -15,16 +14,17 @@
         "react-bootstrap": "^1.2.2",
         "react-dom": "^16.13.1",
         "react-i18next": "^11.7.0",
+        "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.1",
-        "save": "^2.4.0",
-        "react-test-renderer": "^16.13.1"
+        "react-test-renderer": "^16.13.1",
+        "save": "^2.4.0"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "fix": "prettier --write 'src/**/*.js*' 'src/**/*.css' '!src/**/*/*.snap'" 
+        "fix": "prettier --write 'src/**/*.js*' 'src/**/*.css' '!src/**/*/*.snap'"
     },
     "eslintConfig": {
         "extends": "react-app"

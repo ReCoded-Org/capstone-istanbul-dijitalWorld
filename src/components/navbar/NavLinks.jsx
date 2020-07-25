@@ -20,7 +20,7 @@ export default function NavLinks() {
       <Nav.Link className="navLinkText" href="#home">
         {t('home.navBar.navLinks.resource')}
       </Nav.Link>
-      <Nav.Link className="navLinkText" href="#home">
+      <Nav.Link className="navLinkText" href="/about">
         {t('home.navBar.navLinks.about')}
       </Nav.Link>
       <Nav.Link className="navLinkText" href="#home">

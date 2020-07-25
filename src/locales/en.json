@@ -33,5 +33,13 @@
         "girlsFight": "The fight for girls won't be won by girls alone"
       }
     }
+  },
+  "about": {
+    "header": ["Our Story", "Our Mission", "Our Team"],
+    "paragraph": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
+    ]
   }
 }
