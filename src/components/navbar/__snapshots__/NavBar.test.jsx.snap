@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<nav
+  className="navbar navbar navbar-expand-sm navbar-light"
+  data-testid="navbar"
+>
+  <a
+    className="navbarBrand navbar-brand"
+    href="#home"
+  >
+    <img
+      alt="World with Women Logo"
+      className="brandLogo d-inline-block align-top"
+      data-testid="brand-logo"
+      src="www-logo.png"
+    />
+  </a>
+  <button
+    aria-controls="basic-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbarMainContent navbar-toggler collapsed"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="navbar-collapse collapse"
+    data-testid="navbar-collapse"
+    id="basic-navbar-nav"
+  >
+    <div
+      className="navLinksContainer navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="navLinkText nav-link"
+        data-rb-event-key="#home"
+        href="#home"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        home.navBar.navLinks.home
+      </a>
+      <a
+        className="navLinkText nav-link"
+        data-rb-event-key="#home"
+        href="#home"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        home.navBar.navLinks.blog
+      </a>
+      <a
+        className="navLinkText nav-link"
+        data-rb-event-key="#home"
+        href="#home"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        home.navBar.navLinks.inspire
+      </a>
+      <a
+        className="navLinkText nav-link"
+        data-rb-event-key="#home"
+        href="#home"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        home.navBar.navLinks.resource
+      </a>
+      <a
+        className="navLinkText nav-link"
+        data-rb-event-key="#home"
+        href="#home"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        home.navBar.navLinks.about
+      </a>
+      <a
+        className="navLinkText nav-link"
+        data-rb-event-key="#home"
+        href="#home"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        home.navBar.navLinks.contact
+      </a>
+    </div>
+    <div
+      className="buttonGroup"
+    >
+      <button
+        className="signupFilledButton btn btn-primary"
+        disabled={false}
+        type="button"
+      >
+        home.navBar.buttons.signup
+      </button>
+      <button
+        className="loginOutlinedButton btn btn-outline"
+        disabled={false}
+        type="button"
+      >
+        home.navBar.buttons.login
+      </button>
+    </div>
+  </div>
+  <div
+    className="dropdownItemButton dropdown"
+    onKeyDown={[Function]}
+  >
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      className="dropdown-toggle btn btn-none"
+      disabled={false}
+      id="dropdown-item-button"
+      onClick={[Function]}
+      type="button"
+    >
+      EN
+    </button>
+  </div>
+</nav>
+`;
