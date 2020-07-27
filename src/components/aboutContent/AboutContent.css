@@ -1,11 +1,10 @@
 .allContent h2 {
-    margin-bottom: 2rem;
-    font-size: 2.8rem;
-    color: #6c567c;
-  }
-  
-  .allContent p {
-    font-size: 1.5rem;
-    color: #4a474d;
-  }
-  
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  color: #6c567c;
+}
+
+.allContent p {
+  font-size: 1.5rem;
+  color: #4a474d;
+}
