@@ -65,9 +65,9 @@
       "followUs": "Follow Us"
     }
   },
-  "inspire":{
-    "subject":"Subject",
-    "category":["Category","Education","Work","Family","Social","Other"],
-    "story":"Your Story"
+  "inspire": {
+    "subject": "Subject",
+    "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
+    "story": "Your Story"
   }
 }

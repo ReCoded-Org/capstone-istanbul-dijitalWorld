@@ -10,27 +10,38 @@ exports[`renders correctly 1`] = `
   >
     <span
       className="purpleInspire"
-    />
+    >
+      home.inspire.header.header0
+    </span>
      
     <span
       className="pinkInspire"
-    />
+    >
+      home.inspire.header.header1
+    </span>
     <span
       className="purpleInspire"
-    />
+    >
+      home.inspire.header.header2
+    </span>
      
     <span
       className="pinkInspire"
-    />
+    >
+      home.inspire.header.header3
+    </span>
   </h2>
   <p
     className="heroText"
   >
+    home.inspire.heroText
      
     <br />
   </p>
   <button
     className="inspireButton"
-  />
+  >
+    home.inspire.button
+  </button>
 </div>
 `;

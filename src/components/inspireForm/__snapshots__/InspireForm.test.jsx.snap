@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
         <input
           className="inputBox form-control form-control-lg"
           onChange={[Function]}
-          placeholder="Subject"
+          placeholder="inspire.subject"
           type="input"
         />
       </div>
@@ -35,22 +35,22 @@ exports[`renders correctly 1`] = `
           <option
             default={true}
           >
-            Category
+            inspire.category.0
           </option>
           <option>
-            Education
+            inspire.category.1
           </option>
           <option>
-            Work
+            inspire.category.2
           </option>
           <option>
-            Family
+            inspire.category.3
           </option>
           <option>
-            Social
+            inspire.category.4
           </option>
           <option>
-            Other
+            inspire.category.5
           </option>
         </select>
       </div>
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
     <textarea
       className="inputBox form-control"
       onChange={[Function]}
-      placeholder="Your Story"
+      placeholder="inspire.story"
       rows="15"
     />
   </div>

@@ -5,7 +5,6 @@ import { Form, Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 export default function InspireForm() {
-
   const { t } = useTranslation();
   const [headline, setHeadline] = useState();
   const [category, setCategory] = useState();
