@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import InspireForm from '../../components/inspireForm/InspireForm';
 
 export default function InspirePage() {
-    return (
-        <div>
-            <InspireForm />
-        </div>
-    )
+  return (
+    <div>
+      <InspireForm />
+    </div>
+  );
 }
