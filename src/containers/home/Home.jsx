@@ -8,7 +8,6 @@ export default function Home() {
 
   return (
     <div>
-      <Quotes />
       <Inspire
         header0={t('home.inspire.header.header0')}
         header1={t('home.inspire.header.header1')}
@@ -17,6 +16,7 @@ export default function Home() {
         heroText={t('home.inspire.heroText')}
         button={t('home.inspire.button')}
       />
+      <Quotes />
     </div>
   );
 }
