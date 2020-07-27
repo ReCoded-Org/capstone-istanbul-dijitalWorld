@@ -9,12 +9,18 @@ const AboutContent = () => {
     <Container className="allContent">
       <Row>
         <Col>
-          <h2>{t('about.header.0')}</h2>
-          <p>{t('about.paragraph.0')}</p>
-          <h2>{t('about.header.1')}</h2>
-          <p>{t('about.paragraph.1')}</p>
-          <h2>{t('about.header.2')}</h2>
-          <p>{t('about.paragraph.2')}</p>
+          <div className="articleContainer">
+            <h2>{t('about.header.0')}</h2>
+            <p>{t('about.paragraph.0')}</p>
+          </div>
+          <div className="articleContainer">
+            <h2>{t('about.header.1')}</h2>
+            <p>{t('about.paragraph.1')}</p>
+          </div>
+          <div className="articleContainer">
+            <h2>{t('about.header.2')}</h2>
+            <p>{t('about.paragraph.2')}</p>
+          </div>
         </Col>
       </Row>
     </Container>

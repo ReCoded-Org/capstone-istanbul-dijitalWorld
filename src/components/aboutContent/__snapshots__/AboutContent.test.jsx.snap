@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`about content renders correctly 1`] = `
+<div
+  className="allContent container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="articleContainer"
+      >
+        <h2>
+          about.header.0
+        </h2>
+        <p>
+          about.paragraph.0
+        </p>
+      </div>
+      <div
+        className="articleContainer"
+      >
+        <h2>
+          about.header.1
+        </h2>
+        <p>
+          about.paragraph.1
+        </p>
+      </div>
+      <div
+        className="articleContainer"
+      >
+        <h2>
+          about.header.2
+        </h2>
+        <p>
+          about.paragraph.2
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
