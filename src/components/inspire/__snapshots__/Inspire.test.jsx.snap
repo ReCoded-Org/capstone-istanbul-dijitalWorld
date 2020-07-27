@@ -30,9 +30,7 @@ exports[`renders correctly 1`] = `
     <br />
   </p>
   <button
-    className="inspireButton btn btn-primary"
-    disabled={false}
-    type="button"
+    className="inspireButton"
   />
 </div>
 `;

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="inspireForm"
+  onSubmit={[Function]}
+>
+  <div
+    className="firstRow row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="form-group"
+      >
+        <input
+          className="inputBox form-control form-control-lg"
+          onChange={[Function]}
+          placeholder="Subject"
+          type="input"
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="form-group"
+      >
+        <select
+          className="inputBox form-control form-control-lg"
+          onChange={[Function]}
+        >
+          <option
+            default={true}
+          >
+            Category
+          </option>
+          <option>
+            Education
+          </option>
+          <option>
+            Work
+          </option>
+          <option>
+            Family
+          </option>
+          <option>
+            Social
+          </option>
+          <option>
+            Other
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    className="form-group"
+  >
+    <textarea
+      className="inputBox form-control"
+      onChange={[Function]}
+      placeholder="Your Story"
+      rows="15"
+    />
+  </div>
+  <div
+    className="buttonRow row"
+  >
+    <button
+      className="inspireButton"
+      type="submit"
+    >
+      Inspire
+    </button>
+  </div>
+</form>
+`;
