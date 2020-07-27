@@ -1,6 +1,5 @@
 import React from 'react';
 import './Inspire.css';
-import Button from 'react-bootstrap/Button';
 
 export default function Inspire(props) {
   return (
@@ -14,7 +13,7 @@ export default function Inspire(props) {
       <p className="heroText">
         {props.heroText} <br />
       </p>
-      <Button className="inspireButton">{props.button}</Button>
+      <button className="inspireButton">{props.button}</button>
     </div>
   );
 }
