@@ -1,5 +1,14 @@
 {
   "home": {
+    "carousel": {
+      "header": {
+        "header0": "Digital",
+        "header1": "Story telling",
+        "header2": "for",
+        "header3": "Impact"
+      },
+      "button": "Learn More"
+    },
     "navBar": {
       "navLinks": {
         "home": "Home",
