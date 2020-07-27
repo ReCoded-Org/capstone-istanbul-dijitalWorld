@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches the snapshot. 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="newsletterTitle col"
+      >
+        <p>
+          home.newsletter.titles.title0
+        </p>
+         
+        <br />
+        <p>
+          home.newsletter.titles.title1
+        </p>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="newsletterInput col"
+      >
+        <div
+          className="mb-2 inputGroup input-group"
+        >
+          <input
+            className="newsletterInputBar form-control"
+            placeholder="home.newsletter.input.text"
+          />
+          <div
+            className="newsletterButtonGroup input-group-append"
+          >
+            <button
+              className="newsletterButton btn btn-primary"
+              disabled={false}
+              type="button"
+            >
+              home.newsletter.input.button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

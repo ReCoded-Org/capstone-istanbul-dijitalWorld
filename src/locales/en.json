@@ -21,9 +21,7 @@
       "buttons": {
         "signup": "Sign Up",
         "login": "Login"
-      },
-      "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
-      "girlsFight": "The fight for girls won't be won by girls alone"
+      }
     },
     "inspire": {
       "header": {
@@ -43,6 +41,16 @@
       },
       "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
       "girlsFight": "The fight for girls won't be won by girls alone"
+    },
+    "newsletter": {
+      "titles": {
+        "title0": "Never miss a story.",
+        "title1": "Sign up for our newsletter."
+      },
+      "input": {
+        "text": "Your email address",
+        "button": "Subscribe"
+      }
     },
     "footer": {
       "getInTouch": {
