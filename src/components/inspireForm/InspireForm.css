@@ -1,28 +1,38 @@
 .inspireForm {
-  margin: 10%;
+  margin: 5%;
 }
-.firstRow {
+
+.inspireFirstRow {
   height: 10%;
+  font-size: 2rem;
 }
+
+.inspireInputBox::-webkit-input-placeholder {
+  font-size: 1.25rem;
+}
+
 .inspireButton {
   background-color: #6c567b;
   color: white;
   cursor: pointer;
   width: 18.75rem;
   height: 6.25rem;
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   border-radius: 3.125rem;
   border-style: hidden;
   box-shadow: 0 0.6875rem 1.5rem -0.4375rem #b3b3b3;
 }
+
 .inspireButton:hover {
   background-color: #f8b195;
 }
-.buttonRow {
+
+.inspireButtonRow {
   display: flex;
   justify-content: center;
 }
-.inputBox {
+
+.inspireInputBox {
   border-color: #f8b195;
   background-color: #f4f4f4;
 }

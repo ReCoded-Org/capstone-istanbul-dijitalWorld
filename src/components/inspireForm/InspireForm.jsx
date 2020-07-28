@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './InspireForm.css';
 import database from '../../firebase';
-import { Form, Col, Row } from 'react-bootstrap';
+import { Form, Col, Row, Alert } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 export default function InspireForm() {
@@ -9,44 +9,66 @@ export default function InspireForm() {
   const [headline, setHeadline] = useState();
   const [category, setCategory] = useState();
   const [story, setStory] = useState();
+  const [show, setShow] = useState(false);
 
-  const headlineInput = async (e) => {
+  const handleHeadlineInput = async (e) => {
     setHeadline(e.target.value);
   };
 
-  const categoryInput = async (e) => {
+  const handleCategoryInput = async (e) => {
     setCategory(e.target.value);
   };
 
-  const storyInput = async (e) => {
+  const handleStoryInput = async (e) => {
     setStory(e.target.value);
   };
+  function ThankYouPopUp() {
+  
+    return (
+      <>
+        <Alert show={show} variant="success">
+          <Alert.Heading>Thank You!</Alert.Heading>
+          <p>
+           Thank you for submitting your story and having the courage to share!<br/>
+           Our admins will review the story and help you get it out there as soon as possible!
+          
+          </p>
+          <hr />
+        </Alert>
+        </>
+    );
+  }  
 
-  const submitStory = (e) => {
+  const handleSubmitStory = (e) => {
     e.preventDefault();
-    database.collection('inspire').doc('Stories').set({
-      Headline: headline,
+
+    const newStory= database.collection('inspire').doc()
+    newStory.set({
+      headline: headline,
       category: category,
       story: story,
     });
+    setShow(true)
   };
+  
   return (
-    <Form className="inspireForm" onSubmit={submitStory}>
-      <Row className="firstRow">
+    <Form className="inspireForm" onSubmit={handleSubmitStory}>
+      <Row className="inspireFirstRow">
         <Col>
           <Form.Group>
             <Form.Control
               size="lg"
               type="input"
               placeholder={t('inspire.subject')}
-              className="inputBox"
-              onChange={headlineInput}
+              className="inspireInputBox"
+              onChange={handleHeadlineInput}
+              required
             />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group>
-            <Form.Control size="lg" as="select" className="inputBox" onChange={categoryInput}>
+            <Form.Control size="lg" as="select" className="inspireInputBox" onChange={handleCategoryInput}required>
               <option default>{t('inspire.category.0')}</option>
               <option>{t('inspire.category.1')}</option>
               <option>{t('inspire.category.2')}</option>
@@ -62,12 +84,14 @@ export default function InspireForm() {
           as="textarea"
           rows="15"
           placeholder={t('inspire.story')}
-          className="inputBox"
-          onChange={storyInput}
+          className="inspireInputBox"
+          onChange={handleStoryInput}
+          required
         />
       </Form.Group>
-      <Row className="buttonRow">
-        <button type="submit" className="inspireButton">
+      <Row><ThankYouPopUp/></Row>
+      <Row className="inspireButtonRow">
+        <button type="submit" className="inspireButton" >
           Inspire
         </button>
       </Row>
