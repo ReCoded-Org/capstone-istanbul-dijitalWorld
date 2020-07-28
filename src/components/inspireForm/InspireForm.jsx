@@ -23,34 +23,33 @@ export default function InspireForm() {
     setStory(e.target.value);
   };
   function ThankYouPopUp() {
-  
     return (
       <>
         <Alert show={show} variant="success">
           <Alert.Heading>Thank You!</Alert.Heading>
           <p>
-           Thank you for submitting your story and having the courage to share!<br/>
-           Our admins will review the story and help you get it out there as soon as possible!
-          
+            Thank you for submitting your story and having the courage to share!
+            <br />
+            Our admins will review the story and help you get it out there as soon as possible!
           </p>
           <hr />
         </Alert>
-        </>
+      </>
     );
-  }  
+  }
 
   const handleSubmitStory = (e) => {
     e.preventDefault();
 
-    const newStory= database.collection('inspire').doc()
+    const newStory = database.collection('inspire').doc();
     newStory.set({
       headline: headline,
       category: category,
       story: story,
     });
-    setShow(true)
+    setShow(true);
   };
-  
+
   return (
     <Form className="inspireForm" onSubmit={handleSubmitStory}>
       <Row className="inspireFirstRow">
@@ -68,7 +67,13 @@ export default function InspireForm() {
         </Col>
         <Col>
           <Form.Group>
-            <Form.Control size="lg" as="select" className="inspireInputBox" onChange={handleCategoryInput}required>
+            <Form.Control
+              size="lg"
+              as="select"
+              className="inspireInputBox"
+              onChange={handleCategoryInput}
+              required
+            >
               <option default>{t('inspire.category.0')}</option>
               <option>{t('inspire.category.1')}</option>
               <option>{t('inspire.category.2')}</option>
@@ -89,9 +94,11 @@ export default function InspireForm() {
           required
         />
       </Form.Group>
-      <Row><ThankYouPopUp/></Row>
+      <Row>
+        <ThankYouPopUp />
+      </Row>
       <Row className="inspireButtonRow">
-        <button type="submit" className="inspireButton" >
+        <button type="submit" className="inspireButton">
           Inspire
         </button>
       </Row>

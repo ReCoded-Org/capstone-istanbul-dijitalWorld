@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
   onSubmit={[Function]}
 >
   <div
-    className="firstRow row"
+    className="inspireFirstRow row"
   >
     <div
       className="col"
@@ -15,9 +15,10 @@ exports[`renders correctly 1`] = `
         className="form-group"
       >
         <input
-          className="inputBox form-control form-control-lg"
+          className="inspireInputBox form-control form-control-lg"
           onChange={[Function]}
           placeholder="inspire.subject"
+          required={true}
           type="input"
         />
       </div>
@@ -29,8 +30,9 @@ exports[`renders correctly 1`] = `
         className="form-group"
       >
         <select
-          className="inputBox form-control form-control-lg"
+          className="inspireInputBox form-control form-control-lg"
           onChange={[Function]}
+          required={true}
         >
           <option
             default={true}
@@ -60,14 +62,18 @@ exports[`renders correctly 1`] = `
     className="form-group"
   >
     <textarea
-      className="inputBox form-control"
+      className="inspireInputBox form-control"
       onChange={[Function]}
       placeholder="inspire.story"
+      required={true}
       rows="15"
     />
   </div>
   <div
-    className="buttonRow row"
+    className="row"
+  />
+  <div
+    className="inspireButtonRow row"
   >
     <button
       className="inspireButton"
