@@ -11,17 +11,6 @@ export default function InspireForm() {
   const [story, setStory] = useState();
   const [show, setShow] = useState(false);
 
-  const handleHeadlineInput = async (e) => {
-    setHeadline(e.target.value);
-  };
-
-  const handleCategoryInput = async (e) => {
-    setCategory(e.target.value);
-  };
-
-  const handleStoryInput = async (e) => {
-    setStory(e.target.value);
-  };
   function ThankYouPopUp() {
     return (
       <>
@@ -37,6 +26,18 @@ export default function InspireForm() {
       </>
     );
   }
+
+  const handleHeadlineInput = async (e) => {
+    setHeadline(e.target.value);
+  };
+
+  const handleCategoryInput = async (e) => {
+    setCategory(e.target.value);
+  };
+
+  const handleStoryInput = async (e) => {
+    setStory(e.target.value);
+  };
 
   const handleSubmitStory = (e) => {
     e.preventDefault();
