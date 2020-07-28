@@ -79,7 +79,7 @@ exports[`renders correctly 1`] = `
       className="inspireButton"
       type="submit"
     >
-      Inspire
+      inspire.button
     </button>
   </div>
 </form>

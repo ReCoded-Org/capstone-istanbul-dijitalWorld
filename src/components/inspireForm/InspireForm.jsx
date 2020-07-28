@@ -99,7 +99,7 @@ export default function InspireForm() {
       </Row>
       <Row className="inspireButtonRow">
         <button type="submit" className="inspireButton">
-          Inspire
+          {t('inspire.button')}
         </button>
       </Row>
     </Form>
