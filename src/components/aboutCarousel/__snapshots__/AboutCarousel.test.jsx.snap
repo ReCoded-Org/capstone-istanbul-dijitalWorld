@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`about carousel renders correctly 1`] = `
+<div>
+  <h2>
+    hi carousel I am here
+  </h2>
+</div>
+`;
