@@ -1,5 +1,14 @@
 {
   "home": {
+    "carousel": {
+      "header": {
+        "header0": "Digital",
+        "header1": "Story telling",
+        "header2": "for",
+        "header3": "Impact"
+      },
+      "button": "Learn More"
+    },
     "navBar": {
       "navLinks": {
         "home": "Home",
@@ -32,6 +41,34 @@
       },
       "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
       "girlsFight": "The fight for girls won't be won by girls alone"
+    },
+    "newsletter": {
+      "titles": {
+        "title0": "Never miss a story.",
+        "title1": "Sign up for our newsletter."
+      },
+      "input": {
+        "text": "Your email address",
+        "button": "Subscribe"
+      }
+    },
+    "footer": {
+      "getInTouch": {
+        "title": "Get in Touch",
+        "text": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction."
+      },
+      "contactUs": {
+        "title": "Contact Us",
+        "emailAddress": "hello@gmail.com",
+        "phoneNumber": "+9 876 543 21"
+      },
+      "followUs": "Follow Us"
     }
+  },
+  "inspire": {
+    "subject": "Subject",
+    "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
+    "story": "Your Story",
+    "button": "Inspire"
   }
 }
