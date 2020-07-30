@@ -8,10 +8,10 @@ export default function NavLinks() {
 
   return (
     <>
-      <Nav.Link className="navLinkText" href="home">
+      <Nav.Link className="navLinkText" href="#home">
         {t('home.navBar.navLinks.home')}
       </Nav.Link>
-      <Nav.Link className="navLinkText" href="blog">
+      <Nav.Link className="navLinkText" href="#home">
         {t('home.navBar.navLinks.blog')}
       </Nav.Link>
       <Nav.Link className="navLinkText" href="#home">
