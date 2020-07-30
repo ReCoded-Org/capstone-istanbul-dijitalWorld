@@ -5,38 +5,44 @@ import './SignupForm.css';
 
 const SignupForm = () => {
   return (
-    <Container className="signUp">
+    <Container className="signupContainer">
       <Image src={Logo} className="logo" />
-      <h2>Signup Now</h2>
+      <h2 className="signupHeader">Signup Now</h2>
       <Form>
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridFirstName">
+          <Form.Group as={Col} controlId="formGridFirstName" className="mt-3">
             <Form.Control type="name" placeholder="FirstName" />
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridLastName">
+          <Form.Group as={Col} controlId="formGridLastName" className="mt-3">
             <Form.Control type="name" placeholder="LastName" />
           </Form.Group>
         </Form.Row>
 
-        <Form.Group controlId="formGridEmail">
+        <Form.Group controlId="formGridEmail" className="mt-3">
           <Form.Control type="email" placeholder="Your Email" />
         </Form.Group>
 
         <Form.Row>
-          <Form.Group as={Col} controlId="formGridPassword">
+          <Form.Group as={Col} controlId="formGridPassword" className="mt-3">
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridRepeatPassword">
+          <Form.Group as={Col} controlId="formGridRepeatPassword" className="mt-3">
             <Form.Control type="password" placeholder="Repeat Password" />
           </Form.Group>
         </Form.Row>
 
-        <Button variant="primary" type="submit" className="signupBtn">
+        <Button variant="primary" type="submit" className="signupBtn mt-3">
           Sign Up
         </Button>
       </Form>
+      <p className="mt-3">
+        Already Have An Account ?{' '}
+        <a href="/login" className="loginLink">
+          Login
+        </a>
+      </p>
     </Container>
   );
 };
