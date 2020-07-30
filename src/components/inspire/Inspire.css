@@ -24,12 +24,13 @@
   background-color: #6c567b;
   color: white;
   cursor: pointer;
-  width: 18.75rem;
-  height: 6.25rem;
-  font-size: 3.75rem;
+  width: 14rem;
+  height: 4rem;
+  font-size: 3rem;
   border-radius: 3.125rem;
   border-style: hidden;
   box-shadow: 0 0.6875rem 1.5rem -0.4375rem #b3b3b3;
+  margin-bottom: 2%;
 }
 
 .inspireButton:hover {

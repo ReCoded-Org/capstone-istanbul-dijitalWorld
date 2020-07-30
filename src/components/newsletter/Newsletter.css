@@ -1,0 +1,50 @@
+.newsletterTitle {
+  font-size: 2.5rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #6c567c;
+  margin-top: 4rem;
+}
+
+.newsletterInput {
+  outline: none;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.inputGroup {
+  width: 45rem !important;
+}
+
+.newsletterInput .newsletterInputBar {
+  background: #f4f4f4;
+  border: none;
+  height: 4rem;
+  text-indent: 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 2.5rem !important;
+}
+
+.newsletterButtonGroup {
+  position: absolute;
+  right: 0.5625rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.newsletterButtonGroup .newsletterButton {
+  background-color: #6c567b;
+  color: white;
+  cursor: pointer;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  border-radius: 2.5rem !important;
+  border-style: hidden;
+}
+
+.newsletterButtonGroup .newsletterButton:hover {
+  background-color: #f8b195;
+  border-style: hidden;
+}
