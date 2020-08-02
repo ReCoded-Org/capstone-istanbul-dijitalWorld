@@ -5,14 +5,12 @@ import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebookicon.svg';
 import './LoginForm.css';
 
-const ColoredLine = ({ color, width, display }) => (
+const ColoredLine = ({ color }) => (
   <hr
     style={{
       color,
       backgroundColor: color,
-      height: '1px',
-      width,
-      display,
+      width: '20rem',
     }}
   />
 );
@@ -29,8 +27,7 @@ const LoginForm = () => {
         <FacebookIcon className="mr-3" />
         Continue With Facebook
       </Button>
-      <span className="mt-3">Or</span>
-      <ColoredLine width="20rem" color="#D9DADC" display="inline-block" />
+      <hr className="orText" />
       <Form>
         <Form.Group controlId="formGridEmail" className="mt-3">
           <Form.Control type="email" placeholder="Your Email" />
@@ -52,7 +49,7 @@ const LoginForm = () => {
         forgot your password ?
       </a>
       <ColoredLine color="#D9DADC" width="20rem" />
-      <p className="mt-3 forgotPassword" href="#home">
+      <p style={{ fontWeight: 'bold' }} href="#home">
         Don't have an account ?
       </p>
       <Button className="googleBtn">SIGN UP FOR WWW</Button>
