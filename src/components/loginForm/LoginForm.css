@@ -1,0 +1,58 @@
+.logo {
+  width: 10rem;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.loginBtn {
+  background-color: #6c567b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 9.5rem;
+  height: 2.1875rem;
+  font-size: 0.9rem;
+  border-radius: 2.1875rem;
+  border-style: hidden;
+  box-shadow: 0px 11px 24px -7px #b3b3b3;
+}
+
+.loginLink {
+  display: inline;
+  color: #000000;
+}
+
+/* GOOGLE BUTTON */
+.googleBtn {
+  background: white;
+  color: #444;
+  width: 18.75rem;
+  /* height: 30px; */
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+  border-radius: 25px;
+}
+
+/* FACEBOOK BUTTON */
+
+.facebookBtn {
+  background: #3a61b3;
+  color: #fff;
+  width: 18.75rem;
+  /* height: 30px; */
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+  border-radius: 25px;
+}
+
+.forgotPassword,
+.forgotPassword:hover {
+  color: black;
+}
