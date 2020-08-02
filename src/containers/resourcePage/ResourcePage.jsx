@@ -1,7 +1,7 @@
 import React from 'react';
 import Resources from "../../components/resources/Resources"
 
-function Resources() {
+function ResourcePage() {
     return (
         <div>
             <Resources />
@@ -9,4 +9,4 @@ function Resources() {
     )
 }
 
-export default Resources;
+export default ResourcePage;
