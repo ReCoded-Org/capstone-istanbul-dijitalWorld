@@ -64,5 +64,13 @@
       },
       "followUs": "Follow Us"
     }
+  },
+  "resourcePage": {
+    "title": "Resources for you",
+    "resource": {
+      "resourceAddress": "girlsglobe.org",
+      "resourceBlurp": "Girls' Globe amplifies the voices of activists, advocates and experts on gender equality, human rights and social justice.",
+      "button": "Go to the page"
+    }
   }
 }

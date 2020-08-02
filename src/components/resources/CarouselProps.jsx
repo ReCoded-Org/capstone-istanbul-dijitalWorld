@@ -9,9 +9,10 @@ function Panel() {
     <Row className="resourceRow">
         <Col className="blurpCol">
             <aside className="panel">
-                <h2 className="panel-header"></h2>
-                <p className="panel-info"> </p>
-                <Button className="panel-button">visit blabla</Button>
+                <h2 className="panel-header">{t("resourcePage.title")}</h2>
+                <h2 className="resourceTitle">{t("resourcePage.resource.resourceAddress")}</h2>
+                <p className="panel-info">{t("resourcePage.resource.resourceBlurp")}</p>
+                <Button className="panel-button">{t("resourcePage.resource.button")}</Button>
             </aside>
         </Col>
 

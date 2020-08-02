@@ -3,7 +3,7 @@ import { Container, Carousel, Card } from 'react-bootstrap';
 import './Resources.css';
 import girlsGlobe from "./img/Girlsglobal.png"
 import malala from "./img/Malala.png"
-import girlTalk from "./img/Girltalk.png"
+import girlTalk from "./img/GirltalkHQ.png"
 
 function ControlledCarousel() {
     return (
