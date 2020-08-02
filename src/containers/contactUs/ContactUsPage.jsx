@@ -1,14 +1,15 @@
 import React from 'react';
 import ContactUsForm from '../../components/contactUsForm/ContactUsForm';
 import ContactUsMap from '../../components/contactUsMap/ContactUsMap';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 export default function ContactUsPage() {
   return (
-    <Row className="contactUsContainer">
-      <Col md="1"></Col>
-      <ContactUsMap />
-      <ContactUsForm />
-    </Row>
+    <Container>
+      <Row className="contactUsContainer">
+        <ContactUsMap />
+        <ContactUsForm />
+      </Row>
+    </Container>
   );
 }
