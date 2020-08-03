@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row, Container, Image } from 'react-bootstrap';
-import blogArticles from './blog.json'
+import blogArticles from './blog.json';
 
 export default function BlogCard() {
   const newBlogArticles = blogArticles.map((blog) => {
