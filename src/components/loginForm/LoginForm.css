@@ -27,25 +27,23 @@
   color: #000000;
 }
 
-/* GOOGLE BUTTON */
+/* Google button */
 .googleBtn {
   background: white;
   color: #444;
   width: 18.75rem;
-  /* height: 30px; */
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;
   border-radius: 25px;
 }
 
-/* FACEBOOK BUTTON */
+/* Facebook button */
 
 .facebookBtn {
   background: #3a61b3;
   color: #fff;
   width: 18.75rem;
-  /* height: 30px; */
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;
