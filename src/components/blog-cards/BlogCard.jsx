@@ -1,17 +1,23 @@
 import React from 'react';
 import { Col, Row, Container, Image } from 'react-bootstrap';
+import blogArticles from './blog.json'
 
 export default function BlogCard() {
-  return (
-    <div>
-      <Container>
-        <Row>
-          <Col xs={6} md={6} lg={8}></Col>
-          <Col xs={6} md={4} lg={3}>
-            <Image src="holder.js/171x180" roundedCircle />
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
+  const newBlogArticles = blogArticles.map((blog) => {
+    return (
+      <div>
+        <Container key={blog.id}>
+          <Row>
+            <Col xs={6} md={6} lg={8}>
+              <h3>{blog.title}</h3>
+              <span></span>
+            </Col>
+            <Col xs={6} md={4} lg={3}>
+              <Image src="holder.js/171x180" roundedCircle />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
+  });
 }
