@@ -5,12 +5,12 @@ import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebookicon.svg';
 import './LoginForm.css';
 
-const ColoredLine = ({ color }) => (
+const ColoredLine = ({ color, width }) => (
   <hr
     style={{
       color,
       backgroundColor: color,
-      width: '20rem',
+      width,
     }}
   />
 );
