@@ -10,7 +10,7 @@ export default function BlogCard() {
           <Row>
             <Col xs={6} md={6} lg={8}>
               <h3>{blog.title}</h3>
-              <span></span>
+              <span>{blog.body.substring(0, 200)}</span>
             </Col>
             <Col xs={6} md={4} lg={3}>
               <Image src="holder.js/171x180" roundedCircle />
