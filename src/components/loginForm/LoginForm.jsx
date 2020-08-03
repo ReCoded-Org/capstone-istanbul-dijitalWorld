@@ -50,7 +50,7 @@ const LoginForm = () => {
       </a>
       <ColoredLine color="#D9DADC" width="20rem" />
       <p style={{ fontWeight: 'bold' }} href="#home">
-        Don't have an account ?
+        Don&apos;t have an account ?
       </p>
       <Button className="googleBtn">SIGN UP FOR WWW</Button>
     </Container>
