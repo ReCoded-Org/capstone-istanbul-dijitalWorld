@@ -8,10 +8,10 @@ import girlTalk from "./img/GirltalkHQ.png"
 function ControlledCarousel() {
     return (
       <Container>
-        <Carousel className="resourceCarousel">
-          <Card md={6} >
+        <Carousel className="resourceCarousel slide vertical">
+          {/* <Card md={6} >
             dffgh
-          </Card>
+          </Card> */}
 
           <Carousel.Item md={6} >
               <img

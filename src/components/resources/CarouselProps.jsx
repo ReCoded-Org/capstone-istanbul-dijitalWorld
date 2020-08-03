@@ -1,23 +1,65 @@
 import React, { useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
+import data from './testdata.json';
 
-function Panel() {
-  const { t } = useTranslation();
-  const [resourceBlurb, setResourceBlurb] = useState();
+export default function body() {
+  
+}
+
+export default function Panel() {
+  //const { t } = useTranslation();
+  //const [resourceBlurb, setResourceBlurb] = useState();
   return (
-    <Row className="resourceRow">
-        <Col className="blurpCol">
-            <aside className="panel">
-                <h2 className="panel-header">{t("resourcePage.title")}</h2>
-                <h2 className="resourceTitle">{t("resourcePage.resource.resourceAddress")}</h2>
-                <p className="panel-info">{t("resourcePage.resource.resourceBlurp")}</p>
-                <Button className="panel-button">{t("resourcePage.resource.button")}</Button>
-            </aside>
-        </Col>
-
-        <Col className="imageCol">
-        </Col>
-    </Row>
+    // <Row className="resourceRow">
+    // <Col className="blurpCol">
+    <aside className="panel" style={panelStyle}>
+      <h2 className="panel-header">{data.header}</h2>
+      <h2 className="resourceTitle">{data.header}</h2>
+      <p className="panel-info">{data.body}</p>
+      <Button
+        className="panel-button"
+        style={buttonStyle}
+        onMouseEnter={buttonColor}
+        onMouseLeave={buttonColor}
+      >
+        Button
+      </Button>
+    </aside>
+    // </Col>
+    // </Row>
   );
+}
+
+export default function Selectors() {
+  const handleClick = (e) => {
+    if (id !== activeID) {
+      changeActive(id);
+    } else {
+      return;
+    }
+  };
+
+  return (
+    <div className="selectors">
+      {data.map((item) => (
+        <Selector
+          key={item.id}
+          id={item.id}
+          handleClick={handleClick}
+          changeActive={changeActive}
+          activeID={activeID}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default function Selector() {
+  const componentClass = 'selector';
+  if (activeID === id) {
+    componentClass = 'selector active';
+  }
+
+  return <div className={componentClass} onClick={handleClick}></div>;
 }
