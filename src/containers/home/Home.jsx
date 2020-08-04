@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       <Carousel />
-      <Quotes />
       <Inspire />
+      <Quotes />
       <Newsletter />
     </div>
   );
