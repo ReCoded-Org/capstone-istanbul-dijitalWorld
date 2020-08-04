@@ -14,7 +14,7 @@ export default function AboutCarousel() {
   return (
     <Container className="AllCarouselContent">
       <Row>
-        <Col>
+        <Col md>
           <Row className="TeamCard">
             <Col>
               <img className="cardImg" src={teamMemeber0} alt="" />
@@ -25,7 +25,7 @@ export default function AboutCarousel() {
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col md>
           <Row className="TeamCard">
             <Col>
               <img className="cardImg" src={teamMemeber1} alt="" />
@@ -36,7 +36,7 @@ export default function AboutCarousel() {
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col md>
           <Row className="TeamCard">
             <Col>
               <img className="cardImg" src={teamMemeber2} alt="" />
@@ -49,7 +49,7 @@ export default function AboutCarousel() {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col md>
           <Row className="TeamCard">
             <Col>
               <img className="cardImg" src={teamMemeber3} alt="" />
@@ -60,7 +60,7 @@ export default function AboutCarousel() {
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col md>
           <Row className="TeamCard">
             <Col>
               <img className="cardImg" src={teamMemeber4} alt="" />
@@ -71,7 +71,7 @@ export default function AboutCarousel() {
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col md>
           <Row className="TeamCard">
             <Col>
               <img className="cardImg" src={teamMemeber5} alt="" />
