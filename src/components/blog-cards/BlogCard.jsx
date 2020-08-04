@@ -4,7 +4,6 @@ import blogArticles from './blog.json';
 import './BlogCard.css';
 
 export default function BlogCard() {
-
   function handleClick() {
     // history.push('/`${blog.id}`');
   }
