@@ -1,16 +1,27 @@
-/* div {
-  font-size: 1.5rem;
-  color: #4a474d;
-} */
+.AllCarouselContent {
+  margin-bottom: 12rem;
+}
+
 .cardImg {
-  width: 3rem;
+  width: 4.2rem;
+  border-radius: 2.1rem;
 }
-.row h4 {
+
+.AllCarouselContent h4 {
   font-size: 0.9rem;
-font-weight: bold;
+  font-weight: bold;
+  color: #f67280;
 }
 
-.row p {
+.AllCarouselContent p {
   font-size: 0.8rem;
+  color: #f67280;
+}
 
+.TeamCard {
+  margin-bottom: 3rem;
+}
+
+.cardTexts {
+  /* padding-right: -20px; */
 }

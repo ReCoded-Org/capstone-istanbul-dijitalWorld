@@ -73,7 +73,21 @@
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
     ],
-    "name": ["Ammar Sammour", "Bahaa Dabbagh", "Halit Batour", "Refia", "Dara Aldandashi", "Elif Chorghay"],
-    "tilte": ["Lead Engineer", "Junior Engineer", "Junior Engineer", "Junior Engineer", "Junior Engineer", "Junior Engineer"]
+    "name": [
+      "Ammar Sammour",
+      "Bahaa Dabbagh",
+      "Halit Batour",
+      "Refia",
+      "Dara Aldandashi",
+      "Elif Chorghay"
+    ],
+    "tilte": [
+      "Lead Engineer",
+      "Junior Engineer",
+      "Junior Engineer",
+      "Junior Engineer",
+      "Junior Engineer",
+      "Junior Engineer"
+    ]
   }
 }

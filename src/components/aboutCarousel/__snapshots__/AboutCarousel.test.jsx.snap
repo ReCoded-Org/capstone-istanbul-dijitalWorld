@@ -1,9 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`about carousel renders correctly 1`] = `
-<div>
-  <h2>
-    hi carousel I am here
-  </h2>
+<div
+  className="AllCarouselContent container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="TeamCard row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt=""
+            className="cardImg"
+            src="girl.svg"
+          />
+        </div>
+        <div
+          className="cardTexts col"
+        >
+          <h4>
+            about.name.3
+          </h4>
+          <p>
+            about.tilte.3
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="TeamCard row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt=""
+            className="cardImg"
+            src="actress.svg"
+          />
+        </div>
+        <div
+          className="cardTexts col"
+        >
+          <h4>
+            about.name.4
+          </h4>
+          <p>
+            about.tilte.4
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="TeamCard row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt=""
+            className="cardImg"
+            src="doctor.svg"
+          />
+        </div>
+        <div
+          className="cardTexts col"
+        >
+          <h4>
+            about.name.5
+          </h4>
+          <p>
+            about.tilte.5
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="TeamCard row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt=""
+            className="cardImg"
+            src="bussinessMan.svg"
+          />
+        </div>
+        <div
+          className="cardTexts col"
+        >
+          <h4>
+            about.name.0
+          </h4>
+          <p>
+            about.tilte.0
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="TeamCard row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt=""
+            className="cardImg"
+            src="callCenterAgent.svg"
+          />
+        </div>
+        <div
+          className="cardTexts col"
+        >
+          <h4>
+            about.name.1
+          </h4>
+          <p>
+            about.tilte.1
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="TeamCard row"
+      >
+        <div
+          className="col"
+        >
+          <img
+            alt=""
+            className="cardImg"
+            src="dentist.svg"
+          />
+        </div>
+        <div
+          className="cardTexts col"
+        >
+          <h4>
+            about.name.2
+          </h4>
+          <p>
+            about.tilte.2
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
