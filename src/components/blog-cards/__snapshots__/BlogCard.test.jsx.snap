@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="blogContainer container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-8 col-md-6 col-6"
+      >
+        <h3
+          className="blogTitle"
+        >
+          My Intersectional Activism as A Black African Muslim Woman
+        </h3>
+        <span
+          className="blogBody"
+        >
+          My identities as being a Black Muslim woman who is also African come in one. I experience discrimination in many unique ways: my skin colour, my gender, my religion and being African. Often, the notion of have these identities tend to equate to me be
+          ...
+        </span>
+        <button
+          className="readMoreButton"
+          onClick={[Function]}
+        >
+          Read More
+        </button>
+      </div>
+      <div
+        className="imageContainer col-lg-3 col-md-4 col-4"
+      >
+        <img
+          className="roundImage rounded-circle"
+          src="/images/safe_image.jpeg"
+        />
+      </div>
+    </div>
+  </div>,
+  <div
+    className="blogContainer container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-8 col-md-6 col-6"
+      >
+        <h3
+          className="blogTitle"
+        >
+          An Open Letter to My Abuser
+        </h3>
+        <span
+          className="blogBody"
+        >
+          It is hard to put into words all that you put me through. This letter is, I know, another vain attempt to master the chaos within me. But trying is always a better option than quitting, I suppose. Sometimes I wish you could go through the pain and st
+          ...
+        </span>
+        <button
+          className="readMoreButton"
+          onClick={[Function]}
+        >
+          Read More
+        </button>
+      </div>
+      <div
+        className="imageContainer col-lg-3 col-md-4 col-4"
+      >
+        <img
+          className="roundImage rounded-circle"
+          src="/images/leon-biss.jpg"
+        />
+      </div>
+    </div>
+  </div>,
+  <div
+    className="blogContainer container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-8 col-md-6 col-6"
+      >
+        <h3
+          className="blogTitle"
+        >
+          5 Things I’ve Learned from Malala Yousafzai
+        </h3>
+        <span
+          className="blogBody"
+        >
+          Today is Malala Yousafzai’s birthday. As an activist, advocate for girls’ education, champion of human rights and Nobel Peace Prize winner, Malala’s words and actions offer inspiration and hope to people all over the world. In 2012, a Taliban gunman 
+          ...
+        </span>
+        <button
+          className="readMoreButton"
+          onClick={[Function]}
+        >
+          Read More
+        </button>
+      </div>
+      <div
+        className="imageContainer col-lg-3 col-md-4 col-4"
+      >
+        <img
+          className="roundImage rounded-circle"
+          src="/images/malala.jpg"
+        />
+      </div>
+    </div>
+  </div>,
+]
+`;
