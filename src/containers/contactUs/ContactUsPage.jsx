@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactUsForm from '../../components/contactUsForm/ContactUsForm';
 import ContactUsMap from '../../components/contactUsMap/ContactUsMap';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 
 export default function ContactUsPage() {
   return (

@@ -46,7 +46,7 @@ export default function ContactUs() {
   };
 
   return (
-    <Form onSubmit={handleSubmitMessage}>
+    <Form className="contactFormContainer" onSubmit={handleSubmitMessage}>
       <Row>
         <Col>
           <h3 className="contactUsHero">{t('contactUs.getInTouch.0')}</h3>
@@ -56,6 +56,7 @@ export default function ContactUs() {
             <Form.Control
               size="lg"
               type="email"
+              className="contactUsInput"
               placeholder={t('contactUs.email')}
               onChange={handleEmailInput}
               required
@@ -65,6 +66,7 @@ export default function ContactUs() {
             <Form.Control
               as="textarea"
               rows="10"
+              className="contactUsInput"
               placeholder={t('contactUs.message')}
               onChange={handleMessageInput}
               required
