@@ -1,5 +1,5 @@
-.AllCarouselContent {
-  margin-bottom: 12rem;
+.AllTeamsContent {
+  margin-bottom: 6rem;
 }
 
 .cardImg {
@@ -7,13 +7,13 @@
   border-radius: 2.1rem;
 }
 
-.AllCarouselContent h4 {
+.Desktopview h4 {
   font-size: 0.9rem;
   font-weight: bold;
   color: #f67280;
 }
 
-.AllCarouselContent p {
+.Desktopview p {
   font-size: 0.8rem;
   color: #f67280;
 }
@@ -22,6 +22,54 @@
   margin-bottom: 3rem;
 }
 
-.cardTexts {
-  /* padding-right: -20px; */
+.phoneView h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #f67280;
+}
+
+.phoneView p {
+  font-size: 0.8rem;
+  color: #f67280;
+}
+
+.tabletView h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #f67280;
+}
+.tabletView p {
+  font-size: 0.8rem;
+  color: #f67280;
+}
+
+.TeamCardTabletView {
+  align-content: center;
+}
+
+@media only screen and (min-width: 776px) {
+  .tabletView {
+    display: none;
+  }
+  .phoneView {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 775px) and (min-width: 376px) {
+  .Desktopview {
+    display: none;
+  }
+  .phoneView {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .Desktopview {
+    display: none;
+  }
+  .tabletView {
+    display: none;
+  }
 }
