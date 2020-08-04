@@ -8,11 +8,10 @@ import teamMember3 from './images/businessMan.svg';
 import teamMember4 from './images/callCenterAgent.svg';
 import teamMember5 from './images/dentist.svg';
 import { useTranslation } from 'react-i18next';
-import { Col, Row, Container } from 'react-bootstrap';
+import { Col, Row, Container, Card } from 'react-bootstrap';
 
 export default function AboutCarousel() {
   const { t } = useTranslation();
-
   return (
     <div allTeamsContent>
       <Container className="desktopview">
@@ -92,74 +91,74 @@ export default function AboutCarousel() {
           <Carousel.Item>
             <Row>
               <Col>
-                <Row className="teamCard">
-                  <Col>
-                    <img className="cardImg" src={teamMember0} alt="Team Member" />
-                  </Col>
-                  <Col className="cardTexts">
+                <Card border="white" style={{ width: '12rem' }} className="memberCard">
+                  <Card.Body>
+                    <Card.Title>
+                      <img className="cardImg" src={teamMember0} alt="Team Member" />
+                    </Card.Title>
                     <h4>{t('about.name.5')}</h4>
                     <p>{t('about.title.5')}</p>
-                  </Col>
-                </Row>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col>
-                <Row className="teamCard">
-                  <Col>
-                    <img className="cardImg" src={teamMember1} alt="Team Member" />
-                  </Col>
-                  <Col className="cardTexts">
+                <Card border="white" style={{ width: '12rem' }} className="memberCard">
+                  <Card.Body>
+                    <Card.Title>
+                      <img className="cardImg" src={teamMember1} alt="Team Member" />
+                    </Card.Title>
                     <h4>{t('about.name.4')}</h4>
                     <p>{t('about.title.4')}</p>
-                  </Col>
-                </Row>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col>
-                <Row className="teamCard">
-                  <Col>
-                    <img className="cardImg" src={teamMember2} alt="Team Member" />
-                  </Col>
-                  <Col className="cardTexts">
+                <Card border="white" style={{ width: '12rem' }} className="memberCard">
+                  <Card.Body>
+                    <Card.Title>
+                      <img className="cardImg" src={teamMember2} alt="Team Member" />
+                    </Card.Title>
                     <h4>{t('about.name.5')}</h4>
                     <p>{t('about.title.5')}</p>
-                  </Col>
-                </Row>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </Carousel.Item>
           <Carousel.Item>
             <Row>
               <Col>
-                <Row className="teamCard">
-                  <Col>
-                    <img className="cardImg" src={teamMember3} alt="Team Member" />
-                  </Col>
-                  <Col className="cardTexts">
+                <Card border="white" style={{ width: '12rem' }} className="memberCard">
+                  <Card.Body>
+                    <Card.Title>
+                      <img className="cardImg" src={teamMember3} alt="Team Member" />
+                    </Card.Title>
                     <h4>{t('about.name.0')}</h4>
                     <p>{t('about.title.0')}</p>
-                  </Col>
-                </Row>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col>
-                <Row className="teamCard">
-                  <Col>
-                    <img className="cardImg" src={teamMember4} alt="Team Member" />
-                  </Col>
-                  <Col className="cardTexts">
+                <Card border="white" style={{ width: '12rem' }} className="memberCard">
+                  <Card.Body>
+                    <Card.Title>
+                      <img className="cardImg" src={teamMember4} alt="Team Member" />
+                    </Card.Title>
                     <h4>{t('about.name.1')}</h4>
                     <p>{t('about.title.1')}</p>
-                  </Col>
-                </Row>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col>
-                <Row className="teamCard">
-                  <Col>
-                    <img className="cardImg" src={teamMember5} alt="Team Member" />
-                  </Col>
-                  <Col className="cardTexts">
+                <Card border="white" style={{ width: '12rem' }} className="memberCard">
+                  <Card.Body>
+                    <Card.Title>
+                      <img className="cardImg" src={teamMember5} alt="Team Member" />
+                    </Card.Title>
                     <h4>{t('about.name.2')}</h4>
                     <p>{t('about.title.2')}</p>
-                  </Col>
-                </Row>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </Carousel.Item>
@@ -168,46 +167,70 @@ export default function AboutCarousel() {
       <Container className="phoneView">
         <Carousel>
           <Carousel.Item>
-            <div className="teamCard">
-              <img className="cardImg" src={teamMember0} alt="Team Member" />
-              <h4>{t('about.name.3')}</h4>
-              <p>{t('about.title.3')}</p>
-            </div>
+            <Card border="white" style={{ width: '12rem' }} className="memberCard">
+              <Card.Body>
+                <Card.Title>
+                  <img className="cardImg" src={teamMember0} alt="Team Member" />
+                </Card.Title>
+                <h4>{t('about.name.3')}</h4>
+                <p>{t('about.title.3')}</p>
+              </Card.Body>
+            </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="teamCard">
-              <img className="cardImg" src={teamMember1} alt="Team Member" />
-              <h4>{t('about.name.4')}</h4>
-              <p>{t('about.title.4')}</p>
-            </div>
+            <Card border="white" style={{ width: '12rem' }} className="memberCard">
+              <Card.Body>
+                <Card.Title>
+                  <img className="cardImg" src={teamMember1} alt="Team Member" />
+                </Card.Title>
+                <h4>{t('about.name.4')}</h4>
+                <p>{t('about.title.4')}</p>
+              </Card.Body>
+            </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="teamCard">
-              <img className="cardImg" src={teamMember2} alt="Team Member" />
-              <h4>{t('about.name.5')}</h4>
-              <p>{t('about.title.5')}</p>
-            </div>
+            <Card border="white" style={{ width: '12rem' }} className="memberCard">
+              <Card.Body>
+                <Card.Title>
+                  <img className="cardImg" src={teamMember2} alt="Team Member" />
+                </Card.Title>
+                <h4>{t('about.name.5')}</h4>
+                <p>{t('about.title.5')}</p>
+              </Card.Body>
+            </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="teamCard">
-              <img className="cardImg" src={teamMember3} alt="Team Member" />
-              <h4>{t('about.name.0')}</h4>
-              <p>{t('about.title.0')}</p>
-            </div>
+            <Card border="white" style={{ width: '12rem' }} className="memberCard">
+              <Card.Body>
+                <Card.Title>
+                  <img className="cardImg" src={teamMember3} alt="Team Member" />
+                </Card.Title>
+                <h4>{t('about.name.0')}</h4>
+                <p>{t('about.title.0')}</p>
+              </Card.Body>
+            </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="teamCard">
-              <img className="cardImg" src={teamMember4} alt="Team Member" />
-              <h4>{t('about.name.1')}</h4>
-              <p>{t('about.title.1')}</p>
-            </div>
+            <Card border="white" style={{ width: '12rem' }} className="memberCard">
+              <Card.Body>
+                <Card.Title>
+                  <img className="cardImg" src={teamMember4} alt="Team Member" />
+                </Card.Title>
+                <h4>{t('about.name.1')}</h4>
+                <p>{t('about.title.1')}</p>
+              </Card.Body>
+            </Card>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="teamCard">
-              <img className="cardImg" src={teamMember5} alt="Team Member" />
-              <h4>{t('about.name.2')}</h4>
-              <p>{t('about.title.2')}</p>
-            </div>
+            <Card border="white" style={{ width: '12rem' }} className="memberCard">
+              <Card.Body>
+                <Card.Title>
+                  <img className="cardImg" src={teamMember5} alt="Team Member" />
+                </Card.Title>
+                <h4>{t('about.name.2')}</h4>
+                <p>{t('about.title.2')}</p>
+              </Card.Body>
+            </Card>
           </Carousel.Item>
         </Carousel>
       </Container>

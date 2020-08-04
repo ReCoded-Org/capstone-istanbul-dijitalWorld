@@ -214,20 +214,25 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="teamCard row"
+                className="memberCard card border-white"
+                style={
+                  Object {
+                    "width": "12rem",
+                  }
+                }
               >
                 <div
-                  className="col"
+                  className="card-body"
                 >
-                  <img
-                    alt="Team Member"
-                    className="cardImg"
-                    src="girl.svg"
-                  />
-                </div>
-                <div
-                  className="cardTexts col"
-                >
+                  <div
+                    className="card-title h5"
+                  >
+                    <img
+                      alt="Team Member"
+                      className="cardImg"
+                      src="girl.svg"
+                    />
+                  </div>
                   <h4>
                     about.name.5
                   </h4>
@@ -241,20 +246,25 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="teamCard row"
+                className="memberCard card border-white"
+                style={
+                  Object {
+                    "width": "12rem",
+                  }
+                }
               >
                 <div
-                  className="col"
+                  className="card-body"
                 >
-                  <img
-                    alt="Team Member"
-                    className="cardImg"
-                    src="actress.svg"
-                  />
-                </div>
-                <div
-                  className="cardTexts col"
-                >
+                  <div
+                    className="card-title h5"
+                  >
+                    <img
+                      alt="Team Member"
+                      className="cardImg"
+                      src="actress.svg"
+                    />
+                  </div>
                   <h4>
                     about.name.4
                   </h4>
@@ -268,20 +278,25 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="teamCard row"
+                className="memberCard card border-white"
+                style={
+                  Object {
+                    "width": "12rem",
+                  }
+                }
               >
                 <div
-                  className="col"
+                  className="card-body"
                 >
-                  <img
-                    alt="Team Member"
-                    className="cardImg"
-                    src="doctor.svg"
-                  />
-                </div>
-                <div
-                  className="cardTexts col"
-                >
+                  <div
+                    className="card-title h5"
+                  >
+                    <img
+                      alt="Team Member"
+                      className="cardImg"
+                      src="doctor.svg"
+                    />
+                  </div>
                   <h4>
                     about.name.5
                   </h4>
@@ -303,20 +318,25 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="teamCard row"
+                className="memberCard card border-white"
+                style={
+                  Object {
+                    "width": "12rem",
+                  }
+                }
               >
                 <div
-                  className="col"
+                  className="card-body"
                 >
-                  <img
-                    alt="Team Member"
-                    className="cardImg"
-                    src="businessMan.svg"
-                  />
-                </div>
-                <div
-                  className="cardTexts col"
-                >
+                  <div
+                    className="card-title h5"
+                  >
+                    <img
+                      alt="Team Member"
+                      className="cardImg"
+                      src="businessMan.svg"
+                    />
+                  </div>
                   <h4>
                     about.name.0
                   </h4>
@@ -330,20 +350,25 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="teamCard row"
+                className="memberCard card border-white"
+                style={
+                  Object {
+                    "width": "12rem",
+                  }
+                }
               >
                 <div
-                  className="col"
+                  className="card-body"
                 >
-                  <img
-                    alt="Team Member"
-                    className="cardImg"
-                    src="callCenterAgent.svg"
-                  />
-                </div>
-                <div
-                  className="cardTexts col"
-                >
+                  <div
+                    className="card-title h5"
+                  >
+                    <img
+                      alt="Team Member"
+                      className="cardImg"
+                      src="callCenterAgent.svg"
+                    />
+                  </div>
                   <h4>
                     about.name.1
                   </h4>
@@ -357,20 +382,25 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="teamCard row"
+                className="memberCard card border-white"
+                style={
+                  Object {
+                    "width": "12rem",
+                  }
+                }
               >
                 <div
-                  className="col"
+                  className="card-body"
                 >
-                  <img
-                    alt="Team Member"
-                    className="cardImg"
-                    src="dentist.svg"
-                  />
-                </div>
-                <div
-                  className="cardTexts col"
-                >
+                  <div
+                    className="card-title h5"
+                  >
+                    <img
+                      alt="Team Member"
+                      className="cardImg"
+                      src="dentist.svg"
+                    />
+                  </div>
                   <h4>
                     about.name.2
                   </h4>
@@ -461,114 +491,192 @@ exports[`about carousel renders correctly 1`] = `
           className="active carousel-item"
         >
           <div
-            className="teamCard"
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "12rem",
+              }
+            }
           >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="girl.svg"
-            />
-            <h4>
-              about.name.3
-            </h4>
-            <p>
-              about.title.3
-            </p>
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                <img
+                  alt="Team Member"
+                  className="cardImg"
+                  src="girl.svg"
+                />
+              </div>
+              <h4>
+                about.name.3
+              </h4>
+              <p>
+                about.title.3
+              </p>
+            </div>
           </div>
         </div>
         <div
           className="carousel-item"
         >
           <div
-            className="teamCard"
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "12rem",
+              }
+            }
           >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="actress.svg"
-            />
-            <h4>
-              about.name.4
-            </h4>
-            <p>
-              about.title.4
-            </p>
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                <img
+                  alt="Team Member"
+                  className="cardImg"
+                  src="actress.svg"
+                />
+              </div>
+              <h4>
+                about.name.4
+              </h4>
+              <p>
+                about.title.4
+              </p>
+            </div>
           </div>
         </div>
         <div
           className="carousel-item"
         >
           <div
-            className="teamCard"
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "12rem",
+              }
+            }
           >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="doctor.svg"
-            />
-            <h4>
-              about.name.5
-            </h4>
-            <p>
-              about.title.5
-            </p>
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                <img
+                  alt="Team Member"
+                  className="cardImg"
+                  src="doctor.svg"
+                />
+              </div>
+              <h4>
+                about.name.5
+              </h4>
+              <p>
+                about.title.5
+              </p>
+            </div>
           </div>
         </div>
         <div
           className="carousel-item"
         >
           <div
-            className="teamCard"
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "12rem",
+              }
+            }
           >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="businessMan.svg"
-            />
-            <h4>
-              about.name.0
-            </h4>
-            <p>
-              about.title.0
-            </p>
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                <img
+                  alt="Team Member"
+                  className="cardImg"
+                  src="businessMan.svg"
+                />
+              </div>
+              <h4>
+                about.name.0
+              </h4>
+              <p>
+                about.title.0
+              </p>
+            </div>
           </div>
         </div>
         <div
           className="carousel-item"
         >
           <div
-            className="teamCard"
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "12rem",
+              }
+            }
           >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="callCenterAgent.svg"
-            />
-            <h4>
-              about.name.1
-            </h4>
-            <p>
-              about.title.1
-            </p>
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                <img
+                  alt="Team Member"
+                  className="cardImg"
+                  src="callCenterAgent.svg"
+                />
+              </div>
+              <h4>
+                about.name.1
+              </h4>
+              <p>
+                about.title.1
+              </p>
+            </div>
           </div>
         </div>
         <div
           className="carousel-item"
         >
           <div
-            className="teamCard"
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "12rem",
+              }
+            }
           >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="dentist.svg"
-            />
-            <h4>
-              about.name.2
-            </h4>
-            <p>
-              about.title.2
-            </p>
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                <img
+                  alt="Team Member"
+                  className="cardImg"
+                  src="dentist.svg"
+                />
+              </div>
+              <h4>
+                about.name.2
+              </h4>
+              <p>
+                about.title.2
+              </p>
+            </div>
           </div>
         </div>
       </div>
