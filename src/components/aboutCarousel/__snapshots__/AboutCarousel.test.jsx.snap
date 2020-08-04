@@ -2,10 +2,10 @@
 
 exports[`about carousel renders correctly 1`] = `
 <div
-  AllTeamsContent={true}
+  allTeamsContent={true}
 >
   <div
-    className="Desktopview container"
+    className="desktopview container"
   >
     <div
       className="row"
@@ -14,13 +14,13 @@ exports[`about carousel renders correctly 1`] = `
         className="col-md"
       >
         <div
-          className="TeamCard row"
+          className="teamCard row"
         >
           <div
             className="col-sm-4"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="girl.svg"
             />
@@ -32,7 +32,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.3
             </h4>
             <p>
-              about.tilte.3
+              about.title.3
             </p>
           </div>
         </div>
@@ -41,13 +41,13 @@ exports[`about carousel renders correctly 1`] = `
         className="col-md"
       >
         <div
-          className="TeamCard row"
+          className="teamCard row"
         >
           <div
             className="col-sm-4"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="actress.svg"
             />
@@ -59,7 +59,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.4
             </h4>
             <p>
-              about.tilte.4
+              about.title.4
             </p>
           </div>
         </div>
@@ -68,13 +68,13 @@ exports[`about carousel renders correctly 1`] = `
         className="col-md"
       >
         <div
-          className="TeamCard row"
+          className="teamCard row"
         >
           <div
             className="col-sm-4"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="doctor.svg"
             />
@@ -86,7 +86,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.5
             </h4>
             <p>
-              about.tilte.5
+              about.title.5
             </p>
           </div>
         </div>
@@ -99,15 +99,15 @@ exports[`about carousel renders correctly 1`] = `
         className="col-md"
       >
         <div
-          className="TeamCard row"
+          className="teamCard row"
         >
           <div
             className="col-sm-4"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
-              src="bussinessMan.svg"
+              src="businessMan.svg"
             />
           </div>
           <div
@@ -117,7 +117,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.0
             </h4>
             <p>
-              about.tilte.0
+              about.title.0
             </p>
           </div>
         </div>
@@ -126,13 +126,13 @@ exports[`about carousel renders correctly 1`] = `
         className="col-md"
       >
         <div
-          className="TeamCard row"
+          className="teamCard row"
         >
           <div
             className="col-sm-4"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="callCenterAgent.svg"
             />
@@ -144,7 +144,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.1
             </h4>
             <p>
-              about.tilte.1
+              about.title.1
             </p>
           </div>
         </div>
@@ -153,13 +153,13 @@ exports[`about carousel renders correctly 1`] = `
         className="col-md"
       >
         <div
-          className="TeamCard row"
+          className="teamCard row"
         >
           <div
             className="col-sm-4"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="dentist.svg"
             />
@@ -171,7 +171,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.2
             </h4>
             <p>
-              about.tilte.2
+              about.title.2
             </p>
           </div>
         </div>
@@ -211,31 +211,43 @@ exports[`about carousel renders correctly 1`] = `
             className="row"
           >
             <div
-              className="TeamCardTabletView col"
-            >
-              <img
-                alt=""
-                className="cardImg"
-                src="girl.svg"
-              />
-              <h4>
-                about.name.3
-              </h4>
-              <p>
-                about.tilte.3
-              </p>
-            </div>
-            <div
               className="col"
             >
               <div
-                className="TeamCard row"
+                className="teamCard row"
               >
                 <div
                   className="col"
                 >
                   <img
-                    alt=""
+                    alt="Team Member"
+                    className="cardImg"
+                    src="girl.svg"
+                  />
+                </div>
+                <div
+                  className="cardTexts col"
+                >
+                  <h4>
+                    about.name.5
+                  </h4>
+                  <p>
+                    about.title.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col"
+            >
+              <div
+                className="teamCard row"
+              >
+                <div
+                  className="col"
+                >
+                  <img
+                    alt="Team Member"
                     className="cardImg"
                     src="actress.svg"
                   />
@@ -247,7 +259,7 @@ exports[`about carousel renders correctly 1`] = `
                     about.name.4
                   </h4>
                   <p>
-                    about.tilte.4
+                    about.title.4
                   </p>
                 </div>
               </div>
@@ -256,13 +268,13 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="TeamCard row"
+                className="teamCard row"
               >
                 <div
                   className="col"
                 >
                   <img
-                    alt=""
+                    alt="Team Member"
                     className="cardImg"
                     src="doctor.svg"
                   />
@@ -274,7 +286,7 @@ exports[`about carousel renders correctly 1`] = `
                     about.name.5
                   </h4>
                   <p>
-                    about.tilte.5
+                    about.title.5
                   </p>
                 </div>
               </div>
@@ -291,15 +303,15 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="TeamCard row"
+                className="teamCard row"
               >
                 <div
                   className="col"
                 >
                   <img
-                    alt=""
+                    alt="Team Member"
                     className="cardImg"
-                    src="bussinessMan.svg"
+                    src="businessMan.svg"
                   />
                 </div>
                 <div
@@ -309,7 +321,7 @@ exports[`about carousel renders correctly 1`] = `
                     about.name.0
                   </h4>
                   <p>
-                    about.tilte.0
+                    about.title.0
                   </p>
                 </div>
               </div>
@@ -318,13 +330,13 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="TeamCard row"
+                className="teamCard row"
               >
                 <div
                   className="col"
                 >
                   <img
-                    alt=""
+                    alt="Team Member"
                     className="cardImg"
                     src="callCenterAgent.svg"
                   />
@@ -336,7 +348,7 @@ exports[`about carousel renders correctly 1`] = `
                     about.name.1
                   </h4>
                   <p>
-                    about.tilte.1
+                    about.title.1
                   </p>
                 </div>
               </div>
@@ -345,13 +357,13 @@ exports[`about carousel renders correctly 1`] = `
               className="col"
             >
               <div
-                className="TeamCard row"
+                className="teamCard row"
               >
                 <div
                   className="col"
                 >
                   <img
-                    alt=""
+                    alt="Team Member"
                     className="cardImg"
                     src="dentist.svg"
                   />
@@ -363,7 +375,7 @@ exports[`about carousel renders correctly 1`] = `
                     about.name.2
                   </h4>
                   <p>
-                    about.tilte.2
+                    about.title.2
                   </p>
                 </div>
               </div>
@@ -449,10 +461,10 @@ exports[`about carousel renders correctly 1`] = `
           className="active carousel-item"
         >
           <div
-            className="TeamCard"
+            className="teamCard"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="girl.svg"
             />
@@ -460,7 +472,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.3
             </h4>
             <p>
-              about.tilte.3
+              about.title.3
             </p>
           </div>
         </div>
@@ -468,10 +480,10 @@ exports[`about carousel renders correctly 1`] = `
           className="carousel-item"
         >
           <div
-            className="TeamCard"
+            className="teamCard"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="actress.svg"
             />
@@ -479,7 +491,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.4
             </h4>
             <p>
-              about.tilte.4
+              about.title.4
             </p>
           </div>
         </div>
@@ -487,10 +499,10 @@ exports[`about carousel renders correctly 1`] = `
           className="carousel-item"
         >
           <div
-            className="TeamCard"
+            className="teamCard"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="doctor.svg"
             />
@@ -498,7 +510,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.5
             </h4>
             <p>
-              about.tilte.5
+              about.title.5
             </p>
           </div>
         </div>
@@ -506,18 +518,18 @@ exports[`about carousel renders correctly 1`] = `
           className="carousel-item"
         >
           <div
-            className="TeamCard"
+            className="teamCard"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
-              src="bussinessMan.svg"
+              src="businessMan.svg"
             />
             <h4>
               about.name.0
             </h4>
             <p>
-              about.tilte.0
+              about.title.0
             </p>
           </div>
         </div>
@@ -525,10 +537,10 @@ exports[`about carousel renders correctly 1`] = `
           className="carousel-item"
         >
           <div
-            className="TeamCard"
+            className="teamCard"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="callCenterAgent.svg"
             />
@@ -536,7 +548,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.1
             </h4>
             <p>
-              about.tilte.1
+              about.title.1
             </p>
           </div>
         </div>
@@ -544,10 +556,10 @@ exports[`about carousel renders correctly 1`] = `
           className="carousel-item"
         >
           <div
-            className="TeamCard"
+            className="teamCard"
           >
             <img
-              alt=""
+              alt="Team Member"
               className="cardImg"
               src="dentist.svg"
             />
@@ -555,7 +567,7 @@ exports[`about carousel renders correctly 1`] = `
               about.name.2
             </h4>
             <p>
-              about.tilte.2
+              about.title.2
             </p>
           </div>
         </div>

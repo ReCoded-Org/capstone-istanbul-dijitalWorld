@@ -10,16 +10,16 @@ const AboutContent = () => {
       <Row>
         <Col>
           <div className="articleContainer">
-            <h2>{t('about.header.0')}</h2>
-            <p>{t('about.paragraph.0')}</p>
+            <h2>{t('about.ourStory.header')}</h2>
+            <p>{t('about.ourStory.body')}</p>
           </div>
           <div className="articleContainer">
-            <h2>{t('about.header.1')}</h2>
-            <p>{t('about.paragraph.1')}</p>
+            <h2>{t('about.ourMission.header')}</h2>
+            <p>{t('about.ourMission.body')}</p>
           </div>
           <div className="articleContainer">
-            <h2>{t('about.header.2')}</h2>
-            <p>{t('about.paragraph.2')}</p>
+            <h2>{t('about.ourTeam.header')}</h2>
+            <p>{t('about.ourTeam.body')}</p>
           </div>
         </Col>
       </Row>

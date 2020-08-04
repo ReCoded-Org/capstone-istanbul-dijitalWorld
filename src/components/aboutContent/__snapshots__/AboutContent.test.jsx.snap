@@ -14,30 +14,30 @@ exports[`about content renders correctly 1`] = `
         className="articleContainer"
       >
         <h2>
-          about.header.0
+          about.ourStory.header
         </h2>
         <p>
-          about.paragraph.0
+          about.ourStory.body
         </p>
       </div>
       <div
         className="articleContainer"
       >
         <h2>
-          about.header.1
+          about.ourMission.header
         </h2>
         <p>
-          about.paragraph.1
+          about.ourMission.body
         </p>
       </div>
       <div
         className="articleContainer"
       >
         <h2>
-          about.header.2
+          about.ourTeam.header
         </h2>
         <p>
-          about.paragraph.2
+          about.ourTeam.body
         </p>
       </div>
     </div>
