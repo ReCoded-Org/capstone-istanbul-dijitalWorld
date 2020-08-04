@@ -18,7 +18,7 @@ export default function ContactUs() {
           <p>
             Thank you for submitting this message.
             <br />
-            Our admins will review your message and get back to you if needed.
+            Our tean will review your message and get back to you if needed.
           </p>
           <hr />
         </Alert>
@@ -49,8 +49,8 @@ export default function ContactUs() {
     <Form className="contactFormContainer" onSubmit={handleSubmitMessage}>
       <Row>
         <Col>
-          <h3 className="contactUsHero">{t('contactUs.getInTouch.0')}</h3>
-          <h5>{t('contactUs.getInTouch.1')}</h5>
+          <h3 className="contactUsHero">{t('contactUs.getInTouch.header')}</h3>
+          <h5>{t('contactUs.getInTouch.subheader')}</h5>
 
           <Form.Group>
             <Form.Control

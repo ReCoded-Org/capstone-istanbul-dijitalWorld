@@ -74,7 +74,10 @@
   "contactUs": {
     "email": "Email",
     "message": "Message",
-    "getInTouch": ["Get in Touch", "We would love to hear your feedback and suggestions"],
+    "getInTouch": {
+      "header": "Get in Touch",
+      "subheader": "We would love to hear your feedback and suggestions"
+    },
     "button": "Send"
   }
 }
