@@ -14,15 +14,17 @@ function ControlledCarousel() {
           </Card> */}
 
           <Carousel.Item md={6} >
+            <Card>
               <img
               className="d-block w-100"
               src={girlsGlobe}
               alt="girlsglobe.org"
               />
-              <Carousel.Caption>
+              {/* <Carousel.Caption> */}
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>        
+              {/* </Carousel.Caption>    */}
+            </Card>     
           </Carousel.Item>
         
           <Carousel.Item>
