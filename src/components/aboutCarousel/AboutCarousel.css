@@ -25,6 +25,7 @@
 .tabletView .cardImg {
   width: 4rem;
   border-radius: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 .tabletView h4 {
@@ -41,6 +42,7 @@
 .phoneView .cardImg {
   width: 4rem;
   border-radius: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 .phoneView h4 {
@@ -52,6 +54,14 @@
 .phoneView p {
   font-size: 0.7rem;
   color: #f67280;
+}
+
+.memberCard {
+  box-shadow: 0 0 2.5rem -0.8rem #d1dbe3;
+}
+
+.carouselCardPhoneView {
+  margin: 0% 25%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -79,8 +89,4 @@
   .tabletView {
     display: none;
   }
-}
-
-.memberCard {
-  box-shadow: 0 0 40px -5px #d1dbe3;
 }

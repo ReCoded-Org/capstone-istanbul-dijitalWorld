@@ -222,22 +222,18 @@ exports[`about carousel renders correctly 1`] = `
                 }
               >
                 <div
-                  className="card-body"
+                  className="text-center card-body"
                 >
-                  <div
-                    className="card-title h5"
-                  >
-                    <img
-                      alt="Team Member"
-                      className="cardImg"
-                      src="girl.svg"
-                    />
-                  </div>
+                  <img
+                    alt="Team Member"
+                    className="cardImg"
+                    src="girl.svg"
+                  />
                   <h4>
-                    about.name.5
+                    about.name.3
                   </h4>
                   <p>
-                    about.title.5
+                    about.title.3
                   </p>
                 </div>
               </div>
@@ -254,17 +250,13 @@ exports[`about carousel renders correctly 1`] = `
                 }
               >
                 <div
-                  className="card-body"
+                  className="text-center card-body"
                 >
-                  <div
-                    className="card-title h5"
-                  >
-                    <img
-                      alt="Team Member"
-                      className="cardImg"
-                      src="actress.svg"
-                    />
-                  </div>
+                  <img
+                    alt="Team Member"
+                    className="cardImg"
+                    src="actress.svg"
+                  />
                   <h4>
                     about.name.4
                   </h4>
@@ -286,17 +278,13 @@ exports[`about carousel renders correctly 1`] = `
                 }
               >
                 <div
-                  className="card-body"
+                  className="text-center card-body"
                 >
-                  <div
-                    className="card-title h5"
-                  >
-                    <img
-                      alt="Team Member"
-                      className="cardImg"
-                      src="doctor.svg"
-                    />
-                  </div>
+                  <img
+                    alt="Team Member"
+                    className="cardImg"
+                    src="doctor.svg"
+                  />
                   <h4>
                     about.name.5
                   </h4>
@@ -326,17 +314,13 @@ exports[`about carousel renders correctly 1`] = `
                 }
               >
                 <div
-                  className="card-body"
+                  className="text-center card-body"
                 >
-                  <div
-                    className="card-title h5"
-                  >
-                    <img
-                      alt="Team Member"
-                      className="cardImg"
-                      src="businessMan.svg"
-                    />
-                  </div>
+                  <img
+                    alt="Team Member"
+                    className="cardImg"
+                    src="businessMan.svg"
+                  />
                   <h4>
                     about.name.0
                   </h4>
@@ -358,17 +342,13 @@ exports[`about carousel renders correctly 1`] = `
                 }
               >
                 <div
-                  className="card-body"
+                  className="text-center card-body"
                 >
-                  <div
-                    className="card-title h5"
-                  >
-                    <img
-                      alt="Team Member"
-                      className="cardImg"
-                      src="callCenterAgent.svg"
-                    />
-                  </div>
+                  <img
+                    alt="Team Member"
+                    className="cardImg"
+                    src="callCenterAgent.svg"
+                  />
                   <h4>
                     about.name.1
                   </h4>
@@ -390,17 +370,13 @@ exports[`about carousel renders correctly 1`] = `
                 }
               >
                 <div
-                  className="card-body"
+                  className="text-center card-body"
                 >
-                  <div
-                    className="card-title h5"
-                  >
-                    <img
-                      alt="Team Member"
-                      className="cardImg"
-                      src="dentist.svg"
-                    />
-                  </div>
+                  <img
+                    alt="Team Member"
+                    className="card-img cardImg"
+                    src="dentist.svg"
+                  />
                   <h4>
                     about.name.2
                   </h4>
@@ -488,28 +464,24 @@ exports[`about carousel renders correctly 1`] = `
         className="carousel-inner"
       >
         <div
-          className="active carousel-item"
+          className="carouselCardPhoneView active carousel-item"
         >
           <div
             className="memberCard card border-white"
             style={
               Object {
-                "width": "12rem",
+                "width": "50%",
               }
             }
           >
             <div
-              className="card-body"
+              className="text-center card-body"
             >
-              <div
-                className="card-title h5"
-              >
-                <img
-                  alt="Team Member"
-                  className="cardImg"
-                  src="girl.svg"
-                />
-              </div>
+              <img
+                alt="Team Member"
+                className="cardImg"
+                src="girl.svg"
+              />
               <h4>
                 about.name.3
               </h4>
@@ -520,28 +492,24 @@ exports[`about carousel renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="carousel-item"
+          className="carouselCardPhoneView carousel-item"
         >
           <div
             className="memberCard card border-white"
             style={
               Object {
-                "width": "12rem",
+                "width": "50%",
               }
             }
           >
             <div
-              className="card-body"
+              className="text-center card-body"
             >
-              <div
-                className="card-title h5"
-              >
-                <img
-                  alt="Team Member"
-                  className="cardImg"
-                  src="actress.svg"
-                />
-              </div>
+              <img
+                alt="Team Member"
+                className="cardImg"
+                src="actress.svg"
+              />
               <h4>
                 about.name.4
               </h4>
@@ -552,28 +520,24 @@ exports[`about carousel renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="carousel-item"
+          className="carouselCardPhoneView carousel-item"
         >
           <div
             className="memberCard card border-white"
             style={
               Object {
-                "width": "12rem",
+                "width": "50%",
               }
             }
           >
             <div
-              className="card-body"
+              className="text-center card-body"
             >
-              <div
-                className="card-title h5"
-              >
-                <img
-                  alt="Team Member"
-                  className="cardImg"
-                  src="doctor.svg"
-                />
-              </div>
+              <img
+                alt="Team Member"
+                className="cardImg"
+                src="doctor.svg"
+              />
               <h4>
                 about.name.5
               </h4>
@@ -584,28 +548,24 @@ exports[`about carousel renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="carousel-item"
+          className="carouselCardPhoneView carousel-item"
         >
           <div
             className="memberCard card border-white"
             style={
               Object {
-                "width": "12rem",
+                "width": "50%",
               }
             }
           >
             <div
-              className="card-body"
+              className="text-center card-body"
             >
-              <div
-                className="card-title h5"
-              >
-                <img
-                  alt="Team Member"
-                  className="cardImg"
-                  src="businessMan.svg"
-                />
-              </div>
+              <img
+                alt="Team Member"
+                className="cardImg"
+                src="businessMan.svg"
+              />
               <h4>
                 about.name.0
               </h4>
@@ -616,28 +576,24 @@ exports[`about carousel renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="carousel-item"
+          className="carouselCardPhoneView carousel-item"
         >
           <div
             className="memberCard card border-white"
             style={
               Object {
-                "width": "12rem",
+                "width": "50%",
               }
             }
           >
             <div
-              className="card-body"
+              className="text-center card-body"
             >
-              <div
-                className="card-title h5"
-              >
-                <img
-                  alt="Team Member"
-                  className="cardImg"
-                  src="callCenterAgent.svg"
-                />
-              </div>
+              <img
+                alt="Team Member"
+                className="cardImg"
+                src="callCenterAgent.svg"
+              />
               <h4>
                 about.name.1
               </h4>
@@ -648,28 +604,24 @@ exports[`about carousel renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="carousel-item"
+          className="carouselCardPhoneView carousel-item"
         >
           <div
             className="memberCard card border-white"
             style={
               Object {
-                "width": "12rem",
+                "width": "50%",
               }
             }
           >
             <div
-              className="card-body"
+              className="text-center card-body"
             >
-              <div
-                className="card-title h5"
-              >
-                <img
-                  alt="Team Member"
-                  className="cardImg"
-                  src="dentist.svg"
-                />
-              </div>
+              <img
+                alt="Team Member"
+                className="cardImg"
+                src="dentist.svg"
+              />
               <h4>
                 about.name.2
               </h4>
