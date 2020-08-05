@@ -5,14 +5,9 @@ exports[`renders correctly 1`] = `
   className="signupContainer container"
 >
   <img
-    className="logo"
+    className="signupLogo"
     src="www-logo.png"
   />
-  <h2
-    className="signupHeader"
-  >
-    Signup Now
-  </h2>
   <form
     className=""
   >
@@ -25,7 +20,7 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridFirstName"
-          placeholder="FirstName"
+          placeholder="First Name"
           type="name"
         />
       </div>
@@ -35,7 +30,7 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridLastName"
-          placeholder="LastName"
+          placeholder="Last Name"
           type="name"
         />
       </div>
