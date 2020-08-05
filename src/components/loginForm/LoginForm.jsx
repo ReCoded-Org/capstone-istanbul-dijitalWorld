@@ -18,9 +18,9 @@ const ColoredLine = ({ color, width }) => (
 const LoginForm = () => {
   return (
     <Container className="loginContainer">
-      <Image src={Logo} className="logo" />
+      <Image src={Logo} className="loginLogo" />
       <Button className="googleBtn">
-        <GoogleIcon className="mr-3" />
+        <GoogleIcon className="mr-3 mt-3" />
         Continue With Google
       </Button>
       <Button className="facebookBtn mt-3">

@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="loginContainer container"
 >
   <img
-    className="logo"
+    className="loginLogo"
     src="www-logo.png"
   />
   <button
@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
     type="button"
   >
     <svg
-      className="mr-3"
+      className="mr-3 mt-3"
     >
       googleicon.svg
     </svg>
