@@ -6,16 +6,15 @@ import './SignupForm.css';
 const SignupForm = () => {
   return (
     <Container className="signupContainer">
-      <Image src={Logo} className="logo" />
-      <h2 className="signupHeader">Signup Now</h2>
+      <Image src={Logo} className="signupLogo" />
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName" className="mt-3">
-            <Form.Control type="name" placeholder="FirstName" />
+            <Form.Control type="name" placeholder="First Name" />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridLastName" className="mt-3">
-            <Form.Control type="name" placeholder="LastName" />
+            <Form.Control type="name" placeholder="Last Name" />
           </Form.Group>
         </Form.Row>
 
