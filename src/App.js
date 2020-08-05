@@ -6,9 +6,8 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 
-// this array will be mapped throught to create the routes
-// Home component is a plceholder until other components are created
-
+// This array will be mapped throught to create the routes
+// Home component is a placeholder until other components are created
 const routes = [
   { path: '/', name: 'Home', Component: Home },
   { path: '/blog', name: 'Blog', Component: Home },
