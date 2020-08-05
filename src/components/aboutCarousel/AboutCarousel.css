@@ -2,23 +2,23 @@
   margin-bottom: 6rem;
 }
 
-.desktopview .cardImg {
+.desktopView .cardImg {
   width: 4.2rem;
   border-radius: 2.1rem;
 }
 
-.desktopview h4 {
+.desktopView h4 {
   font-size: 1rem;
   font-weight: bold;
   color: #f67280;
 }
 
-.desktopview p {
+.desktopView p {
   font-size: 0.9rem;
   color: #f67280;
 }
 
-.desktopview .teamCard {
+.desktopView .teamCard {
   margin-bottom: 3.5rem;
 }
 
@@ -74,7 +74,7 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 525px) {
-  .desktopview {
+  .desktopView {
     display: none;
   }
   .phoneView {
@@ -83,7 +83,7 @@
 }
 
 @media only screen and (max-width: 525px) {
-  .desktopview {
+  .desktopView {
     display: none;
   }
   .tabletView {

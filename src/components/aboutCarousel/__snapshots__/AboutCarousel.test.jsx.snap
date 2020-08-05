@@ -5,7 +5,7 @@ exports[`about carousel renders correctly 1`] = `
   allTeamsContent={true}
 >
   <div
-    className="desktopview container"
+    className="desktopView container"
   >
     <div
       className="row"

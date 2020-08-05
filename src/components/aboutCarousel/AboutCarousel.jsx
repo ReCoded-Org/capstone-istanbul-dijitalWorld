@@ -14,7 +14,7 @@ export default function AboutCarousel() {
   const { t } = useTranslation();
   return (
     <div allTeamsContent>
-      <Container className="desktopview">
+      <Container className="desktopView">
         <Row>
           <Col md>
             <Row className="teamCard">
