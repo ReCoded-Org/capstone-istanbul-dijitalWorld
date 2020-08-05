@@ -6,21 +6,21 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 
-// This array will be mapped throught to create the routes
+// This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
 const routes = [
-  { path: '/', name: 'Home', Component: Home },
-  { path: '/blog', name: 'Blog', Component: Home },
+  { path: '/', name: 'home', Component: Home },
+  { path: '/blog', name: 'blog', Component: Home },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
-  { path: '/resources', name: 'Resources', Component: Home },
-  { path: '/about', name: 'About', Component: Home },
-  { path: '/contact', name: 'Contact', Component: Home },
+  { path: '/resources', name: 'resource', Component: Home },
+  { path: '/about', name: 'about', Component: Home },
+  { path: '/contact', name: 'contact', Component: Home },
 ];
 
 function App() {
   return (
     <Router className="App">
-      <NavBar routes />
+      <NavBar routes={routes} />
       {routes.map(({ path, Component }) => (
         <Route key={path} exact path={path}>
           <Component />
