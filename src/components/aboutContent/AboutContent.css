@@ -1,14 +1,14 @@
-.allContent {
+.articlesContainer {
   margin-top: 2rem;
 }
 
-.allContent h2 {
+.articlesContainer h2 {
   margin-bottom: 2rem;
   font-size: 3.3rem;
   color: #6c567c;
 }
 
-.allContent p {
+.articlesContainer p {
   font-size: 1.5rem;
   color: #4a474d;
 }

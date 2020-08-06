@@ -6,7 +6,7 @@ import { Col, Row, Container } from 'react-bootstrap';
 const AboutContent = () => {
   const { t } = useTranslation();
   return (
-    <Container className="allContent">
+    <Container className="articlesContainer">
       <Row>
         <Col>
           <div className="articleContainer">

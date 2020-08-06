@@ -2,56 +2,56 @@
   margin-bottom: 6rem;
 }
 
-.desktopView .cardImg {
+.allMembersView img {
   width: 4.2rem;
   border-radius: 2.1rem;
 }
 
-.desktopView h4 {
+.allMembersView h4 {
   font-size: 1rem;
   font-weight: bold;
   color: #f67280;
 }
 
-.desktopView p {
+.allMembersView p {
   font-size: 0.9rem;
   color: #f67280;
 }
 
-.desktopView .teamCard {
+.allMembersView .teamCard {
   margin-bottom: 3.5rem;
 }
 
-.tabletView .cardImg {
+.threeCardsCarouselView img {
   width: 4rem;
   border-radius: 2rem;
   margin-bottom: 0.7rem;
 }
 
-.tabletView h4 {
+.threeCardsCarouselView h4 {
   font-size: 0.8rem;
   font-weight: bold;
   color: #f67280;
 }
 
-.tabletView p {
+.threeCardsCarouselView p {
   font-size: 0.7rem;
   color: #f67280;
 }
 
-.phoneView .cardImg {
+.singleCardCarouselView img {
   width: 4rem;
   border-radius: 2rem;
   margin-bottom: 0.7rem;
 }
 
-.phoneView h4 {
+.singleCardCarouselView h4 {
   font-size: 0.8rem;
   font-weight: bold;
   color: #f67280;
 }
 
-.phoneView p {
+.singleCardCarouselView p {
   font-size: 0.7rem;
   color: #f67280;
 }
@@ -60,33 +60,37 @@
   box-shadow: 0 0 2.5rem -0.8rem #d1dbe3;
 }
 
-.carouselCardPhoneView {
-  margin: 0% 25%;
+.carouselCardSingle {
+  margin: 0% 20%;
 }
 
 @media only screen and (min-width: 1024px) {
-  .tabletView {
+  .allMembersView {
+    display: flex;
+    flex-direction: row;
+  }
+  .threeCardsCarouselView {
     display: none;
   }
-  .phoneView {
+  .singleCardCarouselView {
     display: none;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 525px) {
-  .desktopView {
+  .allMembersView {
     display: none;
   }
-  .phoneView {
+  .singleCardCarouselView {
     display: none;
   }
 }
 
 @media only screen and (max-width: 525px) {
-  .desktopView {
+  .allMembersView {
     display: none;
   }
-  .tabletView {
+  .threeCardsCarouselView {
     display: none;
   }
 }
