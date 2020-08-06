@@ -44,7 +44,7 @@ exports[`renders correctly 1`] = `
       <input
         className="form-control"
         id="formGridEmail"
-        placeholder="Your Email"
+        placeholder="Your email"
         type="email"
       />
     </div>

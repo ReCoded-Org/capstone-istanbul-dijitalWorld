@@ -30,7 +30,7 @@ const LoginForm = () => {
       <hr className="orText" />
       <Form>
         <Form.Group controlId="formGridEmail" className="mt-3">
-          <Form.Control type="email" placeholder="Your Email" />
+          <Form.Control type="email" placeholder="Your email" />
         </Form.Group>
 
         <Form.Group controlId="formGridPassword" className="mt-3">
