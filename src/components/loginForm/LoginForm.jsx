@@ -21,11 +21,11 @@ const LoginForm = () => {
       <Image src={Logo} className="loginLogo" />
       <Button className="googleBtn">
         <GoogleIcon className="mr-3 mt-3" />
-        Continue With Google
+        Continue with Google
       </Button>
       <Button className="facebookBtn mt-3">
         <FacebookIcon className="mr-3" />
-        Continue With Facebook
+        Continue with Facebook
       </Button>
       <hr className="orText" />
       <Form>
@@ -46,13 +46,13 @@ const LoginForm = () => {
         </Button>
       </Form>
       <a className="mt-3 forgotPassword" href="#home">
-        forgot your password ?
+        Forgot your password ?
       </a>
       <ColoredLine color="#D9DADC" width="20rem" />
       <p style={{ fontWeight: 'bold' }} href="#home">
         Don&apos;t have an account ?
       </p>
-      <Button className="googleBtn">SIGN UP FOR WWW</Button>
+      <Button className="googleBtn">Sign Up For WWW</Button>
     </Container>
   );
 };

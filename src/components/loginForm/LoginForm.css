@@ -22,12 +22,6 @@
   box-shadow: 0px 11px 24px -7px #b3b3b3;
 }
 
-.loginLink {
-  display: inline;
-  color: #000000;
-}
-
-/* Google button */
 .googleBtn {
   background: white;
   color: #444;
@@ -36,9 +30,8 @@
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;
   border-radius: 25px;
+  text-transform: capitalize;
 }
-
-/* Facebook button */
 
 .facebookBtn {
   background: #3a61b3;
