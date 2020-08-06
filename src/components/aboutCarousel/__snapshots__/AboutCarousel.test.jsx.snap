@@ -2,10 +2,10 @@
 
 exports[`about carousel renders correctly 1`] = `
 <div
-  allTeamsContent={true}
+  className="allTeamsContent"
 >
   <div
-    className="desktopView container"
+    className="allMembersView container"
   >
     <div
       className="row"
@@ -21,93 +21,7 @@ exports[`about carousel renders correctly 1`] = `
           >
             <img
               alt="Team Member"
-              className="cardImg"
               src="girl.svg"
-            />
-          </div>
-          <div
-            className="cardTexts col-md"
-          >
-            <h4>
-              about.name.3
-            </h4>
-            <p>
-              about.title.3
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-md"
-      >
-        <div
-          className="teamCard row"
-        >
-          <div
-            className="col-sm-4"
-          >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="actress.svg"
-            />
-          </div>
-          <div
-            className="cardTexts col-md"
-          >
-            <h4>
-              about.name.4
-            </h4>
-            <p>
-              about.title.4
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col-md"
-      >
-        <div
-          className="teamCard row"
-        >
-          <div
-            className="col-sm-4"
-          >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="doctor.svg"
-            />
-          </div>
-          <div
-            className="cardTexts col-md"
-          >
-            <h4>
-              about.name.5
-            </h4>
-            <p>
-              about.title.5
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="col-md"
-      >
-        <div
-          className="teamCard row"
-        >
-          <div
-            className="col-sm-4"
-          >
-            <img
-              alt="Team Member"
-              className="cardImg"
-              src="businessMan.svg"
             />
           </div>
           <div
@@ -133,8 +47,7 @@ exports[`about carousel renders correctly 1`] = `
           >
             <img
               alt="Team Member"
-              className="cardImg"
-              src="callCenterAgent.svg"
+              src="actress.svg"
             />
           </div>
           <div
@@ -160,8 +73,7 @@ exports[`about carousel renders correctly 1`] = `
           >
             <img
               alt="Team Member"
-              className="cardImg"
-              src="dentist.svg"
+              src="doctor.svg"
             />
           </div>
           <div
@@ -177,9 +89,328 @@ exports[`about carousel renders correctly 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-md"
+      >
+        <div
+          className="teamCard row"
+        >
+          <div
+            className="col-sm-4"
+          >
+            <img
+              alt="Team Member"
+              src="businessMan.svg"
+            />
+          </div>
+          <div
+            className="cardTexts col-md"
+          >
+            <h4>
+              about.name.3
+            </h4>
+            <p>
+              about.title.3
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md"
+      >
+        <div
+          className="teamCard row"
+        >
+          <div
+            className="col-sm-4"
+          >
+            <img
+              alt="Team Member"
+              src="callCenterAgent.svg"
+            />
+          </div>
+          <div
+            className="cardTexts col-md"
+          >
+            <h4>
+              about.name.4
+            </h4>
+            <p>
+              about.title.4
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md"
+      >
+        <div
+          className="teamCard row"
+        >
+          <div
+            className="col-sm-4"
+          >
+            <img
+              alt="Team Member"
+              src="dentist.svg"
+            />
+          </div>
+          <div
+            className="cardTexts col-md"
+          >
+            <h4>
+              about.name.5
+            </h4>
+            <p>
+              about.title.5
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div
-    className="tabletView container"
+    className="singleCardCarouselView container"
+  >
+    <div
+      className="carousel slide"
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <ol
+        className="carousel-indicators"
+      >
+        <li
+          className="active"
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+      </ol>
+      <div
+        className="carousel-inner"
+      >
+        <div
+          className="carouselCardSingle active carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="girl.svg"
+              />
+              <h4>
+                about.name.0
+              </h4>
+              <p>
+                about.title.0
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="actress.svg"
+              />
+              <h4>
+                about.name.1
+              </h4>
+              <p>
+                about.title.1
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="doctor.svg"
+              />
+              <h4>
+                about.name.2
+              </h4>
+              <p>
+                about.title.2
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="businessMan.svg"
+              />
+              <h4>
+                about.name.3
+              </h4>
+              <p>
+                about.title.3
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="callCenterAgent.svg"
+              />
+              <h4>
+                about.name.4
+              </h4>
+              <p>
+                about.title.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="dentist.svg"
+              />
+              <h4>
+                about.name.5
+              </h4>
+              <p>
+                about.title.5
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        className="carousel-control-prev"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-prev-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Previous
+        </span>
+      </a>
+      <a
+        className="carousel-control-next"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-next-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Next
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="threeCardsCarouselView container"
   >
     <div
       className="carousel slide"
@@ -226,14 +457,13 @@ exports[`about carousel renders correctly 1`] = `
                 >
                   <img
                     alt="Team Member"
-                    className="cardImg"
                     src="girl.svg"
                   />
                   <h4>
-                    about.name.3
+                    about.name.0
                   </h4>
                   <p>
-                    about.title.3
+                    about.title.0
                   </p>
                 </div>
               </div>
@@ -254,14 +484,13 @@ exports[`about carousel renders correctly 1`] = `
                 >
                   <img
                     alt="Team Member"
-                    className="cardImg"
                     src="actress.svg"
                   />
                   <h4>
-                    about.name.4
+                    about.name.1
                   </h4>
                   <p>
-                    about.title.4
+                    about.title.1
                   </p>
                 </div>
               </div>
@@ -282,14 +511,13 @@ exports[`about carousel renders correctly 1`] = `
                 >
                   <img
                     alt="Team Member"
-                    className="cardImg"
                     src="doctor.svg"
                   />
                   <h4>
-                    about.name.5
+                    about.name.2
                   </h4>
                   <p>
-                    about.title.5
+                    about.title.2
                   </p>
                 </div>
               </div>
@@ -318,14 +546,13 @@ exports[`about carousel renders correctly 1`] = `
                 >
                   <img
                     alt="Team Member"
-                    className="cardImg"
                     src="businessMan.svg"
                   />
                   <h4>
-                    about.name.0
+                    about.name.3
                   </h4>
                   <p>
-                    about.title.0
+                    about.title.3
                   </p>
                 </div>
               </div>
@@ -346,14 +573,13 @@ exports[`about carousel renders correctly 1`] = `
                 >
                   <img
                     alt="Team Member"
-                    className="cardImg"
                     src="callCenterAgent.svg"
                   />
                   <h4>
-                    about.name.1
+                    about.name.4
                   </h4>
                   <p>
-                    about.title.1
+                    about.title.4
                   </p>
                 </div>
               </div>
@@ -374,260 +600,16 @@ exports[`about carousel renders correctly 1`] = `
                 >
                   <img
                     alt="Team Member"
-                    className="card-img cardImg"
                     src="dentist.svg"
                   />
                   <h4>
-                    about.name.2
+                    about.name.5
                   </h4>
                   <p>
-                    about.title.2
+                    about.title.5
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a
-        className="carousel-control-prev"
-        href="#"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="carousel-control-prev-icon"
-        />
-        <span
-          className="sr-only"
-        >
-          Previous
-        </span>
-      </a>
-      <a
-        className="carousel-control-next"
-        href="#"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="carousel-control-next-icon"
-        />
-        <span
-          className="sr-only"
-        >
-          Next
-        </span>
-      </a>
-    </div>
-  </div>
-  <div
-    className="phoneView container"
-  >
-    <div
-      className="carousel slide"
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
-      <ol
-        className="carousel-indicators"
-      >
-        <li
-          className="active"
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-      </ol>
-      <div
-        className="carousel-inner"
-      >
-        <div
-          className="carouselCardPhoneView active carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                className="cardImg"
-                src="girl.svg"
-              />
-              <h4>
-                about.name.3
-              </h4>
-              <p>
-                about.title.3
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardPhoneView carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                className="cardImg"
-                src="actress.svg"
-              />
-              <h4>
-                about.name.4
-              </h4>
-              <p>
-                about.title.4
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardPhoneView carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                className="cardImg"
-                src="doctor.svg"
-              />
-              <h4>
-                about.name.5
-              </h4>
-              <p>
-                about.title.5
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardPhoneView carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                className="cardImg"
-                src="businessMan.svg"
-              />
-              <h4>
-                about.name.0
-              </h4>
-              <p>
-                about.title.0
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardPhoneView carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                className="cardImg"
-                src="callCenterAgent.svg"
-              />
-              <h4>
-                about.name.1
-              </h4>
-              <p>
-                about.title.1
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardPhoneView carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "50%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                className="cardImg"
-                src="dentist.svg"
-              />
-              <h4>
-                about.name.2
-              </h4>
-              <p>
-                about.title.2
-              </p>
             </div>
           </div>
         </div>

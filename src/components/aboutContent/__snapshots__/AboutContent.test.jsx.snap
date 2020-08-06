@@ -2,7 +2,7 @@
 
 exports[`about content renders correctly 1`] = `
 <div
-  className="allContent container"
+  className="articlesContainer container"
 >
   <div
     className="row"
