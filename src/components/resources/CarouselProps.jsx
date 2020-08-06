@@ -1,3 +1,4 @@
+// /* eslint-disable */
 import React, { useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 //import { useTranslation } from 'react-i18next';
@@ -13,21 +14,21 @@ export default function Body(props) {
   const [buttonStyle, setButtonStyle] = useState('#ffffff');
 
   const changeActive = async (id) => {
-    setActiveID(id),
-      setWrapperStyle(`url('${props.data[id].img}')`),
+    setActiveID(id);
+      setWrapperStyle(`url('${props.data[id].img}')`);
       setPanelStyle(props.data[id].color);
   };
 
   const buttonColor = async () => {
     if (!buttonHover) {
-      setButtonHover(true), setButtonStyle({ color: props.data[activeID].color });
+      setButtonHover(true); setButtonStyle({ color: props.data[activeID].color });
     } else {
-      setButtonHover(false), setButtonStyle('#ffffff');
+      setButtonHover(false); setButtonStyle('#ffffff');
     }
   };
 
   return (
-    <section>
+    <section className="wrapper" style={wrapperStyle}>
       <Selectors data={props.data} activeID={props.activeID} changeActive={changeActive} />
       <Panel
         data={props.data[activeID]}
@@ -39,21 +40,21 @@ export default function Body(props) {
   );
 }
 
-function Panel() {
+function Panel(props) {
   //const { t } = useTranslation();
   //const [resourceBlurb, setResourceBlurb] = useState();
   return (
     // <Row className="resourceRow">
     // <Col className="blurpCol">
-    <aside className="panel" style={panelStyle}>
+    <aside className="panel" style={props.panelStyle}>
       <h2 className="panel-header">{data.header}</h2>
       <h2 className="resourceTitle">{data.header}</h2>
       <p className="panel-info">{data.body}</p>
       <Button
         className="panel-button"
-        style={buttonStyle}
-        onMouseEnter={buttonColor}
-        onMouseLeave={buttonColor}
+        style={props.buttonStyle}
+        onMouseEnter={props.buttonColor}
+        onMouseLeave={props.buttonColor}
       >
         Button
       </Button>
@@ -63,10 +64,10 @@ function Panel() {
   );
 }
 
-function Selectors() {
+function Selectors(props) {
   const handleClick = (e) => {
-    if (id !== activeID) {
-      changeActive(id);
+    if (props.id !== props.activeID) {
+      props.changeActive(props.id);
     } else {
       return;
     }
@@ -79,19 +80,19 @@ function Selectors() {
           key={item.id}
           id={item.id}
           handleClick={handleClick}
-          changeActive={changeActive}
-          activeID={activeID}
+          changeActive={props.changeActive}
+          activeID={props.activeID}
         />
       ))}
     </div>
   );
 }
 
-function Selector() {
+function Selector(props) {
   const componentClass = 'selector';
-  if (activeID === id) {
+  if (props.activeID === props.id) {
     componentClass = 'selector active';
   }
 
-  return <div className={componentClass} onClick={handleClick}></div>;
+  return <div className={componentClass} onClick={props.handleClick}></div>;
 }
