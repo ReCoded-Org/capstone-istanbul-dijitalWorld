@@ -10,16 +10,16 @@ const SignupForm = () => {
       <Form>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName" className="mt-3">
-            <Form.Control type="name" placeholder="First Name" />
+            <Form.Control type="name" placeholder="First name" />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridLastName" className="mt-3">
-            <Form.Control type="name" placeholder="Last Name" />
+            <Form.Control type="name" placeholder="Last name" />
           </Form.Group>
         </Form.Row>
 
         <Form.Group controlId="formGridEmail" className="mt-3">
-          <Form.Control type="email" placeholder="Your Email" />
+          <Form.Control type="email" placeholder="Your email" />
         </Form.Group>
 
         <Form.Row>
@@ -28,7 +28,7 @@ const SignupForm = () => {
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridRepeatPassword" className="mt-3">
-            <Form.Control type="password" placeholder="Repeat Password" />
+            <Form.Control type="password" placeholder="Repeat password" />
           </Form.Group>
         </Form.Row>
 

@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridFirstName"
-          placeholder="First Name"
+          placeholder="First name"
           type="name"
         />
       </div>
@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridLastName"
-          placeholder="Last Name"
+          placeholder="Last name"
           type="name"
         />
       </div>
@@ -41,7 +41,7 @@ exports[`renders correctly 1`] = `
       <input
         className="form-control"
         id="formGridEmail"
-        placeholder="Your Email"
+        placeholder="Your email"
         type="email"
       />
     </div>
@@ -64,7 +64,7 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridRepeatPassword"
-          placeholder="Repeat Password"
+          placeholder="Repeat password"
           type="password"
         />
       </div>
