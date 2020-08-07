@@ -3,21 +3,21 @@
     "id": 0,
     "header": "girlsglobe.org",
     "body": "'Chillwave knausgaard chambray flannel tumblr, narwhal microdosing blog...'",
-    "colour": "'#242846'",
-    "img": "./img/Girlsglobal.png"
+    "color": "'#242846'",
+    "img": "/images/Girlsglobal.png"
   },
   {
     "id": 1,
     "header": "malala.org",
     "body": "'Swag biodiesel disrupt retro fashion, salvia food truck kitsch wolf DIY...'",
-    "colour": "'#ba9077'",
-    "img": "./img/Malala.png"
+    "color": "'#ba9077'",
+    "img": "/images/Malala.png"
   },
   {
     "id": 2,
     "header": "girltalkhq.com",
     "body": "'Flexitarian 3 wolf moon cliche, migas scenester street art...'",
-    "colour": "'#1ABC9C'",
-    "img": "./img/GirltalkHQ.png"
+    "color": "'#1ABC9C'",
+    "img": "/images/GirltalkHQ.png"
   }
 ]

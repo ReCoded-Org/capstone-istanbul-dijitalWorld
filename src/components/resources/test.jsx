@@ -2,36 +2,38 @@
 import React, { useState } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 //import { useTranslation } from 'react-i18next';
-import data from './testdata.json';
+import data from './data.json';
 
 export default function Body(props) {
   const [activeID, setActiveID] = useState(0);
   const [wrapperStyle, setWrapperStyle] = useState({
-    backgroundImage: `url(${props.data[0].img})`,
+    backgroundImage: `url(${data[0].img})`,
   });
-  const [panelStyle, setPanelStyle] = useState({ backgroundColor: props.data[0].color });
+  const [panelStyle, setPanelStyle] = useState({ backgroundColor: data[0].color });
   const [buttonHover, setButtonHover] = useState(false);
   const [buttonStyle, setButtonStyle] = useState('#ffffff');
 
   const changeActive = async (id) => {
     setActiveID(id);
-      setWrapperStyle(`url('${props.data[id].img}')`);
-      setPanelStyle(props.data[id].color);
+    setWrapperStyle(`url('${props.data[id].img}')`);
+    setPanelStyle(props.data[id].color);
   };
 
   const buttonColor = async () => {
     if (!buttonHover) {
-      setButtonHover(true); setButtonStyle({ color: props.data[activeID].color });
+      setButtonHover(true);
+      setButtonStyle({ color: props.data[activeID].color });
     } else {
-      setButtonHover(false); setButtonStyle('#ffffff');
+      setButtonHover(false);
+      setButtonStyle('#ffffff');
     }
   };
 
   return (
-    <section className="wrapper" style={wrapperStyle}>
+    <section className="wrapper" style={{wrapperStyle}}>
       <Selectors data={props.data} activeID={props.activeID} changeActive={changeActive} />
       <Panel
-        data={props.data[activeID]}
+        data={data[activeID]}
         panelStyle={panelStyle}
         buttonStyle={buttonStyle}
         buttonColor={buttonColor}
