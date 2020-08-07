@@ -4,10 +4,11 @@ import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
 
 const SignupForm = () => {
+  const handleSignup = (e) => {};
   return (
     <Container className="signupContainer">
       <Image src={Logo} className="signupLogo" />
-      <Form>
+      <Form onSubmit={handleSignup}>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName" className="mt-3">
             <Form.Control type="name" placeholder="First name" />
