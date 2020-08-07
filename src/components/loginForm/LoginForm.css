@@ -47,21 +47,3 @@
 .forgotPassword:hover {
   color: black;
 }
-
-.orText {
-  border: none;
-  background-color: #d9dadc;
-  color: #d9dadc;
-  text-align: center;
-  height: 1px;
-  width: 20rem;
-}
-
-.orText:after {
-  background: #fff;
-  color: #6c567b;
-  content: 'Or';
-  padding: 0 4px;
-  position: relative;
-  top: -13px;
-}

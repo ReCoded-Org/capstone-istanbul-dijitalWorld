@@ -27,7 +27,11 @@ const LoginForm = () => {
         <FacebookIcon className="mr-3" />
         Continue with Facebook
       </Button>
-      <hr className="orText" />
+      <div style={{ display: 'flex' }}>
+        <ColoredLine width="8rem" color="#D9DADC" />
+        <span>Or</span>
+        <ColoredLine width="8rem" color="#D9DADC" />
+      </div>
       <Form>
         <Form.Group controlId="formGridEmail" className="mt-3">
           <Form.Control type="email" placeholder="Your email" />
