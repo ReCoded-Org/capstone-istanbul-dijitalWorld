@@ -1,10 +1,12 @@
 import React from 'react';
 import { Col, Row, Container, Image } from 'react-bootstrap';
+import { BrowserRouter as Link } from 'react-router-dom';
 import blogArticles from './blog.json';
 import './BlogCard.css';
 
 export default function BlogCard() {
-  function handleClick() {
+  function handleClick(e) {
+    e.preventDefault();
     // history.push('/`${blog.id}`');
   }
 
@@ -16,7 +18,7 @@ export default function BlogCard() {
             <h3 className="blogTitle">{blog.title}</h3>
             <span className="blogBody">{blog.body.substring(0, 250)}...</span>
             <button onClick={handleClick} className="readMoreButton">
-              Read More
+              <Link to="#home/blog">Read More</Link>
             </button>
           </Col>
           <Col xs={4} md={4} lg={3} className="imageContainer">
