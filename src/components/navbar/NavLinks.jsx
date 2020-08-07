@@ -1,9 +1,10 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap/';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 import './NavBar.css';
 
-export default function NavLinks({ routes }) {
+function NavLinks({ routes }) {
   const { t } = useTranslation();
 
   return (
@@ -16,3 +17,18 @@ export default function NavLinks({ routes }) {
     </>
   );
 }
+
+NavLinks.propTypes = {
+  routes: PropTypes.arrayOf(PropTypes.object),
+};
+
+NavLinks.defaultProps = {
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+    },
+  ],
+};
+
+export default NavLinks;

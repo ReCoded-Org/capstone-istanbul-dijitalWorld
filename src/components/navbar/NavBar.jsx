@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Dropdown, DropdownButton, Button } from 'react-bootstrap/';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
 import './NavBar.css';
 
@@ -43,3 +44,16 @@ export default function NavBar({ routes }) {
     </Navbar>
   );
 }
+
+NavBar.propTypes = {
+  routes: PropTypes.arrayOf(PropTypes.object),
+};
+
+NavBar.defaultProps = {
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+    },
+  ],
+};
