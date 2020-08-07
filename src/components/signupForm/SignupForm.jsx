@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Image, Form, Col, Button, Container } from 'react-bootstrap';
+import { auth } from '../../firebase';
 import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
 
@@ -12,12 +13,28 @@ const SignupForm = () => {
     repeatPassword: '',
   });
 
-  const handleSignup = () => {};
+  const handleSignup = async (e) => {
+    e.preventDefault();
+
+    try {
+      await auth.createUserWithEmailAndPassword(signupInfo.email, signupInfo.password);
+    } catch (error) {
+      console.log(error.message);
+    }
+
+    setSignupInfo({
+      firstName: '',
+      lastName: '',
+      email: '',
+      password: '',
+      repeatPassword: '',
+    });
+  };
 
   return (
     <Container className="signupContainer">
       <Image src={Logo} className="signupLogo" />
-      <Form onSubmit={handleSignup}>
+      <Form onSubmit={handleSignup} className="form">
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName" className="mt-3">
             <Form.Control
