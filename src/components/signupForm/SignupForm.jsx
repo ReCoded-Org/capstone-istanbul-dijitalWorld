@@ -3,14 +3,6 @@ import { Image, Form, Col, Button, Container } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
 
-const inputs = {
-  'First name': 'firstName',
-  'Last name': 'lastName',
-  'Your Email': 'email',
-  Password: 'password',
-  'Repeat password': 'repeatPassword',
-};
-
 const SignupForm = () => {
   const [signupInfo, setSignupInfo] = useState({
     firstName: '',
@@ -29,6 +21,7 @@ const SignupForm = () => {
         <Form.Row>
           <Form.Group as={Col} controlId="formGridFirstName" className="mt-3">
             <Form.Control
+              required
               type="name"
               placeholder="First name"
               value={signupInfo.firstName}
@@ -38,6 +31,7 @@ const SignupForm = () => {
 
           <Form.Group as={Col} controlId="formGridLastName" className="mt-3">
             <Form.Control
+              required
               type="name"
               placeholder="Last name"
               value={signupInfo.lastName}
@@ -58,6 +52,7 @@ const SignupForm = () => {
         <Form.Row>
           <Form.Group as={Col} controlId="formGridPassword" className="mt-3">
             <Form.Control
+              required
               type="password"
               placeholder="Password"
               value={signupInfo.password}
@@ -67,6 +62,7 @@ const SignupForm = () => {
 
           <Form.Group as={Col} controlId="formGridRepeatPassword" className="mt-3">
             <Form.Control
+              required
               type="password"
               placeholder="Repeat password"
               value={signupInfo.repeatPassword}
