@@ -18,7 +18,7 @@ exports[`renders correctly 1`] = `
     >
       googleicon.svg
     </svg>
-    Continue With Google
+    Continue with Google
   </button>
   <button
     className="facebookBtn mt-3 btn btn-primary"
@@ -30,11 +30,37 @@ exports[`renders correctly 1`] = `
     >
       facebookicon.svg
     </svg>
-    Continue With Facebook
+    Continue with Facebook
   </button>
-  <hr
-    className="orText"
-  />
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#D9DADC",
+          "color": "#D9DADC",
+          "width": "8rem",
+        }
+      }
+    />
+    <span>
+      Or
+    </span>
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#D9DADC",
+          "color": "#D9DADC",
+          "width": "8rem",
+        }
+      }
+    />
+  </div>
   <form
     className=""
   >
@@ -98,7 +124,7 @@ exports[`renders correctly 1`] = `
     className="mt-3 forgotPassword"
     href="#home"
   >
-    forgot your password ?
+    Forgot your password ?
   </a>
   <hr
     style={
@@ -124,7 +150,7 @@ exports[`renders correctly 1`] = `
     disabled={false}
     type="button"
   >
-    SIGN UP FOR WWW
+    Sign Up For WWW
   </button>
 </div>
 `;
