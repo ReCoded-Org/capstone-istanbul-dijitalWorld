@@ -94,7 +94,9 @@
       "Lead Engineer",
       "Junior Engineer",
       "Junior Engineer"
-    ],
+    ]
+  },
+
   "inspire": {
     "subject": "Subject",
     "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
