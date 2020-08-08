@@ -50,11 +50,11 @@ const LoginForm = () => {
         </Button>
       </Form>
       <a className="mt-3 forgotPassword" href="#home">
-        Forgot your password ?
+        Forgot your password?
       </a>
       <ColoredLine color="#D9DADC" width="20rem" />
       <p style={{ fontWeight: 'bold' }} href="#home">
-        Don&apos;t have an account ?
+        Don&apos;t have an account?
       </p>
       <Button className="googleBtn">Sign Up For WWW</Button>
     </Container>
