@@ -9,13 +9,13 @@ import teamMember4 from './images/callCenterAgent.svg';
 import teamMember5 from './images/dentist.svg';
 import { useTranslation } from 'react-i18next';
 import { Col, Row, Container, Card } from 'react-bootstrap';
+const MINIMUM_NUMBER = 0;
+const MIDDLE_NUMBER = 3;
+const MAXIMUM_NUMBER = 6;
 
 export default function AboutCarousel() {
   const { t } = useTranslation();
   const teamPhotos = [teamMember0, teamMember1, teamMember2, teamMember3, teamMember4, teamMember5];
-  const MinimumNumber = 0;
-  const MiddleNumber = 3;
-  const MaxNumber = 6;
 
   function renderDesktopView() {
     const allMembersCards = teamPhotos.map(function (e, index) {
@@ -70,16 +70,16 @@ export default function AboutCarousel() {
   return (
     <div className="allTeamsContent">
       <Container className="allMembersView">
-        <Row>{renderDesktopView().slice(MinimumNumber, MiddleNumber)}</Row>
-        <Row>{renderDesktopView().slice(MiddleNumber, MaxNumber)}</Row>
+        <Row>{renderDesktopView().slice(MINIMUM_NUMBER, MIDDLE_NUMBER)}</Row>
+        <Row>{renderDesktopView().slice(MIDDLE_NUMBER, MAXIMUM_NUMBER)}</Row>
       </Container>
       <Container className="threeCardsCarouselView">
         <Carousel>
           <Carousel.Item>
-            <Row>{rendertableView().slice(MinimumNumber, MiddleNumber)}</Row>
+            <Row>{rendertableView().slice(MINIMUM_NUMBER, MIDDLE_NUMBER)}</Row>
           </Carousel.Item>
           <Carousel.Item>
-            <Row>{rendertableView().slice(MiddleNumber, MaxNumber)}</Row>
+            <Row>{rendertableView().slice(MIDDLE_NUMBER, MAXIMUM_NUMBER)}</Row>
           </Carousel.Item>
         </Carousel>
       </Container>
