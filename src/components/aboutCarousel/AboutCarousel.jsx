@@ -36,23 +36,6 @@ export default function AboutCarousel() {
     return allMembersCards;
   }
 
-  function renderPhoneView() {
-    const singleCardCarousel = teamPhotos.map(function (e, index) {
-      return (
-        <Carousel.Item className="carouselCardSingle">
-          <Card border="white" style={{ width: '56%' }} className="memberCard">
-            <Card.Body className="text-center">
-              <img src={e} alt="Team Member" />
-              <h4>{t(`about.name.${index}`)}</h4>
-              <p>{t(`about.title.${index}`)}</p>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-      );
-    });
-    return singleCardCarousel;
-  }
-
   function rendertableView() {
     const threeCardsCarousel = teamPhotos.map(function (e, index) {
       return (
@@ -70,14 +53,25 @@ export default function AboutCarousel() {
     return threeCardsCarousel;
   }
 
+  const renderPhoneView = teamPhotos.map(function (e, index) {
+    return (
+      <Carousel.Item className="carouselCardSingle">
+        <Card border="white" style={{ width: '56%' }} className="memberCard">
+          <Card.Body className="text-center">
+            <img src={e} alt="Team Member" />
+            <h4>{t(`about.name.${index}`)}</h4>
+            <p>{t(`about.title.${index}`)}</p>
+          </Card.Body>
+        </Card>
+      </Carousel.Item>
+    );
+  });
+
   return (
     <div className="allTeamsContent">
       <Container className="allMembersView">
         <Row>{renderDesktopView().slice(MinimumNumber, MiddleNumber)}</Row>
         <Row>{renderDesktopView().slice(MiddleNumber, MaxNumber)}</Row>
-      </Container>
-      <Container className="singleCardCarouselView">
-        <Carousel>{renderPhoneView()}</Carousel>
       </Container>
       <Container className="threeCardsCarouselView">
         <Carousel>
@@ -88,6 +82,9 @@ export default function AboutCarousel() {
             <Row>{rendertableView().slice(MiddleNumber, MaxNumber)}</Row>
           </Carousel.Item>
         </Carousel>
+      </Container>
+      <Container className="singleCardCarouselView">
+        <Carousel>{renderPhoneView}</Carousel>
       </Container>
     </div>
   );

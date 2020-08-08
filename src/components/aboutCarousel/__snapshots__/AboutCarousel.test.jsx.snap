@@ -173,243 +173,6 @@ exports[`about carousel renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="singleCardCarouselView container"
-  >
-    <div
-      className="carousel slide"
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
-      <ol
-        className="carousel-indicators"
-      >
-        <li
-          className="active"
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-        <li
-          onClick={[Function]}
-        />
-      </ol>
-      <div
-        className="carousel-inner"
-      >
-        <div
-          className="carouselCardSingle active carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "56%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                src="girl.svg"
-              />
-              <h4>
-                about.name.0
-              </h4>
-              <p>
-                about.title.0
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardSingle carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "56%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                src="actress.svg"
-              />
-              <h4>
-                about.name.1
-              </h4>
-              <p>
-                about.title.1
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardSingle carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "56%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                src="doctor.svg"
-              />
-              <h4>
-                about.name.2
-              </h4>
-              <p>
-                about.title.2
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardSingle carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "56%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                src="businessMan.svg"
-              />
-              <h4>
-                about.name.3
-              </h4>
-              <p>
-                about.title.3
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardSingle carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "56%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                src="callCenterAgent.svg"
-              />
-              <h4>
-                about.name.4
-              </h4>
-              <p>
-                about.title.4
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="carouselCardSingle carousel-item"
-        >
-          <div
-            className="memberCard card border-white"
-            style={
-              Object {
-                "width": "56%",
-              }
-            }
-          >
-            <div
-              className="text-center card-body"
-            >
-              <img
-                alt="Team Member"
-                src="dentist.svg"
-              />
-              <h4>
-                about.name.5
-              </h4>
-              <p>
-                about.title.5
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a
-        className="carousel-control-prev"
-        href="#"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="carousel-control-prev-icon"
-        />
-        <span
-          className="sr-only"
-        >
-          Previous
-        </span>
-      </a>
-      <a
-        className="carousel-control-next"
-        href="#"
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
-      >
-        <span
-          aria-hidden="true"
-          className="carousel-control-next-icon"
-        />
-        <span
-          className="sr-only"
-        >
-          Next
-        </span>
-      </a>
-    </div>
-  </div>
-  <div
     className="threeCardsCarouselView container"
   >
     <div
@@ -610,6 +373,243 @@ exports[`about carousel renders correctly 1`] = `
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        className="carousel-control-prev"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-prev-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Previous
+        </span>
+      </a>
+      <a
+        className="carousel-control-next"
+        href="#"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          className="carousel-control-next-icon"
+        />
+        <span
+          className="sr-only"
+        >
+          Next
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="singleCardCarouselView container"
+  >
+    <div
+      className="carousel slide"
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <ol
+        className="carousel-indicators"
+      >
+        <li
+          className="active"
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+        <li
+          onClick={[Function]}
+        />
+      </ol>
+      <div
+        className="carousel-inner"
+      >
+        <div
+          className="carouselCardSingle active carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="girl.svg"
+              />
+              <h4>
+                about.name.0
+              </h4>
+              <p>
+                about.title.0
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="actress.svg"
+              />
+              <h4>
+                about.name.1
+              </h4>
+              <p>
+                about.title.1
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="doctor.svg"
+              />
+              <h4>
+                about.name.2
+              </h4>
+              <p>
+                about.title.2
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="businessMan.svg"
+              />
+              <h4>
+                about.name.3
+              </h4>
+              <p>
+                about.title.3
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="callCenterAgent.svg"
+              />
+              <h4>
+                about.name.4
+              </h4>
+              <p>
+                about.title.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="carouselCardSingle carousel-item"
+        >
+          <div
+            className="memberCard card border-white"
+            style={
+              Object {
+                "width": "56%",
+              }
+            }
+          >
+            <div
+              className="text-center card-body"
+            >
+              <img
+                alt="Team Member"
+                src="dentist.svg"
+              />
+              <h4>
+                about.name.5
+              </h4>
+              <p>
+                about.title.5
+              </p>
             </div>
           </div>
         </div>
