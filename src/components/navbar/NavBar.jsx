@@ -1,10 +1,11 @@
 import React from 'react';
 import { Navbar, Nav, Dropdown, DropdownButton, Button } from 'react-bootstrap/';
-import NavLinks from './NavLinks';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+import NavLinks from './NavLinks';
 import './NavBar.css';
 
-export default function NavBar() {
+export default function NavBar({ routes }) {
   const { t } = useTranslation();
 
   return (
@@ -20,7 +21,7 @@ export default function NavBar() {
       <Navbar.Toggle className="navbarMainContent" aria-controls="basic-navbar-nav" />
       <Navbar.Collapse data-testid="navbar-collapse" id="basic-navbar-nav">
         <Nav className="navLinksContainer">
-          <NavLinks />
+          <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
           <Button className="signupFilledButton">{t('home.navBar.buttons.signup')}</Button>
@@ -43,3 +44,16 @@ export default function NavBar() {
     </Navbar>
   );
 }
+
+NavBar.propTypes = {
+  routes: PropTypes.arrayOf(PropTypes.object),
+};
+
+NavBar.defaultProps = {
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+    },
+  ],
+};

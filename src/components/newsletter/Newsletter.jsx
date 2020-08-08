@@ -10,7 +10,8 @@ const Newsletter = () => {
       <Container>
         <Row>
           <Col className="newsletterTitle">
-            <p>{t('home.newsletter.titles.title0')}</p> <br />
+            <p>{t('home.newsletter.titles.title0')}</p>
+            <br />
             <p>{t('home.newsletter.titles.title1')}</p>
           </Col>
         </Row>

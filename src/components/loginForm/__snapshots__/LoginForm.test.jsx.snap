@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="loginContainer container"
+>
+  <img
+    className="loginLogo"
+    src="www-logo.png"
+  />
+  <button
+    className="googleBtn btn btn-primary"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      className="mr-3 mt-3"
+    >
+      googleicon.svg
+    </svg>
+    Continue with Google
+  </button>
+  <button
+    className="facebookBtn mt-3 btn btn-primary"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      className="mr-3"
+    >
+      facebookicon.svg
+    </svg>
+    Continue with Facebook
+  </button>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#D9DADC",
+          "color": "#D9DADC",
+          "width": "8rem",
+        }
+      }
+    />
+    <span>
+      Or
+    </span>
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#D9DADC",
+          "color": "#D9DADC",
+          "width": "8rem",
+        }
+      }
+    />
+  </div>
+  <form
+    className=""
+  >
+    <div
+      className="mt-3 form-group"
+    >
+      <input
+        className="form-control"
+        id="formGridEmail"
+        placeholder="Your email"
+        type="email"
+      />
+    </div>
+    <div
+      className="mt-3 form-group"
+    >
+      <input
+        className="form-control"
+        id="formGridPassword"
+        placeholder="Password"
+        type="password"
+      />
+    </div>
+    <div
+      className="form-group"
+      inline={true}
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          disabled={false}
+          id="formBasicCheckbox"
+          type="checkbox"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="formBasicCheckbox"
+          title=""
+        >
+          Remember me
+        </label>
+      </div>
+    </div>
+    <button
+      className="loginBtn ml-3 btn btn-primary"
+      disabled={false}
+      inline={true}
+      type="submit"
+    >
+      Login
+    </button>
+  </form>
+  <a
+    className="mt-3 forgotPassword"
+    href="#home"
+  >
+    Forgot your password?
+  </a>
+  <hr
+    style={
+      Object {
+        "backgroundColor": "#D9DADC",
+        "color": "#D9DADC",
+        "width": "20rem",
+      }
+    }
+  />
+  <p
+    href="#home"
+    style={
+      Object {
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Don't have an account?
+  </p>
+  <button
+    className="googleBtn btn btn-primary"
+    disabled={false}
+    type="button"
+  >
+    Sign Up For WWW
+  </button>
+</div>
+`;

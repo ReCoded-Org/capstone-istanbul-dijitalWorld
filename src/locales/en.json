@@ -94,6 +94,20 @@
       "Lead Engineer",
       "Junior Engineer",
       "Junior Engineer"
-    ]
+    ],
+  "inspire": {
+    "subject": "Subject",
+    "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
+    "story": "Your Story",
+    "button": "Inspire"
+  },
+  "contactUs": {
+    "email": "Email",
+    "message": "Message",
+    "getInTouch": {
+      "header": "Get in Touch",
+      "subheader": "We would love to hear your feedback and suggestions"
+    },
+    "button": "Send"
   }
 }
