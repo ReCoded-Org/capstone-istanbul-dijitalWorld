@@ -17,7 +17,7 @@ export default function AboutCarousel() {
   const MiddleNumber = 3;
   const MaxNumber = 6;
 
-  function RenderDesktopView() {
+  function renderDesktopView() {
     const allMembersCards = teamPhotos.map(function (e, index) {
       return (
         <Col md>
@@ -36,7 +36,7 @@ export default function AboutCarousel() {
     return allMembersCards;
   }
 
-  function RenderPhoneView() {
+  function renderPhoneView() {
     const singleCardCarousel = teamPhotos.map(function (e, index) {
       return (
         <Carousel.Item className="carouselCardSingle">
@@ -53,7 +53,7 @@ export default function AboutCarousel() {
     return singleCardCarousel;
   }
 
-  function RendertableView() {
+  function rendertableView() {
     const threeCardsCarousel = teamPhotos.map(function (e, index) {
       return (
         <Col>
@@ -73,19 +73,19 @@ export default function AboutCarousel() {
   return (
     <div className="allTeamsContent">
       <Container className="allMembersView">
-        <Row>{RenderDesktopView().slice(MinimumNumber, MiddleNumber)}</Row>
-        <Row>{RenderDesktopView().slice(MiddleNumber, MaxNumber)}</Row>
+        <Row>{renderDesktopView().slice(MinimumNumber, MiddleNumber)}</Row>
+        <Row>{renderDesktopView().slice(MiddleNumber, MaxNumber)}</Row>
       </Container>
       <Container className="singleCardCarouselView">
-        <Carousel>{RenderPhoneView()}</Carousel>
+        <Carousel>{renderPhoneView()}</Carousel>
       </Container>
       <Container className="threeCardsCarouselView">
         <Carousel>
           <Carousel.Item>
-            <Row>{RendertableView().slice(MinimumNumber, MiddleNumber)}</Row>
+            <Row>{rendertableView().slice(MinimumNumber, MiddleNumber)}</Row>
           </Carousel.Item>
           <Carousel.Item>
-            <Row>{RendertableView().slice(MiddleNumber, MaxNumber)}</Row>
+            <Row>{rendertableView().slice(MiddleNumber, MaxNumber)}</Row>
           </Carousel.Item>
         </Carousel>
       </Container>
