@@ -24,7 +24,7 @@ Array [
         </span>
         <button
           className="readMoreButton"
-          onClick={[Function]}
+          type="button"
         >
           Read More
         </button>
@@ -61,7 +61,7 @@ Array [
         </span>
         <button
           className="readMoreButton"
-          onClick={[Function]}
+          type="button"
         >
           Read More
         </button>
@@ -98,7 +98,7 @@ Array [
         </span>
         <button
           className="readMoreButton"
-          onClick={[Function]}
+          type="button"
         >
           Read More
         </button>
