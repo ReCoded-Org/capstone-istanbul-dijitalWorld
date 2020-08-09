@@ -1,0 +1,9 @@
+.articleContainer {
+  width: 80%;
+  text-align: center;
+  margin: 5em auto 5em auto;
+}
+
+.articleImage {
+  width: 18em;
+}
