@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="contactFormContainer"
+  onSubmit={[Function]}
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <h3
+        className="contactUsHero"
+      >
+        contactUs.getInTouch.header
+      </h3>
+      <h5>
+        contactUs.getInTouch.subheader
+      </h5>
+      <div
+        className="form-group"
+      >
+        <input
+          className="contactUsInput form-control form-control-lg"
+          onChange={[Function]}
+          placeholder="contactUs.email"
+          required={true}
+          type="email"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <textarea
+          className="contactUsInput form-control"
+          onChange={[Function]}
+          placeholder="contactUs.message"
+          required={true}
+          rows="10"
+        />
+      </div>
+      <button
+        className="contactUsButton"
+        type="submit"
+      >
+        contactUs.button
+      </button>
+    </div>
+  </div>
+  <div
+    className="row"
+  />
+</form>
+`;

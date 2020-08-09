@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="signupContainer container"
+>
+  <img
+    className="signupLogo"
+    src="www-logo.png"
+  />
+  <form
+    className=""
+  >
+    <div
+      className="form-row"
+    >
+      <div
+        className="mt-3 form-group col"
+      >
+        <input
+          className="form-control"
+          id="formGridFirstName"
+          placeholder="First name"
+          type="name"
+        />
+      </div>
+      <div
+        className="mt-3 form-group col"
+      >
+        <input
+          className="form-control"
+          id="formGridLastName"
+          placeholder="Last name"
+          type="name"
+        />
+      </div>
+    </div>
+    <div
+      className="mt-3 form-group"
+    >
+      <input
+        className="form-control"
+        id="formGridEmail"
+        placeholder="Your email"
+        type="email"
+      />
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="mt-3 form-group col"
+      >
+        <input
+          className="form-control"
+          id="formGridPassword"
+          placeholder="Password"
+          type="password"
+        />
+      </div>
+      <div
+        className="mt-3 form-group col"
+      >
+        <input
+          className="form-control"
+          id="formGridRepeatPassword"
+          placeholder="Repeat password"
+          type="password"
+        />
+      </div>
+    </div>
+    <button
+      className="signupBtn mt-3 btn btn-primary"
+      disabled={false}
+      type="submit"
+    >
+      Sign Up
+    </button>
+  </form>
+  <p
+    className="mt-3"
+  >
+    Already Have An Account ?
+     
+    <a
+      className="loginLink"
+      href="/login"
+    >
+      Login
+    </a>
+  </p>
+</div>
+`;
