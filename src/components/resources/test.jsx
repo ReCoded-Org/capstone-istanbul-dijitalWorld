@@ -1,100 +1,41 @@
-// /* eslint-disable */
-import React, { useState } from 'react';
-import { Row, Col, Button } from 'react-bootstrap';
-//import { useTranslation } from 'react-i18next';
-import data from './data.json';
+import React, { Component } from "react";
+import Slider from "react-slick";
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
+import './Resources.css';
+import data from "./data.json";
 
-export default function Body(props) {
-  const [activeID, setActiveID] = useState(0);
-  const [wrapperStyle, setWrapperStyle] = useState({
-    backgroundImage: `url(${data[0].img})`,
-  });
-  const [panelStyle, setPanelStyle] = useState({ backgroundColor: data[0].color });
-  const [buttonHover, setButtonHover] = useState(false);
-  const [buttonStyle, setButtonStyle] = useState('#ffffff');
-
-  const changeActive = async (id) => {
-    setActiveID(id);
-    setWrapperStyle(`url('${props.data[id].img}')`);
-    setPanelStyle(props.data[id].color);
-  };
-
-  const buttonColor = async () => {
-    if (!buttonHover) {
-      setButtonHover(true);
-      setButtonStyle({ color: props.data[activeID].color });
-    } else {
-      setButtonHover(false);
-      setButtonStyle('#ffffff');
-    }
-  };
+export default function test() {
+  const settings = {
+    dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      vertical: true,
+      verticalSwiping: true,
+      swipeToSlide: true,
+      beforeChange: function(currentSlide, nextSlide) {
+        console.log("before change", currentSlide, nextSlide);
+      },
+      afterChange: function(currentSlide) {
+        console.log("after change", currentSlide);
+      }
+    };
 
   return (
-    <section className="wrapper" style={{wrapperStyle}}>
-      <Selectors data={props.data} activeID={props.activeID} changeActive={changeActive} />
-      <Panel
-        data={data[activeID]}
-        panelStyle={panelStyle}
-        buttonStyle={buttonStyle}
-        buttonColor={buttonColor}
-      />
-    </section>
-  );
-}
-
-function Panel(props) {
-  //const { t } = useTranslation();
-  //const [resourceBlurb, setResourceBlurb] = useState();
-  return (
-    // <Row className="resourceRow">
-    // <Col className="blurpCol">
-    <aside className="panel" style={props.panelStyle}>
-      <h2 className="panel-header">{data.header}</h2>
-      <h2 className="resourceTitle">{data.header}</h2>
-      <p className="panel-info">{data.body}</p>
-      <Button
-        className="panel-button"
-        style={props.buttonStyle}
-        onMouseEnter={props.buttonColor}
-        onMouseLeave={props.buttonColor}
-      >
-        Button
-      </Button>
-    </aside>
-    // </Col>
-    // </Row>
-  );
-}
-
-function Selectors(props) {
-  const handleClick = (e) => {
-    if (props.id !== props.activeID) {
-      props.changeActive(props.id);
-    } else {
-      return;
-    }
-  };
-
-  return (
-    <div className="selectors">
-      {data.map((item) => (
-        <Selector
-          key={item.id}
-          id={item.id}
-          handleClick={handleClick}
-          changeActive={props.changeActive}
-          activeID={props.activeID}
-        />
-      ))}
+    <div>
+      <h2>Vertical Mode with Swipe To Slide</h2>
+      <Slider {...settings}>
+        <div>
+          <h3>{`url(${data[0].img})`}</h3>
+        </div>
+        <div>
+          <h3>{`url(${data[1].img})`}</h3>
+        </div>
+        <div>
+          <h3>{`url(${data[2].img})`}</h3>
+        </div>
+      </Slider>
     </div>
   );
-}
-
-function Selector(props) {
-  const componentClass = 'selector';
-  if (props.activeID === props.id) {
-    componentClass = 'selector active';
-  }
-
-  return <div className={componentClass} onClick={props.handleClick}></div>;
 }

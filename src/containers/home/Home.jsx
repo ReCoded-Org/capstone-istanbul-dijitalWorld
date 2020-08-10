@@ -3,12 +3,12 @@ import React from 'react';
 // import Quotes from '../../components/quotes/Quotes';
 // import Carousel from '../../components/carousel/Carousel';
 //import Newsletter from '../../components/newsletter/Newsletter';
-import Resources from "../resourcePage/ResourcePage"
+import ResourcePage from "../resourcePage/ResourcePage"
 
 export default function Home() {
   return (
     <div>
-      <Resources />
+      <ResourcePage />
       {/* <Carousel /> */}
       {/* <Quotes /> */}
       {/* <Inspire /> */}
