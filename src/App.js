@@ -7,6 +7,7 @@ import BlogCard from './components/blog-cards/BlogCard';
 import SingleArticle from './components/single-article/SingleArticle';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
+import About from './containers/about/About';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
@@ -15,7 +16,7 @@ const ROUTES = [
   { path: '/blog', name: 'blog', Component: BlogCard },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
   { path: '/resources', name: 'resource', Component: Home },
-  { path: '/about', name: 'about', Component: Home },
+  { path: '/about', name: 'about', Component: About },
   { path: '/contact', name: 'contact', Component: Home },
 ];
 

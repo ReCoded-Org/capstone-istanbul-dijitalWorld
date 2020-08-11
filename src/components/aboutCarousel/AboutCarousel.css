@@ -1,0 +1,92 @@
+.allTeamsContent {
+  margin-bottom: 6rem;
+}
+
+.allMembersView img {
+  width: 4.2rem;
+  border-radius: 2.1rem;
+}
+
+.allMembersView h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f67280;
+}
+
+.allMembersView p {
+  font-size: 0.9rem;
+  color: #f67280;
+}
+
+.allMembersView .teamCard {
+  margin-bottom: 3.5rem;
+}
+
+.threeCardsCarouselView img {
+  width: 4rem;
+  border-radius: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.threeCardsCarouselView h4 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #f67280;
+}
+
+.threeCardsCarouselView p {
+  font-size: 0.7rem;
+  color: #f67280;
+}
+
+.singleCardCarouselView img {
+  width: 4rem;
+  border-radius: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.singleCardCarouselView h4 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #f67280;
+}
+
+.singleCardCarouselView p {
+  font-size: 0.7rem;
+  color: #f67280;
+}
+
+.memberCard {
+  box-shadow: 0 0 2.5rem -0.8rem #d1dbe3;
+}
+
+.carouselCardSingle {
+  margin: 0 22%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .threeCardsCarouselView {
+    display: none;
+  }
+  .singleCardCarouselView {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 525px) {
+  .allMembersView {
+    display: none;
+  }
+  .singleCardCarouselView {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .allMembersView {
+    display: none;
+  }
+  .threeCardsCarouselView {
+    display: none;
+  }
+}
