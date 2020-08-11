@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Image, Form, Button, Container } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
+import { auth, googleProvider } from "../../firebase";
 import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebookicon.svg';
 import './LoginForm.css';
@@ -21,6 +22,16 @@ const LoginForm = () => {
     password: ""
   });
 
+  const handlePasswordLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await auth.signInWithEmailAndPassword(loginInfo.email, loginInfo.password);
+      console.log(response)
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
+
   return (
     <Container className="loginContainer">
       <Image src={Logo} className="loginLogo" />
@@ -37,7 +48,7 @@ const LoginForm = () => {
         <span>Or</span>
         <ColoredLine width="8rem" color="#D9DADC" />
       </div>
-      <Form>
+      <Form onSubmit={handlePasswordLogin}>
         <Form.Group controlId="formGridEmail" className="mt-3">
           <Form.Control type="email" placeholder="Your email" value={loginInfo.email} onChange={(e) => setLoginInfo({ ...loginInfo, email: e.target.value })} />
         </Form.Group>
