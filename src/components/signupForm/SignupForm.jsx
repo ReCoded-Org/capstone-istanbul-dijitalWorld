@@ -12,7 +12,6 @@ const SignupForm = () => {
     message: '',
     status: '',
   });
-
   const [signupInfo, setSignupInfo] = useState({
     firstName: '',
     lastName: '',
@@ -34,20 +33,23 @@ const SignupForm = () => {
   // If the login was a success it shows a success alret msg and then redirect the user to the home page
   const handleSignup = async (e) => {
     e.preventDefault();
-
-    try {
-      await auth.createUserWithEmailAndPassword(signupInfo.email, signupInfo.password);
-      setSignupInfo({
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-        repeatPassword: '',
-      });
-      changeAlert(true, 'Your registration is completed!', 'success');
-      setTimeout(() => setRedirect(true), 1000);
-    } catch (error) {
-      changeAlert(true, error.message, 'danger');
+    if (signupInfo.password === signupInfo.repeatPassword) {
+      try {
+        await auth.createUserWithEmailAndPassword(signupInfo.email, signupInfo.password);
+        setSignupInfo({
+          firstName: '',
+          lastName: '',
+          email: '',
+          password: '',
+          repeatPassword: '',
+        });
+        changeAlert(true, 'Your registration is completed!', 'success');
+        setTimeout(() => setRedirect(true), 1000);
+      } catch (error) {
+        changeAlert(true, error.message, 'danger');
+      }
+    } else {
+      changeAlert(true, "Passwords doesn't match", 'danger');
     }
   };
 
