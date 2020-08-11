@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
-import { Image, Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Image, Form, Button, Container, Col, Alert } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
 import { auth, googleProvider, facebookProvider } from '../../firebase';
 import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
@@ -18,6 +18,11 @@ const ColoredLine = ({ color, width }) => (
 );
 
 const LoginForm = () => {
+  const [alert, setAlret] = useState({
+    show: false,
+    message: '',
+    status: '',
+  });
   const [forgotPassword, setForgotPassword] = useState({
     show: false,
     email: '',
@@ -26,6 +31,14 @@ const LoginForm = () => {
     email: '',
     password: '',
   });
+
+  const changeAlert = (show, message = '', status) => {
+    setAlret({
+      show,
+      status,
+      message,
+    });
+  };
 
   const handlePasswordLogin = async (e) => {
     e.preventDefault();
@@ -62,11 +75,13 @@ const LoginForm = () => {
 
   const handleForgotPassword = async (e) => {
     e.preventDefault();
-    setForgotPassword({ ...forgotPassword, show: false });
+
     try {
       await auth.sendPasswordResetEmail(forgotPassword.email);
+      setForgotPassword({ email: "", show: false });
+      changeAlert(true, "Password reset email was sent!", 'success');
     } catch (error) {
-      console.log(error.message);
+      changeAlert(true, "Email was not found!", 'danger');
     }
   }
 
@@ -120,6 +135,7 @@ const LoginForm = () => {
       >
         Forgot your password?
       </p>
+
       {forgotPassword.show && (
         <Form onSubmit={handleForgotPassword}>
           <Form.Row className="align-items-center">
@@ -141,6 +157,17 @@ const LoginForm = () => {
             </Col>
           </Form.Row>
         </Form>
+      )}
+
+      {alert.show && (
+        <Alert
+          className="mt-3"
+          variant={alert.status}
+          onClose={() => setAlret({ ...alert, show: false })}
+          dismissible
+        >
+          <p>{alert.message}</p>
+        </Alert>
       )}
       <ColoredLine color="#D9DADC" width="20rem" />
       <p style={{ fontWeight: 'bold' }} href="#home">
