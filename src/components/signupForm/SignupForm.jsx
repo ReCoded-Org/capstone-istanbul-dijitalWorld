@@ -43,6 +43,7 @@ const SignupForm = () => {
           password: '',
           repeatPassword: '',
         });
+        response.user.sendEmailVerification();
         changeAlert(true, 'Your registration is completed!', 'success');
         setTimeout(() => setRedirect(true), 1000);
       } catch (error) {
