@@ -1,8 +1,4 @@
 .readMoreButton {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   color: #fff;
   display: block;
   margin-top: 30px;
@@ -15,7 +11,7 @@
 
 .blogContainer {
   text-align: justify;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
 }
 
 .blogTitle {
