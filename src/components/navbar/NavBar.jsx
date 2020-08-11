@@ -3,6 +3,7 @@ import { Navbar, Nav, Dropdown, DropdownButton, Button } from 'react-bootstrap/'
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
+import { Route } from "react-router-dom";
 import './NavBar.css';
 
 export default function NavBar({ routes }) {
@@ -24,7 +25,11 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
-          <Button className="signupFilledButton">{t('home.navBar.buttons.signup')}</Button>
+          <Route render={({ history }) => (
+            <Button className="signupFilledButton" onClick={() => history.push("/signup")}>{t('home.navBar.buttons.signup')}</Button>
+          )}>
+
+          </Route>
           <Button className="loginOutlinedButton" variant="outline">
             {t('home.navBar.buttons.login')}
           </Button>
