@@ -44,6 +44,17 @@ const LoginForm = () => {
     }
   }
 
+  const handleFacebookLogin = async () => {
+    try {
+      const result = await auth.signInWithPopup(facebookProvider);
+      const token = result.credential.accessToken;
+      const user = result.user;
+      console.log(user)
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
+
   return (
     <Container className="loginContainer">
       <Image src={Logo} className="loginLogo" />
@@ -51,7 +62,7 @@ const LoginForm = () => {
         <GoogleIcon className="mr-3" />
         Continue with Google
       </Button>
-      <Button className="facebookBtn mt-3">
+      <Button className="facebookBtn mt-3" onClick={handleFacebookLogin}>
         <FacebookIcon className="mr-3" />
         Continue with Facebook
       </Button>
