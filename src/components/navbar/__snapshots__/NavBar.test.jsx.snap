@@ -105,6 +105,7 @@ exports[`Navbar renders correctly 1`] = `
       <button
         className="loginOutlinedButton btn btn-outline"
         disabled={false}
+        onClick={[Function]}
         type="button"
       >
         home.navBar.buttons.login

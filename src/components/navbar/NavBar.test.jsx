@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import NavBar from './NavBar';
+import { BrowserRouter as Router } from "react-router-dom";
 
 const routes = [
   { path: '/', name: 'home' },
@@ -12,6 +13,6 @@ const routes = [
 ];
 
 it('Navbar renders correctly', () => {
-  const div = renderer.create(<NavBar routes={routes} />).toJSON();
+  const div = renderer.create(<Router><NavBar routes={routes} /></Router>).toJSON();
   expect(div).toMatchSnapshot();
 });
