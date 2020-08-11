@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Image, Form, Col, Button, Container, Alert } from 'react-bootstrap';
-import { Redirect } from "react-router-dom"
+import { Redirect } from 'react-router-dom';
 import { auth } from '../../firebase';
 import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
