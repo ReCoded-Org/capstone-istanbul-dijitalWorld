@@ -9,12 +9,13 @@ exports[`renders correctly 1`] = `
     src="www-logo.png"
   />
   <button
-    className="googleBtn btn btn-primary"
+    className="googleBtn mt-3 btn btn-primary"
     disabled={false}
+    onClick={[Function]}
     type="button"
   >
     <svg
-      className="mr-3 mt-3"
+      className="mr-3"
     >
       googleicon.svg
     </svg>
@@ -23,6 +24,7 @@ exports[`renders correctly 1`] = `
   <button
     className="facebookBtn mt-3 btn btn-primary"
     disabled={false}
+    onClick={[Function]}
     type="button"
   >
     <svg
@@ -63,6 +65,7 @@ exports[`renders correctly 1`] = `
   </div>
   <form
     className=""
+    onSubmit={[Function]}
   >
     <div
       className="mt-3 form-group"
@@ -70,8 +73,10 @@ exports[`renders correctly 1`] = `
       <input
         className="form-control"
         id="formGridEmail"
+        onChange={[Function]}
         placeholder="Your email"
         type="email"
+        value=""
       />
     </div>
     <div
@@ -80,8 +85,10 @@ exports[`renders correctly 1`] = `
       <input
         className="form-control"
         id="formGridPassword"
+        onChange={[Function]}
         placeholder="Password"
         type="password"
+        value=""
       />
     </div>
     <div
@@ -120,12 +127,13 @@ exports[`renders correctly 1`] = `
       Login
     </button>
   </form>
-  <a
+  <p
     className="mt-3 forgotPassword"
     href="#home"
+    onClick={[Function]}
   >
     Forgot your password?
-  </a>
+  </p>
   <hr
     style={
       Object {
@@ -146,8 +154,9 @@ exports[`renders correctly 1`] = `
     Don't have an account?
   </p>
   <button
-    className="googleBtn btn btn-primary"
+    className="googleBtn mb-3 btn btn-primary"
     disabled={false}
+    onClick={[Function]}
     type="button"
   >
     Sign Up For WWW

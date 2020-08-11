@@ -48,9 +48,11 @@ const LoginForm = () => {
       setRedirect(true);
     } catch (error) {
       switch (error.code) {
-        case "auth/user-not-found": changeAlert(true, "User not found!", 'danger');
+        case 'auth/user-not-found':
+          changeAlert(true, 'User not found!', 'danger');
           break;
-        case "auth/wrong-password": changeAlert(true, "Incorrect password!", 'danger');
+        case 'auth/wrong-password':
+          changeAlert(true, 'Incorrect password!', 'danger');
           break;
       }
     }
@@ -62,7 +64,7 @@ const LoginForm = () => {
       const result = await auth.signInWithPopup(googleProvider);
       setRedirect(true);
     } catch (error) {
-      changeAlert(true, "Something went wrong! please try again.", 'danger');
+      changeAlert(true, 'Something went wrong! please try again.', 'danger');
     }
   };
 
@@ -71,7 +73,7 @@ const LoginForm = () => {
       const result = await auth.signInWithPopup(facebookProvider);
       setRedirect(true);
     } catch (error) {
-      changeAlert(true, "Something went wrong! please try again.", 'danger');
+      changeAlert(true, 'Something went wrong! please try again.', 'danger');
     }
   };
 
@@ -80,12 +82,12 @@ const LoginForm = () => {
 
     try {
       await auth.sendPasswordResetEmail(forgotPassword.email);
-      setForgotPassword({ email: "", show: false });
-      changeAlert(true, "Password reset email was sent!", 'success');
+      setForgotPassword({ email: '', show: false });
+      changeAlert(true, 'Password reset email was sent!', 'success');
     } catch (error) {
-      changeAlert(true, "Email was not found!", 'danger');
+      changeAlert(true, 'Email was not found!', 'danger');
     }
-  }
+  };
 
   return (
     <Container className="loginContainer">

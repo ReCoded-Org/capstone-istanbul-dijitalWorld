@@ -14,7 +14,7 @@ const ROUTES = [
   { path: '/', name: 'home', Component: Home },
   { path: '/blog', name: 'blog', Component: Home },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
-  { path: '/resources', name: 'resource', Component: LoginPage },
+  { path: '/resources', name: 'resource', Component: Home },
   { path: '/about', name: 'about', Component: About },
   { path: '/contact', name: 'contact', Component: Home },
 ];
