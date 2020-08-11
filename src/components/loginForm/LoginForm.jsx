@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image, Form, Button, Container } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
 import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
@@ -16,11 +16,16 @@ const ColoredLine = ({ color, width }) => (
 );
 
 const LoginForm = () => {
+  const [loginInfo, setLoginInfo] = useState({
+    email: "",
+    password: ""
+  });
+
   return (
     <Container className="loginContainer">
       <Image src={Logo} className="loginLogo" />
-      <Button className="googleBtn">
-        <GoogleIcon className="mr-3 mt-3" />
+      <Button className="googleBtn mt-3">
+        <GoogleIcon className="mr-3" />
         Continue with Google
       </Button>
       <Button className="facebookBtn mt-3">
@@ -34,11 +39,11 @@ const LoginForm = () => {
       </div>
       <Form>
         <Form.Group controlId="formGridEmail" className="mt-3">
-          <Form.Control type="email" placeholder="Your email" />
+          <Form.Control type="email" placeholder="Your email" value={loginInfo.email} onChange={(e) => setLoginInfo({ ...loginInfo, email: e.target.value })} />
         </Form.Group>
 
         <Form.Group controlId="formGridPassword" className="mt-3">
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control type="password" placeholder="Password" value={loginInfo.password} onChange={(e) => setLoginInfo({ ...loginInfo, password: e.target.value })} />
         </Form.Group>
 
         <Form.Group inline controlId="formBasicCheckbox" style={{ display: 'inline-block' }}>
@@ -56,7 +61,7 @@ const LoginForm = () => {
       <p style={{ fontWeight: 'bold' }} href="#home">
         Don&apos;t have an account?
       </p>
-      <Button className="googleBtn">Sign Up For WWW</Button>
+      <Button className="googleBtn mb-3">Sign Up For WWW</Button>
     </Container>
   );
 };
