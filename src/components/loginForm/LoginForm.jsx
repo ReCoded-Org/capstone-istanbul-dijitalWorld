@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Image, Form, Button, Container } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
-import { auth, googleProvider } from "../../firebase";
+import { auth, googleProvider, facebookProvider } from "../../firebase";
 import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebookicon.svg';
 import './LoginForm.css';
@@ -32,10 +32,22 @@ const LoginForm = () => {
     }
   }
 
+  const handleGoogleLogin = async () => {
+    // googleProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+    try {
+      const result = await auth.signInWithPopup(googleProvider);
+      const token = result.credential.accessToken;
+      const user = result.user;
+      console.log(user)
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
+
   return (
     <Container className="loginContainer">
       <Image src={Logo} className="loginLogo" />
-      <Button className="googleBtn mt-3">
+      <Button className="googleBtn mt-3" onClick={handleGoogleLogin}>
         <GoogleIcon className="mr-3" />
         Continue with Google
       </Button>
