@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './InspireForm.css';
-import database from '../../firebase';
+import { fireStore } from '../../firebase';
 import { Form, Col, Row, Alert } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
@@ -42,7 +42,7 @@ export default function InspireForm() {
   const handleSubmitStory = (e) => {
     e.preventDefault();
 
-    const newStory = database.collection('inspire').doc();
+    const newStory = fireStore.collection('inspire').doc();
     newStory.set({
       headline: headline,
       category: category,
