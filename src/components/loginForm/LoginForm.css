@@ -46,3 +46,8 @@
 .forgotPassword:hover {
   color: black;
 }
+
+.forgotPassword:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

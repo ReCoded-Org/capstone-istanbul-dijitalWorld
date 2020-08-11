@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
 import './NavBar.css';
-import { Route } from "react-router-dom";
+import { Route } from 'react-router-dom';
 
 export default function NavBar({ routes }) {
   const { t } = useTranslation();
@@ -26,11 +26,17 @@ export default function NavBar({ routes }) {
         </Nav>
         <div className="buttonGroup">
           <Button className="signupFilledButton">{t('home.navBar.buttons.signup')}</Button>
-          <Route render={({ history }) => (
-            <Button className="loginOutlinedButton" variant="outline" onClick={() => history.push("/login")}>
-              {t('home.navBar.buttons.login')}
-            </Button>
-          )} />
+          <Route
+            render={({ history }) => (
+              <Button
+                className="loginOutlinedButton"
+                variant="outline"
+                onClick={() => history.push('/login')}
+              >
+                {t('home.navBar.buttons.login')}
+              </Button>
+            )}
+          />
         </div>
       </Navbar.Collapse>
       <DropdownButton

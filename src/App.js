@@ -6,7 +6,7 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
-import LoginPage from "./containers/loginPage/LoginPage";
+import LoginPage from './containers/loginPage/LoginPage';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
