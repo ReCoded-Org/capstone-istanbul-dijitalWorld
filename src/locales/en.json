@@ -65,6 +65,38 @@
       "followUs": "Follow Us"
     }
   },
+
+  "about": {
+    "ourStory": {
+      "header": "Our Story",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "ourMission": {
+      "header": "Our Mission",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "ourTeam": {
+      "header": "Our Team",
+      "body": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
+    },
+    "name": [
+      "Refia Candan Ozkalay",
+      "Dara Aldandashi",
+      "Elif Chorghay",
+      "Ammar Sammour",
+      "Bahaa Dabbagh",
+      "Halit Batur"
+    ],
+    "title": [
+      "Junior Engineer",
+      "Junior Engineer",
+      "Junior Engineer",
+      "Lead Engineer",
+      "Junior Engineer",
+      "Junior Engineer"
+    ]
+  },
+
   "inspire": {
     "subject": "Subject",
     "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
