@@ -44,7 +44,7 @@ const LoginForm = () => {
   const handlePasswordLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await auth.signInWithEmailAndPassword(loginInfo.email, loginInfo.password);
+      await auth.signInWithEmailAndPassword(loginInfo.email, loginInfo.password);
       setRedirect(true);
     } catch (error) {
       switch (error.code) {
@@ -54,6 +54,8 @@ const LoginForm = () => {
         case 'auth/wrong-password':
           changeAlert(true, 'Incorrect password!', 'danger');
           break;
+        default:
+          changeAlert(true, 'Please make sure you entered the correct email!', 'danger');
       }
     }
   };
@@ -61,7 +63,7 @@ const LoginForm = () => {
   const handleGoogleLogin = async () => {
     // googleProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
     try {
-      const result = await auth.signInWithPopup(googleProvider);
+      await auth.signInWithPopup(googleProvider);
       setRedirect(true);
     } catch (error) {
       changeAlert(true, 'Something went wrong! please try again.', 'danger');
@@ -70,7 +72,7 @@ const LoginForm = () => {
 
   const handleFacebookLogin = async () => {
     try {
-      const result = await auth.signInWithPopup(facebookProvider);
+      await auth.signInWithPopup(facebookProvider);
       setRedirect(true);
     } catch (error) {
       changeAlert(true, 'Something went wrong! please try again.', 'danger');
