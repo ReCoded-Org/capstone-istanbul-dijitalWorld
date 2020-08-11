@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import { Image, Form, Button, Container, Col, Alert } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
 import { auth, googleProvider, facebookProvider } from '../../firebase';
@@ -18,6 +18,7 @@ const ColoredLine = ({ color, width }) => (
 );
 
 const LoginForm = () => {
+  const [redirect, setRedirect] = useState(false);
   const [alert, setAlret] = useState({
     show: false,
     message: '',
@@ -44,9 +45,14 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const response = await auth.signInWithEmailAndPassword(loginInfo.email, loginInfo.password);
-      console.log(response);
+      setRedirect(true);
     } catch (error) {
-      console.log(error.message);
+      switch (error.code) {
+        case "auth/user-not-found": changeAlert(true, "User not found!", 'danger');
+          break;
+        case "auth/wrong-password": changeAlert(true, "Incorrect password!", 'danger');
+          break;
+      }
     }
   };
 
@@ -54,22 +60,18 @@ const LoginForm = () => {
     // googleProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
     try {
       const result = await auth.signInWithPopup(googleProvider);
-      const token = result.credential.accessToken;
-      const user = result.user;
-      console.log(user);
+      setRedirect(true);
     } catch (error) {
-      console.log(error.message);
+      changeAlert(true, "Something went wrong! please try again.", 'danger');
     }
   };
 
   const handleFacebookLogin = async () => {
     try {
       const result = await auth.signInWithPopup(facebookProvider);
-      const token = result.credential.accessToken;
-      const user = result.user;
-      console.log(user);
+      setRedirect(true);
     } catch (error) {
-      console.log(error.message);
+      changeAlert(true, "Something went wrong! please try again.", 'danger');
     }
   };
 
@@ -169,6 +171,7 @@ const LoginForm = () => {
           <p>{alert.message}</p>
         </Alert>
       )}
+      {redirect && <Redirect to="/" />}
       <ColoredLine color="#D9DADC" width="20rem" />
       <p style={{ fontWeight: 'bold' }} href="#home">
         Don&apos;t have an account?
