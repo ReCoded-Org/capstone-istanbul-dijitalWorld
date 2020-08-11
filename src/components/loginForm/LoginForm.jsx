@@ -19,7 +19,7 @@ const ColoredLine = ({ color, width }) => (
 
 const LoginForm = () => {
   const [redirect, setRedirect] = useState(false);
-  const [alert, setAlret] = useState({
+  const [alert, setAlert] = useState({
     show: false,
     message: '',
     status: '',
@@ -34,7 +34,7 @@ const LoginForm = () => {
   });
 
   const changeAlert = (show, message = '', status) => {
-    setAlret({
+    setAlert({
       show,
       status,
       message,
@@ -61,7 +61,6 @@ const LoginForm = () => {
   };
 
   const handleGoogleLogin = async () => {
-    // googleProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
     try {
       await auth.signInWithPopup(googleProvider);
       setRedirect(true);
