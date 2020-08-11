@@ -6,7 +6,6 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
-import Profile from './containers/profile/ProfilePage';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
@@ -17,7 +16,6 @@ const ROUTES = [
   { path: '/resources', name: 'resource', Component: Home },
   { path: '/about', name: 'about', Component: About },
   { path: '/contact', name: 'contact', Component: Home },
-  // { path: '/profile', name: 'prfile', Component: Profile },
 ];
 
 const LocationDisplay = withRouter(({ location }) => (
@@ -33,7 +31,6 @@ function App() {
           <Component />
         </Route>
       ))}
-      <Profile />
       <Footer />
     </Router>
   );
