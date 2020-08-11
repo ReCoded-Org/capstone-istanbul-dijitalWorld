@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Route } from "react-router-dom";
 import { Image, Form, Button, Container } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
 import { auth, googleProvider, facebookProvider } from "../../firebase";
@@ -95,7 +96,10 @@ const LoginForm = () => {
       <p style={{ fontWeight: 'bold' }} href="#home">
         Don&apos;t have an account?
       </p>
-      <Button className="googleBtn mb-3">Sign Up For WWW</Button>
+      <Route render={({ history }) => (
+        <Button className="googleBtn mb-3" onClick={() => history.push("/signup")}>Sign Up For WWW</Button>
+      )} />
+
     </Container>
   );
 };
