@@ -35,7 +35,10 @@ const SignupForm = () => {
     e.preventDefault();
     if (signupInfo.password === signupInfo.repeatPassword) {
       try {
-        const response = await auth.createUserWithEmailAndPassword(signupInfo.email, signupInfo.password);
+        const response = await auth.createUserWithEmailAndPassword(
+          signupInfo.email,
+          signupInfo.password,
+        );
         setSignupInfo({
           firstName: '',
           lastName: '',
