@@ -1,0 +1,19 @@
+.articlesContainer {
+  margin-top: 2rem;
+}
+
+.articlesContainer h2 {
+  margin-bottom: 2rem;
+  font-size: 3.3rem;
+  color: #6c567c;
+}
+
+.articlesContainer p {
+  font-size: 1.5rem;
+  color: #4a474d;
+}
+
+.articleContainer {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
