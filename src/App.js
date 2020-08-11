@@ -6,7 +6,6 @@ import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
-import SignupPage from './containers/signupPage/SignupPage';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
@@ -14,7 +13,7 @@ const ROUTES = [
   { path: '/', name: 'home', Component: Home },
   { path: '/blog', name: 'blog', Component: Home },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
-  { path: '/resources', name: 'resource', Component: SignupPage },
+  { path: '/resources', name: 'resource', Component: Home },
   { path: '/about', name: 'about', Component: About },
   { path: '/contact', name: 'contact', Component: Home },
 ];

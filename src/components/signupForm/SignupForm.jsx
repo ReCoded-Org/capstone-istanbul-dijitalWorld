@@ -6,8 +6,9 @@ import './SignupForm.css';
 
 const SignupForm = () => {
   const [alert, setAlret] = useState({
-    status: false,
+    show: false,
     message: '',
+    status: '',
   });
 
   const [signupInfo, setSignupInfo] = useState({
@@ -18,12 +19,19 @@ const SignupForm = () => {
     repeatPassword: '',
   });
 
+  const changeAlert = (show, message = '', status) => {
+    setAlret({
+      show,
+      status,
+      message,
+    });
+  };
+
   const handleSignup = async (e) => {
     e.preventDefault();
 
     try {
       await auth.createUserWithEmailAndPassword(signupInfo.email, signupInfo.password);
-
       setSignupInfo({
         firstName: '',
         lastName: '',
@@ -31,16 +39,9 @@ const SignupForm = () => {
         password: '',
         repeatPassword: '',
       });
-      setAlret({
-        status: false,
-        message: '',
-      });
+      changeAlert(true, 'Your registration is completed!', 'success');
     } catch (error) {
-      setAlret({
-        status: true,
-        message: error.message,
-      });
-      console.log(error.message);
+      changeAlert(true, error.message, 'danger');
     }
   };
 
@@ -105,11 +106,11 @@ const SignupForm = () => {
           Sign Up
         </Button>
       </Form>
-      {alert.status && (
+      {alert.show && (
         <Alert
           className="mt-3"
-          variant="danger"
-          onClose={() => setAlret({ ...alert, status: false })}
+          variant={alert.status}
+          onClose={() => setAlret({ ...alert, show: false })}
           dismissible
         >
           <p>{alert.message}</p>
