@@ -60,6 +60,16 @@ const LoginForm = () => {
     }
   };
 
+  const handleForgotPassword = async (e) => {
+    e.preventDefault();
+    setForgotPassword({ ...forgotPassword, show: false });
+    try {
+      await auth.sendPasswordResetEmail(forgotPassword.email);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+
   return (
     <Container className="loginContainer">
       <Image src={Logo} className="loginLogo" />
@@ -111,7 +121,7 @@ const LoginForm = () => {
         Forgot your password?
       </p>
       {forgotPassword.show && (
-        <Form>
+        <Form onSubmit={handleForgotPassword}>
           <Form.Row className="align-items-center">
             <Col>
               <Form.Group controlId="formGridEmail" className="mt-3">
