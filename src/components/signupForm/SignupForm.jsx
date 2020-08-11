@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Image, Form, Col, Button, Container, Alert } from 'react-bootstrap';
+import { Redirect } from "react-router-dom"
 import { auth } from '../../firebase';
 import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
 
 const SignupForm = () => {
+  const [redirect, setRedirect] = useState(false);
   const [alert, setAlret] = useState({
     show: false,
     message: '',
@@ -27,6 +29,9 @@ const SignupForm = () => {
     });
   };
 
+  // This function use firebase auth to register the user
+  // Incase of errors it will change the alret state to render a componenet to show the error message to the user
+  // If the login was a success it shows a success alret msg and then redirect the user to the home page
   const handleSignup = async (e) => {
     e.preventDefault();
 
@@ -40,6 +45,7 @@ const SignupForm = () => {
         repeatPassword: '',
       });
       changeAlert(true, 'Your registration is completed!', 'success');
+      setTimeout(() => setRedirect(true), 1000);
     } catch (error) {
       changeAlert(true, error.message, 'danger');
     }
@@ -116,6 +122,7 @@ const SignupForm = () => {
           <p>{alert.message}</p>
         </Alert>
       )}
+      {redirect && <Redirect to="/" />}
       <p className="mt-3">
         Already Have An Account ?{' '}
         <a href="/login" className="loginLink">
