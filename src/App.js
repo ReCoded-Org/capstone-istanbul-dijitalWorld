@@ -13,7 +13,6 @@ import InspirePage from './containers/inspirePage/InspirePage';
 const ROUTES = [
   { path: '/', name: 'home', Component: Home },
   { path: '/blog', name: 'blog', Component: BlogCard },
-  { path: '/blog/:id', name: 'blog', Component: SingleArticle },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
   { path: '/resources', name: 'resource', Component: Home },
   { path: '/about', name: 'about', Component: Home },
