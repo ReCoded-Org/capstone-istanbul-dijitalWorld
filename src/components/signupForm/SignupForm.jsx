@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import { Image, Form, Col, Button, Container } from 'react-bootstrap';
+import { Image, Form, Col, Button, Container, Alert } from 'react-bootstrap';
 import { auth } from '../../firebase';
 import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
 
 const SignupForm = () => {
+  const [alert, setAlret] = useState({
+    status: false,
+    message: '',
+  });
+
   const [signupInfo, setSignupInfo] = useState({
     firstName: '',
     lastName: '',
@@ -18,17 +23,25 @@ const SignupForm = () => {
 
     try {
       await auth.createUserWithEmailAndPassword(signupInfo.email, signupInfo.password);
+
+      setSignupInfo({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        repeatPassword: '',
+      });
+      setAlret({
+        status: false,
+        message: '',
+      });
     } catch (error) {
+      setAlret({
+        status: true,
+        message: error.message,
+      });
       console.log(error.message);
     }
-
-    setSignupInfo({
-      firstName: '',
-      lastName: '',
-      email: '',
-      password: '',
-      repeatPassword: '',
-    });
   };
 
   return (
@@ -92,6 +105,16 @@ const SignupForm = () => {
           Sign Up
         </Button>
       </Form>
+      {alert.status && (
+        <Alert
+          className="mt-3"
+          variant="danger"
+          onClose={() => setAlret({ ...alert, status: false })}
+          dismissible
+        >
+          <p>{alert.message}</p>
+        </Alert>
+      )}
       <p className="mt-3">
         Already Have An Account ?{' '}
         <a href="/login" className="loginLink">
