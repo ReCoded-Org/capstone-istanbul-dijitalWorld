@@ -24,8 +24,8 @@ const LoginForm = () => {
   // In case of alert it will be an object with 2 keys message and status
   // Status's value will decide the color of the alert "danger" for red and "success" for green
   const [alert, setAlert] = useState(null);
-  const [forgotPassword, setForgotPassword] = useState({
-    show: false,
+  const [forgotPasswordForm, setForgotPasswordForm] = useState({
+    isShown: false,
     email: '',
   });
   const [loginInfo, setLoginInfo] = useState({
@@ -74,8 +74,8 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      await auth.sendPasswordResetEmail(forgotPassword.email);
-      setForgotPassword({ email: '', show: false });
+      await auth.sendPasswordResetEmail(forgotPasswordForm.email);
+      setForgotPasswordForm({ email: '', isShown: false });
       setAlert({ message: 'Password reset email was sent!', status: 'success' });
     } catch (error) {
       setAlert({ message: 'Email was not found!', status: 'danger' });
@@ -132,12 +132,14 @@ const LoginForm = () => {
       <p
         className="mt-3 forgotPassword"
         href="#home"
-        onClick={() => setForgotPassword({ ...forgotPassword, show: !forgotPassword.show })}
+        onClick={() =>
+          setForgotPasswordForm({ ...forgotPasswordForm, isShown: !forgotPasswordForm.isShown })
+        }
       >
         Forgot your password?
       </p>
 
-      {forgotPassword.show && (
+      {forgotPasswordForm.isShown && (
         <Form onSubmit={handleForgotPassword}>
           <Form.Row className="align-items-center">
             <Col>
@@ -145,8 +147,10 @@ const LoginForm = () => {
                 <Form.Control
                   type="email"
                   placeholder="Your email"
-                  value={forgotPassword.email}
-                  onChange={(e) => setForgotPassword({ ...forgotPassword, email: e.target.value })}
+                  value={forgotPasswordForm.email}
+                  onChange={(e) =>
+                    setForgotPasswordForm({ ...forgotPasswordForm, email: e.target.value })
+                  }
                 />
                 <Form.Text className="text-muted">Send a password reset email</Form.Text>
               </Form.Group>
