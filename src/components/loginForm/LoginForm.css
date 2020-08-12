@@ -42,12 +42,12 @@
   border-radius: 25px;
 }
 
-.forgotPassword,
-.forgotPassword:hover {
+.forgotPassword {
   color: black;
 }
 
 .forgotPassword:hover {
+  color: black;
   text-decoration: underline;
   cursor: pointer;
 }
