@@ -6,12 +6,12 @@ import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
 
 const SignupForm = () => {
+  // This state manages the redirecting to the home page that happens after a successful signup
   const [redirect, setRedirect] = useState(false);
-  const [alert, setAlret] = useState({
-    show: false,
-    message: '',
-    status: '',
-  });
+  // Alert state will be set to null in case there's no Alert
+  // In case of alert it will be an object with 2 keys message and status
+  // Status's value will decide the color of the alert "danger" for red and "success" for green
+  const [alert, setAlert] = useState(null);
   const [signupInfo, setSignupInfo] = useState({
     firstName: '',
     lastName: '',
@@ -20,41 +20,38 @@ const SignupForm = () => {
     repeatPassword: '',
   });
 
-  const changeAlert = (show, message = '', status) => {
-    setAlret({
-      show,
-      status,
-      message,
-    });
-  };
-
-  // This function use firebase auth to register the user
-  // Incase of errors it will change the alret state to render a componenet to show the error message to the user
-  // If the login was a success it shows a success alret msg and then redirect the user to the home page
+  // This function uses firebase auth to register the user
+  // In case of any error it will change the alert state to render a component that shows an error message to the user
+  // If the login was successful it will show  a success alert message and then redirect the user to the home page
   const handleSignup = async (e) => {
     e.preventDefault();
-    if (signupInfo.password === signupInfo.repeatPassword) {
-      try {
-        const response = await auth.createUserWithEmailAndPassword(
-          signupInfo.email,
-          signupInfo.password,
-        );
-        setSignupInfo({
-          firstName: '',
-          lastName: '',
-          email: '',
-          password: '',
-          repeatPassword: '',
-        });
-        response.user.sendEmailVerification();
-        changeAlert(true, 'Your registration is completed!', 'success');
-        setTimeout(() => setRedirect(true), 1000);
-      } catch (error) {
-        changeAlert(true, error.message, 'danger');
-      }
-    } else {
-      changeAlert(true, "Passwords doesn't match", 'danger');
+    if (signupInfo.password !== signupInfo.repeatPassword) {
+      setAlert({ message: "Passwords doesn't match", status: 'danger' });
+      return;
     }
+    try {
+      const response = await auth.createUserWithEmailAndPassword(
+        signupInfo.email,
+        signupInfo.password,
+      );
+      response.user.sendEmailVerification();
+    } catch (error) {
+      setAlert({ message: error.message, status: 'danger' });
+      return;
+    }
+    setSignupInfo({
+      firstName: '',
+      lastName: '',
+      email: '',
+      password: '',
+      repeatPassword: '',
+    });
+    setAlert({ message: 'Your registration is completed!', status: 'success' });
+    setTimeout(() => setRedirect(true), 1000);
+  };
+
+  const handleChange = (key) => (e) => {
+    setSignupInfo({ ...signupInfo, [key]: e.target.value });
   };
 
   return (
@@ -68,7 +65,7 @@ const SignupForm = () => {
               type="name"
               placeholder="First name"
               value={signupInfo.firstName}
-              onChange={(e) => setSignupInfo({ ...signupInfo, firstName: e.target.value })}
+              onChange={handleChange('firstName')}
             />
           </Form.Group>
 
@@ -78,7 +75,7 @@ const SignupForm = () => {
               type="name"
               placeholder="Last name"
               value={signupInfo.lastName}
-              onChange={(e) => setSignupInfo({ ...signupInfo, lastName: e.target.value })}
+              onChange={handleChange('lastName')}
             />
           </Form.Group>
         </Form.Row>
@@ -88,7 +85,7 @@ const SignupForm = () => {
             type="email"
             placeholder="Your email"
             value={signupInfo.email}
-            onChange={(e) => setSignupInfo({ ...signupInfo, email: e.target.value })}
+            onChange={handleChange('email')}
           />
         </Form.Group>
 
@@ -99,7 +96,7 @@ const SignupForm = () => {
               type="password"
               placeholder="Password"
               value={signupInfo.password}
-              onChange={(e) => setSignupInfo({ ...signupInfo, password: e.target.value })}
+              onChange={handleChange('password')}
             />
           </Form.Group>
 
@@ -109,7 +106,7 @@ const SignupForm = () => {
               type="password"
               placeholder="Repeat password"
               value={signupInfo.repeatPassword}
-              onChange={(e) => setSignupInfo({ ...signupInfo, repeatPassword: e.target.value })}
+              onChange={handleChange('repeatPassword')}
             />
           </Form.Group>
         </Form.Row>
@@ -118,13 +115,8 @@ const SignupForm = () => {
           Sign Up
         </Button>
       </Form>
-      {alert.show && (
-        <Alert
-          className="mt-3"
-          variant={alert.status}
-          onClose={() => setAlret({ ...alert, show: false })}
-          dismissible
-        >
+      {alert && (
+        <Alert className="mt-3" variant={alert.status} onClose={() => setAlert(null)} dismissible>
           <p>{alert.message}</p>
         </Alert>
       )}
