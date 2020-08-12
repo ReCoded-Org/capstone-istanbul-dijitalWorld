@@ -19,6 +19,9 @@ const ColoredLine = ({ color, width }) => (
 
 const LoginForm = () => {
   const [redirect, setRedirect] = useState(false);
+  // Alert state will be set to null in case there's no Alert
+  // In case of alert it will be an object with 2 keys message and status
+  // Status's value will decide the color of the alert "danger" for red and "success" for green
   const [alert, setAlert] = useState(null);
   const [forgotPassword, setForgotPassword] = useState({
     show: false,
@@ -37,13 +40,13 @@ const LoginForm = () => {
     } catch (error) {
       switch (error.code) {
         case 'auth/user-not-found':
-          setAlert({ message: "User not found!", status: "danger" })
+          setAlert({ message: 'User not found!', status: 'danger' });
           break;
         case 'auth/wrong-password':
-          setAlert({ message: "Incorrect password!", status: "danger" })
+          setAlert({ message: 'Incorrect password!', status: 'danger' });
           break;
         default:
-          setAlert({ message: "Something went wrong!", status: "danger" })
+          setAlert({ message: 'Something went wrong!', status: 'danger' });
       }
     }
   };
@@ -53,7 +56,7 @@ const LoginForm = () => {
       await auth.signInWithPopup(googleProvider);
       setRedirect(true);
     } catch (error) {
-      setAlert({ message: "Something went wrong! please try again.", status: "danger" })
+      setAlert({ message: 'Something went wrong! please try again.', status: 'danger' });
     }
   };
 
@@ -62,7 +65,7 @@ const LoginForm = () => {
       await auth.signInWithPopup(facebookProvider);
       setRedirect(true);
     } catch (error) {
-      setAlert({ message: "Something went wrong! please try again.", status: "danger" })
+      setAlert({ message: 'Something went wrong! please try again.', status: 'danger' });
     }
   };
 
@@ -72,11 +75,15 @@ const LoginForm = () => {
     try {
       await auth.sendPasswordResetEmail(forgotPassword.email);
       setForgotPassword({ email: '', show: false });
-      setAlert({ message: "Password reset email was sent!", status: "success" })
+      setAlert({ message: 'Password reset email was sent!', status: 'success' });
     } catch (error) {
-      setAlert({ message: "Email was not found!", status: "danger" })
+      setAlert({ message: 'Email was not found!', status: 'danger' });
     }
   };
+
+  const handleChange = (key) => (e) => {
+    setLoginInfo({ ...loginInfo, [key]: e.target.value })
+  }
 
   return (
     <Container className="loginContainer">
@@ -100,7 +107,7 @@ const LoginForm = () => {
             type="email"
             placeholder="Your email"
             value={loginInfo.email}
-            onChange={(e) => setLoginInfo({ ...loginInfo, email: e.target.value })}
+            onChange={handleChange("email")}
           />
         </Form.Group>
 
@@ -109,7 +116,7 @@ const LoginForm = () => {
             type="password"
             placeholder="Password"
             value={loginInfo.password}
-            onChange={(e) => setLoginInfo({ ...loginInfo, password: e.target.value })}
+            onChange={handleChange("password")}
           />
         </Form.Group>
 
@@ -153,12 +160,7 @@ const LoginForm = () => {
       )}
 
       {alert && (
-        <Alert
-          className="mt-3"
-          variant={alert.status}
-          onClose={() => setAlert(null)}
-          dismissible
-        >
+        <Alert className="mt-3" variant={alert.status} onClose={() => setAlert(null)} dismissible>
           <p>{alert.message}</p>
         </Alert>
       )}
