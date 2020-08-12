@@ -8,9 +8,8 @@ import './SignupForm.css';
 const SignupForm = () => {
   // This state manages the redirecting to the home page that happens after a successful signup
   const [redirect, setRedirect] = useState(false);
-  // Alert state will be set to null in case there's no Alert
-  // In case of alert it will be an object with 2 keys message and status
-  // Status's value will decide the color of the alert "danger" for red and "success" for green
+  // Alert is null if not present. If present, has two keys, message and status.
+  // Status's value will decide the appearance of the alert
   const [alert, setAlert] = useState(null);
   const [signupInfo, setSignupInfo] = useState({
     firstName: '',
