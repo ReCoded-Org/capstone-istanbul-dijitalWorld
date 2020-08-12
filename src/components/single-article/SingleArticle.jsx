@@ -19,6 +19,7 @@ export default function SingleArticle({ match }) {
   
   return (
     <div>
+      <ScrollToTopOnMount />
       {blogArticles.filter(({id}) => id === parseInt(params.id)).map((blog) => {
         return (
           <Container key={blog.id} className="articleContainer">
