@@ -11,7 +11,7 @@ export default function BlogCard() {
         <Row>
           <Col xs={6} md={6} lg={8}>
             <h3 className="blogTitle">{blog.title}</h3>
-            <span className="blogBody">{blog.body.substring(0, 250)}...</span>
+            <span className="blogBody">{blog.firstPart.substring(0, 250)}...</span>
             <Router>
               <Link to={`/blog/${blog.id}`}>
                 <button type="button" className="readMoreButton">
