@@ -1,66 +1,51 @@
-/* .slider {
-    width: 100%;
-    height: 100%;
-} */
-/* 
-.slider div {
-    display: block;
-    align-items: center;
-}
-
-.resourceImage {
-    display: inline; 
-} */
-
 .permanentTitle {
-    font-size: 54px;
-    line-height: 63px;
-    color: #F8B195;
+  font-size: 54px;
+  line-height: 63px;
+  color: #f8b195;
 }
 
 .resourceHeader {
-    font-size: 54px;
-    font-weight: bold;
-    line-height: 63px;
-    letter-spacing: -1.92857px;
-    color: #6C567B;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 63px;
+  letter-spacing: -1.92857px;
+  color: #6c567b;
 }
+
 .resourceBlurp {
-    font-size: 18px;
-    line-height: 21px;
-    color: #9DAFBD;
+  font-size: 18px;
+  line-height: 21px;
+  color: #9dafbd;
 }
 
 .resourceButton {
-    background-color: #6c567b !important;
-    color: white;
-    cursor: pointer;
-    width: auto;
-    min-width: 11rem !important;
-    height: 3rem;
-    font-size: 1.25rem;
-    border-radius: 2.5rem !important;
-    border-style: hidden;
+  background-color: #6c567b !important;
+  color: white;
+  cursor: pointer;
+  width: auto;
+  min-width: 11rem !important;
+  height: 3rem;
+  font-size: 1.25rem;
+  border-radius: 2.5rem !important;
+  border-style: hidden;
 }
 
 .blurpBlock {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 .resourceButton:hover {
-    background-color: #f8b195;
-    border-style: hidden;
-  }
+  background-color: #f8b195;
+  border-style: hidden;
+}
 
 .carouselContainer {
-    display: flex !important;
-    flex-direction: row;
-    /* justify-content: center; */
-    padding: 2%;
-    margin: 2%;
-    /* width: 100%; */
+  display: flex !important;
+  flex-direction: row;
+  padding: 2%;
+  margin: 2%;
 }
 
 .container {
-    margin: 7% 0;
+  margin: 7% 0;
 }
