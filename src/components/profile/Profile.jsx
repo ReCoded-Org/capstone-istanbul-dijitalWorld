@@ -22,21 +22,18 @@ export default function Profile() {
           </Row>
           <Row>
             <Col>
-              {' '}
               <h5>{t('profile.email')}</h5>
             </Col>
             <Col> email@gmail.com</Col>
           </Row>
           <Row>
             <Col>
-              {' '}
               <h5>{t('profile.birthday')}</h5>
             </Col>
             <Col>31-13-1901</Col>
           </Row>
           <Row>
             <Col>
-              {' '}
               <h5>{t('profile.phone')}</h5>
             </Col>
             <Col>+811234567 </Col>
