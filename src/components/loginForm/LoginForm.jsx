@@ -18,6 +18,7 @@ const ColoredLine = ({ color, width }) => (
 );
 
 const LoginForm = () => {
+  // This state manages the redirecting to the home page that happens after a successful login
   const [redirect, setRedirect] = useState(false);
   // Alert state will be set to null in case there's no Alert
   // In case of alert it will be an object with 2 keys message and status
@@ -82,8 +83,8 @@ const LoginForm = () => {
   };
 
   const handleChange = (key) => (e) => {
-    setLoginInfo({ ...loginInfo, [key]: e.target.value })
-  }
+    setLoginInfo({ ...loginInfo, [key]: e.target.value });
+  };
 
   return (
     <Container className="loginContainer">
@@ -107,7 +108,7 @@ const LoginForm = () => {
             type="email"
             placeholder="Your email"
             value={loginInfo.email}
-            onChange={handleChange("email")}
+            onChange={handleChange('email')}
           />
         </Form.Group>
 
@@ -116,7 +117,7 @@ const LoginForm = () => {
             type="password"
             placeholder="Password"
             value={loginInfo.password}
-            onChange={handleChange("password")}
+            onChange={handleChange('password')}
           />
         </Form.Group>
 
