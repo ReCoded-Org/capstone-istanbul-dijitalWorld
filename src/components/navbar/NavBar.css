@@ -16,7 +16,7 @@
   color: #6c567b !important;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
 }
 
@@ -46,7 +46,7 @@
 
 .signupFilledButton,
 .loginOutlinedButton {
-  box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
+  box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.116);
   font-size: 14px;
   display: inline-flex;
   justify-content: center;
@@ -59,7 +59,7 @@
 .signupFilledButton {
   background-color: #6c567b !important;
   outline: none;
-  border: none;
+  border: none !important;
 }
 
 .loginOutlinedButton {
@@ -87,7 +87,7 @@
 }
 
 .loginOutlinedButton:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #f8b195;
 }
 
