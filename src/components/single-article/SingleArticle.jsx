@@ -12,7 +12,6 @@ function ScrollToTopOnMount() {
 
   return null;
 }
-
 export default function SingleArticle({ match }) {
   let params = useParams();
   console.log(params.id);
