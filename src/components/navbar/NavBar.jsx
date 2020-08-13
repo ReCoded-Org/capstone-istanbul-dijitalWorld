@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Dropdown, DropdownButton, Button, Image } from 'react-bootstrap/';
+import { useDispatch, useSelector } from "react-redux";
+import { userLoggedInAction } from "../../redux/action"
 import { auth } from "../../firebase";
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
@@ -11,7 +13,9 @@ import './NavBar.css';
 
 export default function NavBar({ routes }) {
 
-  const [isLogged, setIsLogged] = useState(null)
+  const dispatch = useDispatch();
+  const isLogged = useSelector((state) => state.currentUserDataReducer)
+  const [isLoggedOut, setIsLoggedOut] = useState(false)
 
   const loginSignupButton = (<><Route
     render={({ history }) => (
@@ -35,14 +39,12 @@ export default function NavBar({ routes }) {
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
-        console.log("someone logged in")
+        setIsLoggedOut(false);
         // Provider data is a key in the user object, containing an array that has the user's info in the first index as an object
-        setIsLogged(user.providerData[0])
-        console.log(isLogged)
-        // console.log(user)
+        dispatch(userLoggedInAction(user.providerData[0]));
       } else {
-        // console.log(user)
-        console.log("no one is logged")
+        dispatch(userLoggedInAction(null));
+        setIsLoggedOut(true);
       }
     })
 
@@ -68,7 +70,10 @@ export default function NavBar({ routes }) {
         </Nav>
         <div className="buttonGroup">
           {
-            isLogged ? <Image src={isLogged.photoURL} roundedCircle style={{ width: "50px" }} /> : loginSignupButton
+            isLogged && <Image onClick={() => auth.signOut()} src={isLogged.photoURL} roundedCircle style={{ width: "50px" }} />
+          }
+          {
+            isLoggedOut && loginSignupButton
           }
         </div>
       </Navbar.Collapse>

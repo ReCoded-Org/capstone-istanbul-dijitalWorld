@@ -1,4 +1,4 @@
-import { USER_LOGGED_IN, USER_LOGGED_OUT } from './types';
+import { USER_LOGGED_IN } from './types';
 
 export const userLoggedInAction = (data) => {
     return {
@@ -7,10 +7,4 @@ export const userLoggedInAction = (data) => {
     };
 };
 
-export const userLoggedOutAction = (data) => {
-    return {
-        type: USER_LOGGED_OUT,
-        payload: data,
-    };
-};
 
