@@ -21,11 +21,14 @@ const STATUS_DANGER = 'danger';
 const STATUS_SUCCESS = 'success';
 
 const AUTH_LOGIN_ERROR = 'Something went wrong! please try again.';
+
+// These Keys are coming from firebase
 const PASSWORD_LOGIN_ERRORS = {
   'auth/user-not-found': 'User not found!',
   'auth/wrong-password': 'Incorrect password!',
   default: 'Something went wrong!',
 };
+
 const PASSWORD_RESET_MESSAGE = {
   success: 'Password reset email was sent!',
   error: 'Email was not found!',
