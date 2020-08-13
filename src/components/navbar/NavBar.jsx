@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
 import { Route } from 'react-router-dom';
 import './NavBar.css';
-import { Route } from 'react-router-dom';
 
 export default function NavBar({ routes }) {
   const { t } = useTranslation();
@@ -26,8 +25,7 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
-
-         <Route
+          <Route
             render={({ history }) => (
               <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
                 {t('home.navBar.buttons.signup')}
@@ -45,7 +43,6 @@ export default function NavBar({ routes }) {
               </Button>
             )}
           />
-
         </div>
       </Navbar.Collapse>
       <DropdownButton

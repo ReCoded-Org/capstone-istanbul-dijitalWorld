@@ -11,7 +11,6 @@ import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
 
-
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
 const ROUTES = [
