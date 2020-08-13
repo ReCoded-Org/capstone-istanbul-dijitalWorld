@@ -17,6 +17,20 @@ const ColoredLine = ({ color, width }) => (
   />
 );
 
+const STATUS_DANGER = 'danger';
+const STATUS_SUCCESS = 'success';
+
+const AUTH_LOGIN_ERROR = 'Something went wrong! please try again.';
+const PASSWORD_LOGIN_ERRORS = {
+  'auth/user-not-found': 'User not found!',
+  'auth/wrong-password': 'Incorrect password!',
+  default: 'Something went wrong!',
+};
+const PASSWORD_RESET_MESSAGE = {
+  success: 'Password reset email was sent!',
+  error: 'Email was not found!',
+};
+
 const LoginForm = () => {
   // This state manages the redirecting to the home page that happens after a successful login
   const [redirect, setRedirect] = useState(false);
@@ -41,13 +55,19 @@ const LoginForm = () => {
     } catch (error) {
       switch (error.code) {
         case 'auth/user-not-found':
-          setAlert({ message: 'User not found!', status: 'danger' });
+          setAlert({
+            message: PASSWORD_LOGIN_ERRORS['auth/user-not-found'],
+            status: STATUS_DANGER,
+          });
           break;
         case 'auth/wrong-password':
-          setAlert({ message: 'Incorrect password!', status: 'danger' });
+          setAlert({
+            message: PASSWORD_LOGIN_ERRORS['auth/wrong-password'],
+            status: STATUS_DANGER,
+          });
           break;
         default:
-          setAlert({ message: 'Something went wrong!', status: 'danger' });
+          setAlert({ message: PASSWORD_LOGIN_ERRORS['default'], status: STATUS_DANGER });
       }
     }
   };
@@ -57,7 +77,7 @@ const LoginForm = () => {
       await auth.signInWithPopup(googleProvider);
       setRedirect(true);
     } catch (error) {
-      setAlert({ message: 'Something went wrong! please try again.', status: 'danger' });
+      setAlert({ message: AUTH_LOGIN_ERROR, status: STATUS_DANGER });
     }
   };
 
@@ -66,7 +86,7 @@ const LoginForm = () => {
       await auth.signInWithPopup(facebookProvider);
       setRedirect(true);
     } catch (error) {
-      setAlert({ message: 'Something went wrong! please try again.', status: 'danger' });
+      setAlert({ message: AUTH_LOGIN_ERROR, status: STATUS_DANGER });
     }
   };
 
@@ -76,9 +96,9 @@ const LoginForm = () => {
     try {
       await auth.sendPasswordResetEmail(forgotPasswordForm.email);
       setForgotPasswordForm({ email: '', isShown: false });
-      setAlert({ message: 'Password reset email was sent!', status: 'success' });
+      setAlert({ message: PASSWORD_RESET_MESSAGE.success, status: STATUS_SUCCESS });
     } catch (error) {
-      setAlert({ message: 'Email was not found!', status: 'danger' });
+      setAlert({ message: PASSWORD_RESET_MESSAGE.error, status: STATUS_DANGER });
     }
   };
 
@@ -131,7 +151,6 @@ const LoginForm = () => {
       </Form>
       <p
         className="mt-3 forgotPassword"
-        href="#home"
         onClick={() =>
           setForgotPasswordForm({ ...forgotPasswordForm, isShown: !forgotPasswordForm.isShown })
         }
