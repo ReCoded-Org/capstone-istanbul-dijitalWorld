@@ -8,6 +8,7 @@ import SingleArticle from './components/single-article/SingleArticle';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
+import SignupPage from './containers/signupPage/SignupPage';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
@@ -33,7 +34,13 @@ function App() {
           <Component />
         </Route>
       ))}
+
+      <Route exact path="/signup">
+        <SignupPage />
+      </Route>
+
       <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
+
       <Footer />
     </Router>
   );
