@@ -1,0 +1,63 @@
+import React from 'react';
+import { Col, Row, Container, Image } from 'react-bootstrap';
+import {  NavLink } from 'react-router-dom';
+import './BlogCard.css'
+
+export default function SingleBlogCard(props) {
+ console.log(props.post.jetpack_featured_media_url);
+
+ return (
+   <div className="containerToAllCards">
+     <Container className="blogContainer">
+       <Row>
+         <Col xs={6} md={6} lg={8}>
+           <h3 className="blogTitle">{props.post.title.rendered}</h3>
+           <span
+             className="blogBody"
+             dangerouslySetInnerHTML={{
+               __html: props.post.excerpt.rendered,
+             }}
+           ></span>
+             <NavLink to={`/blog/${props.post.id}`}>
+               <button type="button" className="readMoreButton">
+                 Read More
+               </button>
+             </NavLink>
+         </Col>
+         <Col xs={4} md={4} lg={3} className="imageContainer">
+           <Image
+             src={props.post.jetpack_featured_media_url}
+             className="roundImage"
+             roundedCircle
+           />
+         </Col>
+       </Row>
+     </Container>
+     <hr />
+   </div>
+ );
+}
+
+
+
+// return (
+//   <div>
+//     <Container key={blog.id} className="blogContainer">
+//       <Row>
+//         <Col xs={6} md={6} lg={8}>
+//           <h3 className="blogTitle">{blog.title}</h3>
+//           <span className="blogBody">{blog.firstPart.substring(0, 250)}...</span>
+//           <NavLink to={`/blog/${blog.id}`}>
+//             <button type="button" className="readMoreButton">
+//               Read More
+//             </button>
+//           </NavLink>
+//         </Col>
+//         <Col xs={4} md={4} lg={3} className="imageContainer">
+//           <Image src={blog.imgUrl} className="roundImage" roundedCircle />
+//         </Col>
+//       </Row>
+//     </Container>
+//     <hr />
+//   </div>
+// );

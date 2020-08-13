@@ -16,7 +16,7 @@
 
 .blogTitle {
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
   color: #6c567b;
   font-size: 30px;
 }
@@ -27,12 +27,13 @@
   line-height: 150%;
 }
 
-.imageContainer {
-  margin-left: 3em;
+.roundImage {
+  width: 18em;
+  height: 18em;
+  align-self: center;
 }
 
-.roundImage {
-  width: 17em;
-  height: 17em;
-  align-self: center;
+hr {
+  border-top: 5px dotted lightgray;
+  width: 2%;
 }

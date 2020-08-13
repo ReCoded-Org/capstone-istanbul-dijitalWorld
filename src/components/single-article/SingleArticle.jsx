@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-import blogArticles from '../blog-cards/blog.json';
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import './SingleArticle.css';
@@ -13,31 +12,45 @@ function ScrollToTopOnMount() {
   return null;
 }
 
-export default function SingleArticle({ match }) {
+export default function SingleArticle(props) {
   let params = useParams();
   console.log(params.id);
+
+  const [allPosts, setAllPosts] = React.useState([]);
+
+  const getAllPosts = async () => {
+    const data = await fetch(
+      'https://public-api.wordpress.com/wp/v2/sites/worldwithwomen30560421.wordpress.com/posts',
+    );
+    const posts = await data.json();
+    setAllPosts(posts);
+  };
+
+  React.useEffect(() => {
+    getAllPosts();
+  }, []);
   
-  return (
-    <div>
-      {blogArticles.filter(({id}) => id === parseInt(params.id)).map((blog) => {
-        return (
-          <Container key={blog.id} className="articleContainer">
-            <ScrollToTopOnMount/>
-            <Row>
-              <Col xs={6} md={6} lg={8}>
-                <h1 className="articleTitle">{blog.title}</h1>
-                <span>By {blog.author}</span>
-              </Col>
-            </Row>
-            <Row>
-              <span className="articleBody">{blog.firstPart}</span>
-              <Image src={blog.imgUrl} className="articleImage" />
-              <span className="articleBody">{blog.secondPart}</span>
-              <span className="articleBody">{blog.thirdPart}</span>
-            </Row>
-          </Container>
-        );
-      })}
-    </div>
-  );
+  return allPosts
+    .filter(({ id }) => id === parseInt(params.id))
+    .map((post, index) => {
+      return (
+        <Container className="articleContainer">
+          <ScrollToTopOnMount />
+          <Row>
+            <Col xs={6} md={6} lg={8}>
+              <h1 className="articleTitle">{post.title.rendered}</h1>
+            </Col>
+          </Row>
+          <Row className="textBodyHolder">
+            <Image src={post.jetpack_featured_media_url} className="articleImage" />
+            <span
+              className="blogBody"
+              dangerouslySetInnerHTML={{
+                __html: post.content.rendered,
+              }}
+            ></span>
+          </Row>
+        </Container>
+      );
+    });
 }

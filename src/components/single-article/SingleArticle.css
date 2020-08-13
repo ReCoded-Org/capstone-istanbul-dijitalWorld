@@ -3,13 +3,18 @@
 }
 
 .articleContainer {
-  width: 90%;
-  text-align: center;
   margin: 10em auto 5em auto;
+}
+
+.textBodyHolder {
+  width: 70%;
+  text-align: justify;
+  margin: auto;
 }
 
 .articleTitle {
   color: #f8b195;
+  margin-bottom: 2rem;
 }
 
 .articleImage {
