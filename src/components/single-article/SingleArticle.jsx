@@ -29,7 +29,7 @@ export default function SingleArticle(props) {
   React.useEffect(() => {
     getAllPosts();
   }, []);
-  
+
   return allPosts
     .filter(({ id }) => id === parseInt(params.id))
     .map((post, index) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import SingleBlogCard from './SingleBlogCard'
+import SingleBlogCard from './SingleBlogCard';
 import './BlogCard.css';
 
 export default function BlogCard() {
@@ -17,8 +17,5 @@ export default function BlogCard() {
     getAllPosts();
   }, []);
 
-  return allPosts.map((post, index) => (
-      <SingleBlogCard post={post} />
-      )
-  );
+  return allPosts.map((post, index) => <SingleBlogCard post={post} />);
 }

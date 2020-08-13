@@ -9,6 +9,14 @@
   border: none;
 }
 
+.readMoreButton:active {
+  outline: none;
+}
+
+.readMoreButton:hover {
+  text-decoration-color: none;
+}
+
 .blogContainer {
   text-align: justify;
   margin: 100px auto;
