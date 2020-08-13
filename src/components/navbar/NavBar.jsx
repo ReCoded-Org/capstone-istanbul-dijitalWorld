@@ -32,9 +32,17 @@ export default function NavBar({ routes }) {
               </Button>
             )}
           ></Route>
-          <Button className="loginOutlinedButton" variant="outline">
-            {t('home.navBar.buttons.login')}
-          </Button>
+          <Route
+            render={({ history }) => (
+              <Button
+                className="loginOutlinedButton"
+                variant="outline"
+                onClick={() => history.push('/login')}
+              >
+                {t('home.navBar.buttons.login')}
+              </Button>
+            )}
+          />
         </div>
       </Navbar.Collapse>
       <DropdownButton
