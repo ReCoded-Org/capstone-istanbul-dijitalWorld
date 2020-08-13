@@ -4,14 +4,13 @@ import './index.css';
 import './i18n';
 import { App } from './App';
 import * as serviceWorker from './serviceWorker';
-import { Provider } from "react-redux";
-import { createStore } from "redux";
-import allReducers from "./redux/reducers"
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import allReducers from './redux/reducers';
 
 const store = createStore(
   allReducers,
-  window.devToolsExtension ? window.devToolsExtension() : (f) => f
-
+  window.devToolsExtension ? window.devToolsExtension() : (f) => f,
 );
 
 ReactDOM.render(

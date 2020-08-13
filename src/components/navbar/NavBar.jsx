@@ -1,40 +1,41 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Dropdown, DropdownButton, Button, Image } from 'react-bootstrap/';
-import { useDispatch, useSelector } from "react-redux";
-import { userLoggedInAction } from "../../redux/action"
-import { auth } from "../../firebase";
+import { useDispatch, useSelector } from 'react-redux';
+import { userLoggedInAction } from '../../redux/action';
+import { auth } from '../../firebase';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
 import { Route } from 'react-router-dom';
 import './NavBar.css';
 
-
-
 export default function NavBar({ routes }) {
-
   const dispatch = useDispatch();
-  const isLogged = useSelector((state) => state.currentUserDataReducer)
-  const [isLoggedOut, setIsLoggedOut] = useState(false)
+  const isLogged = useSelector((state) => state.currentUserDataReducer);
+  const [isLoggedOut, setIsLoggedOut] = useState(false);
 
-  const loginSignupButton = (<><Route
-    render={({ history }) => (
-      <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
-        {t('home.navBar.buttons.signup')}
-      </Button>
-    )}
-  ></Route>
-    <Route
-      render={({ history }) => (
-        <Button
-          className="loginOutlinedButton"
-          variant="outline"
-          onClick={() => history.push('/login')}
-        >
-          {t('home.navBar.buttons.login')}
-        </Button>
-      )}
-    /></>)
+  const loginSignupButton = (
+    <>
+      <Route
+        render={({ history }) => (
+          <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
+            {t('home.navBar.buttons.signup')}
+          </Button>
+        )}
+      ></Route>
+      <Route
+        render={({ history }) => (
+          <Button
+            className="loginOutlinedButton"
+            variant="outline"
+            onClick={() => history.push('/login')}
+          >
+            {t('home.navBar.buttons.login')}
+          </Button>
+        )}
+      />
+    </>
+  );
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -46,10 +47,8 @@ export default function NavBar({ routes }) {
         dispatch(userLoggedInAction(null));
         setIsLoggedOut(true);
       }
-    })
-
-  })
-
+    });
+  });
 
   const { t } = useTranslation();
 
@@ -69,12 +68,15 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
-          {
-            isLogged && <Image onClick={() => auth.signOut()} src={isLogged.photoURL} roundedCircle style={{ width: "50px" }} />
-          }
-          {
-            isLoggedOut && loginSignupButton
-          }
+          {isLogged && (
+            <Image
+              onClick={() => auth.signOut()}
+              src={isLogged.photoURL}
+              roundedCircle
+              style={{ width: '50px' }}
+            />
+          )}
+          {isLoggedOut && loginSignupButton}
         </div>
       </Navbar.Collapse>
       <DropdownButton

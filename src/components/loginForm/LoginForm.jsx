@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { Image, Form, Button, Container, Col, Alert } from 'react-bootstrap';
 import Logo from '../../images/www-logo.png';
 import { auth, googleProvider, facebookProvider } from '../../firebase';
 import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebookicon.svg';
-import { useDispatch } from "react-redux";
-import { userLoggedInAction } from "../../redux/action"
 import './LoginForm.css';
 
 const ColoredLine = ({ color, width }) => (
@@ -37,7 +35,6 @@ const PASSWORD_RESET_MESSAGE = {
 };
 
 const LoginForm = () => {
-
   // This state manages the redirecting to the home page that happens after a successful login
   const [redirect, setRedirect] = useState(false);
   // Alert state will be set to null in case there's no Alert
