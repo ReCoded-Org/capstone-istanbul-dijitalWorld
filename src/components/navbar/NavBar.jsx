@@ -3,6 +3,7 @@ import { Navbar, Nav, Dropdown, DropdownButton, Button } from 'react-bootstrap/'
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
+import { Route } from 'react-router-dom';
 import './NavBar.css';
 import { Route } from 'react-router-dom';
 
@@ -25,7 +26,14 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
-          <Button className="signupFilledButton">{t('home.navBar.buttons.signup')}</Button>
+
+         <Route
+            render={({ history }) => (
+              <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
+                {t('home.navBar.buttons.signup')}
+              </Button>
+            )}
+          ></Route>
           <Route
             render={({ history }) => (
               <Button
@@ -37,6 +45,7 @@ export default function NavBar({ routes }) {
               </Button>
             )}
           />
+
         </div>
       </Navbar.Collapse>
       <DropdownButton

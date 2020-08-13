@@ -9,7 +9,8 @@ exports[`renders correctly 1`] = `
     src="www-logo.png"
   />
   <form
-    className=""
+    className="form"
+    onSubmit={[Function]}
   >
     <div
       className="form-row"
@@ -20,8 +21,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridFirstName"
+          onChange={[Function]}
           placeholder="First name"
+          required={true}
           type="name"
+          value=""
         />
       </div>
       <div
@@ -30,8 +34,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridLastName"
+          onChange={[Function]}
           placeholder="Last name"
+          required={true}
           type="name"
+          value=""
         />
       </div>
     </div>
@@ -41,8 +48,10 @@ exports[`renders correctly 1`] = `
       <input
         className="form-control"
         id="formGridEmail"
+        onChange={[Function]}
         placeholder="Your email"
         type="email"
+        value=""
       />
     </div>
     <div
@@ -54,8 +63,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridPassword"
+          onChange={[Function]}
           placeholder="Password"
+          required={true}
           type="password"
+          value=""
         />
       </div>
       <div
@@ -64,8 +76,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridRepeatPassword"
+          onChange={[Function]}
           placeholder="Repeat password"
+          required={true}
           type="password"
+          value=""
         />
       </div>
     </div>
