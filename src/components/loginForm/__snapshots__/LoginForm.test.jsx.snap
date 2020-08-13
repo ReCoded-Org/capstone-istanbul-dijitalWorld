@@ -129,7 +129,6 @@ exports[`renders correctly 1`] = `
   </form>
   <p
     className="mt-3 forgotPassword"
-    href="#home"
     onClick={[Function]}
   >
     Forgot your password?
