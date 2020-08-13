@@ -1,12 +1,54 @@
-import React from 'react';
-import { Navbar, Nav, Dropdown, DropdownButton, Button } from 'react-bootstrap/';
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav, Dropdown, DropdownButton, Button, Image } from 'react-bootstrap/';
+import { auth } from "../../firebase";
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
 import { Route } from 'react-router-dom';
 import './NavBar.css';
 
+
+
 export default function NavBar({ routes }) {
+
+  const [isLogged, setIsLogged] = useState(null)
+
+  const loginSignupButton = (<><Route
+    render={({ history }) => (
+      <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
+        {t('home.navBar.buttons.signup')}
+      </Button>
+    )}
+  ></Route>
+    <Route
+      render={({ history }) => (
+        <Button
+          className="loginOutlinedButton"
+          variant="outline"
+          onClick={() => history.push('/login')}
+        >
+          {t('home.navBar.buttons.login')}
+        </Button>
+      )}
+    /></>)
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        console.log("someone logged in")
+        // Provider data is a key in the user object, containing an array that has the user's info in the first index as an object
+        setIsLogged(user.providerData[0])
+        console.log(isLogged)
+        // console.log(user)
+      } else {
+        // console.log(user)
+        console.log("no one is logged")
+      }
+    })
+
+  })
+
+
   const { t } = useTranslation();
 
   return (
@@ -25,24 +67,9 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
-          <Route
-            render={({ history }) => (
-              <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
-                {t('home.navBar.buttons.signup')}
-              </Button>
-            )}
-          ></Route>
-          <Route
-            render={({ history }) => (
-              <Button
-                className="loginOutlinedButton"
-                variant="outline"
-                onClick={() => history.push('/login')}
-              >
-                {t('home.navBar.buttons.login')}
-              </Button>
-            )}
-          />
+          {
+            isLogged ? <Image src={isLogged.photoURL} roundedCircle style={{ width: "50px" }} /> : loginSignupButton
+          }
         </div>
       </Navbar.Collapse>
       <DropdownButton
