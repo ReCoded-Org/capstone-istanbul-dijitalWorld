@@ -60,7 +60,6 @@ export default function NavBar({ routes }) {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setIsLoggedOut(false);
-        // Providerdata's value contains an array that has the user's info in the first index as an object
         dispatch(userLoggedInAction(user));
       } else {
         dispatch(userLoggedInAction(null));
