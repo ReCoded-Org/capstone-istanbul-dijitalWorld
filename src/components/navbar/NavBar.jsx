@@ -6,16 +6,13 @@ import { auth } from '../../firebase';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './NavBar.css';
 
 const ANONYMOUS_PHOTO_URL =
   'https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg';
 
 export default function NavBar({ routes }) {
-  // This state manages the redirecting to the home page that happens after a successful logout
-  const [homeRedirect, setHomeRedirect] = useState(false);
-  const [profileRedirect, setProfileRedirect] = useState(false);
   const dispatch = useDispatch();
   // Incase user is logged out this variable will be null which will case the user picture not to render
   const userData = useSelector((state) => state.currentUserDataReducer);
@@ -95,29 +92,36 @@ export default function NavBar({ routes }) {
             <Dropdown alignRight className="mr-3">
               <Dropdown.Toggle as={CustomToggle} id="dropdown-split-basic"></Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item
-                  onClick={() => {
-                    setProfileRedirect(true);
-                  }}
-                  eventKey="1"
-                >
-                  Profile
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => {
-                    setHomeRedirect(true);
-                    auth.signOut();
-                  }}
-                  eventKey="2"
-                >
-                  SignOut
-                </Dropdown.Item>
+                <Route
+                  render={({ history }) => (
+                    <Dropdown.Item
+                      onClick={() => history.push("/profile")
+                      }
+                      eventKey="1"
+                    >
+                      Profile
+                    </Dropdown.Item>
+                  )}
+                />
+                <Route
+                  render={({ history }) => (
+                    <Dropdown.Item
+                      onClick={() => {
+                        auth.signOut();
+                        history.push("/")
+                      }
+                      }
+                      eventKey="1"
+                    >
+                      Sign out
+                    </Dropdown.Item>
+                  )}
+                />
+
               </Dropdown.Menu>
             </Dropdown>
           )}
           {isLoggedOut && loginSignupButton}
-          {homeRedirect && <Redirect to="/" />}
-          {profileRedirect && <Redirect to="/profile" />}
         </div>
       </Navbar.Collapse>
       <DropdownButton
