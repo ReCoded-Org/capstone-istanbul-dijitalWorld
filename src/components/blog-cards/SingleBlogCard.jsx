@@ -14,8 +14,7 @@ export default function SingleBlogCard(props) {
               dangerouslySetInnerHTML={{
                 __html: props.post.title.rendered,
               }}
-            >
-            </h3>
+            ></h3>
             <span
               className="blogBody"
               dangerouslySetInnerHTML={{

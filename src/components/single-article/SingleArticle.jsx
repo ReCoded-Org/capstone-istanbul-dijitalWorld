@@ -12,9 +12,8 @@ function ScrollToTopOnMount() {
   return null;
 }
 
-export default function SingleArticle(props) {
+export default function SingleArticle() {
   let params = useParams();
-  console.log(params.id);
 
   const [allPosts, setAllPosts] = React.useState([]);
 
@@ -32,7 +31,7 @@ export default function SingleArticle(props) {
 
   return allPosts
     .filter(({ id }) => id === parseInt(params.id))
-    .map((post, index) => {
+    .map((post) => {
       return (
         <Container className="articleContainer">
           <ScrollToTopOnMount />
