@@ -125,7 +125,7 @@
     "password": "Password",
     "repeatPassword": "Repeat password",
     "signup": "Sign Up",
-    "existingAccount": "Already Have An Account ?",
+    "existingAccount": "Already have an account?",
     "login": "Login"
   }
 }
