@@ -110,5 +110,15 @@
     "email": "البريد الالكتروني",
     "birthday": "تاريخ الميلاد:",
     "phone": "الهاتف"
+  },
+  "signup": {
+    "firstName": "الإسم الأول",
+    "lastName": "الكنية",
+    "email": "بريدك الإلكتروني",
+    "password": "كلمة المرور",
+    "repeatPassword": "إعادة كلمة المرور",
+    "signup": "تسجيل",
+    "existingAccount": "لديك حساب هنا؟",
+    "login": "تسجيل الدخول"
   }
 }
