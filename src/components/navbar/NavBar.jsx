@@ -11,7 +11,8 @@ import './NavBar.css';
 
 export default function NavBar({ routes }) {
   const dispatch = useDispatch();
-  const isLogged = useSelector((state) => state.currentUserDataReducer);
+  // Incase user is logged out this variable will be null which will case the user picture not to render
+  const userData = useSelector((state) => state.currentUserDataReducer);
   const [isLoggedOut, setIsLoggedOut] = useState(false);
 
   const loginSignupButton = (
@@ -41,7 +42,7 @@ export default function NavBar({ routes }) {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setIsLoggedOut(false);
-        // Provider data is a key in the user object, containing an array that has the user's info in the first index as an object
+        // Providerdata's value contains an array that has the user's info in the first index as an object
         dispatch(userLoggedInAction(user.providerData[0]));
       } else {
         dispatch(userLoggedInAction(null));
@@ -68,10 +69,10 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
-          {isLogged && (
+          {userData && (
             <Image
               onClick={() => auth.signOut()}
-              src={isLogged.photoURL}
+              src={userData.photoURL}
               roundedCircle
               style={{ width: '50px' }}
             />
