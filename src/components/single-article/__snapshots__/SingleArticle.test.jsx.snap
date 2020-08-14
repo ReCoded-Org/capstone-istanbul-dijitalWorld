@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Navbar component 1`] = `
+exports[`renders SingleArticle component 1`] = `
 <MemoryRouter>
   <SingleArticle />
 </MemoryRouter>
