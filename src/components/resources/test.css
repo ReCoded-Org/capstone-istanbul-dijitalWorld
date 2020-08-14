@@ -1,20 +1,20 @@
 .permanentTitle {
-  font-size: 54px;
-  line-height: 63px;
+  font-size: 3.375rem;
+  line-height: 3.9375rem;
   color: #f8b195;
 }
 
 .resourceHeader {
-  font-size: 54px;
+  font-size: 3.375rem;
   font-weight: bold;
-  line-height: 63px;
-  letter-spacing: -1.92857px;
+  line-height: 3.9375rem;
+  letter-spacing: -0.120535625rem;
   color: #6c567b;
 }
 
 .resourceBlurp {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   color: #9dafbd;
 }
 
@@ -47,5 +47,5 @@
 }
 
 .container {
-  margin: 7% 0;
+  margin: 2% 0;
 }
