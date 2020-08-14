@@ -100,14 +100,7 @@
   },
   "inspire": {
     "subject": "Subject",
-    "category": [
-      "Category",
-      "Education",
-      "Work",
-      "Family",
-      "Social",
-      "Other"
-    ],
+    "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
     "story": "Your Story",
     "button": "Inspire"
   },
