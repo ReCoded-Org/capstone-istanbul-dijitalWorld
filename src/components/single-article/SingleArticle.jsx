@@ -38,7 +38,12 @@ export default function SingleArticle(props) {
           <ScrollToTopOnMount />
           <Row>
             <Col xs={6} md={6} lg={8}>
-              <h1 className="articleTitle">{post.title.rendered}</h1>
+              <h1
+                className="articleTitle"
+                dangerouslySetInnerHTML={{
+                  __html: post.title.rendered,
+                }}
+              ></h1>
             </Col>
           </Row>
           <Row className="textBodyHolder">

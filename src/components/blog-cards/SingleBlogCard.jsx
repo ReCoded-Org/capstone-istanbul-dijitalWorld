@@ -4,14 +4,18 @@ import { NavLink } from 'react-router-dom';
 import './BlogCard.css';
 
 export default function SingleBlogCard(props) {
-  console.log(props.post.jetpack_featured_media_url);
-
   return (
     <div className="containerToAllCards">
       <Container className="blogContainer">
         <Row>
           <Col xs={6} md={6} lg={8}>
-            <h3 className="blogTitle">{props.post.title.rendered}</h3>
+            <h3
+              className="blogTitle"
+              dangerouslySetInnerHTML={{
+                __html: props.post.title.rendered,
+              }}
+            >
+            </h3>
             <span
               className="blogBody"
               dangerouslySetInnerHTML={{
