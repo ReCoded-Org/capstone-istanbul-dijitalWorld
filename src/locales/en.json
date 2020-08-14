@@ -117,5 +117,15 @@
     "email": "E-mail:",
     "birthday": "Birthday:",
     "phone": "Phone:"
+  },
+  "signup": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Your email",
+    "password": "Password",
+    "repeatPassword": "Repeat password",
+    "signup": "Sign Up",
+    "existingAccount": "Already Have An Account ?",
+    "login": "Login"
   }
 }

@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
           className="form-control"
           id="formGridFirstName"
           onChange={[Function]}
-          placeholder="First name"
+          placeholder="signup.firstName"
           required={true}
           type="name"
           value=""
@@ -35,7 +35,7 @@ exports[`renders correctly 1`] = `
           className="form-control"
           id="formGridLastName"
           onChange={[Function]}
-          placeholder="Last name"
+          placeholder="signup.lastName"
           required={true}
           type="name"
           value=""
@@ -49,7 +49,7 @@ exports[`renders correctly 1`] = `
         className="form-control"
         id="formGridEmail"
         onChange={[Function]}
-        placeholder="Your email"
+        placeholder="signup.email"
         type="email"
         value=""
       />
@@ -64,7 +64,7 @@ exports[`renders correctly 1`] = `
           className="form-control"
           id="formGridPassword"
           onChange={[Function]}
-          placeholder="Password"
+          placeholder="signup.password"
           required={true}
           type="password"
           value=""
@@ -77,7 +77,7 @@ exports[`renders correctly 1`] = `
           className="form-control"
           id="formGridRepeatPassword"
           onChange={[Function]}
-          placeholder="Repeat password"
+          placeholder="signup.repeatPassword"
           required={true}
           type="password"
           value=""
@@ -89,19 +89,19 @@ exports[`renders correctly 1`] = `
       disabled={false}
       type="submit"
     >
-      Sign Up
+      signup.signup
     </button>
   </form>
   <p
     className="mt-3"
   >
-    Already Have An Account ?
+    signup.existingAccount
      
     <a
       className="loginLink"
       href="/login"
     >
-      Login
+      signup.login
     </a>
   </p>
 </div>
