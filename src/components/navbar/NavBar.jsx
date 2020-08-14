@@ -62,7 +62,6 @@ export default function NavBar({ routes }) {
         setIsLoggedOut(false);
         // Providerdata's value contains an array that has the user's info in the first index as an object
         dispatch(userLoggedInAction(user.providerData[0]));
-        console.log(userData);
       } else {
         dispatch(userLoggedInAction(null));
         setIsLoggedOut(true);
@@ -94,11 +93,7 @@ export default function NavBar({ routes }) {
               <Dropdown.Menu>
                 <Route
                   render={({ history }) => (
-                    <Dropdown.Item
-                      onClick={() => history.push("/profile")
-                      }
-                      eventKey="1"
-                    >
+                    <Dropdown.Item onClick={() => history.push('/profile')} eventKey="1">
                       Profile
                     </Dropdown.Item>
                   )}
@@ -108,16 +103,14 @@ export default function NavBar({ routes }) {
                     <Dropdown.Item
                       onClick={() => {
                         auth.signOut();
-                        history.push("/")
-                      }
-                      }
+                        history.push('/');
+                      }}
                       eventKey="1"
                     >
                       Sign out
                     </Dropdown.Item>
                   )}
                 />
-
               </Dropdown.Menu>
             </Dropdown>
           )}
