@@ -39,7 +39,10 @@
         "title": "My Intersectional Activism as a Black African Muslim Woman #BlackLivesMatter",
         "author": "by Bashirat Oladele"
       },
-      "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
+      "openLetter": {
+        "title": "An Open Letter to My Abuser",
+        "author": "Anonymous"
+      },
       "girlsFight": "The fight for girls won't be won by girls alone"
     },
     "newsletter": {
@@ -65,7 +68,6 @@
       "followUs": "Follow Us"
     }
   },
-
   "about": {
     "ourStory": {
       "header": "Our Story",
@@ -96,10 +98,16 @@
       "Junior Engineer"
     ]
   },
-
   "inspire": {
     "subject": "Subject",
-    "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
+    "category": [
+      "Category",
+      "Education",
+      "Work",
+      "Family",
+      "Social",
+      "Other"
+    ],
     "story": "Your Story",
     "button": "Inspire"
   },
@@ -116,6 +124,7 @@
     "fullName": "Full Name:",
     "email": "E-mail:",
     "birthday": "Birthday:",
-    "phone": "Phone:"
+    "phone": "Phone:",
+    "verified": "Verified:"
   }
 }
