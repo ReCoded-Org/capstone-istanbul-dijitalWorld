@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="loginContainer container"
+>
+  <img
+    className="loginLogo"
+    src="www-logo.png"
+  />
+  <button
+    className="googleBtn mt-3 btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    <svg
+      className="mr-3"
+    >
+      googleicon.svg
+    </svg>
+    Continue with Google
+  </button>
+  <button
+    className="facebookBtn mt-3 btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    <svg
+      className="mr-3"
+    >
+      facebookicon.svg
+    </svg>
+    Continue with Facebook
+  </button>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#D9DADC",
+          "color": "#D9DADC",
+          "width": "8rem",
+        }
+      }
+    />
+    <span>
+      Or
+    </span>
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#D9DADC",
+          "color": "#D9DADC",
+          "width": "8rem",
+        }
+      }
+    />
+  </div>
+  <form
+    className=""
+    onSubmit={[Function]}
+  >
+    <div
+      className="mt-3 form-group"
+    >
+      <input
+        className="form-control"
+        id="formGridEmail"
+        onChange={[Function]}
+        placeholder="Your email"
+        type="email"
+        value=""
+      />
+    </div>
+    <div
+      className="mt-3 form-group"
+    >
+      <input
+        className="form-control"
+        id="formGridPassword"
+        onChange={[Function]}
+        placeholder="Password"
+        type="password"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group"
+      inline={true}
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
+    >
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          disabled={false}
+          id="formBasicCheckbox"
+          type="checkbox"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="formBasicCheckbox"
+          title=""
+        >
+          Remember me
+        </label>
+      </div>
+    </div>
+    <button
+      className="loginBtn ml-3 btn btn-primary"
+      disabled={false}
+      inline={true}
+      type="submit"
+    >
+      Login
+    </button>
+  </form>
+  <p
+    className="mt-3 forgotPassword"
+    onClick={[Function]}
+  >
+    Forgot your password?
+  </p>
+  <hr
+    style={
+      Object {
+        "backgroundColor": "#D9DADC",
+        "color": "#D9DADC",
+        "width": "20rem",
+      }
+    }
+  />
+  <p
+    href="#home"
+    style={
+      Object {
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Don't have an account?
+  </p>
+  <button
+    className="googleBtn mb-3 btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Sign Up For WWW
+  </button>
+</div>
+`;
