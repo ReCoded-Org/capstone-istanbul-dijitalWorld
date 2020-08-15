@@ -94,24 +94,7 @@ exports[`Navbar renders correctly 1`] = `
     </div>
     <div
       className="buttonGroup"
-    >
-      <button
-        className="signupFilledButton btn btn-primary"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        home.navBar.buttons.signup
-      </button>
-      <button
-        className="loginOutlinedButton btn btn-outline"
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        home.navBar.buttons.login
-      </button>
-    </div>
+    />
   </div>
   <div
     className="dropdownItemButton dropdown"

@@ -4,8 +4,10 @@ import { Redirect } from 'react-router-dom';
 import { auth } from '../../firebase';
 import Logo from '../../images/www-logo.png';
 import './SignupForm.css';
+import { useTranslation } from 'react-i18next';
 
 const SignupForm = () => {
+  const { t } = useTranslation();
   // This state manages the redirecting to the home page that happens after a successful signup
   const [redirect, setRedirect] = useState(false);
   // Alert is null if not present. If present, has two keys, message and status.
@@ -62,7 +64,7 @@ const SignupForm = () => {
             <Form.Control
               required
               type="name"
-              placeholder="First name"
+              placeholder={t('signup.firstName')}
               value={signupInfo.firstName}
               onChange={handleChange('firstName')}
             />
@@ -72,7 +74,7 @@ const SignupForm = () => {
             <Form.Control
               required
               type="name"
-              placeholder="Last name"
+              placeholder={t('signup.lastName')}
               value={signupInfo.lastName}
               onChange={handleChange('lastName')}
             />
@@ -82,7 +84,7 @@ const SignupForm = () => {
         <Form.Group controlId="formGridEmail" className="mt-3">
           <Form.Control
             type="email"
-            placeholder="Your email"
+            placeholder={t('signup.email')}
             value={signupInfo.email}
             onChange={handleChange('email')}
           />
@@ -93,7 +95,7 @@ const SignupForm = () => {
             <Form.Control
               required
               type="password"
-              placeholder="Password"
+              placeholder={t('signup.password')}
               value={signupInfo.password}
               onChange={handleChange('password')}
             />
@@ -103,7 +105,7 @@ const SignupForm = () => {
             <Form.Control
               required
               type="password"
-              placeholder="Repeat password"
+              placeholder={t('signup.repeatPassword')}
               value={signupInfo.repeatPassword}
               onChange={handleChange('repeatPassword')}
             />
@@ -111,7 +113,7 @@ const SignupForm = () => {
         </Form.Row>
 
         <Button variant="primary" type="submit" className="signupBtn mt-3">
-          Sign Up
+          {t('signup.signup')}
         </Button>
       </Form>
       {alert && (
@@ -121,9 +123,9 @@ const SignupForm = () => {
       )}
       {redirect && <Redirect to="/" />}
       <p className="mt-3">
-        Already Have An Account ?{' '}
+        {t('signup.existingAccount')}{' '}
         <a href="/login" className="loginLink">
-          Login
+          {t('signup.login')}
         </a>
       </p>
     </Container>
