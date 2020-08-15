@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Profile.css';
-import { Container, Col, Row, Image, Modal, Button, Form } from 'react-bootstrap';
+import { Container, Col, Row, Image, Modal, Button, Form, Alert } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { userLoggedInAction } from '../../redux/action';
@@ -10,29 +10,36 @@ const ANONYMOUS_PHOTO_URL =
   'https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg';
 
 export default function Profile() {
-  const [formUserInfo, setUserInfo] = useState({
+  const currentUser = auth.currentUser;
+  const [alert, setAlert] = useState(null)
+  const [formUserInfo, setFormUserInfo] = useState({
     displayName: '',
     email: ""
   });
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.currentUserDataReducer);
-  console.log(userData);
   const { t } = useTranslation();
 
   const updateUserData = async () => {
-    const currentUser = auth.currentUser;
-    await currentUser.updateProfile({
-      displayName: formUserInfo.displayName,
-    })
-    await currentUser.updateEmail(formUserInfo.email).then((good) => console.log("hello"))
-    dispatch(userLoggedInAction(auth.currentUser));
-    setUserInfo({
+    if (formUserInfo.displayName) {
+      await currentUser.updateProfile({
+        displayName: formUserInfo.displayName,
+      })
+    }
+    if (formUserInfo.email) {
+      await currentUser.updateEmail(formUserInfo.email)
+    }
+    dispatch(userLoggedInAction(currentUser));
+    setFormUserInfo({
       displayName: "",
       email: ""
     })
+    setAlert({
+      message: "Profile updated successfully",
+      status: "success"
+    })
   };
-
   return (
     <Container className="mt-3">
       <Col md="12">
@@ -44,12 +51,22 @@ export default function Profile() {
             alt="profileImage"
             roundedCircle
           />
-        </Row>
-        <Row className="profileImageRow mt-3">
-          <Button style={{ justifyContent: 'center' }} onClick={() => setShowModal(true)}>
+
+          <Button className="mt-3" onClick={() => setShowModal(true)}>
             Edit Profile
           </Button>
+
+          {alert && (
+            <Alert className="mt-3" variant={alert.status} onClose={() => setAlert(null)} dismissible>
+              <p>{alert.message}</p>
+            </Alert>
+          )}
         </Row>
+
+
+
+
+
         <div className="profileDetailRow">
           <Row>
             <Col>
@@ -81,23 +98,24 @@ export default function Profile() {
           onSubmit={(e) => {
             e.preventDefault();
             updateUserData();
+            setShowModal(false);
           }}
         >
           <Modal.Body>
             <Form.Group controlId="formBasicName">
-              <Form.Control placeholder="Name" value={formUserInfo.displayName} onChange={(e) => setUserInfo({ ...setUserInfo, displayName: e.target.value })} />
+              <Form.Control type="name" placeholder="name" value={formUserInfo.displayName} onChange={(e) => setFormUserInfo({ ...formUserInfo, displayName: e.target.value })} />
             </Form.Group>
-            <Form.Group controlId="formBasicNumber">
-              <Form.Control placeholder="Email" value={formUserInfo.email} onChange={(e) => setUserInfo({ ...setUserInfo, email: e.target.value })} />
+            <Form.Group controlId="formBasicEmail">
+              <Form.Control type="email" placeholder="Email" value={formUserInfo.email} onChange={(e) => setFormUserInfo({ ...formUserInfo, email: e.target.value })} />
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
-            <Button type="submit" onClick={() => setShowModal(false)}>
+            <Button type="submit">
               Submit Changes
             </Button>
           </Modal.Footer>
         </Form>
       </Modal>
-    </Container>
+    </Container >
   );
 }
