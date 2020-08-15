@@ -34,6 +34,9 @@ const SignupForm = () => {
         signupInfo.password,
       );
       response.user.sendEmailVerification();
+      response.user.updateProfile({
+        displayName: signupInfo.firstName + " " + signupInfo.lastName,
+      })
     } catch (error) {
       setAlert({ message: error.message, status: 'danger' });
       return;

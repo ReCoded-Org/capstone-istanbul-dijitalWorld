@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import './Profile.css';
 import { Container, Col, Row, Image, Modal, Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import deleteThis from '../../images/stupidGuy.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { userLoggedInAction } from '../../redux/action';
 import { auth } from '../../firebase';
 
+const ANONYMOUS_PHOTO_URL =
+  'https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg';
+
 export default function Profile() {
   const [formUserInfo, setUserInfo] = useState({
     displayName: '',
-    phoneNumber: '',
+    email: ""
   });
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
@@ -19,12 +21,16 @@ export default function Profile() {
   const { t } = useTranslation();
 
   const updateUserData = async () => {
-    console.log(auth.currentUser);
-    const response = await auth.currentUser.updateProfile({
-      displayName: 'omegaaaaalul',
-      birthday: '20-20-2019',
-    });
+    const currentUser = auth.currentUser;
+    await currentUser.updateProfile({
+      displayName: formUserInfo.displayName,
+    })
+    await currentUser.updateEmail(formUserInfo.email).then((good) => console.log("hello"))
     dispatch(userLoggedInAction(auth.currentUser));
+    setUserInfo({
+      displayName: "",
+      email: ""
+    })
   };
 
   return (
@@ -33,9 +39,10 @@ export default function Profile() {
         <Row className="profileImageRow">
           <Image
             onClick={updateUserData}
-            style={{ width: '200px' }}
-            src={userData && userData.photoURL}
+            style={{ width: '12.5rem' }}
+            src={userData && userData.photoURL ? userData.photoURL : ANONYMOUS_PHOTO_URL}
             alt="profileImage"
+            roundedCircle
           />
         </Row>
         <Row className="profileImageRow mt-3">
@@ -58,14 +65,6 @@ export default function Profile() {
           </Row>
           <Row>
             <Col>
-              <h5>{t('profile.phone')}</h5>
-            </Col>
-            <Col>
-              {userData && (userData.phoneNumber ? userData.phoneNumber : 'No phone number saved')}{' '}
-            </Col>
-          </Row>
-          <Row>
-            <Col>
               <h5>{t('profile.verified')}</h5>
             </Col>
             <Col>
@@ -74,23 +73,22 @@ export default function Profile() {
           </Row>
         </div>
       </Col>
-      <Modal show={showModal} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">Change Profile Info </Modal.Title>
         </Modal.Header>
         <Form
           onSubmit={(e) => {
             e.preventDefault();
-            console.log('Hello');
+            updateUserData();
           }}
         >
           <Modal.Body>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Name" />
+            <Form.Group controlId="formBasicName">
+              <Form.Control placeholder="Name" value={formUserInfo.displayName} onChange={(e) => setUserInfo({ ...setUserInfo, displayName: e.target.value })} />
             </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Control type="password" placeholder="Phone Number" />
+            <Form.Group controlId="formBasicNumber">
+              <Form.Control placeholder="Email" value={formUserInfo.email} onChange={(e) => setUserInfo({ ...setUserInfo, email: e.target.value })} />
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
