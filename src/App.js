@@ -32,26 +32,23 @@ const LocationDisplay = withRouter(({ location }) => (
 function App() {
   return (
     <I18nextProvider i18n={i18n}>
-
-    <Router className="App">
-      <NavBar routes={ROUTES} />
-      {ROUTES.map(({ path, Component }) => (
-        <Route key={path} exact path={path}>
-          <Component />
+      <Router className="App">
+        <NavBar routes={ROUTES} />
+        {ROUTES.map(({ path, Component }) => (
+          <Route key={path} exact path={path}>
+            <Component />
+          </Route>
+        ))}
+        <Route exact path="/login">
+          <LoginPage />
         </Route>
-      ))}
-      <Route exact path="/login">
-        <LoginPage />
-      </Route>
-      <Route exact path="/signup">
-        <SignupPage />
-      </Route>
-      <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
-      <Footer />
-    </Router>
-    
+        <Route exact path="/signup">
+          <SignupPage />
+        </Route>
+        <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
+        <Footer />
+      </Router>
     </I18nextProvider>
-
   );
 }
 

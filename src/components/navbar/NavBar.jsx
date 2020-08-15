@@ -7,23 +7,7 @@ import { Route } from 'react-router-dom';
 import './NavBar.css';
 
 export default function NavBar({ routes }) {
-  // const { t } = useTranslation();
-  // const i18n = useTranslation('common');
-  // const [t, i18n] = useTranslation('common');
-
   const [t, i18n] = useTranslation();
-
-  // const [lng, setLng] = useState();
-
-
-  // const handleLanguageChange =()=>{
-  //   // e.preventDefault();
-
-  //   setLng({
-  //     lng: "ar"
-  //   })
-  // }
-  
 
   return (
     <Navbar className="navbar" data-testid="navbar" expand="sm">
@@ -68,9 +52,15 @@ export default function NavBar({ routes }) {
         className="dropdownItemButton"
         title="EN"
       >
-        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('en')}>EN</Dropdown.Item>
-        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('tr')}>TR</Dropdown.Item>
-        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('an')}>AR</Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('en')}>
+          EN
+        </Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('tr')}>
+          TR
+        </Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('an')}>
+          AR
+        </Dropdown.Item>
       </DropdownButton>
     </Navbar>
   );
