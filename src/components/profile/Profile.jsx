@@ -5,12 +5,14 @@ import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { userLoggedInAction } from '../../redux/action';
 import { auth } from '../../firebase';
-
-const ANONYMOUS_PHOTO_URL =
-  'https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg';
+import { ANONYMOUS_PHOTO_URL } from '../../images/anonymous';
 
 export default function Profile() {
+  // auth.currentUser returns the current logged in user
   const currentUser = auth.currentUser;
+  // Alert state would be changed into an object with 2 keys
+  // First key will be the message the alert would display
+  // Second key will be the color of the alert success for green danger for red
   const [alert, setAlert] = useState(null);
   const [formUserInfo, setFormUserInfo] = useState({
     displayName: '',
@@ -30,6 +32,7 @@ export default function Profile() {
     if (formUserInfo.email) {
       await currentUser.updateEmail(formUserInfo.email);
     }
+    // updating my state after the user changes his name or email
     dispatch(userLoggedInAction(currentUser));
     setFormUserInfo({
       displayName: '',
@@ -40,6 +43,8 @@ export default function Profile() {
       status: 'success',
     });
   };
+  // All the data that is coming from the userData redux state is checked incase it's null
+  // Because when the component render userData default value starts as null which caused an error if I try and use userData.photoUrl
   return (
     <Container className="mt-3">
       <Col md="12">

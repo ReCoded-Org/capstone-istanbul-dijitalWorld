@@ -7,10 +7,8 @@ import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import NavLinks from './NavLinks';
 import { Route } from 'react-router-dom';
+import { ANONYMOUS_PHOTO_URL } from '../../images/anonymous';
 import './NavBar.css';
-
-const ANONYMOUS_PHOTO_URL =
-  'https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg';
 
 export default function NavBar({ routes }) {
   const dispatch = useDispatch();
