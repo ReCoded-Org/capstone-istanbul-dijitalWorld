@@ -14,7 +14,7 @@ const ANONYMOUS_PHOTO_URL =
 
 export default function NavBar({ routes }) {
   const dispatch = useDispatch();
-  // Incase user is logged out this variable will be null which will case the user picture not to render
+  // In case user is logged out this variable will be null which will case the user picture not to render
   const userData = useSelector((state) => state.currentUserDataReducer);
   const [isLoggedOut, setIsLoggedOut] = useState(false);
 
@@ -62,8 +62,8 @@ export default function NavBar({ routes }) {
         setIsLoggedOut(false);
         dispatch(userLoggedInAction(user));
       } else {
-        dispatch(userLoggedInAction(null));
         setIsLoggedOut(true);
+        dispatch(userLoggedInAction(null));
       }
     });
   });
