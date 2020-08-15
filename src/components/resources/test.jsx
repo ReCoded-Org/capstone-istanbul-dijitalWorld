@@ -17,21 +17,10 @@ function Arrow(props) {
   );
 }
 
-// function PrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", background: "#6c567b", borderRadius: "50%" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
 export default function Resources() {
   const { t } = useTranslation();
   const renderSlides = () => {
-    return t("resourcePage.resources", {returnObjects: true}).map((item) => {
+    return t('resourcePage.resources', { returnObjects: true }).map((item) => {
       return (
         <Container className="carouselContainer">
           <Col md="6">
@@ -79,25 +68,14 @@ export default function Resources() {
     dots: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    // fade: true,
     centerMode: true,
     focusOnSelect: true,
     swipeToSlide: true,
     vertical: true,
-    // centerPadding: "10%",
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
-    // rows: 1,
-    // slidesPerRow: 2,
-    // slidesToShow: 3,
     slidesToScroll: 1,
     pauseOnFocus: true,
-    // beforeChange: function(currentSlide, nextSlide) {
-    //   console.log("before change", currentSlide, nextSlide);
-    // },
-    // afterChange: function(currentSlide) {
-    //   console.log("after change", currentSlide);
-    // }
   };
   return (
     <div className="container">
