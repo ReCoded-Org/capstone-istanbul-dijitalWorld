@@ -10,7 +10,6 @@ import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
-
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
