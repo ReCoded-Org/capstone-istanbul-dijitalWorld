@@ -11,10 +11,10 @@ const ANONYMOUS_PHOTO_URL =
 
 export default function Profile() {
   const currentUser = auth.currentUser;
-  const [alert, setAlert] = useState(null)
+  const [alert, setAlert] = useState(null);
   const [formUserInfo, setFormUserInfo] = useState({
     displayName: '',
-    email: ""
+    email: '',
   });
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
@@ -25,20 +25,20 @@ export default function Profile() {
     if (formUserInfo.displayName) {
       await currentUser.updateProfile({
         displayName: formUserInfo.displayName,
-      })
+      });
     }
     if (formUserInfo.email) {
-      await currentUser.updateEmail(formUserInfo.email)
+      await currentUser.updateEmail(formUserInfo.email);
     }
     dispatch(userLoggedInAction(currentUser));
     setFormUserInfo({
-      displayName: "",
-      email: ""
-    })
+      displayName: '',
+      email: '',
+    });
     setAlert({
-      message: "Profile updated successfully",
-      status: "success"
-    })
+      message: 'Profile updated successfully',
+      status: 'success',
+    });
   };
   return (
     <Container className="mt-3">
@@ -57,15 +57,16 @@ export default function Profile() {
           </Button>
 
           {alert && (
-            <Alert className="mt-3" variant={alert.status} onClose={() => setAlert(null)} dismissible>
+            <Alert
+              className="mt-3"
+              variant={alert.status}
+              onClose={() => setAlert(null)}
+              dismissible
+            >
               <p>{alert.message}</p>
             </Alert>
           )}
         </Row>
-
-
-
-
 
         <div className="profileDetailRow">
           <Row>
@@ -90,7 +91,13 @@ export default function Profile() {
           </Row>
         </div>
       </Col>
-      <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">Change Profile Info </Modal.Title>
         </Modal.Header>
@@ -103,19 +110,27 @@ export default function Profile() {
         >
           <Modal.Body>
             <Form.Group controlId="formBasicName">
-              <Form.Control type="name" placeholder="name" value={formUserInfo.displayName} onChange={(e) => setFormUserInfo({ ...formUserInfo, displayName: e.target.value })} />
+              <Form.Control
+                type="name"
+                placeholder="name"
+                value={formUserInfo.displayName}
+                onChange={(e) => setFormUserInfo({ ...formUserInfo, displayName: e.target.value })}
+              />
             </Form.Group>
             <Form.Group controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Email" value={formUserInfo.email} onChange={(e) => setFormUserInfo({ ...formUserInfo, email: e.target.value })} />
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                value={formUserInfo.email}
+                onChange={(e) => setFormUserInfo({ ...formUserInfo, email: e.target.value })}
+              />
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
-            <Button type="submit">
-              Submit Changes
-            </Button>
+            <Button type="submit">Submit Changes</Button>
           </Modal.Footer>
         </Form>
       </Modal>
-    </Container >
+    </Container>
   );
 }

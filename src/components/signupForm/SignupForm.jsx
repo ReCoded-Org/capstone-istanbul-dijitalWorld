@@ -35,8 +35,8 @@ const SignupForm = () => {
       );
       response.user.sendEmailVerification();
       response.user.updateProfile({
-        displayName: signupInfo.firstName + " " + signupInfo.lastName,
-      })
+        displayName: signupInfo.firstName + ' ' + signupInfo.lastName,
+      });
     } catch (error) {
       setAlert({ message: error.message, status: 'danger' });
       return;
