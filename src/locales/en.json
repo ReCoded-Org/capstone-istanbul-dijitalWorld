@@ -100,14 +100,7 @@
   },
   "inspire": {
     "subject": "Subject",
-    "category": [
-      "Category",
-      "Education",
-      "Work",
-      "Family",
-      "Social",
-      "Other"
-    ],
+    "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
     "story": "Your Story",
     "button": "Inspire"
   },
@@ -124,7 +117,6 @@
     "fullName": "Full Name:",
     "email": "E-mail:",
     "birthday": "Birthday:",
-    "phone": "Phone:",
     "verified": "Verified:",
     "phone": "Phone:"
   },
