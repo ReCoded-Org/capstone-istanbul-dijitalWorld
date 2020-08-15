@@ -11,6 +11,9 @@ import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
 
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
+
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
 const ROUTES = [
@@ -28,6 +31,8 @@ const LocationDisplay = withRouter(({ location }) => (
 
 function App() {
   return (
+    <I18nextProvider i18n={i18n}>
+
     <Router className="App">
       <NavBar routes={ROUTES} />
       {ROUTES.map(({ path, Component }) => (
@@ -44,6 +49,9 @@ function App() {
       <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
       <Footer />
     </Router>
+    
+    </I18nextProvider>
+
   );
 }
 
