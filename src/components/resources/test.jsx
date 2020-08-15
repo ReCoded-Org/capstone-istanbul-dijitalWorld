@@ -1,6 +1,5 @@
 import React from 'react';
 import './test.css';
-import data from './data.json';
 import { Button, Row, Col, Container } from 'react-bootstrap';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -31,8 +30,8 @@ function Arrow(props) {
 
 export default function Resources() {
   const { t } = useTranslation();
-  const renderSlides = () =>
-    data.map((item) => {
+  const renderSlides = () => {
+    return t("resourcePage.resources", {returnObjects: true}).map((item) => {
       return (
         <Container className="carouselContainer">
           <Col md="6">
@@ -40,8 +39,8 @@ export default function Resources() {
             <div className="blurpBlock">
               <p className="resourceHeader">{item.header}</p>
               <br></br>
-              <p className="resourceBlurp">{item.body}</p>
-              <Button className="resourceButton">{t('resourcePage.resources.button')}</Button>
+              <p className="resourceBlurp">{item.blurp}</p>
+              <Button className="resourceButton">{t('resourcePage.button')}</Button>
             </div>
           </Col>
           <Col md="6">
@@ -52,6 +51,7 @@ export default function Resources() {
         </Container>
       );
     });
+  };
 
   //conditionally renders texts and imgs as seperate slides
 
