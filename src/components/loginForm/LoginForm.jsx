@@ -6,6 +6,7 @@ import { auth, googleProvider, facebookProvider } from '../../firebase';
 import { ReactComponent as GoogleIcon } from '../../images/googleicon.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebookicon.svg';
 import './LoginForm.css';
+import { useTranslation } from 'react-i18next';
 
 const ColoredLine = ({ color, width }) => (
   <hr
@@ -35,6 +36,8 @@ const PASSWORD_RESET_MESSAGE = {
 };
 
 const LoginForm = () => {
+  const { t } = useTranslation();
+
   // This state manages the redirecting to the home page that happens after a successful login
   const [redirect, setRedirect] = useState(false);
   // Alert state will be set to null in case there's no Alert
@@ -114,22 +117,22 @@ const LoginForm = () => {
       <Image src={Logo} className="loginLogo" />
       <Button className="googleBtn mt-3" onClick={handleGoogleLogin}>
         <GoogleIcon className="mr-3" />
-        Continue with Google
+        {t('login.loginGoogle')}
       </Button>
       <Button className="facebookBtn mt-3" onClick={handleFacebookLogin}>
         <FacebookIcon className="mr-3" />
-        Continue with Facebook
+        {t('login.loginFB')}
       </Button>
       <div style={{ display: 'flex' }}>
         <ColoredLine width="8rem" color="#D9DADC" />
-        <span>Or</span>
+        <span>{t('login.or')}</span>
         <ColoredLine width="8rem" color="#D9DADC" />
       </div>
       <Form onSubmit={handlePasswordLogin}>
         <Form.Group controlId="formGridEmail" className="mt-3">
           <Form.Control
             type="email"
-            placeholder="Your email"
+            placeholder={t('login.email')}
             value={loginInfo.email}
             onChange={handleChange('email')}
           />
@@ -138,18 +141,18 @@ const LoginForm = () => {
         <Form.Group controlId="formGridPassword" className="mt-3">
           <Form.Control
             type="password"
-            placeholder="Password"
+            placeholder={t('login.password')}
             value={loginInfo.password}
             onChange={handleChange('password')}
           />
         </Form.Group>
 
         <Form.Group inline controlId="formBasicCheckbox" style={{ display: 'inline-block' }}>
-          <Form.Check type="checkbox" label="Remember me" />
+          <Form.Check type="checkbox" label={t('login.rememberMe')} />
         </Form.Group>
 
         <Button inline variant="primary" type="submit" className="loginBtn ml-3">
-          Login
+          {t('login.login')}
         </Button>
       </Form>
       <p
@@ -158,7 +161,7 @@ const LoginForm = () => {
           setForgotPasswordForm({ ...forgotPasswordForm, isShown: !forgotPasswordForm.isShown })
         }
       >
-        Forgot your password?
+        {t('login.forgotPassword')}
       </p>
 
       {forgotPasswordForm.isShown && (
@@ -168,18 +171,18 @@ const LoginForm = () => {
               <Form.Group controlId="formGridEmail" className="mt-3">
                 <Form.Control
                   type="email"
-                  placeholder="Your email"
+                  placeholder={t('login.email')}
                   value={forgotPasswordForm.email}
                   onChange={(e) =>
                     setForgotPasswordForm({ ...forgotPasswordForm, email: e.target.value })
                   }
                 />
-                <Form.Text className="text-muted">Send a password reset email</Form.Text>
+                <Form.Text className="text-muted">{t('login.passwordReset')}</Form.Text>
               </Form.Group>
             </Col>
             <Col>
               <Button variant="primary" type="submit" className="loginBtn ml-5 mb-4">
-                Send
+                {t('login.send')}
               </Button>
             </Col>
           </Form.Row>
@@ -194,12 +197,12 @@ const LoginForm = () => {
       {redirect && <Redirect to="/" />}
       <ColoredLine color="#D9DADC" width="20rem" />
       <p style={{ fontWeight: 'bold' }} href="#home">
-        Don&apos;t have an account?
+        {t('login.noAccount')}
       </p>
       <Route
         render={({ history }) => (
           <Button className="googleBtn mb-3" onClick={() => history.push('/signup')}>
-            Sign Up For WWW
+            {t('login.signup')}
           </Button>
         )}
       />

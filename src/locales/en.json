@@ -117,5 +117,29 @@
     "email": "E-mail:",
     "birthday": "Birthday:",
     "phone": "Phone:"
+  },
+  "signup": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Your email",
+    "password": "Password",
+    "repeatPassword": "Repeat password",
+    "signup": "Sign Up",
+    "existingAccount": "Already have an account?",
+    "login": "Login"
+  },
+  "login": {
+    "loginGoogle": "Continue with Google",
+    "loginFB": "Continue with Facebook",
+    "or": "Or",
+    "email": "Your email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "login": "Login",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "signup": "Signup for WWW",
+    "send": "Send",
+    "passwordReset": "Send a password reset email"
   }
 }
