@@ -67,7 +67,6 @@ export default function NavBar({ routes }) {
       }
     });
   });
-
   const [t, i18n] = useTranslation();
 
   return (
