@@ -85,6 +85,35 @@ export default function NavBar({ routes }) {
           <NavLinks routes={routes} />
         </Nav>
         <div className="buttonGroup">
+          {userData && (
+            <Dropdown alignRight className="mr-3">
+              <Dropdown.Toggle as={CustomToggle} id="dropdown-split-basic"></Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Route
+                  render={({ history }) => (
+                    <Dropdown.Item onClick={() => history.push('/profile')} eventKey="1">
+                      Profile
+                    </Dropdown.Item>
+                  )}
+                />
+                <Route
+                  render={({ history }) => (
+                    <Dropdown.Item
+                      onClick={() => {
+                        auth.signOut();
+                        history.push('/');
+                      }}
+                      eventKey="1"
+                    >
+                      Sign out
+                    </Dropdown.Item>
+                  )}
+                />
+              </Dropdown.Menu>
+            </Dropdown>
+          )}
+          {isLoggedOut && loginSignupButton}
+
           <Route
             render={({ history }) => (
               <Button className="signupFilledButton" onClick={() => history.push('/signup')}>

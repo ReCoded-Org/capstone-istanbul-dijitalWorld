@@ -10,6 +10,7 @@ import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
+import ProfilePage from './containers/profile/ProfilePage';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
@@ -45,6 +46,9 @@ function App() {
           <SignupPage />
         </Route>
         <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
+        <Route exact path="/profile">
+          <ProfilePage />
+        </Route>
         <Footer />
       </Router>
     </I18nextProvider>
