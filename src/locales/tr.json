@@ -134,8 +134,9 @@
     },
     "profile": {
       "fullName": "İsim, Soyisim:",
-      "email": "Eposta:",
+      "email": "E-posta:",
       "birthday": "Doğum tarihi:",
+      "verified": "Doğrulanmış:",
       "phone": "Telefon numarası:"
     },
     "signup": {
