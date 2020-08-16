@@ -8,7 +8,6 @@ import { auth } from '../../firebase';
 import { ANONYMOUS_PHOTO_URL } from '../../images/anonymous';
 
 export default function Profile() {
-  // auth.currentUser returns the current logged in user
   const currentUser = auth.currentUser;
   // Alert state would be changed into an object with 2 keys
   // First key will be the message the alert would display
@@ -91,7 +90,7 @@ export default function Profile() {
               <h5>{t('profile.verified')}</h5>
             </Col>
             <Col>
-              {userData && userData.emailVerified ? 'Email verified!' : 'Email is not verified'}{' '}
+              {userData && userData.emailVerified ? 'Email verified!' : 'Email is not verified'}
             </Col>
           </Row>
         </div>
@@ -132,7 +131,7 @@ export default function Profile() {
             </Form.Group>
           </Modal.Body>
           <Modal.Footer>
-            <Button type="submit">Submit Changes</Button>
+            <Button type="submit">Submit changes</Button>
           </Modal.Footer>
         </Form>
       </Modal>
