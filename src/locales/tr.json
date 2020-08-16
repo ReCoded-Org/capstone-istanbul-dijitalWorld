@@ -1,166 +1,159 @@
 {
-    "home": {
-      "carousel": {
-        "header": {
-          "header0": "Değişim",
-          "header1": "İçin",
-          "header2": "Hikaye",
-          "header3": "Paylaşımı"
-        },
-        "button": "Öğren"
+  "home": {
+    "carousel": {
+      "header": {
+        "header0": "Değişim",
+        "header1": "İçin",
+        "header2": "Hikaye",
+        "header3": "Paylaşımı"
       },
-      "navBar": {
-        "navLinks": {
-          "home": "Anasayfa",
-          "blog": "Blog",
-          "inspire": "İlham ver",
-          "resource": "Kaynaklar",
-          "about": "Hakkımızda",
-          "contact": "İletişim"
-        },
-        "buttons": {
-          "signup": "Kaydol",
-          "login": "Oturum aç"
-        }
+      "button": "Öğren"
+    },
+    "navBar": {
+      "navLinks": {
+        "home": "Anasayfa",
+        "blog": "Blog",
+        "inspire": "İlham ver",
+        "resource": "Kaynaklar",
+        "about": "Hakkımızda",
+        "contact": "İletişim"
       },
-      "inspire": {
-        "header": {
-          "header0": "Umut ol.",
-          "header1": "İlham ver.",
-          "header2": "Hayatlara dokun.",
-          "header3": "Hikayeni paylaş."
-        },
-        "heroText": "Paylaşacak güçlü bir hikayeniz var. Hikayeniz dünyadaki kadınlara ve kız çocuklarına yardımcı olabilir. Güçlenerek ilerlediğiniz bu yolculuğu paylaşarak ilham veren öykülere katkıda bulunun.",
-        "button": "Paylaş"
-      },
-      "quotes": {
-        "sayHerName": {
-          "hashtag": "#SayHerName",
-          "title": "Afrikalı siyahi müslüman bir kadın olarak kesişimsel aktivizm hikayem #BlackLivesMatter",
-          "author": "Bashirat Oladele"
-        },
-        "openLetter": { "title": "İstismarcıma açık mektup", "author": "Anonim" },
-        "girlsFight": "Kız çocukları için mücadelede kız çocukları yalnız olmayacak."
-      },
-      "newsletter": {
-        "titles": {
-          "title0": "Hikayeleri kaçırmayın.",
-          "title1": "Bültenimize abone olun."
-        },
-        "input": {
-          "text": "E-posta adresiniz",
-          "button": "Abone ol"
-        }
-      },
-      "footer": {
-        "getInTouch": {
-          "title": "İletişime geçin",
-          "text": "Paylaşımlarınızı özenle ele alıyor, verilerinizi güvenle koruyoruz."
-        },
-        "contactUs": {
-          "title": "Bize ulaşın",
-          "emailAddress": "hello@gmail.com",
-          "phoneNumber": "+9 876 543 21"
-        },
-        "followUs": "Bizi takip edin"
+      "buttons": {
+        "signup": "Kaydol",
+        "login": "Oturum aç"
       }
     },
-    "resourcePage": {
-      "title": "Faydalı kaynaklar",
-      "resources": [
-        {
-          "header": "girlsglobe.org",
-          "blurp": "Girls' Globe, toplumsal cinsiyet eşitliği, insan hakları ve sosyal adalet konularında aktivistlerin, savunucuların ve uzmanların sesini yükseltir.",
-          "img": "/images/Girlsglobal.png"
-        },
-        {
-          "header": "malala.org",
-          "blurp": "Malala ve Ziauddin Yousafzai, her kız çocuğunun 12 yıllık ücretsiz, güvenli ve kaliteli eğitim hakkını desteklemek için 2013 yılında Malala Fonu'nu kurdu.",
-          "img": "/images/Malala.png"
-        },
-        {
-          "header": "girltalkhq.com",
-          "blurp": "GTHQ, feminizm, kadınların üreme hakları, film ve TV'de kadınların temsili, medyadaki çeşitlilik ve cinsiyet eşitliği gibi günümüz kadınlarıyla ilgili bir dizi konuyu kapsıyor.",
-          "img": "/images/GirltalkHQ.png"
-        }
-      ],
-      "button": "Sayfaya git"
-    },
-    "about": {
-      "ourStory": {
-        "header": "Hikayemiz",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      },
-      "ourMission": {
-        "header": "Misyonumuz",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      },
-      "ourTeam": {
-        "header": "Ekibimiz",
-        "body": "Çeşitli alanlarda eğitim almış ekibimiz kadınların eşitliği için çalışıyor."
-      },
-      "name": [
-        "Refia Candan Ozkalay",
-        "Dara Aldandashi",
-        "Elif Chorghay",
-        "Ammar Sammour",
-        "Bahaa Dabbagh",
-        "Halit Batur"
-      ],
-      "title": [
-        "Mühendis",
-        "Mühendis",
-        "Mühendis",
-        "Baş mühendis",
-        "Mühendis",
-        "Mühendis"
-      ]
-    },
-  
     "inspire": {
-      "subject": "Konu",
-      "category": ["Kategori", "Eğitim", "İş", "Aile", "Sosyal", "Diğer"],
-      "story": "Hikayeniz",
-      "button": "İlham olun!"
-    },
-    "contactUs": {
-      "email": "E-posta",
-      "message": "Mesajınız",
-      "getInTouch": {
-        "header": "Bizimle iletişime geçin",
-        "subheader": "Öneri ve yorumlarınızı öğrenmek istiyoruz."
+      "header": {
+        "header0": "Umut ol.",
+        "header1": "İlham ver.",
+        "header2": "Hayatlara dokun.",
+        "header3": "Hikayeni paylaş."
       },
-      "button": "Gönder"
+      "heroText": "Paylaşacak güçlü bir hikayeniz var. Hikayeniz dünyadaki kadınlara ve kız çocuklarına yardımcı olabilir. Güçlenerek ilerlediğiniz bu yolculuğu paylaşarak ilham veren öykülere katkıda bulunun.",
+      "button": "Paylaş"
     },
-    "profile": {
-      "fullName": "İsim, Soyisim:",
-      "email": "E-posta:",
-      "birthday": "Doğum tarihi:",
-      "verified": "Doğrulanmış:",
-      "phone": "Telefon numarası:"
+    "quotes": {
+      "sayHerName": {
+        "hashtag": "#SayHerName",
+        "title": "Afrikalı siyahi müslüman bir kadın olarak kesişimsel aktivizm hikayem #BlackLivesMatter",
+        "author": "Bashirat Oladele"
+      },
+      "openLetter": { "title": "İstismarcıma açık mektup", "author": "Anonim" },
+      "girlsFight": "Kız çocukları için mücadelede kız çocukları yalnız olmayacak."
     },
-    "signup": {
-      "firstName": "İsim",
-      "lastName": "Soyisim",
-      "email": "E-posta",
-      "password": "Şifre",
-      "repeatPassword": "Tekrar şifre",
-      "signup": "Kaydolun",
-      "existingAccount": "Zaten hesabınız var mı?",
-      "login": "Oturum açın"
+    "newsletter": {
+      "titles": {
+        "title0": "Hikayeleri kaçırmayın.",
+        "title1": "Bültenimize abone olun."
+      },
+      "input": {
+        "text": "E-posta adresiniz",
+        "button": "Abone ol"
+      }
     },
-    "login": {
-      "loginGoogle": "Google ile oturum açın",
-      "loginFB": "Facebook ile oturum açın",
-      "or": "veya",
-      "email": "E-posta",
-      "password": "Şifre",
-      "rememberMe": "Beni hatırla",
-      "login": "Oturum açın",
-      "forgotPassword": "Şifrenizi mi unuttunuz?",
-      "noAccount": "Hesap oluşturun",
-      "signup": "Kaydolun",
-      "send": "Gönder",
-      "passwordReset": "Şifreyi sıfırlamak için e-posta gönder"
+    "footer": {
+      "getInTouch": {
+        "title": "İletişime geçin",
+        "text": "Paylaşımlarınızı özenle ele alıyor, verilerinizi güvenle koruyoruz."
+      },
+      "contactUs": {
+        "title": "Bize ulaşın",
+        "emailAddress": "hello@gmail.com",
+        "phoneNumber": "+9 876 543 21"
+      },
+      "followUs": "Bizi takip edin"
     }
-  }  
+  },
+  "resourcePage": {
+    "title": "Faydalı kaynaklar",
+    "resources": [
+      {
+        "header": "girlsglobe.org",
+        "blurp": "Girls' Globe, toplumsal cinsiyet eşitliği, insan hakları ve sosyal adalet konularında aktivistlerin, savunucuların ve uzmanların sesini yükseltir.",
+        "img": "/images/Girlsglobal.png"
+      },
+      {
+        "header": "malala.org",
+        "blurp": "Malala ve Ziauddin Yousafzai, her kız çocuğunun 12 yıllık ücretsiz, güvenli ve kaliteli eğitim hakkını desteklemek için 2013 yılında Malala Fonu'nu kurdu.",
+        "img": "/images/Malala.png"
+      },
+      {
+        "header": "girltalkhq.com",
+        "blurp": "GTHQ, feminizm, kadınların üreme hakları, film ve TV'de kadınların temsili, medyadaki çeşitlilik ve cinsiyet eşitliği gibi günümüz kadınlarıyla ilgili bir dizi konuyu kapsıyor.",
+        "img": "/images/GirltalkHQ.png"
+      }
+    ],
+    "button": "Sayfaya git"
+  },
+  "about": {
+    "ourStory": {
+      "header": "Hikayemiz",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "ourMission": {
+      "header": "Misyonumuz",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "ourTeam": {
+      "header": "Ekibimiz",
+      "body": "Çeşitli alanlarda eğitim almış ekibimiz kadınların eşitliği için çalışıyor."
+    },
+    "name": [
+      "Refia Candan Ozkalay",
+      "Dara Aldandashi",
+      "Elif Chorghay",
+      "Ammar Sammour",
+      "Bahaa Dabbagh",
+      "Halit Batur"
+    ],
+    "title": ["Mühendis", "Mühendis", "Mühendis", "Baş mühendis", "Mühendis", "Mühendis"]
+  },
+
+  "inspire": {
+    "subject": "Konu",
+    "category": ["Kategori", "Eğitim", "İş", "Aile", "Sosyal", "Diğer"],
+    "story": "Hikayeniz",
+    "button": "İlham olun!"
+  },
+  "contactUs": {
+    "email": "E-posta",
+    "message": "Mesajınız",
+    "getInTouch": {
+      "header": "Bizimle iletişime geçin",
+      "subheader": "Öneri ve yorumlarınızı öğrenmek istiyoruz."
+    },
+    "button": "Gönder"
+  },
+  "profile": {
+    "fullName": "İsim, Soyisim:",
+    "email": "E-posta:",
+    "birthday": "Doğum tarihi:",
+    "verified": "Doğrulanmış:",
+    "phone": "Telefon numarası:"
+  },
+  "signup": {
+    "firstName": "İsim",
+    "lastName": "Soyisim",
+    "email": "E-posta",
+    "password": "Şifre",
+    "repeatPassword": "Tekrar şifre",
+    "signup": "Kaydolun",
+    "existingAccount": "Zaten hesabınız var mı?",
+    "login": "Oturum açın"
+  },
+  "login": {
+    "loginGoogle": "Google ile oturum açın",
+    "loginFB": "Facebook ile oturum açın",
+    "or": "veya",
+    "email": "E-posta",
+    "password": "Şifre",
+    "rememberMe": "Beni hatırla",
+    "login": "Oturum açın",
+    "forgotPassword": "Şifrenizi mi unuttunuz?",
+    "noAccount": "Hesap oluşturun",
+    "signup": "Kaydolun",
+    "send": "Gönder",
+    "passwordReset": "Şifreyi sıfırlamak için e-posta gönder"
+  }
+}
