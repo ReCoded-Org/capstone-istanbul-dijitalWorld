@@ -11,6 +11,7 @@ import ResourcePage from './containers/resourcePage/ResourcePage';
 import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
+import ProfilePage from './containers/profile/ProfilePage';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
@@ -43,6 +44,9 @@ function App() {
         <SignupPage />
       </Route>
       <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
+      <Route exact path="/profile">
+        <ProfilePage />
+      </Route>
       <Footer />
     </Router>
   );

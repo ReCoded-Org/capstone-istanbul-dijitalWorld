@@ -39,7 +39,10 @@
         "title": "My Intersectional Activism as a Black African Muslim Woman #BlackLivesMatter",
         "author": "by Bashirat Oladele"
       },
-      "openLetter": { "title": "An Open Letter to My Abuser", "author": "Anonymous" },
+      "openLetter": {
+        "title": "An Open Letter to My Abuser",
+        "author": "Anonymous"
+      },
       "girlsFight": "The fight for girls won't be won by girls alone"
     },
     "newsletter": {
@@ -122,7 +125,6 @@
       "Junior Engineer"
     ]
   },
-
   "inspire": {
     "subject": "Subject",
     "category": ["Category", "Education", "Work", "Family", "Social", "Other"],
@@ -142,6 +144,31 @@
     "fullName": "Full Name:",
     "email": "E-mail:",
     "birthday": "Birthday:",
+    "verified": "Verified:",
     "phone": "Phone:"
+  },
+  "signup": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Your email",
+    "password": "Password",
+    "repeatPassword": "Repeat password",
+    "signup": "Sign Up",
+    "existingAccount": "Already have an account?",
+    "login": "Login"
+  },
+  "login": {
+    "loginGoogle": "Continue with Google",
+    "loginFB": "Continue with Facebook",
+    "or": "Or",
+    "email": "Your email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "login": "Login",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "signup": "Signup for WWW",
+    "send": "Send",
+    "passwordReset": "Send a password reset email"
   }
 }
