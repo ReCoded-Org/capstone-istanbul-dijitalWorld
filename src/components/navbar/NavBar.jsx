@@ -113,25 +113,6 @@ export default function NavBar({ routes }) {
             </Dropdown>
           )}
           {isLoggedOut && loginSignupButton}
-
-          <Route
-            render={({ history }) => (
-              <Button className="signupFilledButton" onClick={() => history.push('/signup')}>
-                {t('home.navBar.buttons.signup')}
-              </Button>
-            )}
-          ></Route>
-          <Route
-            render={({ history }) => (
-              <Button
-                className="loginOutlinedButton"
-                variant="outline"
-                onClick={() => history.push('/login')}
-              >
-                {t('home.navBar.buttons.login')}
-              </Button>
-            )}
-          />
         </div>
       </Navbar.Collapse>
       <DropdownButton
