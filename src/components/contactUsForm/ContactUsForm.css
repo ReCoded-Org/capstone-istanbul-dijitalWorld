@@ -1,0 +1,33 @@
+.contactUsContainer {
+  margin: 5% 0%;
+}
+
+.contactFormContainer {
+  margin-left: 5%;
+}
+
+.contactUsHero {
+  color: #f8b195;
+}
+
+.contactUsButton {
+  background-color: #6c567b;
+  margin-top: 5%;
+  color: white;
+  cursor: pointer;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 3.125rem;
+  border-style: hidden;
+  box-shadow: 0 0.6875rem 1.5rem -0.4375rem #b3b3b3;
+}
+
+.contactUsButton:hover {
+  background-color: #f8b195;
+}
+
+.contactUsInput {
+  outline: 1px solid #f8b195;
+  background: #f4f4f4;
+}

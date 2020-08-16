@@ -39,8 +39,8 @@ exports[`Navbar renders correctly 1`] = `
     >
       <a
         className="navLinkText nav-link"
-        data-rb-event-key="#home"
-        href="#home"
+        data-rb-event-key="/"
+        href="/"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -48,8 +48,8 @@ exports[`Navbar renders correctly 1`] = `
       </a>
       <a
         className="navLinkText nav-link"
-        data-rb-event-key="#home"
-        href="#home"
+        data-rb-event-key="/blog"
+        href="/blog"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -57,8 +57,8 @@ exports[`Navbar renders correctly 1`] = `
       </a>
       <a
         className="navLinkText nav-link"
-        data-rb-event-key="#home"
-        href="#home"
+        data-rb-event-key="/inspire"
+        href="/inspire"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -66,8 +66,8 @@ exports[`Navbar renders correctly 1`] = `
       </a>
       <a
         className="navLinkText nav-link"
-        data-rb-event-key="#home"
-        href="#home"
+        data-rb-event-key="/resources"
+        href="/resources"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -75,8 +75,8 @@ exports[`Navbar renders correctly 1`] = `
       </a>
       <a
         className="navLinkText nav-link"
-        data-rb-event-key="#home"
-        href="#home"
+        data-rb-event-key="/about"
+        href="/about"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -84,8 +84,8 @@ exports[`Navbar renders correctly 1`] = `
       </a>
       <a
         className="navLinkText nav-link"
-        data-rb-event-key="#home"
-        href="#home"
+        data-rb-event-key="/contact"
+        href="/contact"
         onClick={[Function]}
         onKeyDown={[Function]}
       >
@@ -94,22 +94,7 @@ exports[`Navbar renders correctly 1`] = `
     </div>
     <div
       className="buttonGroup"
-    >
-      <button
-        className="signupFilledButton btn btn-primary"
-        disabled={false}
-        type="button"
-      >
-        home.navBar.buttons.signup
-      </button>
-      <button
-        className="loginOutlinedButton btn btn-outline"
-        disabled={false}
-        type="button"
-      >
-        home.navBar.buttons.login
-      </button>
-    </div>
+    />
   </div>
   <div
     className="dropdownItemButton dropdown"
