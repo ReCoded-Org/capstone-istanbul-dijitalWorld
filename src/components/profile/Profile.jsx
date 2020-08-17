@@ -31,8 +31,8 @@ export default function Profile() {
     }
     if (formUserInfo.photoURL) {
       await currentUser.updateProfile({
-        photoURL: formUserInfo.photoURL
-      })
+        photoURL: formUserInfo.photoURL,
+      });
     }
     if (formUserInfo.email) {
       await currentUser.updateEmail(formUserInfo.email);
