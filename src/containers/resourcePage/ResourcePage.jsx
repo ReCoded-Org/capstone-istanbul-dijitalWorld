@@ -1,14 +1,12 @@
 import React from 'react';
-//import Resources from "../../components/resources/Resources"
-import Test from "../../components/resources/test"
+import Resources from '../../components/resources/Resources';
 
 function ResourcePage() {
-    return (
-        <div>
-            <Test />
-            {/* <Resources /> */}
-        </div>
-    )
+  return (
+    <div>
+      <Resources />
+    </div>
+  );
 }
 
 export default ResourcePage;

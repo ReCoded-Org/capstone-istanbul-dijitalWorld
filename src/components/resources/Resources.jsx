@@ -1,5 +1,5 @@
 import React from 'react';
-import './test.css';
+import './Resources.css';
 import { Button, Col, Container } from 'react-bootstrap';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
