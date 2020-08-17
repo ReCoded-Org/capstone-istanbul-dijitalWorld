@@ -1,4 +1,5 @@
 .allContent {
+  padding-left: 12%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,7 +10,6 @@
 }
 
 .sentence {
-  font-size: 3.75rem;
   font-weight: bold;
   color: #6c567b;
   text-shadow: 0rem 0.3125rem 0.3125rem #cecece;
@@ -41,7 +41,7 @@
   width: 53.125rem;
   margin-left: -5%;
   z-index: -1;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .socialMediaIcons {
