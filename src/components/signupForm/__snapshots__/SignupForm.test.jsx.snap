@@ -9,7 +9,8 @@ exports[`renders correctly 1`] = `
     src="www-logo.png"
   />
   <form
-    className=""
+    className="form"
+    onSubmit={[Function]}
   >
     <div
       className="form-row"
@@ -20,8 +21,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridFirstName"
-          placeholder="First name"
+          onChange={[Function]}
+          placeholder="signup.firstName"
+          required={true}
           type="name"
+          value=""
         />
       </div>
       <div
@@ -30,8 +34,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridLastName"
-          placeholder="Last name"
+          onChange={[Function]}
+          placeholder="signup.lastName"
+          required={true}
           type="name"
+          value=""
         />
       </div>
     </div>
@@ -41,8 +48,10 @@ exports[`renders correctly 1`] = `
       <input
         className="form-control"
         id="formGridEmail"
-        placeholder="Your email"
+        onChange={[Function]}
+        placeholder="signup.email"
         type="email"
+        value=""
       />
     </div>
     <div
@@ -54,8 +63,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridPassword"
-          placeholder="Password"
+          onChange={[Function]}
+          placeholder="signup.password"
+          required={true}
           type="password"
+          value=""
         />
       </div>
       <div
@@ -64,8 +76,11 @@ exports[`renders correctly 1`] = `
         <input
           className="form-control"
           id="formGridRepeatPassword"
-          placeholder="Repeat password"
+          onChange={[Function]}
+          placeholder="signup.repeatPassword"
+          required={true}
           type="password"
+          value=""
         />
       </div>
     </div>
@@ -74,19 +89,19 @@ exports[`renders correctly 1`] = `
       disabled={false}
       type="submit"
     >
-      Sign Up
+      signup.signup
     </button>
   </form>
   <p
     className="mt-3"
   >
-    Already Have An Account ?
+    signup.existingAccount
      
     <a
       className="loginLink"
       href="/login"
     >
-      Login
+      signup.login
     </a>
   </p>
 </div>

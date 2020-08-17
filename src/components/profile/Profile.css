@@ -1,0 +1,11 @@
+.profileImageRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileDetailRow {
+  margin: 10% 20%;
+  padding-left: 10%;
+}

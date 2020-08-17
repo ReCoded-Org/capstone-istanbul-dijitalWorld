@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactUsForm.css';
-import database from '../../firebase';
+import { fireStore } from '../../firebase';
 import { Form, Col, Row, Alert } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
@@ -37,7 +37,7 @@ export default function ContactUs() {
   const handleSubmitMessage = (e) => {
     e.preventDefault();
 
-    const newMessage = database.collection('contactUs').doc();
+    const newMessage = fireStore.collection('contactUs').doc();
     newMessage.set({
       email: email,
       message: message,

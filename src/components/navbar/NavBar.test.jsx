@@ -1,6 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import NavBar from './NavBar';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import allReducers from '../../redux/reducers';
+
+const store = createStore(
+  allReducers,
+  window.devToolsExtension ? window.devToolsExtension() : (f) => f,
+);
 
 const routes = [
   { path: '/', name: 'home' },
@@ -12,6 +21,14 @@ const routes = [
 ];
 
 it('Navbar renders correctly', () => {
-  const div = renderer.create(<NavBar routes={routes} />).toJSON();
+  const div = renderer
+    .create(
+      <Provider store={store}>
+        <Router>
+          <NavBar routes={routes} />
+        </Router>
+      </Provider>,
+    )
+    .toJSON();
   expect(div).toMatchSnapshot();
 });
