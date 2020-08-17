@@ -43,9 +43,5 @@
   display: flex !important;
   flex-direction: row;
   padding: 2%;
-  margin: 2%;
-}
-
-.container {
-  margin: 2% 0;
+  margin: 3%;
 }

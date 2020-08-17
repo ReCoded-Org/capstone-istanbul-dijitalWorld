@@ -7,11 +7,10 @@ import Slider from 'react-slick';
 import { useTranslation } from 'react-i18next';
 
 function Arrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', background: '#6c567b', borderRadius: '50%' }}
       onClick={onClick}
     />
   );
