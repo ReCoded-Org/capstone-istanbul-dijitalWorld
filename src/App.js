@@ -11,6 +11,7 @@ import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
 import ProfilePage from './containers/profile/ProfilePage';
+import ContactUsPage from "./containers/contactUs/ContactUsPage"
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
@@ -22,7 +23,7 @@ const ROUTES = [
   { path: '/inspire', name: 'inspire', Component: InspirePage },
   { path: '/resources', name: 'resource', Component: Home },
   { path: '/about', name: 'about', Component: About },
-  { path: '/contact', name: 'contact', Component: Home },
+  { path: '/contact', name: 'contact', Component: ContactUsPage },
 ];
 
 const LocationDisplay = withRouter(({ location }) => (
