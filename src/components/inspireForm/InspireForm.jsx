@@ -14,7 +14,7 @@ export default function InspireForm() {
   function ThankYouPopUp() {
     return (
       <>
-        <Alert show={show} variant="success">
+        <Alert show={show} variant="success" className="m-auto" onClose={() => setShow(false)} dismissible>
           <Alert.Heading>Thank You!</Alert.Heading>
           <p>
             Thank you for submitting your story and having the courage to share!
@@ -98,7 +98,7 @@ export default function InspireForm() {
       <Row>
         <ThankYouPopUp />
       </Row>
-      <Row className="inspireButtonRow">
+      <Row className="inspireButtonRow mt-3">
         <button type="submit" className="inspireButton">
           {t('inspire.button')}
         </button>
