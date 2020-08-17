@@ -7,16 +7,22 @@ import { useTranslation } from 'react-i18next';
 export default function InspireForm() {
   const { t } = useTranslation();
   const [inspireForm, setInspireForm] = useState({
-    headline: "",
-    category: "",
-    story: ""
+    headline: '',
+    category: '',
+    story: '',
   });
   const [show, setShow] = useState(false);
 
   function ThankYouPopUp() {
     return (
       <>
-        <Alert show={show} variant="success" className="m-auto" onClose={() => setShow(false)} dismissible>
+        <Alert
+          show={show}
+          variant="success"
+          className="m-auto"
+          onClose={() => setShow(false)}
+          dismissible
+        >
           <Alert.Heading>Thank You!</Alert.Heading>
           <p>
             Thank you for submitting your story and having the courage to share!
@@ -30,8 +36,8 @@ export default function InspireForm() {
   }
 
   const handleInput = (key) => (e) => {
-    setInspireForm({ ...inspireForm, [key]: e.target.value })
-  }
+    setInspireForm({ ...inspireForm, [key]: e.target.value });
+  };
 
   const handleSubmitStory = (e) => {
     e.preventDefault();
@@ -40,14 +46,14 @@ export default function InspireForm() {
     newStory.set({
       headline: inspireForm.headline,
       category: inspireForm.category,
-      story: inspireForm.story
+      story: inspireForm.story,
     });
 
     setInspireForm({
-      headline: "",
-      category: "",
-      story: ""
-    })
+      headline: '',
+      category: '',
+      story: '',
+    });
     setShow(true);
   };
 
@@ -61,7 +67,7 @@ export default function InspireForm() {
               type="input"
               placeholder={t('inspire.subject')}
               className="inspireInputBox"
-              onChange={handleInput("headline")}
+              onChange={handleInput('headline')}
               value={inspireForm.headline}
               required
             />
@@ -73,7 +79,7 @@ export default function InspireForm() {
               size="lg"
               as="select"
               className="inspireInputBox"
-              onChange={handleInput("category")}
+              onChange={handleInput('category')}
               value={inspireForm.category}
               required
             >
@@ -93,7 +99,7 @@ export default function InspireForm() {
           rows="15"
           placeholder={t('inspire.story')}
           className="inspireInputBox"
-          onChange={handleInput("story")}
+          onChange={handleInput('story')}
           value={inspireForm.story}
           required
         />
