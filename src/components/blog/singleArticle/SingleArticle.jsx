@@ -4,15 +4,12 @@ import { Col, Row, Container, Image } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import './SingleArticle.css';
 
-function ScrollToTopOnMount() {
+export default function SingleArticle() {
+  let params = useParams();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  return null;
-}
-
-export default function SingleArticle() {
-  let params = useParams();
 
   const [allPosts, setAllPosts] = React.useState([]);
 
@@ -33,7 +30,6 @@ export default function SingleArticle() {
     .map((post) => {
       return (
         <Container className="articleContainer">
-          <ScrollToTopOnMount />
           <Row>
             <Col xs={6} md={6} lg={8}>
               <h1
