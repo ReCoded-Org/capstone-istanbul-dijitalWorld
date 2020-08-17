@@ -58,7 +58,7 @@
     "footer": {
       "getInTouch": {
         "title": "Get in Touch",
-        "text": "But Brooke Chaffin and Catherine Connors are looking to change that with the introduction."
+        "text": "We handle your shares with care and protect your data safely."
       },
       "contactUs": {
         "title": "Contact Us",
@@ -72,24 +72,18 @@
     "title": "Resources for you",
     "resources": [
       {
-        "id": 0,
         "header": "girlsglobe.org",
         "blurp": "Girls' Globe amplifies the voices of activists, advocates and experts on gender equality, human rights and social justice.",
-        "color": "'#242846'",
         "img": "/images/Girlsglobal.png"
       },
       {
-        "id": 1,
         "header": "malala.org",
         "blurp": "Malala and Ziauddin Yousafzai founded Malala Fund in 2013 to champion every girl’s right to 12 years of free, safe, quality education.",
-        "color": "'#ba9077'",
         "img": "/images/Malala.png"
       },
       {
-        "id": 2,
         "header": "girltalkhq.com",
         "blurp": "GTHQ covers a range of topics that are relevant to women today, like feminism, women’s reproductive rights, the representation of women in film & TV, diversity in the media, and gender equality measures.",
-        "color": "'#1ABC9C'",
         "img": "/images/GirltalkHQ.png"
       }
     ],

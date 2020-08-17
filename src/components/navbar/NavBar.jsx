@@ -65,8 +65,7 @@ export default function NavBar({ routes }) {
       }
     });
   });
-
-  const { t } = useTranslation();
+  const [t, i18n] = useTranslation();
 
   return (
     <Navbar className="navbar" data-testid="navbar" expand="sm">
@@ -121,9 +120,15 @@ export default function NavBar({ routes }) {
         className="dropdownItemButton"
         title="EN"
       >
-        <Dropdown.Item as="button">EN</Dropdown.Item>
-        <Dropdown.Item as="button">TR</Dropdown.Item>
-        <Dropdown.Item as="button">AR</Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('en')}>
+          EN
+        </Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('tr')}>
+          TR
+        </Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('an')}>
+          AR
+        </Dropdown.Item>
       </DropdownButton>
     </Navbar>
   );
