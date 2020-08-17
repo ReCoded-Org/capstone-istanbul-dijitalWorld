@@ -30,7 +30,6 @@
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;
   border-radius: 25px;
-  text-transform: capitalize;
 }
 
 .facebookBtn {
@@ -43,7 +42,11 @@
   border-radius: 25px;
 }
 
-.forgotPassword,
-.forgotPassword:hover {
+.forgotPassword {
   color: black;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

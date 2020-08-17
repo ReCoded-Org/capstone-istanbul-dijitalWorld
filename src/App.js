@@ -8,6 +8,11 @@ import SingleArticle from './components/single-article/SingleArticle';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
 import About from './containers/about/About';
+import LoginPage from './containers/loginPage/LoginPage';
+import SignupPage from './containers/signupPage/SignupPage';
+import ProfilePage from './containers/profile/ProfilePage';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
 
 // This array will be mapped through to create the routes
 // Home component is a placeholder until other components are created
@@ -26,16 +31,27 @@ const LocationDisplay = withRouter(({ location }) => (
 
 function App() {
   return (
-    <Router className="App">
-      <NavBar routes={ROUTES} />
-      {ROUTES.map(({ path, Component }) => (
-        <Route key={path} exact path={path}>
-          <Component />
+    <I18nextProvider i18n={i18n}>
+      <Router className="App">
+        <NavBar routes={ROUTES} />
+        {ROUTES.map(({ path, Component }) => (
+          <Route key={path} exact path={path}>
+            <Component />
+          </Route>
+        ))}
+        <Route exact path="/login">
+          <LoginPage />
         </Route>
-      ))}
-      <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
-      <Footer />
-    </Router>
+        <Route exact path="/signup">
+          <SignupPage />
+        </Route>
+        <Route exact path="/blog/:id" render={(props) => <SingleArticle {...props} />} />
+        <Route exact path="/profile">
+          <ProfilePage />
+        </Route>
+        <Footer />
+      </Router>
+    </I18nextProvider>
   );
 }
 
