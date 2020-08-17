@@ -9,6 +9,8 @@ import NavLinks from './NavLinks';
 import { Route } from 'react-router-dom';
 import { ANONYMOUS_PHOTO_URL } from '../../images/anonymous';
 import './NavBar.css';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function NavBar({ routes }) {
   const dispatch = useDispatch();
@@ -113,12 +115,13 @@ export default function NavBar({ routes }) {
           {isLoggedOut && loginSignupButton}
         </div>
       </Navbar.Collapse>
-      <DropdownButton
+      <FontAwesomeIcon className="globeIcon" icon={faGlobe} />
+      <DropdownButton 
         alignRight
         variant="none"
         id="dropdown-item-button"
         className="dropdownItemButton"
-        title="EN"
+        title="LNG"
       >
         <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('en')}>
           EN
@@ -126,7 +129,7 @@ export default function NavBar({ routes }) {
         <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('tr')}>
           TR
         </Dropdown.Item>
-        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('an')}>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('ar')}>
           AR
         </Dropdown.Item>
       </DropdownButton>
