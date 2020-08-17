@@ -39,8 +39,14 @@
         "title": "Afrikalı siyahi müslüman bir kadın olarak kesişimsel aktivizm hikayem #BlackLivesMatter",
         "author": "Bashirat Oladele"
       },
-      "openLetter": { "title": "İstismarcıma açık mektup", "author": "Anonim" },
-      "girlsFight": "Kız çocukları için mücadelede kız çocukları yalnız olmayacak."
+      "openLetter": {
+        "title": "İstismarcıma açık mektup",
+        "author": "Anonim"
+      },
+      "girlsFight": {
+        "title": "Kız çocukları için mücadelede kız çocukları yalnız olmayacak.",
+        "button": "Bağış yap"
+      }
     },
     "newsletter": {
       "titles": {
