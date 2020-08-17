@@ -8,12 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 function Arrow(props) {
   const { className, onClick } = props;
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-    />
-  );
+  return <div className={className} onClick={onClick} />;
 }
 
 export default function Resources() {
