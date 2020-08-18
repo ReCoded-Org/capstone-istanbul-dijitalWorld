@@ -19,7 +19,7 @@ const Quotes = () => {
           <span className="sayHerNameAuthor">{t('home.quotes.sayHerName.author')}</span>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <Image src={safeImage} fluid />
+          <Image src={safeImage} width="100%" fluid />
         </Col>
       </Row>
       <Row data-testid="anOpenLetterRow">
