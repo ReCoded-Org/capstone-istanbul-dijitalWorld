@@ -7,6 +7,7 @@ import BlogCard from './components/blog-cards/BlogCard';
 import SingleArticle from './components/single-article/SingleArticle';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
+import ResourcePage from './containers/resourcePage/ResourcePage';
 import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
@@ -20,7 +21,7 @@ const ROUTES = [
   { path: '/', name: 'home', Component: Home },
   { path: '/blog', name: 'blog', Component: BlogCard },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
-  { path: '/resources', name: 'resource', Component: Home },
+  { path: '/resources', name: 'resource', Component: ResourcePage },
   { path: '/about', name: 'about', Component: About },
   { path: '/contact', name: 'contact', Component: Home },
 ];
