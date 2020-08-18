@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Dropdown, DropdownButton, Button, Image } from 'react-bootstrap/';
+import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { userLoggedInAction } from '../../redux/action';
 import { auth } from '../../firebase';
@@ -69,14 +70,16 @@ export default function NavBar({ routes }) {
 
   return (
     <Navbar className="navbar" data-testid="navbar" expand="sm">
-      <Navbar.Brand className="navbarBrand" href="#home">
-        <img
-          data-testid="brand-logo"
-          src={require('../../images/www-logo.png')}
-          className="brandLogo d-inline-block align-top"
-          alt="World with Women Logo"
-        />
-      </Navbar.Brand>
+      <NavLink to="/">
+        <Navbar.Brand className="navbarBrand">
+          <img
+            data-testid="brand-logo"
+            src={require('../../images/www-logo.png')}
+            className="brandLogo d-inline-block align-top"
+            alt="World with Women Logo"
+          />
+        </Navbar.Brand>
+      </NavLink>
       <Navbar.Toggle className="navbarMainContent" aria-controls="basic-navbar-nav" />
       <Navbar.Collapse data-testid="navbar-collapse" id="basic-navbar-nav">
         <Nav className="navLinksContainer">

@@ -74,17 +74,20 @@
       {
         "header": "girlsglobe.org",
         "blurp": "Girls' Globe amplifies the voices of activists, advocates and experts on gender equality, human rights and social justice.",
-        "img": "/images/GirlsglobalResource.png"
+        "img": "/images/GirlsglobalResource.png",
+        "link": "http://www.girlsglobe.org"
       },
       {
         "header": "malala.org",
         "blurp": "Malala and Ziauddin Yousafzai founded Malala Fund in 2013 to champion every girl’s right to 12 years of free, safe, quality education.",
-        "img": "/images/MalalaResource.png"
+        "img": "/images/MalalaResource.png",
+        "link": "http://www.malala.org"
       },
       {
         "header": "girltalkhq.com",
         "blurp": "GTHQ covers a range of topics that are relevant to women today, like feminism, women’s reproductive rights, the representation of women in film & TV, diversity in the media, and gender equality measures.",
-        "img": "/images/GirltalkHQResource.png"
+        "img": "/images/GirltalkHQResource.png",
+        "link": "http://www.girltalkhq.com"
       }
     ],
     "button": "Go to the page"

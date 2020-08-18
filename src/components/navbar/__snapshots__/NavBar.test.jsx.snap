@@ -6,15 +6,22 @@ exports[`Navbar renders correctly 1`] = `
   data-testid="navbar"
 >
   <a
-    className="navbarBrand navbar-brand"
-    href="#home"
+    aria-current="page"
+    className="active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
   >
-    <img
-      alt="World with Women Logo"
-      className="brandLogo d-inline-block align-top"
-      data-testid="brand-logo"
-      src="www-logo.png"
-    />
+    <span
+      className="navbarBrand navbar-brand"
+    >
+      <img
+        alt="World with Women Logo"
+        className="brandLogo d-inline-block align-top"
+        data-testid="brand-logo"
+        src="www-logo.png"
+      />
+    </span>
   </a>
   <button
     aria-controls="basic-navbar-nav"
@@ -38,56 +45,51 @@ exports[`Navbar renders correctly 1`] = `
       onKeyDown={[Function]}
     >
       <a
-        className="navLinkText nav-link"
-        data-rb-event-key="/"
+        aria-current="page"
+        className="navLinkText nav-link active"
         href="/"
         onClick={[Function]}
-        onKeyDown={[Function]}
+        style={Object {}}
       >
         home.navBar.navLinks.home
       </a>
       <a
+        aria-current={null}
         className="navLinkText nav-link"
-        data-rb-event-key="/blog"
         href="/blog"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         home.navBar.navLinks.blog
       </a>
       <a
+        aria-current={null}
         className="navLinkText nav-link"
-        data-rb-event-key="/inspire"
         href="/inspire"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         home.navBar.navLinks.inspire
       </a>
       <a
+        aria-current={null}
         className="navLinkText nav-link"
-        data-rb-event-key="/resources"
         href="/resources"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         home.navBar.navLinks.resource
       </a>
       <a
+        aria-current={null}
         className="navLinkText nav-link"
-        data-rb-event-key="/about"
         href="/about"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         home.navBar.navLinks.about
       </a>
       <a
+        aria-current={null}
         className="navLinkText nav-link"
-        data-rb-event-key="/contact"
         href="/contact"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         home.navBar.navLinks.contact
       </a>
