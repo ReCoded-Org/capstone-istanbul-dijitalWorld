@@ -170,5 +170,8 @@
     "signup": "Signup for WWW",
     "send": "Send",
     "passwordReset": "Send a password reset email"
+  },
+  "blog": {
+    "readMore": "Read More"
   }
 }

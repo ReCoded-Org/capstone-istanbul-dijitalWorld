@@ -57,7 +57,7 @@ export default function Profile() {
             roundedCircle
           />
 
-          <Button className="mt-3" onClick={() => setShowModal(true)}>
+          <Button className="mt-3 editProfileBtn" onClick={() => setShowModal(true)}>
             Edit Profile
           </Button>
 

@@ -161,5 +161,8 @@
     "signup": "Kaydolun",
     "send": "Gönder",
     "passwordReset": "Şifreyi sıfırlamak için e-posta gönder"
+  },
+  "blog": {
+    "readMore": "Yazıya git"
   }
 }
