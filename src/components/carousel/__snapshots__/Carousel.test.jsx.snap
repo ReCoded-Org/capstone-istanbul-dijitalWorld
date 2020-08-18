@@ -10,7 +10,7 @@ exports[`Carousel renders correctly 1`] = `
     <div
       className="sentence"
     >
-      <p>
+      <h1>
         home.carousel.header.header0
         <br />
          
@@ -22,7 +22,7 @@ exports[`Carousel renders correctly 1`] = `
         <span>
           home.carousel.header.header3
         </span>
-      </p>
+      </h1>
     </div>
     <button
       className="learnBtn"

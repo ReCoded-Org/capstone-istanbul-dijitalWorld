@@ -38,6 +38,7 @@ exports[`renders correctly 1`] = `
       <img
         className="img-fluid"
         src="safe_image.jpeg"
+        width="100%"
       />
     </div>
   </div>

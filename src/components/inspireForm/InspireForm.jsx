@@ -6,15 +6,23 @@ import { useTranslation } from 'react-i18next';
 
 export default function InspireForm() {
   const { t } = useTranslation();
-  const [headline, setHeadline] = useState();
-  const [category, setCategory] = useState();
-  const [story, setStory] = useState();
+  const [inspireForm, setInspireForm] = useState({
+    headline: '',
+    category: '',
+    story: '',
+  });
   const [show, setShow] = useState(false);
 
   function ThankYouPopUp() {
     return (
       <>
-        <Alert show={show} variant="success">
+        <Alert
+          show={show}
+          variant="success"
+          className="m-auto"
+          onClose={() => setShow(false)}
+          dismissible
+        >
           <Alert.Heading>Thank You!</Alert.Heading>
           <p>
             Thank you for submitting your story and having the courage to share!
@@ -27,16 +35,8 @@ export default function InspireForm() {
     );
   }
 
-  const handleHeadlineInput = async (e) => {
-    setHeadline(e.target.value);
-  };
-
-  const handleCategoryInput = async (e) => {
-    setCategory(e.target.value);
-  };
-
-  const handleStoryInput = async (e) => {
-    setStory(e.target.value);
+  const handleInput = (key) => (e) => {
+    setInspireForm({ ...inspireForm, [key]: e.target.value });
   };
 
   const handleSubmitStory = (e) => {
@@ -44,15 +44,24 @@ export default function InspireForm() {
 
     const newStory = fireStore.collection('inspire').doc();
     newStory.set({
-      headline: headline,
-      category: category,
-      story: story,
+      headline: inspireForm.headline,
+      category: inspireForm.category,
+      story: inspireForm.story,
+    });
+
+    setInspireForm({
+      headline: '',
+      category: '',
+      story: '',
     });
     setShow(true);
   };
 
   return (
     <Form className="inspireForm" onSubmit={handleSubmitStory}>
+      <h3 className="inspireFormHero">
+        Here is the perfect space to share your struggle or success
+      </h3>
       <Row className="inspireFirstRow">
         <Col>
           <Form.Group>
@@ -61,7 +70,8 @@ export default function InspireForm() {
               type="input"
               placeholder={t('inspire.subject')}
               className="inspireInputBox"
-              onChange={handleHeadlineInput}
+              onChange={handleInput('headline')}
+              value={inspireForm.headline}
               required
             />
           </Form.Group>
@@ -72,7 +82,8 @@ export default function InspireForm() {
               size="lg"
               as="select"
               className="inspireInputBox"
-              onChange={handleCategoryInput}
+              onChange={handleInput('category')}
+              value={inspireForm.category}
               required
             >
               <option default>{t('inspire.category.0')}</option>
@@ -91,14 +102,15 @@ export default function InspireForm() {
           rows="15"
           placeholder={t('inspire.story')}
           className="inspireInputBox"
-          onChange={handleStoryInput}
+          onChange={handleInput('story')}
+          value={inspireForm.story}
           required
         />
       </Form.Group>
       <Row>
         <ThankYouPopUp />
       </Row>
-      <Row className="inspireButtonRow">
+      <Row className="inspireButtonRow mt-3">
         <button type="submit" className="inspireButton">
           {t('inspire.button')}
         </button>
