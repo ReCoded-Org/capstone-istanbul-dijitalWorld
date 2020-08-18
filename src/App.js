@@ -3,14 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
 import Home from './containers/home/Home';
 import NavBar from './components/navbar/NavBar';
-import BlogCard from './components/blog-cards/BlogCard';
-import SingleArticle from './components/single-article/SingleArticle';
+import BlogCard from './components/blog/blogCards/BlogCard';
+import SingleArticle from './components/blog/singleArticle/SingleArticle';
 import Footer from './components/footer/Footer';
 import InspirePage from './containers/inspirePage/InspirePage';
+import ResourcePage from './containers/resourcePage/ResourcePage';
 import About from './containers/about/About';
 import LoginPage from './containers/loginPage/LoginPage';
 import SignupPage from './containers/signupPage/SignupPage';
 import ProfilePage from './containers/profile/ProfilePage';
+import ContactUsPage from './containers/contactUs/ContactUsPage';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
@@ -20,9 +22,9 @@ const ROUTES = [
   { path: '/', name: 'home', Component: Home },
   { path: '/blog', name: 'blog', Component: BlogCard },
   { path: '/inspire', name: 'inspire', Component: InspirePage },
-  { path: '/resources', name: 'resource', Component: Home },
+  { path: '/resources', name: 'resource', Component: ResourcePage },
   { path: '/about', name: 'about', Component: About },
-  { path: '/contact', name: 'contact', Component: Home },
+  { path: '/contact', name: 'contact', Component: ContactUsPage },
 ];
 
 const LocationDisplay = withRouter(({ location }) => (

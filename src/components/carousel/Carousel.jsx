@@ -15,11 +15,11 @@ export default function Carousel() {
     <div className="allContent">
       <div className="sentenceAndButton">
         <div className="sentence">
-          <p>
+          <h1>
             {t('home.carousel.header.header0')}
             <br /> {t('home.carousel.header.header1')} <br />
             {t('home.carousel.header.header2')} <span>{t('home.carousel.header.header3')}</span>
-          </p>
+          </h1>
         </div>
         <button type="button" className="learnBtn">
           {t('home.carousel.button')}

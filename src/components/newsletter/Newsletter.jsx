@@ -6,7 +6,7 @@ import './Newsletter.css';
 const Newsletter = () => {
   const { t } = useTranslation();
   return (
-    <div className="container">
+    <div className="newsletterContainer">
       <Container>
         <Row>
           <Col className="newsletterTitle">
