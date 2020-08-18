@@ -117,7 +117,8 @@
 }
 
 /* bootstrap class */
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   box-shadow: none !important;
 }
 
