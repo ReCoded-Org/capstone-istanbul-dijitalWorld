@@ -6,15 +6,22 @@ exports[`Navbar renders correctly 1`] = `
   data-testid="navbar"
 >
   <a
-    className="navbarBrand navbar-brand"
+    aria-current="page"
+    className="active"
     href="/"
+    onClick={[Function]}
+    style={Object {}}
   >
-    <img
-      alt="World with Women Logo"
-      className="brandLogo d-inline-block align-top"
-      data-testid="brand-logo"
-      src="www-logo.png"
-    />
+    <span
+      className="navbarBrand navbar-brand"
+    >
+      <img
+        alt="World with Women Logo"
+        className="brandLogo d-inline-block align-top"
+        data-testid="brand-logo"
+        src="www-logo.png"
+      />
+    </span>
   </a>
   <button
     aria-controls="basic-navbar-nav"
