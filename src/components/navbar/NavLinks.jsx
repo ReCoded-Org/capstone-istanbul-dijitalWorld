@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap/';
+import { NavLink } from "react-router-dom"
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import './NavBar.css';
@@ -10,9 +10,9 @@ function NavLinks({ routes }) {
   return (
     <>
       {routes.map((route) => (
-        <Nav.Link className="navLinkText" key={route.path} href={route.path}>
+        <NavLink className="navLinkText nav-link" key={route.path} to={route.path}>
           {t(`home.navBar.navLinks.${route.name}`)}
-        </Nav.Link>
+        </NavLink>
       ))}
     </>
   );
