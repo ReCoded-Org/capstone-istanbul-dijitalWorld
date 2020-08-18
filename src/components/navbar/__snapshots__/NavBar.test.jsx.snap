@@ -7,7 +7,7 @@ exports[`Navbar renders correctly 1`] = `
 >
   <a
     className="navbarBrand navbar-brand"
-    href="#home"
+    href="/"
   >
     <img
       alt="World with Women Logo"
