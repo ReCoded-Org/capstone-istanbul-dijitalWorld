@@ -5,6 +5,11 @@ exports[`renders correctly 1`] = `
   className="inspireForm"
   onSubmit={[Function]}
 >
+  <h3
+    className="inspireFormHero"
+  >
+    Here is the perfect space to share your struggle or success
+  </h3>
   <div
     className="inspireFirstRow row"
   >
