@@ -7,7 +7,7 @@ export default function SingleBlogCard(props) {
   return (
     <div className="containerToAllCards">
       <Container className="blogContainer">
-        <Row>
+        <Row className="blogCardBox">
           <Col xs={6} md={6} lg={8}>
             <h3
               className="blogTitle"

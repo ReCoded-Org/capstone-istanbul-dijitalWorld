@@ -44,3 +44,7 @@ hr {
   border-top: 5px dotted lightgray;
   width: 2%;
 }
+
+.blogCardBox {
+  margin-left: 2em;
+}

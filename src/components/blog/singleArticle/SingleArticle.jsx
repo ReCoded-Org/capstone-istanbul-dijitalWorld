@@ -31,7 +31,7 @@ export default function SingleArticle() {
       return (
         <Container className="articleContainer">
           <Row>
-            <Col xs={6} md={6} lg={8}>
+            <Col xs={6} md={6} lg={12}>
               <h1
                 className="articleTitle"
                 dangerouslySetInnerHTML={{
