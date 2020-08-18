@@ -30,12 +30,20 @@
   border-style: hidden;
 }
 
+.resourceLink {
+  color: white;
+}
+
+.resourceLink:hover {
+  color: white;
+}
+
 .blurpBlock {
   padding-left: 2rem;
 }
 
 .resourceButton:hover {
-  background-color: #f8b195;
+  background-color: #f8b195 !important;
   border-style: hidden;
 }
 
