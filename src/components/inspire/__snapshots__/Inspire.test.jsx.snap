@@ -19,6 +19,7 @@ exports[`renders correctly 1`] = `
     >
       home.inspire.header.header1
     </span>
+     
     <span
       className="purpleInspire"
     >
