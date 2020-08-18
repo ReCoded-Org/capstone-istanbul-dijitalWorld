@@ -21,6 +21,9 @@
       "buttons": {
         "signup": "Sign Up",
         "login": "Login"
+      },
+      "dropdown": {
+        "language": "EN"
       }
     },
     "inspire": {

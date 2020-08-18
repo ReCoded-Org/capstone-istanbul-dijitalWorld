@@ -50,8 +50,6 @@
   font-size: 14px;
   display: inline-flex;
   justify-content: center;
-  width: 6em;
-  height: 2.3em;
   margin: 0.3em;
   border-radius: 40px !important;
 }
@@ -116,6 +114,11 @@
 /* bootstrap class */
 .dropdown-menu {
   font-size: 12px;
+}
+
+/* bootstrap class */
+.btn.focus, .btn:focus {
+  box-shadow: none !important;
 }
 
 @media only screen and (min-device-width: 998px) and (max-device-width: 1024px) {
