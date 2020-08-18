@@ -20,6 +20,7 @@ exports[`renders correctly 1`] = `
           placeholder="inspire.subject"
           required={true}
           type="input"
+          value=""
         />
       </div>
     </div>
@@ -33,6 +34,7 @@ exports[`renders correctly 1`] = `
           className="inspireInputBox form-control form-control-lg"
           onChange={[Function]}
           required={true}
+          value=""
         >
           <option
             default={true}
@@ -67,13 +69,14 @@ exports[`renders correctly 1`] = `
       placeholder="inspire.story"
       required={true}
       rows="15"
+      value=""
     />
   </div>
   <div
     className="row"
   />
   <div
-    className="inspireButtonRow row"
+    className="inspireButtonRow mt-3 row"
   >
     <button
       className="inspireButton"
