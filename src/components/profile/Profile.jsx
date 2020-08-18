@@ -16,6 +16,7 @@ export default function Profile() {
   const [formUserInfo, setFormUserInfo] = useState({
     displayName: '',
     email: '',
+    photoURL: '',
   });
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
@@ -23,11 +24,10 @@ export default function Profile() {
   const { t } = useTranslation();
 
   const updateUserData = async () => {
-    if (formUserInfo.displayName) {
-      await currentUser.updateProfile({
-        displayName: formUserInfo.displayName,
-      });
-    }
+    await currentUser.updateProfile({
+      displayName: formUserInfo.displayName || userData.displayName,
+      photoURL: formUserInfo.photoURL || userData.photoURL,
+    });
     if (formUserInfo.email) {
       await currentUser.updateEmail(formUserInfo.email);
     }
@@ -36,6 +36,7 @@ export default function Profile() {
     setFormUserInfo({
       displayName: '',
       email: '',
+      photoURL: '',
     });
     setAlert({
       message: 'Profile updated successfully',
@@ -56,7 +57,7 @@ export default function Profile() {
             roundedCircle
           />
 
-          <Button className="mt-3" onClick={() => setShowModal(true)}>
+          <Button className="mt-3 editProfileBtn" onClick={() => setShowModal(true)}>
             Edit Profile
           </Button>
 
@@ -116,7 +117,7 @@ export default function Profile() {
             <Form.Group controlId="formBasicName">
               <Form.Control
                 type="name"
-                placeholder="name"
+                placeholder="Name"
                 value={formUserInfo.displayName}
                 onChange={(e) => setFormUserInfo({ ...formUserInfo, displayName: e.target.value })}
               />
@@ -127,6 +128,14 @@ export default function Profile() {
                 placeholder="Email"
                 value={formUserInfo.email}
                 onChange={(e) => setFormUserInfo({ ...formUserInfo, email: e.target.value })}
+              />
+            </Form.Group>
+            <Form.Group controlId="formBasicName">
+              <Form.Control
+                type="name"
+                placeholder="Photo URL"
+                value={formUserInfo.photoURL}
+                onChange={(e) => setFormUserInfo({ ...formUserInfo, photoURL: e.target.value })}
               />
             </Form.Group>
           </Modal.Body>

@@ -5,35 +5,26 @@
 }
 
 .footerRow {
-  margin: 5% 0;
+  margin: 3% 0;
   display: flex;
   justify-content: space-between;
 }
 
-.footerBlurbTitle {
-  font-weight: bold;
-  font-size: 2.125rem;
-  line-height: 2.875rem;
-  color: #6c567b;
-}
-
 .footerBlurbText,
 .footerContactText {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.625rem;
   letter-spacing: -0.03125rem;
   color: rgba(108, 86, 123, 0.83);
 }
-
-.footerContactTitle,
-.footerSocialTitle {
+.footerTitle {
   font-weight: bold;
-  font-size: 1.5625rem;
-  line-height: 2.875rem;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
   color: #6c567b;
 }
 
 .footerIcons {
-  padding: 0.3125rem;
+  padding: 0.3rem;
   font-size: 2rem;
 }

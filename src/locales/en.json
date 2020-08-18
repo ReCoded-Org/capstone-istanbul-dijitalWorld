@@ -3,7 +3,7 @@
     "carousel": {
       "header": {
         "header0": "Digital",
-        "header1": "Story telling",
+        "header1": "Storytelling",
         "header2": "for",
         "header3": "Impact"
       },
@@ -77,17 +77,20 @@
       {
         "header": "girlsglobe.org",
         "blurp": "Girls' Globe amplifies the voices of activists, advocates and experts on gender equality, human rights and social justice.",
-        "img": "/images/Girlsglobal.png"
+        "img": "/images/GirlsglobalResource.png",
+        "link": "http://www.girlsglobe.org"
       },
       {
         "header": "malala.org",
         "blurp": "Malala and Ziauddin Yousafzai founded Malala Fund in 2013 to champion every girl’s right to 12 years of free, safe, quality education.",
-        "img": "/images/Malala.png"
+        "img": "/images/MalalaResource.png",
+        "link": "http://www.malala.org"
       },
       {
         "header": "girltalkhq.com",
         "blurp": "GTHQ covers a range of topics that are relevant to women today, like feminism, women’s reproductive rights, the representation of women in film & TV, diversity in the media, and gender equality measures.",
-        "img": "/images/GirltalkHQ.png"
+        "img": "/images/GirltalkHQResource.png",
+        "link": "http://www.girltalkhq.com"
       }
     ],
     "button": "Go to the page"
@@ -95,15 +98,15 @@
   "about": {
     "ourStory": {
       "header": "Our Story",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "body": "All change starts with an idea and a conversation. We give you the idea that will start a conversation! Women in the middle east feel that they’re alone and that feminist movements are not very related to them because they have a different society. Women will have the ability to stand together and learn from each other. Men will know that there’s a problem and they can do something about it"
     },
     "ourMission": {
       "header": "Our Mission",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "body": "This website gives women the ability to read stories and learn from each other.Understand that what they’re going through is not just a special case.They will also be able to reach help through resources"
     },
     "ourTeam": {
       "header": "Our Team",
-      "body": "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
+      "body": "We are a team of individuals, who together will achieve goals, by helping women."
     },
     "name": [
       "Refia Candan Ozkalay",
@@ -167,5 +170,8 @@
     "signup": "Signup for WWW",
     "send": "Send",
     "passwordReset": "Send a password reset email"
+  },
+  "blog": {
+    "readMore": "Read More"
   }
 }

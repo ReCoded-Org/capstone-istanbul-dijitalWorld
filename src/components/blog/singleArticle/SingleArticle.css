@@ -1,0 +1,26 @@
+.articleContainer {
+  margin: 10em auto 5em auto;
+  text-align: center;
+}
+
+.textBodyHolder {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+
+.articleTitle {
+  color: #6c567b;
+  margin-bottom: 2rem;
+}
+
+.articleImage {
+  width: 35em;
+}
+
+.articleBody {
+  line-height: 2rem;
+  margin: 3em auto;
+  color: #4a474d;
+  width: 80%;
+}
