@@ -59,6 +59,9 @@ export default function InspireForm() {
 
   return (
     <Form className="inspireForm" onSubmit={handleSubmitStory}>
+      <h3 className="inspireFormHero">
+        Here is the perfect space to share your struggle or success
+      </h3>
       <Row className="inspireFirstRow">
         <Col>
           <Form.Group>
