@@ -69,7 +69,7 @@ export default function NavBar({ routes }) {
 
   return (
     <Navbar className="navbar" data-testid="navbar" expand="sm">
-      <Navbar.Brand className="navbarBrand" href="#home">
+      <Navbar.Brand className="navbarBrand" href="/">
         <img
           data-testid="brand-logo"
           src={require('../../images/www-logo.png')}
