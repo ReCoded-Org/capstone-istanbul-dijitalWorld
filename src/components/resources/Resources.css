@@ -1,0 +1,47 @@
+.permanentTitle {
+  font-size: 3.375rem;
+  line-height: 3.9375rem;
+  color: #f8b195;
+}
+
+.resourceHeader {
+  font-size: 3.375rem;
+  font-weight: bold;
+  line-height: 3.9375rem;
+  letter-spacing: -0.12rem;
+  color: #6c567b;
+}
+
+.resourceBlurp {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #9dafbd;
+}
+
+.resourceButton {
+  background-color: #6c567b !important;
+  color: white;
+  cursor: pointer;
+  width: auto;
+  min-width: 11rem !important;
+  height: 3rem;
+  font-size: 1.25rem;
+  border-radius: 2.5rem !important;
+  border-style: hidden;
+}
+
+.blurpBlock {
+  padding-left: 2rem;
+}
+
+.resourceButton:hover {
+  background-color: #f8b195;
+  border-style: hidden;
+}
+
+.carouselContainer {
+  display: flex !important;
+  flex-direction: row;
+  padding: 2%;
+  margin: 3%;
+}
