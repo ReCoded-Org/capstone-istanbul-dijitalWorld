@@ -1,5 +1,5 @@
 .articleContainer {
-  margin: 5em auto 5em auto;
+  margin: 3em auto 5em auto;
   text-align: center;
 }
 
@@ -11,7 +11,7 @@
 
 .articleTitle {
   color: #6c567b;
-  margin: 3rem;
+  margin: 0rem 3rem 3rem 3rem;
 }
 
 .articleImage {
