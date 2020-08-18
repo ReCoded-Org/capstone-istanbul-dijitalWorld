@@ -23,7 +23,7 @@ export default function Resources() {
               <p className="resourceHeader">{item.header}</p>
               <br></br>
               <p className="resourceBlurp">{item.blurp}</p>
-              <Button className="resourceButton">{t('resourcePage.button')}</Button>
+              <Button className="resourceButton"><a className="resourceLink" href={item.link} target="_blank" rel="noopener noreferrer">{t('resourcePage.button')}</a></Button>
             </div>
           </Col>
           <Col md="6">

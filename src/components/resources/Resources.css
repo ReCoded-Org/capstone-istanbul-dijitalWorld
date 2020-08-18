@@ -30,6 +30,14 @@
   border-style: hidden;
 }
 
+.resourceLink {
+  color: white;
+}
+
+.resourceLink:hover {
+  color: white;
+}
+
 .blurpBlock {
   padding-left: 2rem;
 }
