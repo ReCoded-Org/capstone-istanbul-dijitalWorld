@@ -33,7 +33,7 @@ const Footer = () => {
           </Col>
 
           <Col className="footerCol" md="3">
-            <p className="footerTitle followUsTitle">{t('home.footer.followUs')}</p>
+            <p className="footerTitle">{t('home.footer.followUs')}</p>
             <FontAwesomeIcon className="footerIcons" icon={faTwitter} />
             <FontAwesomeIcon className="footerIcons" icon={faFacebook} />
             <FontAwesomeIcon className="footerIcons" icon={faGithub} />
