@@ -24,16 +24,10 @@ export default function Profile() {
   const { t } = useTranslation();
 
   const updateUserData = async () => {
-    if (formUserInfo.displayName) {
-      await currentUser.updateProfile({
-        displayName: formUserInfo.displayName,
-      });
-    }
-    if (formUserInfo.photoURL) {
-      await currentUser.updateProfile({
-        photoURL: formUserInfo.photoURL,
-      });
-    }
+    await currentUser.updateProfile({
+      displayName: formUserInfo.displayName || userData.displayName,
+      photoURL: formUserInfo.photoURL || userData.photoURL,
+    });
     if (formUserInfo.email) {
       await currentUser.updateEmail(formUserInfo.email);
     }
