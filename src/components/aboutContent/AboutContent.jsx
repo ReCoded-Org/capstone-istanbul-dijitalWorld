@@ -6,18 +6,18 @@ import { Col, Row, Container } from 'react-bootstrap';
 const AboutContent = () => {
   const { t } = useTranslation();
   return (
-    <Container className="articlesContainer">
+    <Container className="aboutArticlesContainer">
       <Row>
         <Col>
-          <div className="articleContainer">
+          <div className="aboutArticleContainer">
             <h2>{t('about.ourStory.header')}</h2>
             <p>{t('about.ourStory.body')}</p>
           </div>
-          <div className="articleContainer">
+          <div className="aboutArticleContainer">
             <h2>{t('about.ourMission.header')}</h2>
             <p>{t('about.ourMission.body')}</p>
           </div>
-          <div className="articleContainer">
+          <div className="aboutArticleContainer">
             <h2>{t('about.ourTeam.header')}</h2>
             <p>{t('about.ourTeam.body')}</p>
           </div>

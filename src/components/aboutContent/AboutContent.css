@@ -1,19 +1,17 @@
-.articlesContainer {
-  margin-top: 2rem;
+.aboutArticlesContainer {
+  margin-top: 1.5rem;
 }
 
-.articlesContainer h2 {
-  margin-bottom: 2rem;
-  font-size: 3.3rem;
+.aboutArticlesContainer h2 {
+  margin-bottom: 1.5rem;
   color: #6c567c;
 }
 
-.articlesContainer p {
-  font-size: 1.5rem;
+.aboutArticlesContainer p {
   color: #4a474d;
 }
 
-.articleContainer {
-  margin-top: 2rem;
-  margin-bottom: 6rem;
+.aboutArticleContainer {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
 }
