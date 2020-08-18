@@ -11,6 +11,10 @@
   margin-left: 5%;
 }
 
+.dropdownlistToggle:active {
+  position: absolute;
+}
+
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link {
   color: #6c567b !important;
@@ -19,8 +23,6 @@
   font-size: 16px;
   line-height: 16px;
 }
-
-
 
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link:hover {
@@ -114,7 +116,8 @@
 }
 
 /* bootstrap class */
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   box-shadow: none !important;
 }
 
