@@ -11,6 +11,10 @@
   margin-left: 5%;
 }
 
+.dropdownlistToggle:active {
+  position: absolute;
+}
+
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link {
   color: #6c567b !important;
@@ -18,11 +22,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-}
-
-/* bootstrap class */
-.navbar-collapse {
-  justify-content: flex-end;
 }
 
 /* bootstrap class */
@@ -178,7 +177,7 @@
   }
 
   .navbarBrand {
-    margin: auto;
+    margin: 2em;
   }
 
   .navLinkText {
@@ -198,10 +197,38 @@
   .loginOutlinedButton {
     box-shadow: 0px 10px 20px rgba(49, 49, 49, 0.2);
     font-size: 9px;
-    width: 60px;
-    height: 20px;
     margin: 0.2em;
     border-radius: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 574px) and (max-device-width: 677px) {
+  .navbarBrand {
+    margin: 1em;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 572px) {
+  .navbarBrand {
+    margin: 0 11em;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media only screen and (min-device-width: 410px) and (max-device-width: 481px) {
+  .navbarBrand {
+    margin: 0 10em;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 410px) {
+  .navbarBrand {
+    margin: 0 8em;
+    position: absolute;
+    top: 0;
   }
 }
 
