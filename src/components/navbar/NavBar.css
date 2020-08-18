@@ -20,10 +20,7 @@
   line-height: 16px;
 }
 
-/* bootstrap class */
-.navbar-collapse {
-  justify-content: flex-end;
-}
+
 
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link:hover {
