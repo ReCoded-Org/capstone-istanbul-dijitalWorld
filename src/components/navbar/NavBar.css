@@ -11,8 +11,9 @@
   margin-left: 5%;
 }
 
-.dropdownlistToggle:active {
-  position: absolute;
+/* bootstrap class */	
+.navbar-collapse {	
+  justify-content: flex-end;	
 }
 
 /* bootstrap class */
@@ -27,7 +28,7 @@
 /* bootstrap class */
 .navbar-light .navbar-nav .nav-link:hover {
   color: #f8b195 !important;
-  justify-content: flex-end;
+  justify-content: flex-end !important;
 }
 
 .navbarBrand {
@@ -114,6 +115,12 @@
 /* bootstrap class */
 .dropdown-menu {
   font-size: 12px;
+}
+
+/* bootstrap class */
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
 }
 
 @media only screen and (min-device-width: 998px) and (max-device-width: 1024px) {
