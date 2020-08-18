@@ -11,7 +11,7 @@
   padding-left: 10%;
 }
 
-.EditProfileBtn {
+.editProfileBtn {
   background-color: #6c567b;
   color: white;
   cursor: pointer;
@@ -23,7 +23,7 @@
   margin: 2rem 0;
 }
 
-.EditProfileBtn:hover {
+.editProfileBtn:hover {
   background-color: #f8b195;
 }
 
