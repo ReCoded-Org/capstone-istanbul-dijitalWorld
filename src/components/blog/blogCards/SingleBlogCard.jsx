@@ -2,8 +2,10 @@ import React from 'react';
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './BlogCard.css';
+import { useTranslation } from 'react-i18next';
 
 export default function SingleBlogCard(props) {
+  const { t } = useTranslation();
   return (
     <div className="containerToAllCards">
       <Container className="blogContainer">
@@ -23,7 +25,7 @@ export default function SingleBlogCard(props) {
             ></span>
             <NavLink to={`/blog/${props.post.id}`}>
               <button type="button" className="readMoreButton">
-                Read More
+                {t('blog.readMore')}
               </button>
             </NavLink>
           </Col>

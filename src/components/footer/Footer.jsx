@@ -1,10 +1,11 @@
 import React from 'react';
 import {
-  faTwitterSquare,
+  faTwitter,
   faFacebook,
   faGithub,
-  faInstagramSquare,
+  faInstagram,
   faPinterest,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -17,13 +18,13 @@ const Footer = () => {
     <footer className="footerContainer">
       <Container>
         <Row className="footerRow">
-          <Col className="footerCol" md="4">
-            <p className="footerBlurbTitle">{t('home.footer.getInTouch.title')}</p>
+          <Col className="footerCol" md="5">
+            <p className="footerTitle">{t('home.footer.getInTouch.title')}</p>
             <p className="footerBlurbText">{t('home.footer.getInTouch.text')}</p>
           </Col>
 
           <Col className="footerCol" md="3">
-            <p className="footerContactTitle">{t('home.footer.contactUs.title')}</p>
+            <p className="footerTitle">{t('home.footer.contactUs.title')}</p>
             <p className="footerContactText">
               {t('home.footer.contactUs.emailAddress')}
               <br />
@@ -31,13 +32,15 @@ const Footer = () => {
             </p>
           </Col>
 
-          <Col className="footerCol" md="2">
-            <p className="footerSocialTitle">{t('home.footer.followUs')}</p>
-            <FontAwesomeIcon className="footerIcons" icon={faTwitterSquare} />
+          <Col className="footerCol" md="3">
+            <p className="footerTitle">{t('home.footer.followUs')}</p>
+            <FontAwesomeIcon className="footerIcons" icon={faTwitter} />
             <FontAwesomeIcon className="footerIcons" icon={faFacebook} />
             <FontAwesomeIcon className="footerIcons" icon={faGithub} />
-            <FontAwesomeIcon className="footerIcons" icon={faInstagramSquare} />
+            <br />
+            <FontAwesomeIcon className="footerIcons" icon={faInstagram} />
             <FontAwesomeIcon className="footerIcons" icon={faPinterest} />
+            <FontAwesomeIcon className="footerIcons" icon={faYoutube} />
           </Col>
         </Row>
       </Container>
