@@ -2,7 +2,7 @@
 
 exports[`about content renders correctly 1`] = `
 <div
-  className="articlesContainer container"
+  className="aboutArticlesContainer container"
 >
   <div
     className="row"
@@ -11,7 +11,7 @@ exports[`about content renders correctly 1`] = `
       className="col"
     >
       <div
-        className="articleContainer"
+        className="aboutArticleContainer"
       >
         <h2>
           about.ourStory.header
@@ -21,7 +21,7 @@ exports[`about content renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="articleContainer"
+        className="aboutArticleContainer"
       >
         <h2>
           about.ourMission.header
@@ -31,7 +31,7 @@ exports[`about content renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="articleContainer"
+        className="aboutArticleContainer"
       >
         <h2>
           about.ourTeam.header
