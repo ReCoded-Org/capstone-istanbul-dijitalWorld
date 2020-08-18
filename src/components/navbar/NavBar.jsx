@@ -87,7 +87,7 @@ export default function NavBar({ routes }) {
         </Nav>
         <div className="buttonGroup">
           {userData && (
-            <Dropdown alignLeft className="ml-3 dropdownlistToggle">
+            <Dropdown alignRight className="mr-3">
               <Dropdown.Toggle as={CustomToggle} id="dropdown-split-basic"></Dropdown.Toggle>
               <Dropdown.Menu>
                 <Route

@@ -11,8 +11,9 @@
   margin-left: 5%;
 }
 
-.dropdownlistToggle:active {
-  position: absolute;
+/* bootstrap class */	
+.navbar-collapse {	
+  justify-content: flex-end;	
 }
 
 /* bootstrap class */
