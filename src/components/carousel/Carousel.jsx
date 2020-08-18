@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Carousel() {
   const { t } = useTranslation();
   return (
-    <div className="allContent">
+    <div className="allContentHomeCarousel">
       <div className="sentenceAndButton">
         <div className="sentence">
           <h1>
