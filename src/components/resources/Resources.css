@@ -43,7 +43,7 @@
 }
 
 .resourceButton:hover {
-  background-color: #f8b195;
+  background-color: #f8b195 !important;
   border-style: hidden;
 }
 

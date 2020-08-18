@@ -65,7 +65,30 @@
       "followUs": "تابعونا"
     }
   },
-
+  "resourcePage": {
+    "title": "Resources for you",
+    "resources": [
+      {
+        "header": "girlsglobe.org",
+        "blurp": "تقوم Girls 'Globe بتضخيم أصوات النشطاء والدعاة والخبراء في مجال المساواة بين الجنسين وحقوق الإنسان والعدالة الاجتماعية",
+        "img": "/images/GirlsglobalResource.png",
+        "link": "http://www.girlsglobe.org"
+      },
+      {
+        "header": "malala.org",
+        "blurp": "أسس ملالا وزيا الدين يوسفزاي صندوق ملالا في عام 2013 لدعم حق كل فتاة في 12 عامًا من التعليم المجاني والآمن والجيد",
+        "img": "/images/MalalaResource.png",
+        "link": "http://www.malala.org"
+      },
+      {
+        "header": "girltalkhq.com",
+        "blurp": "يغطي GTHQ مجموعة من الموضوعات ذات الصلة بالمرأة اليوم ، مثل النسوية ، والحقوق الإنجابية للمرأة ، وتمثيل المرأة في السينما والتلفزيون ، والتنوع في وسائل الإعلام ، وتدابير المساواة بين الجنسين",
+        "img": "/images/GirltalkHQResource.png",
+        "link": "http://www.girltalkhq.com"
+      }
+    ],
+    "button": "اذهب إلى الصفحة"
+  },
   "about": {
     "ourStory": {
       "header": "قصتنا",
