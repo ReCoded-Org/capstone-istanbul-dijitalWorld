@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
 
+/* bootstrap class */
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;

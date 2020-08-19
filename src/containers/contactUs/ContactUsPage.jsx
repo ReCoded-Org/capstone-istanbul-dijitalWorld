@@ -6,7 +6,7 @@ import { Row, Container } from 'react-bootstrap';
 export default function ContactUsPage() {
   return (
     <Container>
-      <Row className="contactUsContainer">
+      <Row className="flex-column-reverse flex-lg-row justify-content-around">
         <ContactUsMap />
         <ContactUsForm />
       </Row>

@@ -83,14 +83,14 @@ exports[`renders correctly 1`] = `
       <h2
         className="fightForGirls"
       >
-        home.quotes.girlsFight
+        home.quotes.girlsFight.title
       </h2>
       <button
         className="donateButton"
         data-testid="button"
         type="button"
       >
-        Donate Now
+        home.quotes.girlsFight.button
       </button>
     </div>
     <div

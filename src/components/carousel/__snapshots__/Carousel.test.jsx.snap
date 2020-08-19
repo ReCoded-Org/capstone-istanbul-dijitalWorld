@@ -2,7 +2,7 @@
 
 exports[`Carousel renders correctly 1`] = `
 <div
-  className="allContent"
+  className="allContentHomeCarousel"
 >
   <div
     className="sentenceAndButton"

@@ -10,7 +10,7 @@ export default function SingleBlogCard(props) {
     <div className="containerToAllCards">
       <Container className="blogContainer">
         <Row>
-          <Col xs={6} md={6} lg={8}>
+          <Col xs={4} md={6} lg={8}>
             <h3
               className="blogTitle"
               dangerouslySetInnerHTML={{
@@ -29,7 +29,7 @@ export default function SingleBlogCard(props) {
               </button>
             </NavLink>
           </Col>
-          <Col xs={4} md={4} lg={3} className="imageContainer">
+          <Col xs={3} md={4} lg={4} className="imageContainer">
             <Image
               src={props.post.jetpack_featured_media_url}
               className="roundImage"
