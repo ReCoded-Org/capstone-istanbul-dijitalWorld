@@ -15,7 +15,7 @@ export default function Inspire(props) {
       <p className="heroText">
         {t('home.inspire.heroText')} <br />
       </p>
-      <button className="inspireButton">{t('home.inspire.button')}</button>
+      <button className="shareButton">{t('home.inspire.button')}</button>
     </div>
   );
 }

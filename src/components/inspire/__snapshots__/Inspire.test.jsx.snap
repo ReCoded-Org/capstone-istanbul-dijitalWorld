@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
     <br />
   </p>
   <button
-    className="inspireButton"
+    className="shareButton"
   >
     home.inspire.button
   </button>
