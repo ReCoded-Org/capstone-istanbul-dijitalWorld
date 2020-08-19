@@ -35,7 +35,7 @@ i18n
       },
     },
     lng: 'en',
-    fallbackLng: 'ar',
+    fallbackLng: ['ar', 'tr'],
     debug: true,
 
     keySeparator: '.',
