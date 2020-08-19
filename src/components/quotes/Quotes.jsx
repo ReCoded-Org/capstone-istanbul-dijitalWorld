@@ -19,7 +19,7 @@ const Quotes = () => {
           <span className="sayHerNameAuthor">{t('home.quotes.sayHerName.author')}</span>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <Image src={safeImage} fluid />
+          <Image src={safeImage} width="100%" fluid />
         </Col>
       </Row>
       <Row data-testid="anOpenLetterRow">
@@ -35,9 +35,9 @@ const Quotes = () => {
       </Row>
       <Row data-testid="fightForGirlsRow">
         <Col xl={6} lg={12} md={12} className="contentColumns">
-          <h2 className="fightForGirls">{t('home.quotes.girlsFight')}</h2>
+          <h2 className="fightForGirls">{t('home.quotes.girlsFight.title')}</h2>
           <button type="button" className="donateButton" data-testid="button">
-            Donate Now
+            {t('home.quotes.girlsFight.button')}
           </button>
         </Col>
         <Col xl={6} lg={12} md={12} className="contentColumns">

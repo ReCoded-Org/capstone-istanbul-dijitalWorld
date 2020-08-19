@@ -3,9 +3,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .profileDetailRow {
-  margin: 10% 20%;
+  margin: 3rem 12rem;
   padding-left: 10%;
+}
+
+.editProfileBtn {
+  background-color: #6c567b;
+  color: white;
+  cursor: pointer;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  border-style: hidden;
+  box-shadow: 0 0.6875rem 1.5rem -0.4375rem #b3b3b3;
+  margin: 2rem 0;
+}
+
+.editProfileBtn:hover {
+  background-color: #f8b195;
+}
+
+.profileDetailRow h5 {
+  color: #6c567c;
 }

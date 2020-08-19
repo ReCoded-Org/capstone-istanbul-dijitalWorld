@@ -46,7 +46,10 @@
         "title": "An Open Letter to My Abuser",
         "author": "Anonymous"
       },
-      "girlsFight": "The fight for girls won't be won by girls alone"
+      "girlsFight": {
+        "title": "The fight for girls won't be won by girls alone",
+        "button": "Donate now"
+      }
     },
     "newsletter": {
       "titles": {
@@ -170,5 +173,8 @@
     "signup": "Signup for WWW",
     "send": "Send",
     "passwordReset": "Send a password reset email"
+  },
+  "blog": {
+    "readMore": "Read More"
   }
 }
