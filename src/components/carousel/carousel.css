@@ -4,6 +4,7 @@
   flex-direction: row;
   align-items: center;
   position: relative;
+  margin-bottom: 5em;
 }
 
 .sentenceAndButton {
@@ -21,9 +22,9 @@
   background-color: #6c567b;
   color: white;
   cursor: pointer;
-  width: 10.625rem;
-  height: 3.75rem;
-  font-size: 1.375rem;
+  width: 8.6rem;
+  height: 2.7rem;
+  font-size: 1.3rem;
   border-radius: 2.1875rem;
   border-style: hidden;
   box-shadow: 0rem 0.6875rem 1.5rem -0.4375rem #b3b3b3;
