@@ -47,6 +47,7 @@
   margin-bottom: 5%;
 }
 
-.inspireButton:hover, .shareButton:hover {
+.inspireButton:hover,
+.shareButton:hover {
   background-color: #f8b195;
 }
