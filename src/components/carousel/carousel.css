@@ -1,15 +1,17 @@
-.allContent {
-  padding-left: 7%;
+.allContentHomeCarousel {
+  padding-left: 4%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 
 .sentenceAndButton {
-  margin-left: 6%;
+  margin-left: 7%;
 }
 
-.sentence {
+.sentence h1 {
+  font-size: 3rem;
   font-weight: bold;
   color: #6c567b;
   text-shadow: 0rem 0.3125rem 0.3125rem #cecece;
@@ -37,9 +39,8 @@
 }
 
 .carouselImgs {
-  height: 28.125rem;
-  width: 53.125rem;
-  margin-left: -5%;
+  width: 60%;
+  margin-left: -7%;
   z-index: -1;
   margin-top: 5%;
 }
@@ -55,4 +56,28 @@
   margin-top: 0.625rem;
   font-size: 1.5rem;
   color: #6c567b;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 771px) {
+  .sentence h1 {
+    font-size: 2.5rem;
+  }
+  .learnBtn {
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .sentence h1 {
+    font-size: 1rem;
+  }
+  .learnBtn {
+    width: 7rem;
+    height: 2.8rem;
+    font-size: 1rem;
+    border-radius: 1.4rem;
+  }
 }
