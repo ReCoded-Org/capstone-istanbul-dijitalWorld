@@ -44,7 +44,7 @@ exports[`Matches the snapshot. 1`] = `
         className="footerCol col-md-3"
       >
         <p
-          className="footerTitle followUsTitle"
+          className="footerTitle"
         >
           home.footer.followUs
         </p>

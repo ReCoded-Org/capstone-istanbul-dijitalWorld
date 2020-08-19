@@ -4,8 +4,8 @@
       "header": {
         "header0": "Değişim",
         "header1": "İçin",
-        "header2": "Hikaye",
-        "header3": "Paylaşımı"
+        "header2": "Hikayeni",
+        "header3": "Paylaş"
       },
       "button": "Öğren"
     },
@@ -21,6 +21,9 @@
       "buttons": {
         "signup": "Kaydol",
         "login": "Oturum aç"
+      },
+      "dropdown": {
+        "language": "TR"
       }
     },
     "inspire": {
@@ -39,8 +42,14 @@
         "title": "Afrikalı siyahi müslüman bir kadın olarak kesişimsel aktivizm hikayem #BlackLivesMatter",
         "author": "Bashirat Oladele"
       },
-      "openLetter": { "title": "İstismarcıma açık mektup", "author": "Anonim" },
-      "girlsFight": "Kız çocukları için mücadelede kız çocukları yalnız olmayacak."
+      "openLetter": {
+        "title": "İstismarcıma açık mektup",
+        "author": "Anonim"
+      },
+      "girlsFight": {
+        "title": "Kız çocukları için mücadelede kız çocukları yalnız olmayacak.",
+        "button": "Bağış yap"
+      }
     },
     "newsletter": {
       "titles": {
@@ -92,15 +101,15 @@
   "about": {
     "ourStory": {
       "header": "Hikayemiz",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "body": "World with Women, dünyada kadınların hak ettiği yere gelmesi için onları cesaretlendirmek için bir platform olması amacıyla kuruldu. İnanıyoruz ki, bir başkasının da aynı sıkıntılardan geçtiğini görmek, benzer hikayeler yaşadığını bilmek yalnız olmadığını hissetmek için çok önemli. Bugünün imkanlarını yalnız kalmamanız için kullanıyoruz, siz de aramıza katılın. Beraber daha güçlüyüz."
     },
     "ourMission": {
       "header": "Misyonumuz",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "body": "Ekip olarak her insanın, eşit şartlarda doğmasalar da eşit haklara sahip olduğunu savunuyoruz. Kadınların her gün yaşayıp alışmasına göz yummuyoruz ve bir arada hareket etmek için destek olmak istiyoruz. Dayanışmada bulunmak isteyenlerle ve dayanmak isteyenleri buluşturan bu platform, güçlüklerin paylaşımla aşılacağına inanan bir ekiple geliştirildi."
     },
     "ourTeam": {
       "header": "Ekibimiz",
-      "body": "Çeşitli alanlarda eğitim almış ekibimiz kadınların eşitliği için çalışıyor."
+      "body": "Çeşitli alanlarda eğitim almış ekibimiz kadınların da eşit haklara erişebilmesi, onların seslerini duyurmak için çalışıyor."
     },
     "name": [
       "Refia Candan Ozkalay",

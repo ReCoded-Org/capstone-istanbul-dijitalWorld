@@ -121,7 +121,7 @@ export default function NavBar({ routes }) {
         variant="none"
         id="dropdown-item-button"
         className="dropdownItemButton"
-        title="EN"
+        title={t('home.navBar.dropdown.language')}
       >
         <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('en')}>
           EN
@@ -129,7 +129,7 @@ export default function NavBar({ routes }) {
         <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('tr')}>
           TR
         </Dropdown.Item>
-        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('an')}>
+        <Dropdown.Item as="button" onClick={() => i18n.changeLanguage('ar')}>
           AR
         </Dropdown.Item>
       </DropdownButton>
