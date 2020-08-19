@@ -21,6 +21,9 @@
       "buttons": {
         "signup": "Kaydol",
         "login": "Oturum aç"
+      },
+      "dropdown": {
+        "language": "TR"
       }
     },
     "inspire": {
