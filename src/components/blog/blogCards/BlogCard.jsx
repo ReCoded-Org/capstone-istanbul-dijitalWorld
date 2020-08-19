@@ -26,7 +26,7 @@ export default function BlogCard() {
         case 'en':
           filteredPosts = posts.slice(startingIndexOfEnglish);
           break;
-        case 'an':
+        case 'ar':
           filteredPosts = posts.slice(postsDividedLanguages, startingIndexOfEnglish);
           break;
         default:
