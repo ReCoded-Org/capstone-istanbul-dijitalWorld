@@ -21,10 +21,6 @@ import i18n from './i18n';
 const ROUTES = [
   { path: '/', name: 'home', Component: Home },
   { path: '/blog', name: 'blog', Component: BlogCard },
-  { path: '/inspire', name: 'inspire', Component: InspirePage },
-  { path: '/resources', name: 'resource', Component: ResourcePage },
-  { path: '/about', name: 'about', Component: About },
-  { path: '/contact', name: 'contact', Component: ContactUsPage },
 ];
 
 const LocationDisplay = withRouter(({ location }) => (
